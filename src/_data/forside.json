@@ -1,8 +1,5 @@
 {
-  "titel": "Rideterapi & handicapridning ved Roskilde | Lotte Stegeager",
-  "beskrivelse": "Hesteassisteret behandling og handicapridning for børn, unge og voksne. Ved skolefravær, ADHD, autisme, angst og handicap. Praksis i Gevninge, 10 km fra Roskilde.",
-
-  "hero_mikrotekst": "Godkendt af Rideterapeut Foreningen",
+  "hero_mikrotekst": "Godkendt af Rideterapeut Foreningen TEST",
   "hero_overskrift": "Når ord ikke rækker, kan hesten være vejen",
   "hero_tekst": "Hesteassisteret behandling og handicapridning for børn, unge og voksne, særligt ved skolefravær, ADHD, autisme, angst, traumer og handicap. Individuelle forløb i rolige omgivelser 10 km fra Roskilde.",
   "hero_knap1": "Book en gratis samtale på 20 min.",
@@ -10,11 +7,16 @@
   "hero_billede": "/billeder/pladsholder-hest.svg",
   "hero_billede_alt": "Barn i rolig kontakt med hest på marken",
   "hero_maerkater": [
-    { "tekst": "Kun eneundervisning" },
-    { "tekst": "Mulighed for kommunalt tilskud" },
-    { "tekst": "30 års erfaring med heste" }
+    {
+      "tekst": "Kun eneundervisning"
+    },
+    {
+      "tekst": "Mulighed for kommunalt tilskud"
+    },
+    {
+      "tekst": "30 års erfaring med heste"
+    }
   ],
-
   "problemer_overskrift": "Måske står I i noget af det her",
   "problemer_intro": "De fleste, der kontakter mig, har prøvet meget andet først. Det er helt almindeligt.",
   "problemer_kort": [
@@ -43,7 +45,6 @@
       "tekst": "I er blevet mødt med fordomme og krav. Heste dømmer ikke – de møder mennesker præcis som de er."
     }
   ],
-
   "tilbud_mikrotekst": "Jeg tilbyder to ting",
   "tilbud_overskrift": "Behandling og ridning – eller begge dele",
   "tilbud_intro": "Begge dele foregår som eneundervisning, hvor tempoet sættes af dig. Man behøver ikke kunne ride for at komme her.",
@@ -59,7 +60,6 @@
       "link_tekst": "Læs om handicapridning"
     }
   ],
-
   "hvorfor_mikrotekst": "Hvorfor heste?",
   "hvorfor_overskrift": "Heste møder mennesker uden filter",
   "hvorfor_tekst": "Heste er byttedyr og derfor usædvanligt sensitive over for deres omgivelser. De er til stede i nuet og reagerer på den stemning, vi møder dem med. Det gør dem til en helt direkte spejling af, hvilke signaler vi sender ud.\n\nNår vi får skærpet blikket for vores egen rolle i samspillet, bliver det muligt at komme tættere på sig selv – og på sin omverden. Mange af de mennesker, jeg møder, er blevet mødt med fordomme andre steder i livet. Hesten har ingen fordomme.",
@@ -68,18 +68,34 @@
   "hvorfor_boks_titel": "Fra forskningen:",
   "hvorfor_boks_tekst": "Et amerikansk studie fra 2014 fulgte 130 unge gennem 12 ugers hesteassisteret forløb og fandt et betydeligt fald i stresshormonet kortisol. Et andet studie med 66 deltagere over 8 måneder viste markant reduktion af angst og depression samt styrket selvværd.",
   "hvorfor_boks_link": "Se kilder og litteratur",
-
   "fokus_overskrift": "Hvad er i fokus?",
   "fokus_intro": "Det centrale er at blive mødt, som man er – som betydningsfuld.",
   "fokus_kort": [
-    { "overskrift": "Selvværd og selvtillid", "tekst": "At mærke at man kan noget, ved noget og vil noget." },
-    { "overskrift": "Egne og andres grænser", "tekst": "At afstemme sig og mærke, hvor grænsen går – både din og hestens." },
-    { "overskrift": "Ro i nervesystemet", "tekst": "At afbalancere et system, der har været i alarmberedskab for længe." },
-    { "overskrift": "Samspil og samarbejde", "tekst": "Erfaringer med at lykkes sammen med en anden – der kan overføres til livet udenfor." },
-    { "overskrift": "Koncentration og nærvær", "tekst": "At være ét sted ad gangen. Forløbene foregår så vidt muligt i et digitalt frit rum." },
-    { "overskrift": "Krop og motorik", "tekst": "Koordination, balance og kropsholdning gennem sansemotorisk træning." }
+    {
+      "overskrift": "Selvværd og selvtillid",
+      "tekst": "At mærke at man kan noget, ved noget og vil noget."
+    },
+    {
+      "overskrift": "Egne og andres grænser",
+      "tekst": "At afstemme sig og mærke, hvor grænsen går – både din og hestens."
+    },
+    {
+      "overskrift": "Ro i nervesystemet",
+      "tekst": "At afbalancere et system, der har været i alarmberedskab for længe."
+    },
+    {
+      "overskrift": "Samspil og samarbejde",
+      "tekst": "Erfaringer med at lykkes sammen med en anden – der kan overføres til livet udenfor."
+    },
+    {
+      "overskrift": "Koncentration og nærvær",
+      "tekst": "At være ét sted ad gangen. Forløbene foregår så vidt muligt i et digitalt frit rum."
+    },
+    {
+      "overskrift": "Krop og motorik",
+      "tekst": "Koordination, balance og kropsholdning gennem sansemotorisk træning."
+    }
   ],
-
   "anmeldelser_overskrift": "Hvad siger andre?",
   "anmeldelser_citater": [
     {
@@ -92,11 +108,11 @@
     }
   ],
   "anmeldelser_knap": "Læs anmeldelserne på Google",
-
   "cta_overskrift": "Er du i tvivl, om det er noget for jer?",
   "cta_tekst": "Så ring. Jeg tilbyder en samtale på 20 minutter uden beregning, hvor du kan fortælle om jeres situation, spørge ind til min erfaring og finde ud af, om jeg er den rette.",
-
   "soester_overskrift": "Søger du samtaleterapi, familiebehandling eller supervision?",
   "soester_tekst": "Jeg driver også Narrativ Samtale, hvor jeg tilbyder individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision.",
-  "soester_knap": "Gå til narrativsamtale.dk"
+  "soester_knap": "Gå til narrativsamtale.dk",
+  "titel": "Rideterapi & handicapridning ved Roskilde | Lotte Stegeager",
+  "beskrivelse": "Hesteassisteret behandling og handicapridning for børn, unge og voksne. Ved skolefravær, ADHD, autisme, angst og handicap. Praksis i Gevninge, 10 km fra Roskilde."
 }
