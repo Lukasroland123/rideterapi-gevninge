@@ -11,6 +11,13 @@
   [headers.values]
     X-Robots-Tag = "noindex"
 
+# MIDLERTIDIGT — hele siden holdes ude af Google, mens Lotte skriver.
+# SLET denne blok, naar det rigtige domaene er sat paa og siden skal findes.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 # Almindelige sikkerhedsheaders
 [[headers]]
   for = "/*"
