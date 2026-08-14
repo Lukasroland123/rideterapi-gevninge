@@ -10,15 +10,15 @@ backend:
   repo: Lukasroland123/rideterapi-gevninge
   branch: main
 
+  # Skriv beskeden ind i historikken paa almindeligt dansk
+  commit_messages:
+    update: "Rettet {{collection}} · {{author-name}}"
+    uploadMedia: "Nyt billede: {{path}}"
+    deleteMedia: "Slettet billede: {{path}}"
+
 # Hvor billeder lægges, og hvordan de findes af hjemmesiden
 media_folder: "src/billeder"
 public_folder: "/billeder"
-
-# Skriv beskeden ind i historikken på almindeligt dansk
-backend_commit_messages:
-  update: "Rettet {{collection}} · {{author-name}}"
-  uploadMedia: "Nyt billede: {{path}}"
-  deleteMedia: "Slettet billede: {{path}}"
 
 collections:
   # -------------------------------------------------------------------
