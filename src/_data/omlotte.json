@@ -1,0 +1,73 @@
+{
+  "titel": "Om Lotte Stegeager | Rideterapi Gevninge",
+  "beskrivelse": "Lotte Stegeager – cand.scient.soc., specialist i narrativ psykoterapi, certificeret funktionel neuroterapeut og medlem af Rideterapeut Foreningen. 30 års erfaring med heste.",
+
+  "hero_mikrotekst": "Om mig",
+  "hero_overskrift": "Lotte Stegeager",
+  "hero_tekst": "Jeg har arbejdet med heste i over 30 år og med mennesker i mistrivsel siden 1998. Rideterapien er stedet, hvor de to ting mødes.",
+  "hero_billede": "/billeder/pladsholder-portraet.svg",
+  "hero_billede_alt": "Portræt af Lotte Stegeager",
+  "hero_maerkater": [
+    { "tekst": "Cand.scient.soc., RUC 1998" },
+    { "tekst": "Specialist i narrativ psykoterapi" },
+    { "tekst": "Certificeret funktionel neuroterapeut" },
+    { "tekst": "Medlem af Rideterapeut Foreningen" }
+  ],
+
+  "vej_overskrift": "Hvorfor jeg fandt vejen til rideterapien",
+  "vej_tekst": "Gennem mit arbejde inden for det pædagogiske og psykologiske felt har jeg været i kontakt med rigtig mange børn og unge, som jeg har støttet i at navigere i livet på trods af de udfordringer, de har haft med sig. Især børn og unge, der har haft vanskeligt ved at trives i det traditionelle skole- og uddannelsessystem.\n\nGennem rideterapien har jeg fundet en alternativ vej – både til den mere traditionelle samtaleorienterede terapi og til den mere funktionsprægede træning af mennesker med handicap. Jeg har overført greb og forståelser fra narrativ terapi og „oversat“ dem til et sanseligt og nonverbalt samspil mellem hest og menneske.\n\nDen tilgang har jeg igen og igen oplevet som udviklende for mennesker, der er ramt af blandt andet stress, PTSD, angst, depression og spiseforstyrrelser – ligesom mennesker med andre former for handicap og funktionsnedsættelser har profiteret af den.\n\nNetop via rideterapien og handicapridningen oplever jeg, at mennesker føler sig set som de er og får helt konkrete oplevelser med at mærke sig selv gennem den anden – hestens øjne, signaler, responser og initiativer. Det giver indblik i den sensitivitet, der ligger i socialt samspil – et indblik, der kan overføres til andre sammenhænge i livet.",
+
+  "uddannelse_overskrift": "Uddannelse og baggrund",
+  "uddannelse_kort_overskrift": "Uddannelser",
+  "uddannelser": [
+    { "tekst": "Cand.scient.soc. fra RUC, 1998 – samfundsvidenskabeligt og pædagogisk/psykologisk felt" },
+    { "tekst": "Lektorgodkendt inden for det pædagogiske og psykologiske fagområde" },
+    { "tekst": "Specialist i narrativ psykoterapi (DISPUK) – godkendt af Dansk Psykolog Forening og Dansk Psykiatrisk Selskab" },
+    { "tekst": "Traumeuddannelse (DISPUK)" },
+    { "tekst": "Narrativ coach- og vejlederuddannelse (DISPUK)" },
+    { "tekst": "Certificeret funktionel neuroterapeut" },
+    { "tekst": "Marte Meo-uddannelsen" },
+    { "tekst": "Uddannelse i systemisk opstilling" }
+  ],
+  "medlemskaber_overskrift": "Medlemskaber og hverv",
+  "medlemskaber": [
+    { "tekst": "Medlem af Rideterapeut Foreningen" },
+    { "tekst": "Medlem af Dansk Psykoterapeut Forening (MPF)" },
+    { "tekst": "Censor ved de pædagogiske bacheloruddannelser" },
+    { "tekst": "Censor ved de pædagogiske diplomuddannelser – herunder Diplomuddannelse i Familieterapi og Relationel Praksis" }
+  ],
+  "erfaring_overskrift": "Erfaring",
+  "erfaring_tekst": "Siden 1998 har jeg blandt andet uddannet pædagoger og undervist i socialfag, pædagogik, kommunikation og psykologi. Jeg har deltaget i udviklingsprojekter om forandringer i organisationer og teams og været tilknyttet en specialefterskole som konsulent.",
+
+  "neuro_mikrotekst": "Krop og nervesystem",
+  "neuro_overskrift": "Funktionel neuroterapi som en del af arbejdet",
+  "neuro_tekst": "Som certificeret funktionel neuroterapeut benytter jeg denne tilgang i forbindelse med både handicapridning og hesteassisteret terapi, hvor specifikke nervebaner aktiveres bevidst via sensoriske input.\n\nUnder sessionerne laves fysiske øvelser, som stimulerer blandt andet koordination, balance og kropsholdning – herunder sansemotorisk og psykomotorisk træning. Via rideterapien skabes en skærpet opmærksomhed på sammenhængen mellem den fysiske krop og vores psyke.",
+  "neuro_billede": "/billeder/pladsholder-hest.svg",
+  "neuro_billede_alt": "Lotte sammen med en af sine heste",
+
+  "forskning_overskrift": "Fagligt afsæt, litteratur og forskning",
+  "forskning_intro": "Jeg mener, du har krav på at vide, hvad min praksis bygger på. Her er kilderne.",
+  "forskning_punkter": [
+    {
+      "spoergsmaal": "Min egen publikation",
+      "svar": "„Hesteassisteret terapi som platform – i mødet med børn og unge i mistrivsel“, Tidsskrift for Specialpædagogik, 2024 nr. 2. Her kan du læse konkret om, hvordan jeg arbejder med rideterapi og hesteassisteret terapi.\n\nJeg er desuden medforfatter på den forskningsgodkendte artikel „Jeg er ikke bange for at blive set, men…“ om skam og udskamning, DPT nr. 3, 2020."
+    },
+    {
+      "spoergsmaal": "Litteratur jeg tager afsæt i",
+      "svar": "Janet L. Jones (PhD): Horse Brain – Human Brain. The Neuroscience of Horsemanship\n\nUte Lehmann: Horse in Harmony – min tilgang til at møde mine heste\n\nMaja Caspersen, livsridekunst.dk – passion, føling og viden\n\nLeif Hallberg: The Equine-Assisted Therapy Workbook (Taylor & Francis, 2017)\n\nHannah Burgon: Equine-Assisted Therapy and Learning with At-Risk Young People (Palgrave Macmillan, 2014)\n\nHallie E. Sheade: Equine-Assisted Counseling and Psychotherapy – Healing Through Horses (Taylor & Francis, 2020)\n\nScientific and Educational Journal of Therapeutic Riding"
+    },
+    {
+      "spoergsmaal": "Eksempler på forskning på området",
+      "svar": "Washington State University, 2014: 130 unge gennemgik et 12-ugers hesteassisteret forløb. Kortisolniveauet faldt betydeligt i løbet af perioden.\n\nSociety & Animals 15, 2007: 66 personer fulgt gennem 8 måneder. Undersøgelsen viste betydelig reduktion af angst og depression samt styrket overblik, selvværd og selvtillid.\n\nThe Horse Course (England): Rapporterer blandt andet en reduktion af angstsymptomer på 80 % i arbejdet med unge i 2014.\n\nMotorik og indlæring: Der er indikationer på, at hestens bevægelser, der forplanter sig ind i rytterens krop, kan styrke koncentration og indlæring hos børn."
+    }
+  ],
+  "citat": "Equine brains are built to experience emotion without evaluation. This architecture creates an emotional but non-judgmental animal who mirrors human attitudes.",
+  "citat_kilde": "Janet L. Jones (PhD), Horse Brain – Human Brain, s. 244",
+
+  "soester_overskrift": "Jeg tilbyder også samtaleterapi og supervision",
+  "soester_tekst": "Ved siden af rideterapien driver jeg Narrativ Samtale med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision.",
+  "soester_knap": "Gå til narrativsamtale.dk",
+
+  "cta_overskrift": "Vil du høre mere?",
+  "cta_tekst": "Ring og få 20 minutter uden beregning. Så kan du høre mere om min erfaring og finde ud af, om jeg er den rette for jer."
+}

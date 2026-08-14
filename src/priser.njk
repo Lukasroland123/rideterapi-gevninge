@@ -1,0 +1,117 @@
+---
+layout: base.njk
+permalink: /priser/
+side: priser
+eleventyComputed:
+  titel: "{{ priser.titel }}"
+  beskrivelse: "{{ priser.beskrivelse }}"
+---
+<div class="pagehead">
+  <div class="wrap">
+    <span class="eyebrow">{{ priser.hero_mikrotekst }}</span>
+    <h1>{{ priser.hero_overskrift }}</h1>
+    <p>{{ priser.hero_tekst }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--2">
+      <article class="price-card price-card--highlight">
+        <h3>{{ priser.pris1_overskrift }}</h3>
+        <div class="price-card__amount">{{ priser.pris1_beloeb }}</div>
+        <p class="price-card__unit">{{ priser.pris1_enhed }}</p>
+        {{ priser.pris1_tekst | afsnit | safe }}
+        <a class="btn btn--primary" href="/kontakt/">{{ priser.pris1_knap }}</a>
+      </article>
+
+      <article class="price-card">
+        <h3>{{ priser.pris2_overskrift }}</h3>
+        <div class="price-card__amount">{{ priser.pris2_beloeb }}</div>
+        <p class="price-card__unit">{{ priser.pris2_enhed }}</p>
+        {{ priser.pris2_tekst | afsnit | safe }}
+        <a class="btn btn--ghost" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+      </article>
+    </div>
+
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ priser.pris_note_titel }}</strong> {{ priser.pris_note_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ priser.tilskud_mikrotekst }}</span>
+      <h2>{{ priser.tilskud_overskrift }}</h2>
+      <p>{{ priser.tilskud_intro }}</p>
+    </div>
+    {% set tilskudsikoner = [
+      '<path d="M20 21v-2a4 4 0 0 0-3-3.9M9 7a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>',
+      '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>'
+    ] %}
+    <div class="grid grid--2">
+      {% for k in priser.tilskud_kort %}
+      <article class="card card--flat">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ tilskudsikoner[loop.index0] | safe }}</svg>
+        </div>
+        <h3>{{ k.overskrift }}</h3>
+        {{ k.tekst | afsnit | safe }}
+      </article>
+      {% endfor %}
+    </div>
+    <p style="margin-top:1.75rem">
+      <a class="btn btn--brand" href="/kontakt/">{{ priser.tilskud_knap }}</a>
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ priser.aabning_overskrift }}</h2>
+    </div>
+    <div class="grid grid--2">
+      <div>
+        <ul>
+          {% for p in priser.aabning_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+        </ul>
+      </div>
+      <div class="note">
+        <strong>{{ priser.aabning_note_titel }}</strong> {{ priser.aabning_note_tekst }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="{{ priser.sted_billede }}" alt="{{ priser.sted_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ priser.sted_mikrotekst }}</span>
+      <h2>{{ priser.sted_overskrift }}</h2>
+      {{ priser.sted_tekst | afsnit | safe }}
+      <p><strong>{{ site.adresse }}<br>{{ site.postnr_by }}</strong></p>
+      <div class="btn-row">
+        <a class="btn btn--brand" href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26,+4000+Roskilde" rel="noopener">{{ priser.sted_knap }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ priser.cta_overskrift }}</h2>
+      <p>{{ priser.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="mailto:{{ site.email }}">Skriv en mail</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,156 @@
+---
+layout: base.njk
+permalink: /til-kommuner/
+side: kommuner
+eleventyComputed:
+  titel: "{{ kommuner.titel }}"
+  beskrivelse: "{{ kommuner.beskrivelse }}"
+---
+{% set ikoner = [
+  '<path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/>',
+  '<circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>',
+  '<path d="M13 2L3 14h8l-1 8 10-12h-8z"/>',
+  '<path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/>',
+  '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/>',
+  '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>'
+] %}
+
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ kommuner.hero_mikrotekst }}</span>
+      <h1>{{ kommuner.hero_overskrift }}</h1>
+      <p class="lead">{{ kommuner.hero_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="800" height="600">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ kommuner.relevant_overskrift }}</h2>
+      <p>{{ kommuner.relevant_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in kommuner.relevant_kort %}
+      <article class="card card--flat">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ ikoner[loop.index0] | safe }}</svg>
+        </div>
+        <h3>{{ k.overskrift }}</h3>
+        <p>{{ k.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="{{ kommuner.fagligt_billede }}" alt="{{ kommuner.fagligt_billede_alt }}" width="600" height="700">
+    </div>
+    <div>
+      <span class="eyebrow">{{ kommuner.fagligt_mikrotekst }}</span>
+      <h2>{{ kommuner.fagligt_overskrift }}</h2>
+      <p>{{ kommuner.fagligt_intro }}</p>
+      <ul>
+        {% for p in kommuner.fagligt_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      <p>{{ kommuner.fagligt_afslutning }}</p>
+      <p><a href="/om-lotte/">Se den fulde faglige baggrund</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="note">
+      <strong>{{ kommuner.publikation_titel }}</strong>
+      {{ kommuner.publikation_tekst | afsnit | safe }}
+      <p><a href="/om-lotte/#forskning">Se øvrig litteratur og forskning på området</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ kommuner.forloeb_overskrift }}</h2>
+    </div>
+    <div class="steps">
+      {% for t in kommuner.forloeb_trin %}
+      <article class="step">
+        <h3>{{ t.overskrift }}</h3>
+        <p>{{ t.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ kommuner.lov_overskrift }}</h2>
+      <p>{{ kommuner.lov_intro }}</p>
+    </div>
+    <div class="grid grid--2">
+      <article class="card card--flat">
+        <h3>{{ kommuner.lov_kort1_overskrift }}</h3>
+        {{ kommuner.lov_kort1_tekst | afsnit | safe }}
+      </article>
+      <article class="card card--flat">
+        <h3>{{ kommuner.lov_kort2_overskrift }}</h3>
+        {{ kommuner.lov_kort2_tekst | afsnit | safe }}
+        <h3 style="margin-top:1.5rem">{{ kommuner.lov_kort2_overskrift2 }}</h3>
+        {{ kommuner.lov_kort2_tekst2 | afsnit | safe }}
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ kommuner.praktisk_overskrift }}</h2>
+    </div>
+    <div class="grid grid--3">
+      {% for k in kommuner.praktisk_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ kommuner.soester_overskrift }}</h3>
+        <p>{{ kommuner.soester_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ kommuner.soester_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ kommuner.cta_overskrift }}</h2>
+      <p>{{ kommuner.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
+      </div>
+    </div>
+  </div>
+</section>

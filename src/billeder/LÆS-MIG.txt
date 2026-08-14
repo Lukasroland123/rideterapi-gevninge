@@ -1,0 +1,40 @@
+BILLEDER — sådan skifter du dem ud
+==================================
+
+Læg jeres egne fotos i denne mappe og ret filnavnet i HTML-filerne.
+
+Lige nu bruges tre pladsholdere:
+
+  pladsholder-hest.svg      → bruges som hovedbillede (forside, "Sådan foregår det", "Om Lotte")
+  pladsholder-natur.svg     → bruges til omgivelser/landskab
+  pladsholder-portraet.svg  → bruges til portræt af Lotte på "Om Lotte"
+
+SÅDAN GØR DU
+------------
+1. Læg fx "hest-og-barn.jpg" i denne mappe.
+2. Åbn HTML-filen i Notesblok/VS Code og find linjen:
+       <img src="billeder/pladsholder-hest.svg" alt="...">
+3. Ret til:
+       <img src="billeder/hest-og-barn.jpg" alt="Beskriv hvad man ser på billedet">
+
+ALT-TEKSTEN ER VIGTIG. Den læses højt for blinde brugere og bruges af Google.
+Skriv hvad man faktisk ser, fx "Dreng børster brun hest på folden".
+
+ANBEFALINGER
+------------
+• Format: JPG til fotos. Brug gerne WEBP hvis I kan — mindre filer.
+• Størrelse: ca. 1600 px bred er rigeligt. Filer over 400 KB gør siden langsom.
+  Komprimer gratis på squoosh.app eller tinypng.com.
+• Billedformat: de fleste pladser er 4:3 (fx 1600x1200). Portrættet er 4:5.
+• SAMTYKKE: husk skriftligt samtykke fra personer, der kan genkendes på billederne.
+
+HVOR BRUGES BILLEDERNE?
+-----------------------
+index.html            → 2 billeder (hest + natur)
+rideterapi.html       → 3 billeder (hest, natur, hest)
+handicapridning.html  → 2 billeder (hest, natur)
+forloeb.html          → 2 billeder (hest, natur)
+priser.html           → 1 billede  (natur)
+om-lotte.html         → 2 billeder (portræt + hest)
+kontakt.html          → 1 billede  (natur)
+til-kommuner.html     → 2 billeder (natur + portræt)

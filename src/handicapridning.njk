@@ -1,0 +1,147 @@
+---
+layout: base.njk
+permalink: /handicapridning/
+side: handicapridning
+eleventyComputed:
+  titel: "{{ handicapridning.titel }}"
+  beskrivelse: "{{ handicapridning.beskrivelse }}"
+---
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ handicapridning.hero_mikrotekst }}</span>
+      <h1>{{ handicapridning.hero_overskrift }}</h1>
+      <p class="lead">{{ handicapridning.hero_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">{{ handicapridning.hero_knap1 }}</a>
+        <a class="btn btn--ghost" href="#tilskud">{{ handicapridning.hero_knap2 }}</a>
+      </div>
+      <div class="badges">
+        {% for m in handicapridning.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="{{ handicapridning.hero_billede }}" alt="{{ handicapridning.hero_billede_alt }}" width="800" height="600">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ handicapridning.hvad_overskrift }}</h2>
+    {{ handicapridning.hvad_tekst | afsnit | safe }}
+    <div class="note">
+      <strong>{{ handicapridning.hvad_boks_titel }}</strong> {{ handicapridning.hvad_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="{{ handicapridning.neuro_billede }}" alt="{{ handicapridning.neuro_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ handicapridning.neuro_mikrotekst }}</span>
+      <h2>{{ handicapridning.neuro_overskrift }}</h2>
+      {{ handicapridning.neuro_indledning | afsnit | safe }}
+      <ul>
+        {% for p in handicapridning.neuro_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ handicapridning.neuro_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ handicapridning.hvem_overskrift }}</h2>
+      <p>{{ handicapridning.hvem_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in handicapridning.hvem_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ handicapridning.hvem_boks_titel }}</strong> {{ handicapridning.hvem_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="tilskud">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ handicapridning.tilskud_mikrotekst }}</span>
+      <h2>{{ handicapridning.tilskud_overskrift }}</h2>
+      <p>{{ handicapridning.tilskud_intro }}</p>
+    </div>
+    <div class="grid grid--2">
+      {% for k in handicapridning.tilskud_kort %}
+      <article class="card card--flat">
+        <h3>{{ k.overskrift }}</h3>
+        {{ k.tekst | afsnit | safe }}
+      </article>
+      {% endfor %}
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--brand" href="/kontakt/">{{ handicapridning.tilskud_knap1 }}</a>
+      <a class="btn btn--ghost" href="/til-kommuner/">{{ handicapridning.tilskud_knap2 }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ handicapridning.sikkerhed_overskrift }}</h2>
+    {{ handicapridning.sikkerhed_tekst | afsnit | safe }}
+    <p><a href="/kontakt/#ansvar">{{ handicapridning.sikkerhed_link }}</a></p>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ handicapridning.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in handicapridning.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+    <p style="margin-top:2rem">
+      <a class="btn btn--ghost" href="/forloeb/">{{ handicapridning.faq_knap }}</a>
+    </p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ handicapridning.kryds_overskrift }}</h3>
+        <p>{{ handicapridning.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="/rideterapi/">{{ handicapridning.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ handicapridning.cta_overskrift }}</h2>
+      <p>{{ handicapridning.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser og tilskud</a>
+      </div>
+    </div>
+  </div>
+</section>

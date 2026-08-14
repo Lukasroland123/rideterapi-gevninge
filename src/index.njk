@@ -1,0 +1,163 @@
+---
+layout: base.njk
+permalink: /
+side: forside
+eleventyComputed:
+  titel: "{{ forside.titel }}"
+  beskrivelse: "{{ forside.beskrivelse }}"
+---
+{% set ikoner = [
+  '<path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/>',
+  '<circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>',
+  '<path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/>',
+  '<path d="M13 2L3 14h8l-1 8 10-12h-8z"/>',
+  '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+  '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/>'
+] %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ forside.hero_mikrotekst }}</span>
+      <h1>{{ forside.hero_overskrift }}</h1>
+      <p class="lead">{{ forside.hero_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">{{ forside.hero_knap1 }}</a>
+        <a class="btn btn--ghost" href="/forloeb/">{{ forside.hero_knap2 }}</a>
+      </div>
+      <div class="badges">
+        {% for m in forside.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}" width="800" height="600">
+    </div>
+  </div>
+</section>
+
+<!-- DU ER MÅSKE HER -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ forside.problemer_overskrift }}</h2>
+      <p>{{ forside.problemer_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in forside.problemer_kort %}
+      <article class="card card--flat">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ ikoner[loop.index0] | safe }}</svg>
+        </div>
+        <h3>{{ k.overskrift }}</h3>
+        <p>{{ k.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- TO TILBUD -->
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ forside.tilbud_mikrotekst }}</span>
+      <h2>{{ forside.tilbud_overskrift }}</h2>
+      <p>{{ forside.tilbud_intro }}</p>
+    </div>
+    {% set maal = ['/rideterapi/', '/handicapridning/'] %}
+    <div class="grid grid--2">
+      {% for k in forside.tilbud_kort %}
+      <article class="card">
+        <h3>{{ k.overskrift }}</h3>
+        {{ k.tekst | afsnit | safe }}
+        <a class="card__link" href="{{ maal[loop.index0] }}">{{ k.link_tekst }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- HVORFOR HESTE -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="{{ forside.hvorfor_billede }}" alt="{{ forside.hvorfor_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ forside.hvorfor_mikrotekst }}</span>
+      <h2>{{ forside.hvorfor_overskrift }}</h2>
+      {{ forside.hvorfor_tekst | afsnit | safe }}
+      <div class="note">
+        <strong>{{ forside.hvorfor_boks_titel }}</strong>
+        {{ forside.hvorfor_boks_tekst }}
+        <a href="/om-lotte/#forskning">{{ forside.hvorfor_boks_link }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOKUS -->
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ forside.fokus_overskrift }}</h2>
+      <p>{{ forside.fokus_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in forside.fokus_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ANMELDELSER -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ forside.anmeldelser_overskrift }}</h2>
+    </div>
+    <div class="grid grid--2">
+      {% for c in forside.anmeldelser_citater %}
+      <blockquote class="quote-card">
+        <div class="quote-card__stars" aria-hidden="true">★★★★★</div>
+        <p>„{{ c.tekst }}“</p>
+        <footer class="quote-card__who">{{ c.hvem }}</footer>
+      </blockquote>
+      {% endfor %}
+    </div>
+    <p class="center" style="margin-top:2rem">
+      <a class="btn btn--ghost" href="{{ site.google_anmeldelser }}" rel="noopener">{{ forside.anmeldelser_knap }}</a>
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ forside.cta_overskrift }}</h2>
+      <p>{{ forside.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="mailto:{{ site.email }}">Skriv en mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SØSTERSITE -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ forside.soester_overskrift }}</h3>
+        <p>{{ forside.soester_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ forside.soester_knap }}</a>
+    </div>
+  </div>
+</section>

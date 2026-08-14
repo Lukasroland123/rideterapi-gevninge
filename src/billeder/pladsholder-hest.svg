@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Pladsholder til foto">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dfe7d2"/>
+      <stop offset="100%" stop-color="#f2f4ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="655" cy="115" r="48" fill="#f4e8d2"/>
+  <path d="M0 400 C 150 372 280 402 420 388 C 560 374 680 400 800 382 L800 600 L0 600 Z" fill="#bfcbaa"/>
+
+  <!-- hest -->
+  <g fill="#5a6b45">
+    <!-- krop -->
+    <ellipse cx="400" cy="360" rx="98" ry="52"/>
+    <!-- bagpart -->
+    <circle cx="472" cy="352" r="52"/>
+    <!-- ben -->
+    <rect x="325" y="392" width="19" height="112" rx="8"/>
+    <rect x="360" y="392" width="19" height="112" rx="8"/>
+    <rect x="452" y="392" width="19" height="112" rx="8"/>
+    <rect x="488" y="392" width="19" height="112" rx="8"/>
+    <!-- hals -->
+    <path d="M318 352 L295 246 c-3-14 8-24 21-20 l38 12 c12 4 20 14 22 26 l12 66 z"/>
+    <!-- hoved -->
+    <path d="M296 240 c-2-12 6-22 18-22 l30 2 c14 1 24 12 24 26 l1 22 c0 10-8 18-18 17 l-34-4 c-12-1-19-9-21-21z"/>
+    <!-- ører -->
+    <path d="M303 218 l-6-26 c-1-6 6-10 10-5 l14 20z"/>
+    <path d="M330 216 l2-26 c0-6 8-8 11-2 l9 24z"/>
+    <!-- man -->
+    <path d="M340 232 c22-8 34 6 40 22 l16 60 c3 12-12 18-17 7l-24-52z" fill="#43522f"/>
+    <!-- hale -->
+    <path d="M520 320 c26 6 40 34 34 66 c-4 22-18 40-30 44 c-8 3-14-6-9-13 c14-18 16-42 5-62 c-6-11-12-18-18-22z"/>
+  </g>
+
+  <path d="M0 486 C 180 456 320 496 490 472 C 630 452 720 482 800 466 L800 600 L0 600 Z" fill="#8ea172"/>
+  <text x="400" y="566" font-family="system-ui, sans-serif" font-size="21" fill="#41492f" text-anchor="middle">Foto indsættes her</text>
+</svg>

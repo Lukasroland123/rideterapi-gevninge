@@ -1,0 +1,57 @@
+{
+  "titel": "Priser og tilskud til rideterapi | Rideterapi Gevninge",
+  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, åbningstider og vejledning i at søge kommunalt tilskud efter servicelovens §41 og §100.",
+
+  "hero_mikrotekst": "Åbent og gennemskueligt",
+  "hero_overskrift": "Priser og tilskud",
+  "hero_tekst": "Prisen på rideterapi og handicapridning afhænger af opgaven og af, hvor lang tid der er brug for. Derfor aftaler vi altid prisen på forhånd – ingen overraskelser.",
+
+  "pris1_overskrift": "Rideterapi og handicapridning",
+  "pris1_beloeb": "Efter aftale",
+  "pris1_enhed": "Typisk 45–60 min. eller 90–120 min.",
+  "pris1_tekst": "Prisen er opgaveafhængig og fastsættes i dialog med dig, inden vi går i gang. Individuel rideterapi og handicapridning kan tilbydes separat eller kombineres med narrativ terapi og familiebehandling.\n\nVær opmærksom på, at rideterapi ikke nødvendigvis handler om at ride, men om det samspil, der kan skabes mellem menneske og hest.",
+  "pris1_knap": "Få et konkret tilbud",
+
+  "pris2_overskrift": "Gratis indledende samtale",
+  "pris2_beloeb": "0 kr.",
+  "pris2_enhed": "20 minutter, uforpligtende",
+  "pris2_tekst": "Jeg tilbyder en konsultation på 20 minutter uden beregning til alle potentielle klienter. Det giver dig mulighed for at beskrive netop den situation, du står i, stille spørgsmål om min erfaring og komme til en beslutning om, hvorvidt jeg er den rette for dig.",
+
+  "pris_note_titel": "Bemærk:",
+  "pris_note_tekst": "Ved forløb finansieret via kommuner, forsikringsselskaber, virksomheder eller institutioner aftales prisen særskilt. Kontakt mig for en skriftlig aftale.",
+
+  "tilskud_mikrotekst": "Vidste du det?",
+  "tilskud_overskrift": "Du kan søge om tilskud til handicapridning",
+  "tilskud_intro": "Mange ved ikke, at rideterapi og handicapridning kan dækkes som en nødvendig merudgift efter serviceloven. Det er værd at undersøge.",
+  "tilskud_kort": [
+    {
+      "overskrift": "Børn under 18 år – servicelovens § 41",
+      "tekst": "„Kommunalbestyrelsen skal yde dækning af nødvendige merudgifter ved forsørgelse i hjemmet af et barn under 18 år med betydelig og varigt nedsat fysisk eller psykisk funktionsevne eller indgribende kronisk eller langvarig lidelse.“\n\nDet er en betingelse, at merudgifterne er en konsekvens af den nedsatte funktionsevne og ikke kan dækkes efter andre bestemmelser. Udmålingen sker på grundlag af de sandsynliggjorte merudgifter for det enkelte barn – for eksempel til individuel befordring og fritidsaktiviteter. Og netop her kan der være tale om rideterapi."
+    },
+    {
+      "overskrift": "Voksne – servicelovens § 100",
+      "tekst": "Som voksen kan der søges tilskud til nødvendige merudgifter via § 100 i serviceloven. Betingelserne minder om dem for børn: merudgiften skal være en følge af en varigt nedsat funktionsevne.\n\nDu søger hos din bopælskommune. Jeg kan udarbejde en beskrivelse af forløbet og dets formål, som du kan vedlægge din ansøgning."
+    }
+  ],
+  "tilskud_knap": "Spørg mig om tilskudsansøgning",
+
+  "aabning_overskrift": "Åbningstider",
+  "aabning_punkter": [
+    { "tekst": "Åbent mandag–fredag efter forudgående aftale." },
+    { "tekst": "Lørdag, søndag og helligdage: mulighed for særaftaler, med tillægspris på ydelsen." },
+    { "tekst": "Mulighed for besøg i hjemmet eller på institutionen, med tillægspris ved udkørsel." },
+    { "tekst": "Pris efter aftale ved forløb finansieret via kommuner, forsikringsselskaber, virksomheder og institutioner." }
+  ],
+  "aabning_note_titel": "Alt foregår udendørs.",
+  "aabning_note_tekst": "Ved stærk blæst, storm eller kraftig regn kan vi blive nødt til at flytte aftalen. Det sker sjældent – og du hører fra mig i god tid.",
+
+  "sted_mikrotekst": "Sådan finder du herud",
+  "sted_overskrift": "Beliggenhed",
+  "sted_tekst": "Min praksis ligger i Gevninge, kun 10 km fra Roskilde.\n\nDu finder gratis parkering overfor, og du kan nemt ankomme med offentlig transport fra både Roskilde og Lejre station.",
+  "sted_knap": "Åbn i Google Maps",
+  "sted_billede": "/billeder/pladsholder-natur.svg",
+  "sted_billede_alt": "Omgivelserne ved praksis i Gevninge",
+
+  "cta_overskrift": "Få en pris på jeres forløb",
+  "cta_tekst": "Ring eller skriv, så finder vi ud af, hvad der skal til – og hvad det koster. Den første samtale er gratis."
+}

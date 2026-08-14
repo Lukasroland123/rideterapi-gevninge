@@ -1,0 +1,133 @@
+---
+layout: base.njk
+permalink: /rideterapi/
+side: rideterapi
+eleventyComputed:
+  titel: "{{ rideterapi.titel }}"
+  beskrivelse: "{{ rideterapi.beskrivelse }}"
+---
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ rideterapi.hero_mikrotekst }}</span>
+      <h1>{{ rideterapi.hero_overskrift }}</h1>
+      <p class="lead">{{ rideterapi.hero_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">{{ rideterapi.hero_knap1 }}</a>
+        <a class="btn btn--ghost" href="/handicapridning/">{{ rideterapi.hero_knap2 }}</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="{{ rideterapi.hero_billede }}" alt="{{ rideterapi.hero_billede_alt }}" width="800" height="600">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ rideterapi.hvad_overskrift }}</h2>
+    {{ rideterapi.hvad_tekst | afsnit | safe }}
+    <div class="note">
+      <strong>{{ rideterapi.hvad_boks_titel }}</strong> {{ rideterapi.hvad_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="{{ rideterapi.hvorfor_billede }}" alt="{{ rideterapi.hvorfor_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ rideterapi.hvorfor_mikrotekst }}</span>
+      <h2>{{ rideterapi.hvorfor_overskrift }}</h2>
+      {{ rideterapi.hvorfor_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ rideterapi.fokus_overskrift }}</h2>
+      <p>{{ rideterapi.fokus_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in rideterapi.fokus_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split split--reverse">
+    <div class="split__media">
+      <img src="{{ rideterapi.hvem_billede }}" alt="{{ rideterapi.hvem_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ rideterapi.hvem_mikrotekst }}</span>
+      <h2>{{ rideterapi.hvem_overskrift }}</h2>
+      <p>{{ rideterapi.hvem_indledning }}</p>
+      <ul>
+        {% for p in rideterapi.hvem_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ rideterapi.hvem_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ rideterapi.metode_overskrift }}</h2>
+    {{ rideterapi.metode_tekst | afsnit | safe }}
+    <div class="note">
+      <strong>{{ rideterapi.metode_boks_titel }}</strong> {{ rideterapi.metode_boks_tekst }}
+      <a href="/om-lotte/#forskning">{{ rideterapi.metode_boks_link }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ rideterapi.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in rideterapi.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+    <p style="margin-top:2rem">
+      <a class="btn btn--ghost" href="/forloeb/">{{ rideterapi.faq_knap }}</a>
+    </p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ rideterapi.kryds_overskrift }}</h3>
+        <p>{{ rideterapi.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="/handicapridning/">{{ rideterapi.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ rideterapi.cta_overskrift }}</h2>
+      <p>{{ rideterapi.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser og tilskud</a>
+      </div>
+    </div>
+  </div>
+</section>

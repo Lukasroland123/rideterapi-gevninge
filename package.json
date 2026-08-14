@@ -1,0 +1,13 @@
+{
+  "name": "rideterapi-gevninge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hjemmeside for Rideterapi Gevninge — hesteassisteret behandling og handicapridning",
+  "scripts": {
+    "start": "eleventy --serve --port=8012",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

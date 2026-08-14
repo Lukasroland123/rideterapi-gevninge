@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" role="img" aria-label="Pladsholder til portrætfoto">
+  <rect width="600" height="700" fill="#eef1e7"/>
+  <circle cx="300" cy="270" r="105" fill="#c4cfae"/>
+  <path d="M300 400 c -115 0 -190 78 -205 175 h410 c -15 -97 -90 -175 -205 -175z" fill="#c4cfae"/>
+  <text x="300" y="655" font-family="system-ui, sans-serif" font-size="21" fill="#5b6155" text-anchor="middle">Portrætfoto indsættes her</text>
+</svg>

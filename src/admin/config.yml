@@ -1,0 +1,615 @@
+# =====================================================================
+#  Redigeringssystem for Rideterapi Gevninge
+#
+#  "repo" nedenfor peger på det GitHub-repository, hvor indholdet gemmes.
+#  Skifter repositoriet navn eller ejer, skal linjen rettes tilsvarende.
+# =====================================================================
+
+backend:
+  name: github
+  repo: Lukasroland123/rideterapi-gevninge
+  branch: main
+
+# Hvor billeder lægges, og hvordan de findes af hjemmesiden
+media_folder: "src/billeder"
+public_folder: "/billeder"
+
+# Skriv beskeden ind i historikken på almindeligt dansk
+backend_commit_messages:
+  update: "Rettet {{collection}} · {{author-name}}"
+  uploadMedia: "Nyt billede: {{path}}"
+  deleteMedia: "Slettet billede: {{path}}"
+
+collections:
+  # -------------------------------------------------------------------
+  - name: sider
+    label: "Sider"
+    files:
+
+      # ---------------------------------------------------------------
+      - name: forside
+        label: "Forside"
+        file: "src/_data/forside.json"
+        description: "Den første side folk lander på."
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
+          - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
+          - { name: hero_billede, label: "Stort billede øverst", widget: image }
+          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string, hint: "Læses højt for blinde og bruges af Google. Skriv hvad man ser." }
+          - name: hero_maerkater
+            label: "De tre små mærkater"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Tekst", widget: string }
+
+          - { name: problemer_overskrift, label: "Overskrift · afsnittet med seks kort", widget: string }
+          - { name: problemer_intro, label: "Introtekst", widget: text }
+          - name: problemer_kort
+            label: "De seks kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: tilbud_mikrotekst, label: "Lille tekst · afsnittet om de to tilbud", widget: string }
+          - { name: tilbud_overskrift, label: "Overskrift", widget: string }
+          - { name: tilbud_intro, label: "Introtekst", widget: text }
+          - name: tilbud_kort
+            label: "De to tilbud"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+              - { name: link_tekst, label: "Tekst på linket nederst", widget: string }
+
+          - { name: hvorfor_mikrotekst, label: "Lille tekst · afsnittet 'Hvorfor heste'", widget: string }
+          - { name: hvorfor_overskrift, label: "Overskrift", widget: string }
+          - { name: hvorfor_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: hvorfor_billede, label: "Billede", widget: image }
+          - { name: hvorfor_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hvorfor_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: hvorfor_boks_tekst, label: "Grøn boks · tekst", widget: text }
+          - { name: hvorfor_boks_link, label: "Grøn boks · tekst på linket", widget: string }
+
+          - { name: fokus_overskrift, label: "Overskrift · afsnittet 'Hvad er i fokus'", widget: string }
+          - { name: fokus_intro, label: "Introtekst", widget: text }
+          - name: fokus_kort
+            label: "De seks fokuspunkter"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: anmeldelser_overskrift, label: "Overskrift · udtalelser", widget: string }
+          - name: anmeldelser_citater
+            label: "De to udtalelser"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Udtalelsen", widget: text, hint: "Skriv uden anførselstegn — de sættes automatisk." }
+              - { name: hvem, label: "Hvem har sagt det", widget: string }
+          - { name: anmeldelser_knap, label: "Tekst på knappen til Google", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
+          - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string, hint: "Vises i browserfanen og i Google." }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text, hint: "Cirka 150 tegn." }
+
+      # ---------------------------------------------------------------
+      - name: rideterapi
+        label: "Rideterapi"
+        file: "src/_data/rideterapi.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
+          - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
+          - { name: hero_billede, label: "Stort billede øverst", widget: image }
+          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: hvad_overskrift, label: "Overskrift · 'Hvad er det?'", widget: string }
+          - { name: hvad_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: hvad_boks_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: hvorfor_mikrotekst, label: "Lille tekst · 'Hvorfor det virker'", widget: string }
+          - { name: hvorfor_overskrift, label: "Overskrift", widget: string }
+          - { name: hvorfor_tekst, label: "Tekst", widget: text }
+          - { name: hvorfor_billede, label: "Billede", widget: image }
+          - { name: hvorfor_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: fokus_overskrift, label: "Overskrift · 'Hvad arbejder vi med'", widget: string }
+          - { name: fokus_intro, label: "Introtekst", widget: text }
+          - name: fokus_kort
+            label: "De seks kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: hvem_mikrotekst, label: "Lille tekst · 'Målgruppe'", widget: string }
+          - { name: hvem_overskrift, label: "Overskrift", widget: string }
+          - { name: hvem_indledning, label: "Tekst før punktlisten", widget: text }
+          - name: hvem_punkter
+            label: "Punktlisten"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: hvem_afslutning, label: "Tekst efter punktlisten", widget: text }
+          - { name: hvem_billede, label: "Billede", widget: image }
+          - { name: hvem_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: metode_overskrift, label: "Overskrift · 'Sådan arbejder jeg'", widget: string }
+          - { name: metode_tekst, label: "Tekst", widget: text }
+          - { name: metode_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: metode_boks_tekst, label: "Grøn boks · tekst", widget: text }
+          - { name: metode_boks_link, label: "Grøn boks · tekst på linket", widget: string }
+
+          - { name: faq_overskrift, label: "Overskrift · spørgsmål og svar", widget: string }
+          - name: faq
+            label: "Spørgsmål og svar"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: spoergsmaal, label: "Spørgsmål", widget: string }
+              - { name: svar, label: "Svar", widget: text }
+          - { name: faq_knap, label: "Tekst på knappen under spørgsmålene", widget: string }
+
+          - { name: kryds_overskrift, label: "Henvisning til handicapridning · overskrift", widget: string }
+          - { name: kryds_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: kryds_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+      # ---------------------------------------------------------------
+      - name: handicapridning
+        label: "Handicapridning"
+        file: "src/_data/handicapridning.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
+          - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
+          - { name: hero_billede, label: "Stort billede øverst", widget: image }
+          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - name: hero_maerkater
+            label: "De to små mærkater"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Tekst", widget: string }
+
+          - { name: hvad_overskrift, label: "Overskrift · 'Hvad er det?'", widget: string }
+          - { name: hvad_tekst, label: "Tekst", widget: text }
+          - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: hvad_boks_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: neuro_mikrotekst, label: "Lille tekst · 'Fagligt afsæt'", widget: string }
+          - { name: neuro_overskrift, label: "Overskrift", widget: string }
+          - { name: neuro_indledning, label: "Tekst før punktlisten", widget: text }
+          - name: neuro_punkter
+            label: "Punktlisten"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: neuro_afslutning, label: "Tekst efter punktlisten", widget: text }
+          - { name: neuro_billede, label: "Billede", widget: image }
+          - { name: neuro_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: hvem_overskrift, label: "Overskrift · 'Hvem kan henvende sig'", widget: string }
+          - { name: hvem_intro, label: "Introtekst", widget: text }
+          - name: hvem_kort
+            label: "De tre kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+          - { name: hvem_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: hvem_boks_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: tilskud_mikrotekst, label: "Lille tekst · tilskudsafsnittet", widget: string }
+          - { name: tilskud_overskrift, label: "Overskrift", widget: string }
+          - { name: tilskud_intro, label: "Introtekst", widget: text }
+          - name: tilskud_kort
+            label: "De to tilskudskort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+          - { name: tilskud_knap1, label: "Grøn knap", widget: string }
+          - { name: tilskud_knap2, label: "Hvid knap", widget: string }
+
+          - { name: sikkerhed_overskrift, label: "Overskrift · sikkerhed", widget: string }
+          - { name: sikkerhed_tekst, label: "Tekst", widget: text }
+          - { name: sikkerhed_link, label: "Tekst på linket", widget: string }
+
+          - { name: faq_overskrift, label: "Overskrift · spørgsmål og svar", widget: string }
+          - name: faq
+            label: "Spørgsmål og svar"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: spoergsmaal, label: "Spørgsmål", widget: string }
+              - { name: svar, label: "Svar", widget: text }
+          - { name: faq_knap, label: "Tekst på knappen under spørgsmålene", widget: string }
+
+          - { name: kryds_overskrift, label: "Henvisning til rideterapi · overskrift", widget: string }
+          - { name: kryds_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: kryds_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+      # ---------------------------------------------------------------
+      - name: forloeb
+        label: "Sådan foregår det"
+        file: "src/_data/forloeb.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+
+          - name: trin
+            label: "De fire trin"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: session_mikrotekst, label: "Lille tekst · 'En typisk session'", widget: string }
+          - { name: session_overskrift, label: "Overskrift", widget: string }
+          - { name: session_tekst, label: "Tekst", widget: text }
+          - { name: session_billede, label: "Billede", widget: image }
+          - { name: session_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: metode_mikrotekst, label: "Lille tekst · 'Metoden'", widget: string }
+          - { name: metode_overskrift, label: "Overskrift", widget: string }
+          - { name: metode_tekst, label: "Tekst", widget: text }
+          - { name: metode_billede, label: "Billede", widget: image }
+          - { name: metode_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: praktisk_overskrift, label: "Overskrift · 'Det praktiske'", widget: string }
+          - { name: praktisk_intro, label: "Introtekst", widget: text }
+          - name: praktisk_kort
+            label: "De seks praktiske kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: faq_overskrift, label: "Overskrift · spørgsmål og svar", widget: string }
+          - name: faq
+            label: "Spørgsmål og svar"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: spoergsmaal, label: "Spørgsmål", widget: string }
+              - { name: svar, label: "Svar", widget: text }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+      # ---------------------------------------------------------------
+      - name: priser
+        label: "Priser og tilskud"
+        file: "src/_data/priser.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+
+          - { name: pris1_overskrift, label: "Priskort 1 · overskrift", widget: string }
+          - { name: pris1_beloeb, label: "Priskort 1 · det store beløb", widget: string }
+          - { name: pris1_enhed, label: "Priskort 1 · tekst under beløbet", widget: string }
+          - { name: pris1_tekst, label: "Priskort 1 · beskrivelse", widget: text }
+          - { name: pris1_knap, label: "Priskort 1 · knaptekst", widget: string }
+
+          - { name: pris2_overskrift, label: "Priskort 2 · overskrift", widget: string }
+          - { name: pris2_beloeb, label: "Priskort 2 · det store beløb", widget: string }
+          - { name: pris2_enhed, label: "Priskort 2 · tekst under beløbet", widget: string }
+          - { name: pris2_tekst, label: "Priskort 2 · beskrivelse", widget: text }
+
+          - { name: pris_note_titel, label: "Grøn boks under priserne · fed indledning", widget: string }
+          - { name: pris_note_tekst, label: "Grøn boks under priserne · tekst", widget: text }
+
+          - { name: tilskud_mikrotekst, label: "Lille tekst · tilskudsafsnittet", widget: string }
+          - { name: tilskud_overskrift, label: "Overskrift", widget: string }
+          - { name: tilskud_intro, label: "Introtekst", widget: text }
+          - name: tilskud_kort
+            label: "De to tilskudskort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+          - { name: tilskud_knap, label: "Knaptekst", widget: string }
+
+          - { name: aabning_overskrift, label: "Overskrift · åbningstider", widget: string }
+          - name: aabning_punkter
+            label: "Punkter om åbningstider"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: aabning_note_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: aabning_note_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: sted_mikrotekst, label: "Lille tekst · beliggenhed", widget: string }
+          - { name: sted_overskrift, label: "Overskrift", widget: string }
+          - { name: sted_tekst, label: "Tekst", widget: text }
+          - { name: sted_knap, label: "Knaptekst", widget: string }
+          - { name: sted_billede, label: "Billede", widget: image }
+          - { name: sted_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+      # ---------------------------------------------------------------
+      - name: omlotte
+        label: "Om Lotte"
+        file: "src/_data/omlotte.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_billede, label: "Portrætfoto", widget: image }
+          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - name: hero_maerkater
+            label: "De fire mærkater"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Tekst", widget: string }
+
+          - { name: vej_overskrift, label: "Overskrift · 'Vejen til rideterapien'", widget: string }
+          - { name: vej_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+
+          - { name: uddannelse_overskrift, label: "Overskrift · uddannelsesafsnittet", widget: string }
+          - { name: uddannelse_kort_overskrift, label: "Venstre kort · overskrift", widget: string }
+          - name: uddannelser
+            label: "Uddannelser"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Uddannelse", widget: string }
+          - { name: medlemskaber_overskrift, label: "Højre kort · overskrift", widget: string }
+          - name: medlemskaber
+            label: "Medlemskaber og hverv"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Medlemskab", widget: string }
+          - { name: erfaring_overskrift, label: "Højre kort · anden overskrift", widget: string }
+          - { name: erfaring_tekst, label: "Erfaringstekst", widget: text }
+
+          - { name: neuro_mikrotekst, label: "Lille tekst · neuroterapi", widget: string }
+          - { name: neuro_overskrift, label: "Overskrift", widget: string }
+          - { name: neuro_tekst, label: "Tekst", widget: text }
+          - { name: neuro_billede, label: "Billede", widget: image }
+          - { name: neuro_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: forskning_overskrift, label: "Overskrift · litteratur og forskning", widget: string }
+          - { name: forskning_intro, label: "Introtekst", widget: text }
+          - name: forskning_punkter
+            label: "De tre udklappelige punkter"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: spoergsmaal, label: "Overskrift", widget: string }
+              - { name: svar, label: "Indhold", widget: text, hint: "Lav en tom linje mellem hvert punkt." }
+          - { name: citat, label: "Citatet nederst", widget: text }
+          - { name: citat_kilde, label: "Kilde til citatet", widget: string }
+
+          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
+          - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+      # ---------------------------------------------------------------
+      - name: kontakt
+        label: "Kontakt"
+        file: "src/_data/kontakt.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+
+          - { name: kontakt_overskrift, label: "Overskrift over kontaktoplysningerne", widget: string }
+          - { name: aabningstider, label: "Åbningstider", widget: text }
+          - { name: knap1, label: "Orange knap", widget: string }
+          - { name: knap2, label: "Hvid knap", widget: string }
+
+          - { name: ringer_overskrift, label: "Boks · 'Hvad sker der, når du ringer' · overskrift", widget: string }
+          - { name: ringer_tekst, label: "Boks · tekst", widget: text }
+          - { name: akut_titel, label: "Akutboks · fed indledning", widget: string }
+          - { name: akut_tekst, label: "Akutboks · tekst", widget: text }
+
+          - { name: vej_overskrift, label: "Overskrift · 'Sådan finder du herud'", widget: string }
+          - { name: vej_intro, label: "Introtekst", widget: text }
+          - name: vej_punkter
+            label: "Punkter om vejen herud"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: vej_knap, label: "Knaptekst", widget: string }
+          - { name: vej_billede, label: "Billede", widget: image }
+          - { name: vej_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: ansvar_overskrift, label: "Overskrift · ansvar og forsikring", widget: string }
+          - { name: ansvar_intro, label: "Introtekst", widget: text }
+          - { name: ansvar_tekst, label: "Ansvarstekst", widget: text }
+
+          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
+          - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+      # ---------------------------------------------------------------
+      - name: kommuner
+        label: "Til kommuner"
+        file: "src/_data/kommuner.json"
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
+          - { name: hero_billede, label: "Stort billede øverst", widget: image }
+          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: relevant_overskrift, label: "Overskrift · 'Hvornår er det relevant'", widget: string }
+          - { name: relevant_intro, label: "Introtekst", widget: text }
+          - name: relevant_kort
+            label: "De seks kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: fagligt_mikrotekst, label: "Lille tekst · fagligt grundlag", widget: string }
+          - { name: fagligt_overskrift, label: "Overskrift", widget: string }
+          - { name: fagligt_intro, label: "Tekst før punktlisten", widget: text }
+          - name: fagligt_punkter
+            label: "Faglige kvalifikationer"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: fagligt_afslutning, label: "Tekst efter punktlisten", widget: text }
+          - { name: fagligt_billede, label: "Billede", widget: image }
+          - { name: fagligt_billede_alt, label: "Beskrivelse af billedet", widget: string }
+
+          - { name: publikation_titel, label: "Publikationsboks · fed indledning", widget: string }
+          - { name: publikation_tekst, label: "Publikationsboks · tekst", widget: text }
+
+          - { name: forloeb_overskrift, label: "Overskrift · 'Hvad indeholder et forløb'", widget: string }
+          - name: forloeb_trin
+            label: "De fire trin"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: lov_overskrift, label: "Overskrift · lovgrundlag", widget: string }
+          - { name: lov_intro, label: "Introtekst", widget: text }
+          - { name: lov_kort1_overskrift, label: "Venstre kort · overskrift", widget: string }
+          - { name: lov_kort1_tekst, label: "Venstre kort · tekst", widget: text }
+          - { name: lov_kort2_overskrift, label: "Højre kort · overskrift", widget: string }
+          - { name: lov_kort2_tekst, label: "Højre kort · tekst", widget: text }
+          - { name: lov_kort2_overskrift2, label: "Højre kort · anden overskrift", widget: string }
+          - { name: lov_kort2_tekst2, label: "Højre kort · anden tekst", widget: text }
+
+          - { name: praktisk_overskrift, label: "Overskrift · 'Det praktiske'", widget: string }
+          - name: praktisk_kort
+            label: "De seks praktiske kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
+          - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
+
+  # -------------------------------------------------------------------
+  - name: generelt
+    label: "Fælles oplysninger"
+    files:
+      - name: site
+        label: "Navn, telefon, adresse og links"
+        file: "src/_data/site.json"
+        description: "Disse oplysninger bruges i toppen og bunden af ALLE sider."
+        fields:
+          - { name: navn, label: "Virksomhedens navn", widget: string }
+          - { name: undertitel, label: "Undertekst i logoet", widget: string }
+          - { name: telefon, label: "Mobilnummer (som det vises)", widget: string }
+          - { name: telefon_link, label: "Mobilnummer til opkald", widget: string, hint: "Skrives som +45 efterfulgt af nummeret uden mellemrum, fx +4526122329" }
+          - { name: telefon2, label: "Fastnetnummer (som det vises)", widget: string }
+          - { name: telefon2_link, label: "Fastnetnummer til opkald", widget: string, hint: "Fx +4543491091" }
+          - { name: email, label: "E-mailadresse", widget: string }
+          - { name: adresse, label: "Vej og husnummer", widget: string }
+          - { name: postnr_by, label: "Postnummer og by", widget: string }
+          - { name: facebook, label: "Link til Facebook", widget: string }
+          - { name: google_anmeldelser, label: "Link til anmeldelser på Google", widget: string }
+          - { name: soestersite_url, label: "Link til Narrativ Samtale", widget: string }
+          - { name: soestersite_navn, label: "Navn på den anden hjemmeside", widget: string }
+          - { name: footer_beskrivelse, label: "Tekst nederst på siden", widget: text }
+          - { name: cta_knap, label: "Tekst på knappen i menuen", widget: string }
+          - { name: domaene, label: "Hjemmesidens adresse", widget: string, hint: "Fx https://rideterapigevninge.dk — bruges af Google. Ret kun hvis domænet skifter." }

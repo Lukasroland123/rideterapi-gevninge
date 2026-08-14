@@ -1,0 +1,119 @@
+---
+layout: base.njk
+permalink: /om-lotte/
+side: omlotte
+eleventyComputed:
+  titel: "{{ omlotte.titel }}"
+  beskrivelse: "{{ omlotte.beskrivelse }}"
+---
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ omlotte.hero_mikrotekst }}</span>
+      <h1>{{ omlotte.hero_overskrift }}</h1>
+      <p class="lead">{{ omlotte.hero_tekst }}</p>
+      <div class="badges">
+        {% for m in omlotte.hero_maerkater %}
+        <span class="badge">{{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="hero__media" style="aspect-ratio:4/5">
+      <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}" width="600" height="700">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ omlotte.vej_overskrift }}</h2>
+    {{ omlotte.vej_tekst | afsnit | safe }}
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ omlotte.uddannelse_overskrift }}</h2>
+    </div>
+    <div class="grid grid--2">
+      <article class="card card--flat">
+        <h3>{{ omlotte.uddannelse_kort_overskrift }}</h3>
+        <ul>
+          {% for u in omlotte.uddannelser %}<li>{{ u.tekst }}</li>{% endfor %}
+        </ul>
+      </article>
+
+      <article class="card card--flat">
+        <h3>{{ omlotte.medlemskaber_overskrift }}</h3>
+        <ul>
+          {% for m in omlotte.medlemskaber %}<li>{{ m.tekst }}</li>{% endfor %}
+        </ul>
+        <h3 style="margin-top:1.5rem">{{ omlotte.erfaring_overskrift }}</h3>
+        <p>{{ omlotte.erfaring_tekst }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--reverse">
+    <div class="split__media">
+      <img src="{{ omlotte.neuro_billede }}" alt="{{ omlotte.neuro_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ omlotte.neuro_mikrotekst }}</span>
+      <h2>{{ omlotte.neuro_overskrift }}</h2>
+      {{ omlotte.neuro_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="forskning">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ omlotte.forskning_overskrift }}</h2>
+      <p>{{ omlotte.forskning_intro }}</p>
+    </div>
+    <div class="faq">
+      {% for f in omlotte.forskning_punkter %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+
+    <blockquote style="margin-top:3rem;text-align:center">
+      „{{ omlotte.citat }}“
+      <footer style="font-family:var(--font-body);font-size:.95rem;font-style:normal;margin-top:1rem;color:var(--ink-soft)">
+        {{ omlotte.citat_kilde }}
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ omlotte.soester_overskrift }}</h3>
+        <p>{{ omlotte.soester_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ omlotte.soester_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ omlotte.cta_overskrift }}</h2>
+      <p>{{ omlotte.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/kontakt/">Se kontaktinfo</a>
+      </div>
+    </div>
+  </div>
+</section>

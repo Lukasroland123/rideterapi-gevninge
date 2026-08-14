@@ -1,0 +1,97 @@
+---
+layout: base.njk
+permalink: /forloeb/
+side: forloeb
+eleventyComputed:
+  titel: "{{ forloeb.titel }}"
+  beskrivelse: "{{ forloeb.beskrivelse }}"
+---
+<div class="pagehead">
+  <div class="wrap">
+    <span class="eyebrow">{{ forloeb.hero_mikrotekst }}</span>
+    <h1>{{ forloeb.hero_overskrift }}</h1>
+    <p>{{ forloeb.hero_tekst }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="steps">
+      {% for t in forloeb.trin %}
+      <article class="step">
+        <h3>{{ t.overskrift }}</h3>
+        <p>{{ t.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div class="split__media">
+      <img src="{{ forloeb.session_billede }}" alt="{{ forloeb.session_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ forloeb.session_mikrotekst }}</span>
+      <h2>{{ forloeb.session_overskrift }}</h2>
+      {{ forloeb.session_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--reverse">
+    <div class="split__media">
+      <img src="{{ forloeb.metode_billede }}" alt="{{ forloeb.metode_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <span class="eyebrow">{{ forloeb.metode_mikrotekst }}</span>
+      <h2>{{ forloeb.metode_overskrift }}</h2>
+      {{ forloeb.metode_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ forloeb.praktisk_overskrift }}</h2>
+      <p>{{ forloeb.praktisk_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in forloeb.praktisk_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ forloeb.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in forloeb.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ forloeb.cta_overskrift }}</h2>
+      <p>{{ forloeb.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/kontakt/">Se kontaktinfo</a>
+      </div>
+    </div>
+  </div>
+</section>

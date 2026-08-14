@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Pladsholder til foto">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8eddc"/>
+      <stop offset="100%" stop-color="#f6f2ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <circle cx="150" cy="130" r="46" fill="#f3e2c9"/>
+  <path d="M0 400 L180 250 L330 400 Z" fill="#a8b691"/>
+  <path d="M240 400 L430 220 L620 400 Z" fill="#8ea172"/>
+  <path d="M0 420 C 200 395 380 435 560 410 C 680 393 740 420 800 405 L800 600 L0 600 Z" fill="#6f7f56"/>
+  <path d="M0 500 C 190 470 340 510 520 486 C 660 468 730 495 800 480 L800 600 L0 600 Z" fill="#5a6b45"/>
+  <text x="400" y="565" font-family="system-ui, sans-serif" font-size="21" fill="#4a5140" text-anchor="middle">Foto indsættes her</text>
+</svg>

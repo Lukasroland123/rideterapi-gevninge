@@ -1,0 +1,102 @@
+---
+layout: base.njk
+permalink: /kontakt/
+side: kontakt
+eleventyComputed:
+  titel: "{{ kontakt.titel }}"
+  beskrivelse: "{{ kontakt.beskrivelse }}"
+---
+<div class="pagehead">
+  <div class="wrap">
+    <span class="eyebrow">{{ kontakt.hero_mikrotekst }}</span>
+    <h1>{{ kontakt.hero_overskrift }}</h1>
+    <p>{{ kontakt.hero_tekst }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>{{ kontakt.kontakt_overskrift }}</h2>
+      <ul class="contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><span>Mobil</span><a href="tel:{{ site.telefon_link }}">{{ site.telefon }}</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          <div><span>E-mail</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <div><span>Adresse</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26,+4000+Roskilde" rel="noopener">{{ site.adresse }}, {{ site.postnr_by }}</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><span>Åbningstider</span>{{ kontakt.aabningstider | afsnit | safe }}</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.6c-.3 0-1.28-.1-2.42-.1-2.4 0-4.03 1.46-4.03 4.14v2.31H7.5V14h2.75v8z"/></svg>
+          <div><span>Facebook</span><a href="{{ site.facebook }}" rel="noopener">Følg med på Facebook</a></div>
+        </li>
+      </ul>
+
+      <div class="btn-row">
+        <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">{{ kontakt.knap1 }}</a>
+        <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20om%20rideterapi">{{ kontakt.knap2 }}</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="card card--flat">
+        <h3>{{ kontakt.ringer_overskrift }}</h3>
+        {{ kontakt.ringer_tekst | afsnit | safe }}
+      </div>
+      <div class="note" style="margin-top:1.5rem">
+        <strong>{{ kontakt.akut_titel }}</strong> {{ kontakt.akut_tekst }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split split--reverse">
+    <div class="split__media">
+      <img src="{{ kontakt.vej_billede }}" alt="{{ kontakt.vej_billede_alt }}" width="800" height="600">
+    </div>
+    <div>
+      <h2>{{ kontakt.vej_overskrift }}</h2>
+      <p>{{ kontakt.vej_intro }}</p>
+      <ul>
+        {% for p in kontakt.vej_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--brand" href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26,+4000+Roskilde" rel="noopener">{{ kontakt.vej_knap }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ansvar">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ kontakt.ansvar_overskrift }}</h2>
+      <p>{{ kontakt.ansvar_intro }}</p>
+    </div>
+    <div class="card card--flat">
+      {{ kontakt.ansvar_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ kontakt.soester_overskrift }}</h3>
+        <p>{{ kontakt.soester_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ kontakt.soester_knap }}</a>
+    </div>
+  </div>
+</section>
