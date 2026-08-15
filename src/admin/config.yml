@@ -479,20 +479,6 @@ collections:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text }
 
-          - { name: fagligt_mikrotekst, label: "Lille tekst · fagligt grundlag", widget: string }
-          - { name: fagligt_overskrift, label: "Overskrift", widget: string }
-          - { name: fagligt_intro, label: "Tekst før punktlisten", widget: text }
-          - name: fagligt_punkter
-            label: "Faglige kvalifikationer"
-            widget: list
-            allow_add: false
-            allow_remove: false
-            fields:
-              - { name: tekst, label: "Punkt", widget: string }
-          - { name: fagligt_afslutning, label: "Tekst efter punktlisten", widget: text }
-          - { name: fagligt_billede, label: "Billede", widget: image }
-          - { name: fagligt_billede_alt, label: "Beskrivelse af billedet", widget: string }
-
           - { name: publikation_titel, label: "Publikationsboks · fed indledning", widget: string }
           - { name: publikation_tekst, label: "Publikationsboks · tekst", widget: text }
 

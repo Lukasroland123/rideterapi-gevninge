@@ -40,25 +40,10 @@ eleventyComputed:
   </div>
 </section>
 
-<section class="section section--sand">
-  <div class="wrap split">
-    <div class="split__media">
-      <img src="{{ kommuner.fagligt_billede }}" alt="{{ kommuner.fagligt_billede_alt }}" width="600" height="700">
-    </div>
-    <div>
-      <span class="eyebrow">{{ kommuner.fagligt_mikrotekst }}</span>
-      <h2>{{ kommuner.fagligt_overskrift }}</h2>
-      <p>{{ kommuner.fagligt_intro }}</p>
-      <ul>
-        {% for p in kommuner.fagligt_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
-      </ul>
-      <p>{{ kommuner.fagligt_afslutning }}</p>
-      <p><a href="/om-lotte/">Se den fulde faglige baggrund</a></p>
-    </div>
-  </div>
-</section>
+{# "Hvem udfoerer forloebet?" er fjernet — den fulde faglige baggrund
+   staar paa /om-lotte/. #}
 
-<section class="section">
+<section class="section section--sand">
   <div class="wrap wrap--narrow">
     <div class="note">
       <strong>{{ kommuner.publikation_titel }}</strong>
