@@ -362,6 +362,9 @@ blockquote {
 }
 @media (min-width: 860px) {
   .hero__inner { grid-template-columns: 1.05fr .95fr; }
+  /* Hvor tekstsoejlen er lang, skal den flugte med billedets top i stedet
+     for at blive midterstillet — ellers opstaar der et tomrum oeverst. */
+  .hero--top .hero__inner { align-items: start; }
 }
 .hero h1 { margin-bottom: .6rem; }
 .hero__text p.lead { margin-bottom: 0; }

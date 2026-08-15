@@ -125,8 +125,7 @@ collections:
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
           - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
 
-          - { name: hvad_overskrift, label: "Overskrift · 'Hvad er det?'", widget: string }
-          - { name: hvad_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: hvad_tekst, label: "Tekst under overskriften Rideterapi", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
           - { name: hvad_boks_tekst, label: "Grøn boks · tekst", widget: text }
 
