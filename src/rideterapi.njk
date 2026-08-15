@@ -12,23 +12,27 @@ eleventyComputed:
       <span class="eyebrow">{{ rideterapi.hero_mikrotekst }}</span>
       <h1>{{ rideterapi.hero_overskrift }}</h1>
       <p class="lead">{{ rideterapi.hero_tekst }}</p>
+
+      {# Uddybningen staar inde i selve tekstsoejlen, saa den ligger ved siden
+         af billedet paa den lysegroenne baggrund. #}
+      <div class="hero__uddyb prose">
+        <h2>{{ rideterapi.hvad_overskrift }}</h2>
+        {{ rideterapi.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ rideterapi.hvad_boks_titel }}</strong> {{ rideterapi.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      {# Knapperne er slaaet fra indtil videre. Skal de tilbage, fjernes
+         kommentartegnene omkring blokken herunder.
       <div class="btn-row">
         <a class="btn btn--primary" href="/kontakt/">{{ rideterapi.hero_knap1 }}</a>
         <a class="btn btn--ghost" href="/handicapridning/">{{ rideterapi.hero_knap2 }}</a>
       </div>
+      #}
     </div>
     <div class="hero__media">
       <img src="{{ rideterapi.hero_billede }}" alt="{{ rideterapi.hero_billede_alt }}" width="600" height="800">
-    </div>
-  </div>
-
-  {# Uddybningen ligger bevidst inde i selve hero-feltet, saa den staar paa
-     den samme lysegroenne baggrund som overskriften. #}
-  <div class="wrap wrap--narrow prose hero__uddyb">
-    <h2>{{ rideterapi.hvad_overskrift }}</h2>
-    {{ rideterapi.hvad_tekst | afsnit | safe }}
-    <div class="note">
-      <strong>{{ rideterapi.hvad_boks_titel }}</strong> {{ rideterapi.hvad_boks_tekst }}
     </div>
   </div>
 </section>
