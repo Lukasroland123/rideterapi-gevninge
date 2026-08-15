@@ -11,7 +11,9 @@
   --brand-tint:   #eef1e7;   /* meget lys grøn */
   --accent:       #b9743a;   /* varm terrakotta (CTA) */
   --accent-dark:  #96562a;
-  --cta-bg:       #55663d;   /* baggrund i CTA-bokse — lysere og mere oliven */
+  --cta-bg:       #667949;   /* baggrund i CTA-bokse. Lysnet igen 15/8.
+                                Graensen for hvid tekst: kontrast 4,8:1.
+                                Lysere end dette kraever moerk tekst i stedet. */
 
   /* --- Neutrale --- */
   --sand:         #f6f2ea;
@@ -368,7 +370,7 @@ blockquote {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   background: var(--brand-light);
 }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; }
