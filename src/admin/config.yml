@@ -10,6 +10,11 @@ backend:
   repo: Lukasroland123/rideterapi-gevninge
   branch: main
 
+  # Login gaar gennem vores egen Cloudflare Worker (sveltia-cms-auth) i stedet
+  # for Netlifys tjeneste. Skifter Workeren adresse, skal linjen her foelge med,
+  # og callback-adressen i GitHub-appen skal rettes tilsvarende.
+  base_url: https://sveltia-cms-auth.lukas-rs-arbejde.workers.dev
+
   # Skriv beskeden ind i historikken paa almindeligt dansk
   commit_messages:
     update: "Rettet {{collection}} · {{author-name}}"
