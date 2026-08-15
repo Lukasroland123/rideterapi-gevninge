@@ -612,4 +612,4 @@ collections:
           - { name: soestersite_navn, label: "Navn på den anden hjemmeside", widget: string }
           - { name: footer_beskrivelse, label: "Tekst nederst på siden", widget: text }
           - { name: cta_knap, label: "Tekst på knappen i menuen", widget: string }
-          - { name: domaene, label: "Hjemmesidens adresse", widget: string, hint: "Fx https://rideterapigevninge.dk — bruges af Google. Ret kun hvis domænet skifter." }
+          - { name: domaene, label: "Hjemmesidens adresse", widget: string, hint: "Fx https://hesteassisteret-praksis.dk — bruges af Google. Ret kun hvis domænet skifter." }
