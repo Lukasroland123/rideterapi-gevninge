@@ -4,7 +4,11 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{#- Redigeringssiden hoerer ikke til i sitemap'et. Den er baade noindex og
+    spaerret i robots.txt, og Google melder den som fejl, hvis den staar her. -#}
 {%- for side in collections.all %}
+{%- if "/admin/" not in side.url %}
   <url><loc>{{ site.domaene }}{{ side.url }}</loc></url>
+{%- endif %}
 {%- endfor %}
 </urlset>
