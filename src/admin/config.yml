@@ -477,9 +477,6 @@ collections:
               - { name: label, label: "Etiket til venstre", widget: string, hint: "Ét eller to ord, fx Målgruppe." }
               - { name: tekst, label: "Tekst", widget: text }
 
-          - { name: ord_titel, label: "Boks om ordene · fed indledning", widget: string }
-          - { name: ord_tekst, label: "Boks om ordene · tekst", widget: text, hint: "Forklarer at rideterapi = hesteassisteret behandling, og at handicapridning er en selvstændig ydelse." }
-
           - { name: relevant_overskrift, label: "Overskrift · 'Hvornår er det relevant'", widget: string }
           - { name: relevant_intro, label: "Introtekst", widget: text }
           - name: relevant_kort

@@ -33,16 +33,8 @@ eleventyComputed:
         <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
       </div>
     </div>
-    {# Hoejre spalte: billedet med faktaboksen lige under, saa den staar ved
-       siden af "Kort fortalt". Egen groenne nuance, saa den skiller sig ud
-       fra baggrunden uden at blive hvid. #}
-    <div class="hero__side">
-      <div class="hero__media">
-        <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
-      </div>
-      <div class="note note--fakta">
-        <strong>{{ kommuner.ord_titel }}</strong> {{ kommuner.ord_tekst }}
-      </div>
+    <div class="hero__media">
+      <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
     </div>
   </div>
 </section>

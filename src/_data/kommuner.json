@@ -79,8 +79,6 @@
   "soester_overskrift": "Har I også brug for supervision, familiebehandling eller bisidderstøtte?",
   "soester_tekst": "Ved siden af rideterapien driver Lotte Stegeager praksissen Narrativ Samtale med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision af personalegrupper.",
   "soester_knap": "Gå til narrativsamtale.dk",
-  "ord_titel": "Om ordene.",
-  "ord_tekst": "Rideterapi og udviklingsstøttende hesteassisteret behandling er det samme her: et terapeutisk forløb, hvor hesten er redskabet, og hvor formålet er trivsel — ikke ridefærdigheder. Kompenserende handicapridning er en selvstændig ydelse med fysisk, sansemotorisk træning. De to kan visiteres hver for sig eller sammen.",
   "forskel_overskrift": "Hvad adskiller det fra en rideskole?",
   "forskel_intro": "Markedet for rideterapi er forskelligartet. Her er de fire ting, der adskiller et forløb her.",
   "forskel_kort": [
@@ -109,7 +107,7 @@
     },
     {
       "label": "Ydelse",
-      "tekst": "Udviklingsstøttende hesteassisteret behandling (rideterapi) og kompenserende handicapridning. Altid enesessioner, aldrig hold."
+      "tekst": "Udviklingsstøttende hesteassisteret behandling — det, de fleste kender som rideterapi. Et terapeutisk forløb, hvor hesten er redskabet, og hvor formålet er trivsel, ikke ridefærdigheder. Dertil kompenserende handicapridning, som er fysisk, sansemotorisk træning. De to kan visiteres hver for sig eller sammen. Altid enesessioner, aldrig hold."
     },
     {
       "label": "Behandler",
