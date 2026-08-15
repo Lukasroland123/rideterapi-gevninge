@@ -9,6 +9,7 @@
   --brand-dark:   #3f4c31;
   --brand-light:  #8ea172;
   --brand-tint:   #eef1e7;   /* meget lys grøn */
+  --brand-tint-2: #e0e8d1;   /* et trin dybere — til faktabokse på tint */
   --accent:       #b9743a;   /* varm terrakotta (CTA) */
   --accent-dark:  #96562a;
   --cta-bg:       #667949;   /* baggrund i CTA-bokse. Lysnet igen 15/8.
@@ -425,6 +426,9 @@ blockquote {
 .trinliste { padding-left: 1.2rem; }
 .trinliste li { margin-bottom: .75rem; }
 
+/* Hoejre spalte i hero'en: billede med en faktaboks under */
+.hero__side { display: grid; gap: 1.5rem; align-content: start; }
+
 .hero__uddyb { margin-top: 2rem; }
 .hero__uddyb > h2:first-child { margin-top: 0; }
 
@@ -697,6 +701,14 @@ blockquote {
   font-size: 1rem;
 }
 .note strong { color: var(--brand-dark); }
+
+/* Faktaboks, der ligger oven paa den lysegroenne herobaggrund. Egen,
+   dybere groen nuance plus en kant, saa den laeses som en indrammet
+   oplysning og ikke som en del af baggrunden. */
+.note--fakta {
+  background: var(--brand-tint-2);
+  border: 1px solid var(--brand-light);
+}
 
 .pill-nav {
   display: flex; flex-wrap: wrap; gap: .6rem;
