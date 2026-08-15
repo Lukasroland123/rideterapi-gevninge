@@ -1,37 +1,33 @@
 {
   "titel": "Kontakt | Hesteassisteret Praksis",
   "beskrivelse": "Kontakt Lotte Stegeager om rideterapi og handicapridning. Gratis samtale på 20 minutter. Gevninge Bygade 26, 4000 Roskilde. Tlf. 26 12 23 29.",
-
   "hero_mikrotekst": "Første skridt",
   "hero_overskrift": "Kontakt mig",
   "hero_tekst": "Du er altid velkommen til at ringe eller skrive – også bare for at høre, om det her overhovedet er noget for jer. Den første samtale koster ingenting.",
-
   "kontakt_overskrift": "Sådan får du fat i mig",
   "aabningstider": "Mandag–fredag efter aftale.\nWeekend og helligdage efter særaftale.",
   "knap1": "Ring op nu",
   "knap2": "Skriv en mail",
-
   "ringer_overskrift": "Hvad sker der, når du ringer?",
   "ringer_tekst": "Vi tager en samtale på cirka 20 minutter, som er uden beregning. Du fortæller om den situation, du eller dit barn står i. Jeg stiller nogle spørgsmål, og du kan spørge ind til min erfaring og mine ydelser.\n\nDerefter beslutter du, om vi skal aftale et første besøg. Der er ingen forpligtelse, og jeg presser dig ikke.\n\nFår du ikke fat i mig med det samme, er det fordi jeg er ude ved hestene – læg en besked, så ringer jeg tilbage.",
-
   "akut_titel": "Akut hjælp:",
   "akut_tekst": "Har du brug for hjælp lige nu, så ring til Livslinien på 70 201 201 (åben hver dag) eller til din vagtlæge på 1813 (Region Hovedstaden) / 70 15 07 00 (Region Sjælland). Ved fare for liv: ring 112.",
-
   "vej_overskrift": "Sådan finder du herud",
   "vej_intro": "Praksis ligger i Gevninge, cirka 10 km fra Roskilde.",
   "vej_punkter": [
-    { "tekst": "I bil: Gratis parkering lige overfor." },
-    { "tekst": "Offentlig transport: Nem forbindelse med bus fra både Roskilde og Lejre station." },
-    { "tekst": "Alt foregår udendørs – tag tøj på efter vejret og sko, du kan gå på ujævnt underlag i." }
+    {
+      "tekst": "I bil: Gratis parkering lige overfor."
+    },
+    {
+      "tekst": "Offentlig transport: Nem forbindelse med bus fra både Roskilde og Lejre station."
+    },
+    {
+      "tekst": "Alt foregår udendørs – tag tøj på efter vejret og sko, du kan gå på ujævnt underlag i."
+    }
   ],
   "vej_knap": "Åbn rutevejledning i Google Maps",
   "vej_billede": "/billeder/pladsholder-natur.svg",
   "vej_billede_alt": "Omgivelserne omkring praksis i Gevninge",
-
-  "ansvar_overskrift": "Ansvar og forsikring",
-  "ansvar_intro": "Det er vigtigt for mig, at det her står helt klart, inden vi går i gang.",
-  "ansvar_tekst": "Min praksis ligger på min private matrikel. Al færdsel på matriklen og al omgang med mine heste – herunder ridning, både på ejendommen og uden for den – foregår på eget ansvar. Virksomheden kan på ingen måde gøres erstatningsansvarlig.\n\nFor at kunne deltage i rideterapi og handicapridning er det en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nJeg tager naturligvis de sikkerhedsforanstaltninger, jeg er opmærksom på, og alle der sidder på en hest, skal bære både ridehjelm og sikkerhedsvest – som kan lånes her. Igennem de sidste 30 år har jeg ikke oplevet nogen alvorlige ulykker. Men heste er levende væsner, og der vil altid være risiko for noget uforudsigeligt.",
-
   "soester_overskrift": "Søger du samtaleterapi, familiebehandling eller supervision?",
   "soester_tekst": "Jeg driver også Narrativ Samtale – en selvstændig praksis med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision.",
   "soester_knap": "Gå til narrativsamtale.dk"

@@ -44,5 +44,19 @@ eleventyComputed:
   </div>
 </section>
 
+{# Flyttet hertil fra kontaktsiden. Ankeret #ansvar foelger med, saa
+   linkene i bunden af siderne stadig rammer rigtigt. #}
+<section class="section section--sand" id="ansvar">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ forloeb.ansvar_overskrift }}</h2>
+      <p>{{ forloeb.ansvar_intro }}</p>
+    </div>
+    <div class="card card--flat">
+      {{ forloeb.ansvar_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
 {# Den groenne kontaktboks bruges kun paa forsiden, rideterapi og
    handicapridning. #}

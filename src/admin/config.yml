@@ -295,6 +295,10 @@ collections:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text }
 
+          - { name: ansvar_overskrift, label: "Overskrift · ansvar og forsikring", widget: string }
+          - { name: ansvar_intro, label: "Introtekst", widget: text }
+          - { name: ansvar_tekst, label: "Ansvarstekst", widget: text }
+
           - { name: faq_overskrift, label: "Overskrift · spørgsmål og svar", widget: string }
           - name: faq
             label: "Spørgsmål og svar"
@@ -446,9 +450,6 @@ collections:
           - { name: vej_billede, label: "Billede", widget: image }
           - { name: vej_billede_alt, label: "Beskrivelse af billedet", widget: string }
 
-          - { name: ansvar_overskrift, label: "Overskrift · ansvar og forsikring", widget: string }
-          - { name: ansvar_intro, label: "Introtekst", widget: text }
-          - { name: ansvar_tekst, label: "Ansvarstekst", widget: text }
 
           - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
