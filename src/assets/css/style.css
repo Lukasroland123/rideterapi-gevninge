@@ -388,6 +388,43 @@ blockquote {
   margin-inline-start: auto;
 }
 
+/* "Kort fortalt" — resumé i toppen af kommunesiden. Label til venstre,
+   indhold til hoejre, saa oejet kan loebe ned ad etiketterne. */
+.resume {
+  margin-top: 2rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  display: grid;
+  gap: 1rem;
+}
+.resume__titel {
+  font-size: 1.05rem;
+  margin: 0;
+  padding-bottom: .9rem;
+  border-bottom: 1px solid var(--line);
+}
+.resume__row { display: grid; gap: .2rem; }
+.resume__label {
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--brand);
+}
+@media (min-width: 620px) {
+  .resume__row {
+    grid-template-columns: 8.5rem 1fr;
+    gap: 1.25rem;
+    align-items: baseline;
+  }
+}
+
+/* Nummereret trinliste inde i et klik-ud-afsnit */
+.trinliste { padding-left: 1.2rem; }
+.trinliste li { margin-bottom: .75rem; }
+
 .hero__uddyb { margin-top: 2rem; }
 .hero__uddyb > h2:first-child { margin-top: 0; }
 

@@ -6,29 +6,40 @@ eleventyComputed:
   titel: "{{ kommuner.titel }}"
   beskrivelse: "{{ kommuner.beskrivelse }}"
 ---
-<section class="hero">
+<section class="hero hero--top">
   <div class="wrap hero__inner">
     <div class="hero__text">
       <span class="eyebrow">{{ kommuner.hero_mikrotekst }}</span>
       <h1>{{ kommuner.hero_overskrift }}</h1>
       <p class="lead">{{ kommuner.hero_tekst }}</p>
+
+      {# Resuméet ligger med vilje oeverst og ved siden af billedet: en
+         sagsbehandler skal kunne afgoere relevansen uden at scrolle. #}
+      <div class="resume">
+        <h2 class="resume__titel">{{ kommuner.resume_overskrift }}</h2>
+        {% for r in kommuner.resume_punkter %}
+        <div class="resume__row">
+          <span class="resume__label">{{ r.label }}</span>
+          <span>{{ r.tekst }}</span>
+        </div>
+        {% endfor %}
+      </div>
+
       <div class="btn-row">
         <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
         <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
       </div>
     </div>
     <div class="hero__media">
-      <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="800" height="600">
+      <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
     </div>
   </div>
 </section>
 
-{# Terminologien forvirrer: "rideterapi" er det ord, folk soeger paa, men
-   det daekker to forskellige ydelser. Det staar derfor foerst paa siden. #}
 <section class="section section--tight">
   <div class="wrap wrap--narrow">
     <div class="note">
-      <strong>{{ kommuner.ord_titel }}</strong> {{ kommuner.ord_tekst | afsnit | safe }}
+      <strong>{{ kommuner.ord_titel }}</strong> {{ kommuner.ord_tekst }}
     </div>
   </div>
 </section>
@@ -50,9 +61,6 @@ eleventyComputed:
   </div>
 </section>
 
-{# "Hvem udfoerer forloebet?" og publikationsboksen er fjernet —
-   den fulde faglige baggrund staar paa /om-lotte/. #}
-
 <section class="section section--sand">
   <div class="wrap">
     <div class="section-head">
@@ -63,71 +71,72 @@ eleventyComputed:
       {% for k in kommuner.forskel_kort %}
       <article class="card card--flat">
         <h3>{{ k.overskrift }}</h3>
-        {{ k.tekst | afsnit | safe }}
+        <p>{{ k.tekst }}</p>
       </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
+{# Alt det, ingen laeser paa skaermen, men som skal kunne findes: lovtekst,
+   forloebets opbygning og de praktiske forhold. Foldet sammen som paa
+   Praktisk info-siden. #}
 <section class="section">
-  <div class="wrap wrap--narrow prose">
-    <span class="eyebrow">{{ kommuner.besoeg_mikrotekst }}</span>
-    <h2>{{ kommuner.besoeg_overskrift }}</h2>
-    {{ kommuner.besoeg_tekst | afsnit | safe }}
-    <div class="btn-row">
-      <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
-      <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ kommuner.detaljer_overskrift }}</h2>
+      <p>{{ kommuner.detaljer_intro }}</p>
+    </div>
+    <div class="faq">
+
+      <details>
+        <summary>{{ kommuner.forloeb_overskrift }}</summary>
+        <div class="faq__body">
+          <ol class="trinliste">
+            {% for t in kommuner.forloeb_trin %}
+            <li><strong>{{ t.overskrift }}.</strong> {{ t.tekst }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </details>
+
+      <details>
+        <summary>{{ kommuner.lov_overskrift }}</summary>
+        <div class="faq__body">
+          <p>{{ kommuner.lov_intro }}</p>
+          <h3>{{ kommuner.lov_kort1_overskrift }}</h3>
+          {{ kommuner.lov_kort1_tekst | afsnit | safe }}
+          <h3>{{ kommuner.lov_kort2_overskrift }}</h3>
+          {{ kommuner.lov_kort2_tekst | afsnit | safe }}
+          <h3>{{ kommuner.lov_kort2_overskrift2 }}</h3>
+          {{ kommuner.lov_kort2_tekst2 | afsnit | safe }}
+        </div>
+      </details>
+
+      <details>
+        <summary>{{ kommuner.praktisk_overskrift }}</summary>
+        <div class="faq__body">
+          <ul>
+            {% for k in kommuner.praktisk_kort %}
+            <li><strong>{{ k.overskrift }}.</strong> {{ k.tekst }}</li>
+            {% endfor %}
+          </ul>
+          <p><a href="/forloeb/">{{ kommuner.praktisk_link }}</a></p>
+        </div>
+      </details>
+
     </div>
   </div>
 </section>
 
 <section class="section section--tint">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ kommuner.forloeb_overskrift }}</h2>
-    </div>
-    <div class="steps">
-      {% for t in kommuner.forloeb_trin %}
-      <article class="step">
-        <h3>{{ t.overskrift }}</h3>
-        <p>{{ t.tekst }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ kommuner.lov_overskrift }}</h2>
-      <p>{{ kommuner.lov_intro }}</p>
-    </div>
-    <div class="grid grid--2">
-      <article class="card card--flat">
-        <h3>{{ kommuner.lov_kort1_overskrift }}</h3>
-        {{ kommuner.lov_kort1_tekst | afsnit | safe }}
-      </article>
-      <article class="card card--flat">
-        <h3>{{ kommuner.lov_kort2_overskrift }}</h3>
-        {{ kommuner.lov_kort2_tekst | afsnit | safe }}
-        <h3 style="margin-top:1.5rem">{{ kommuner.lov_kort2_overskrift2 }}</h3>
-        {{ kommuner.lov_kort2_tekst2 | afsnit | safe }}
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section section--sand">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ kommuner.praktisk_overskrift }}</h2>
-    </div>
-    <div class="grid grid--3 grid--3-fast">
-      {% for k in kommuner.praktisk_kort %}
-      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
-      {% endfor %}
+  <div class="wrap wrap--narrow prose">
+    <span class="eyebrow">{{ kommuner.besoeg_mikrotekst }}</span>
+    <h2>{{ kommuner.besoeg_overskrift }}</h2>
+    <p>{{ kommuner.besoeg_tekst }}</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+      <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
     </div>
   </div>
 </section>
