@@ -1,53 +1,93 @@
 {
   "titel": "Til kommuner og institutioner | Hesteassisteret Praksis",
   "beskrivelse": "Information til sagsbehandlere, PPR, skoler og institutioner om hesteassisteret behandling og handicapridning: målgrupper, fagligt grundlag, dokumentation, lovgrundlag og rekvirering.",
-
   "hero_mikrotekst": "Til sagsbehandlere, PPR, skoler og institutioner",
   "hero_overskrift": "Til dig, der skal finde et tilbud til et barn",
   "hero_tekst": "Nogle børn og unge kan ikke bruge et samtaletilbud – endnu. Her får de et sted at møde op, hvor der ikke stilles krav om at forklare sig. På denne side finder du det faglige grundlag, målgrupperne og det praktiske.",
   "hero_knap2": "Send en forespørgsel",
   "hero_billede": "/billeder/pladsholder-natur.svg",
   "hero_billede_alt": "Praksis og folde i Gevninge",
-
   "relevant_overskrift": "Hvornår kan et forløb her være relevant?",
   "relevant_intro": "Typisk når andet er prøvet, og barnet eller den unge er gået i stå.",
   "relevant_kort": [
-    { "overskrift": "Skolefravær og skolevægring", "tekst": "Barnet møder ikke op, og presset hjemmefra og fra skolen forstærker problemet. Her er der ingen mødepligt og ingen præstation – kun en hest, der venter." },
-    { "overskrift": "ADHD og autisme", "tekst": "Hvor det sociale samspil er svært at afkode. Hesten giver en umiddelbar, utvetydig og fordomsfri respons på barnets egne signaler." },
-    { "overskrift": "Traumer og PTSD", "tekst": "Hvor nervesystemet er i vedvarende alarmberedskab, og hvor samtale alene kan være for konfronterende." },
-    { "overskrift": "Fysisk eller psykisk handicap", "tekst": "Kompenserende handicapridning med sansemotorisk og psykomotorisk træning ved certificeret funktionel neuroterapeut." },
-    { "overskrift": "Angst, stress og depression", "tekst": "Hvor barnet eller den unge har trukket sig fra fællesskaber, og hvor selvværdet er slidt ned over tid." },
-    { "overskrift": "Voksne med senhjerneskade", "tekst": "Genopbygning af balance, kropsfornemmelse og tillid til egen krop gennem hestens bevægelser." }
+    {
+      "overskrift": "Skolefravær og skolevægring",
+      "tekst": "Barnet møder ikke op, og presset hjemmefra og fra skolen forstærker problemet. Her er der ingen mødepligt og ingen præstation – kun en hest, der venter."
+    },
+    {
+      "overskrift": "ADHD og autisme",
+      "tekst": "Hvor det sociale samspil er svært at afkode. Hesten giver en umiddelbar, utvetydig og fordomsfri respons på barnets egne signaler."
+    },
+    {
+      "overskrift": "Traumer og PTSD",
+      "tekst": "Hvor nervesystemet er i vedvarende alarmberedskab, og hvor samtale alene kan være for konfronterende."
+    },
+    {
+      "overskrift": "Fysisk eller psykisk handicap",
+      "tekst": "Kompenserende handicapridning med sansemotorisk og psykomotorisk træning ved certificeret funktionel neuroterapeut."
+    },
+    {
+      "overskrift": "Angst, stress og depression",
+      "tekst": "Hvor barnet eller den unge har trukket sig fra fællesskaber, og hvor selvværdet er slidt ned over tid."
+    },
+    {
+      "overskrift": "Voksne med senhjerneskade",
+      "tekst": "Genopbygning af balance, kropsfornemmelse og tillid til egen krop gennem hestens bevægelser."
+    }
   ],
-
   "fagligt_mikrotekst": "Fagligt grundlag",
   "fagligt_overskrift": "Hvem udfører forløbet?",
   "fagligt_intro": "Forløbene varetages af Lotte Stegeager, der har arbejdet inden for det pædagogiske og psykologiske felt siden 1998 og med heste i over 30 år.",
   "fagligt_punkter": [
-    { "tekst": "Cand.scient.soc. fra RUC, 1998" },
-    { "tekst": "Lektorgodkendt inden for det pædagogiske/psykologiske fagområde" },
-    { "tekst": "Specialist i narrativ psykoterapi (DISPUK) – godkendt af Dansk Psykolog Forening og Dansk Psykiatrisk Selskab" },
-    { "tekst": "Traumeuddannelse (DISPUK)" },
-    { "tekst": "Certificeret funktionel neuroterapeut" },
-    { "tekst": "Marte Meo-uddannet" },
-    { "tekst": "Medlem af Rideterapeut Foreningen og Dansk Psykoterapeut Forening (MPF)" },
-    { "tekst": "Censor ved de pædagogiske bachelor- og diplomuddannelser" }
+    {
+      "tekst": "Cand.scient.soc. fra RUC, 1998"
+    },
+    {
+      "tekst": "Lektorgodkendt inden for det pædagogiske/psykologiske fagområde"
+    },
+    {
+      "tekst": "Specialist i narrativ psykoterapi (DISPUK) – godkendt af Dansk Psykolog Forening og Dansk Psykiatrisk Selskab"
+    },
+    {
+      "tekst": "Traumeuddannelse (DISPUK)"
+    },
+    {
+      "tekst": "Certificeret funktionel neuroterapeut"
+    },
+    {
+      "tekst": "Marte Meo-uddannet"
+    },
+    {
+      "tekst": "Medlem af Rideterapeut Foreningen og Dansk Psykoterapeut Forening (MPF)"
+    },
+    {
+      "tekst": "Censor ved de pædagogiske bachelor- og diplomuddannelser"
+    }
   ],
   "fagligt_afslutning": "Tidligere underviser af pædagoger i socialfag, pædagogik, kommunikation og psykologi, deltager i udviklingsprojekter i organisationer og teams samt konsulent på en specialefterskole med henblik på trivsel gennem personalesupervision.",
   "fagligt_billede": "/billeder/pladsholder-portraet.svg",
   "fagligt_billede_alt": "Portræt af Lotte Stegeager",
-
   "publikation_titel": "Publiceret metodebeskrivelse:",
   "publikation_tekst": "„Hesteassisteret terapi som platform – i mødet med børn og unge i mistrivsel“, Tidsskrift for Specialpædagogik, 2024 nr. 2. Artiklen beskriver konkret, hvordan metoden anvendes, og kan rekvireres ved henvendelse.\n\nDesuden medforfatter på den forskningsgodkendte artikel „Jeg er ikke bange for at blive set, men…“ om skam og udskamning som barriere for deltagelse, DPT nr. 3, 2020.",
-
   "forloeb_overskrift": "Hvad indeholder et forløb?",
   "forloeb_trin": [
-    { "overskrift": "Indledende afklaring", "tekst": "Gratis samtale på 20 minutter med jer og/eller familien, hvor formål og forventninger afstemmes, inden noget sættes i gang." },
-    { "overskrift": "Individuelle sessioner", "tekst": "Udelukkende eneundervisning, 45–60 min. eller 90–120 min. Typisk 3–8 gange, men rammen tilpasses opgaven." },
-    { "overskrift": "Løbende justering", "tekst": "Indholdet tilpasses efter, hvad der virker. Rideterapi kan kombineres med narrativ terapi og familiebehandling." },
-    { "overskrift": "Afrapportering efter aftale", "tekst": "Jeg kan udarbejde en skriftlig beskrivelse af forløb, formål og observationer samt deltage i statusmøder – det aftales særskilt." }
+    {
+      "overskrift": "Indledende afklaring",
+      "tekst": "Gratis samtale på 20 minutter med jer og/eller familien, hvor formål og forventninger afstemmes, inden noget sættes i gang."
+    },
+    {
+      "overskrift": "Individuelle sessioner",
+      "tekst": "Udelukkende eneundervisning, 45–60 min. eller 90–120 min. Typisk 3–8 gange, men rammen tilpasses opgaven."
+    },
+    {
+      "overskrift": "Løbende justering",
+      "tekst": "Indholdet tilpasses efter, hvad der virker. Rideterapi kan kombineres med narrativ terapi og familiebehandling."
+    },
+    {
+      "overskrift": "Afrapportering efter aftale",
+      "tekst": "Jeg kan udarbejde en skriftlig beskrivelse af forløb, formål og observationer samt deltage i statusmøder – det aftales særskilt."
+    }
   ],
-
   "lov_overskrift": "Lovgrundlag og finansiering",
   "lov_intro": "Forløb kan enten rekvireres direkte af kommune, institution, virksomhed eller forsikringsselskab – eller søges som merudgift af borgeren selv.",
   "lov_kort1_overskrift": "Servicelovens § 41 – børn under 18 år",
@@ -56,21 +96,34 @@
   "lov_kort2_tekst": "Tilskud til nødvendige merudgifter ved varigt nedsat fysisk eller psykisk funktionsevne.",
   "lov_kort2_overskrift2": "Direkte rekvirering",
   "lov_kort2_tekst2": "Ved forløb finansieret via kommuner, forsikringsselskaber, virksomheder og institutioner aftales prisen særskilt. Fakturering, eventuelt EAN-nummer og rekvisitionsnummer aftales, når opgaven bekræftes.",
-
   "praktisk_overskrift": "Det praktiske",
   "praktisk_kort": [
-    { "overskrift": "Sted", "tekst": "Gevninge Bygade 26, 4000 Roskilde – 10 km fra Roskilde. Gratis parkering overfor. Nem adgang med bus fra Roskilde og Lejre station." },
-    { "overskrift": "Tidspunkter", "tekst": "Mandag–fredag efter aftale. Weekend og helligdage efter særaftale med tillægspris. Mulighed for besøg i hjemmet eller på institutionen mod udkørselstillæg." },
-    { "overskrift": "Rammer", "tekst": "Alt foregår udendørs og så vidt muligt i et digitalt frit rum. Ved storm eller kraftig regn kan aftaler blive flyttet." },
-    { "overskrift": "Sikkerhed", "tekst": "Ridehjelm og sikkerhedsvest er obligatorisk for alle, der sidder på hest, og kan lånes i alle størrelser." },
-    { "overskrift": "Forsikring", "tekst": "Deltagelse forudsætter, at borgeren har en dækkende ulykkesforsikring. Færdsel på matriklen og omgang med heste sker på eget ansvar." },
-    { "overskrift": "Mobilitet", "tekst": "Der er ingen hjælpemidler til op- og afstigning. Borgeren skal kunne gå ved egen hjælp eller med hjælp fra støtteperson." }
+    {
+      "overskrift": "Sted",
+      "tekst": "Gevninge Bygade 26, 4000 Roskilde – 10 km fra Roskilde. Gratis parkering overfor. Nem adgang med bus fra Roskilde og Lejre station."
+    },
+    {
+      "overskrift": "Tidspunkter",
+      "tekst": "Mandag–fredag efter aftale. Weekend og helligdage efter særaftale med tillægspris. Mulighed for besøg i hjemmet eller på institutionen mod udkørselstillæg."
+    },
+    {
+      "overskrift": "Rammer",
+      "tekst": "Alt foregår udendørs og så vidt muligt i et digitalt frit rum. Ved storm eller kraftig regn kan aftaler blive flyttet."
+    },
+    {
+      "overskrift": "Sikkerhed",
+      "tekst": "Ridehjelm og sikkerhedsvest er obligatorisk for alle, der sidder på hest, og kan lånes i alle størrelser."
+    },
+    {
+      "overskrift": "Forsikring",
+      "tekst": "Deltagelse forudsætter, at borgeren har en dækkende ulykkesforsikring. Færdsel på matriklen og omgang med heste sker på eget ansvar."
+    },
+    {
+      "overskrift": "Mobilitet",
+      "tekst": "Der er ingen hjælpemidler til op- og afstigning. Borgeren skal kunne gå ved egen hjælp eller med hjælp fra støtteperson."
+    }
   ],
-
   "soester_overskrift": "Har I også brug for supervision, familiebehandling eller bisidderstøtte?",
   "soester_tekst": "Ved siden af rideterapien driver Lotte Stegeager praksissen Narrativ Samtale med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision af personalegrupper.",
-  "soester_knap": "Gå til narrativsamtale.dk",
-
-  "cta_overskrift": "Skal vi tage en faglig snak?",
-  "cta_tekst": "Ring eller skriv med en kort beskrivelse af opgaven, så vender jeg tilbage med en vurdering af, om et forløb her giver mening – og hvad det vil koste."
+  "soester_knap": "Gå til narrativsamtale.dk"
 }

@@ -68,50 +68,6 @@ eleventyComputed:
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>{{ priser.aabning_overskrift }}</h2>
-    </div>
-    <div class="grid grid--2">
-      <div>
-        <ul>
-          {% for p in priser.aabning_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
-        </ul>
-      </div>
-      <div class="note">
-        <strong>{{ priser.aabning_note_titel }}</strong> {{ priser.aabning_note_tekst }}
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tint">
-  <div class="wrap split">
-    <div class="split__media">
-      <img src="{{ priser.sted_billede }}" alt="{{ priser.sted_billede_alt }}" width="800" height="600">
-    </div>
-    <div>
-      <span class="eyebrow">{{ priser.sted_mikrotekst }}</span>
-      <h2>{{ priser.sted_overskrift }}</h2>
-      {{ priser.sted_tekst | afsnit | safe }}
-      <p><strong>{{ site.adresse }}<br>{{ site.postnr_by }}</strong></p>
-      <div class="btn-row">
-        <a class="btn btn--brand" href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26,+4000+Roskilde" rel="noopener">{{ priser.sted_knap }}</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="wrap">
-    <div class="cta">
-      <h2>{{ priser.cta_overskrift }}</h2>
-      <p>{{ priser.cta_tekst }}</p>
-      <div class="btn-row">
-        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
-        <a class="btn btn--outline-light" href="mailto:{{ site.email }}">Skriv en mail</a>
-      </div>
-    </div>
-  </div>
-</section>
+{# Aabningstider og beliggenhed staar kun paa kontaktsiden.
+   Den groenne kontaktboks er ogsaa fjernet herfra — den bruges kun paa
+   forsiden, rideterapi og handicapridning. #}

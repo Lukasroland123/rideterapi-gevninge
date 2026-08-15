@@ -305,9 +305,6 @@ collections:
               - { name: spoergsmaal, label: "Spørgsmål", widget: string }
               - { name: svar, label: "Svar", widget: text }
 
-          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
-          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
-
           - { name: titel, label: "Fanebladstitel i browseren", widget: string }
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
 
@@ -346,27 +343,6 @@ collections:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text }
           - { name: tilskud_knap, label: "Knaptekst", widget: string }
-
-          - { name: aabning_overskrift, label: "Overskrift · åbningstider", widget: string }
-          - name: aabning_punkter
-            label: "Punkter om åbningstider"
-            widget: list
-            allow_add: false
-            allow_remove: false
-            fields:
-              - { name: tekst, label: "Punkt", widget: string }
-          - { name: aabning_note_titel, label: "Grøn boks · fed indledning", widget: string }
-          - { name: aabning_note_tekst, label: "Grøn boks · tekst", widget: text }
-
-          - { name: sted_mikrotekst, label: "Lille tekst · beliggenhed", widget: string }
-          - { name: sted_overskrift, label: "Overskrift", widget: string }
-          - { name: sted_tekst, label: "Tekst", widget: text }
-          - { name: sted_knap, label: "Knaptekst", widget: string }
-          - { name: sted_billede, label: "Billede", widget: image }
-          - { name: sted_billede_alt, label: "Beskrivelse af billedet", widget: string }
-
-          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
-          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
 
           - { name: titel, label: "Fanebladstitel i browseren", widget: string }
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
@@ -434,9 +410,6 @@ collections:
           - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
           - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
-
-          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
-          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
 
           - { name: titel, label: "Fanebladstitel i browseren", widget: string }
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
@@ -556,9 +529,6 @@ collections:
           - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
           - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
-
-          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
-          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
 
           - { name: titel, label: "Fanebladstitel i browseren", widget: string }
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
