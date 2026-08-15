@@ -2,22 +2,22 @@
   "hero_mikrotekst": "Godkendt af Rideterapeut Foreningen og Dansk Psykoterapeut forening",
   "hero_overskrift": "Hesteassisteret Praksis for mennesker i mistrivsel og med diagnoser",
   "hero_tekst": "Hesteassisteret behandling og handicapridning kan understøtte trivsel, og er  særligt relevant ved skolefravær, ADHD, autisme, angst, traumer og handicap. Individuelle forløb i rolige omgivelser 10 km fra Roskilde.",
-  "hero_knap1": "Book en gratis samtale på 20 min.",
+  "hero_knap1": "Book en samtale på 20 min.",
   "hero_knap2": "Se hvordan et forløb foregår",
   "hero_billede": "/billeder/Skærmbillede 2026-08-15 111548.png",
   "hero_billede_alt": "Hestens varme og ro kan 'smitte', når man selv er blevet tryg ved situationen",
   "hero_maerkater": [
     {
-      "tekst": "Jeg tilbyder primært ene-sessioner"
+      "tekst": "primært ene-sessioner"
     },
     {
-      "tekst": "Mulighed for kommunalt tilskud"
+      "tekst": "Mulighed for at søge kommunalt tilskud"
     },
     {
       "tekst": "30 års erfaring med heste"
     }
   ],
-  "problemer_overskrift": "Måske står I i noget af det her",
+  "problemer_overskrift": "Måske står I i noget af det her?",
   "problemer_intro": "De fleste, der kontakter mig, har prøvet meget andet først. Det er helt almindeligt.",
   "problemer_kort": [
     {
