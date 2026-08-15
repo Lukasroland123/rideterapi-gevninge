@@ -22,7 +22,7 @@ eleventyComputed:
       <h2>{{ forloeb.praktisk_overskrift }}</h2>
       <p>{{ forloeb.praktisk_intro }}</p>
     </div>
-    <div class="grid grid--3">
+    <div class="grid grid--3 grid--3-fast">
       {% for k in forloeb.praktisk_kort %}
       <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
       {% endfor %}
