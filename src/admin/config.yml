@@ -207,8 +207,7 @@ collections:
             fields:
               - { name: tekst, label: "Tekst", widget: string }
 
-          - { name: hvad_overskrift, label: "Overskrift · 'Hvad er det?'", widget: string }
-          - { name: hvad_tekst, label: "Tekst", widget: text }
+          - { name: hvad_tekst, label: "Tekst under overskriften Handicapridning", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
           - { name: hvad_boks_tekst, label: "Grøn boks · tekst", widget: text }
 
@@ -280,33 +279,12 @@ collections:
 
       # ---------------------------------------------------------------
       - name: forloeb
-        label: "Sådan foregår det"
+        label: "Praktisk info"
         file: "src/_data/forloeb.json"
         fields:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
-
-          - name: trin
-            label: "De fire trin"
-            widget: list
-            allow_add: false
-            allow_remove: false
-            fields:
-              - { name: overskrift, label: "Overskrift", widget: string }
-              - { name: tekst, label: "Tekst", widget: text }
-
-          - { name: session_mikrotekst, label: "Lille tekst · 'En typisk session'", widget: string }
-          - { name: session_overskrift, label: "Overskrift", widget: string }
-          - { name: session_tekst, label: "Tekst", widget: text }
-          - { name: session_billede, label: "Billede", widget: image }
-          - { name: session_billede_alt, label: "Beskrivelse af billedet", widget: string }
-
-          - { name: metode_mikrotekst, label: "Lille tekst · 'Metoden'", widget: string }
-          - { name: metode_overskrift, label: "Overskrift", widget: string }
-          - { name: metode_tekst, label: "Tekst", widget: text }
-          - { name: metode_billede, label: "Billede", widget: image }
-          - { name: metode_billede_alt, label: "Beskrivelse af billedet", widget: string }
 
           - { name: praktisk_overskrift, label: "Overskrift · 'Det praktiske'", widget: string }
           - { name: praktisk_intro, label: "Introtekst", widget: text }

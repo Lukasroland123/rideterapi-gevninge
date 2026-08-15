@@ -14,46 +14,9 @@ eleventyComputed:
   </div>
 </div>
 
-<section class="section">
-  <div class="wrap">
-    <div class="steps">
-      {% for t in forloeb.trin %}
-      <article class="step">
-        <h3>{{ t.overskrift }}</h3>
-        <p>{{ t.tekst }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
+{# Sandfarvet, ikke groen: sidehovedet ovenfor er allerede lysegroent, og de
+   to blokke ville ellers smelte sammen til ét felt med et hul i midten. #}
 <section class="section section--sand">
-  <div class="wrap split">
-    <div class="split__media">
-      <img src="{{ forloeb.session_billede }}" alt="{{ forloeb.session_billede_alt }}" width="800" height="600">
-    </div>
-    <div>
-      <span class="eyebrow">{{ forloeb.session_mikrotekst }}</span>
-      <h2>{{ forloeb.session_overskrift }}</h2>
-      {{ forloeb.session_tekst | afsnit | safe }}
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap split split--reverse">
-    <div class="split__media">
-      <img src="{{ forloeb.metode_billede }}" alt="{{ forloeb.metode_billede_alt }}" width="800" height="600">
-    </div>
-    <div>
-      <span class="eyebrow">{{ forloeb.metode_mikrotekst }}</span>
-      <h2>{{ forloeb.metode_overskrift }}</h2>
-      {{ forloeb.metode_tekst | afsnit | safe }}
-    </div>
-  </div>
-</section>
-
-<section class="section section--tint">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ forloeb.praktisk_overskrift }}</h2>

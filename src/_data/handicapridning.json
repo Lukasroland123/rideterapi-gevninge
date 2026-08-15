@@ -14,7 +14,6 @@
     { "tekst": "Kun eneundervisning" }
   ],
 
-  "hvad_overskrift": "Hvad er kompenserende handicapridning?",
   "hvad_tekst": "Mennesker med psykiske eller fysiske handicap kan ofte blive stimuleret konstruktivt af både samværet med hestene og af selve ridningen. Gennem hestens bevægelser stimuleres en række forskellige sanser hos rytteren, hvilket kan have gavnlig effekt for et menneske, der er ramt af handicap eller sygdom.\n\nHestens skridt overfører en bevægelse til rytterens bækken og ryg, som minder om menneskets egen gang. Det er den bevægelse, der gør ridningen kompenserende: kroppen arbejder, uden at man skal koncentrere sig om at træne.",
   "hvad_boks_titel": "Det handler ikke kun om at ride.",
   "hvad_boks_tekst": "En del af arbejdet foregår fra jorden – at føre, børste, mærke og være sammen med hesten. Vi finder den form, der passer til kroppen og til dagsformen.",
@@ -36,9 +35,9 @@
   "hvem_overskrift": "Hvem kan henvende sig?",
   "hvem_intro": "De fleste kan have glæde af at være i samvær med heste.",
   "hvem_kort": [
-    { "overskrift": "Børn og unge med handicap", "tekst": "Børn og unge, som skal håndtere et fysisk eller psykisk handicap eller en diagnose i hverdagen." },
-    { "overskrift": "Voksne med senhjerneskade", "tekst": "Hvor der er brug for at genopbygge balance, kropsfornemmelse og tillid til egen krop." },
-    { "overskrift": "Nedsat funktionsevne", "tekst": "Ved varigt nedsat fysisk eller psykisk funktionsevne, hvor almindelige træningstilbud ikke rammer." }
+    { "overskrift": "Børn og unge med handicap", "tekst": "Børn og unge, som skal håndtere et fysisk eller psykisk handicap eller en diagnose i hverdagen. Mange har allerede prøvet genoptræning i et lokale og er kørt trætte i det. Her sidder de på en hest ude i det fri, og træningen sker af sig selv, mens de har travlt med noget andet. Hestens skridt overfører en bevægelse til bækken og ryg, der minder om menneskets egen gang, og det er dét, der gør ridningen kompenserende. For de fleste børn føles det som en fritidsaktivitet, ikke som behandling." },
+    { "overskrift": "Voksne med senhjerneskade", "tekst": "Hvor der er brug for at genopbygge balance, kropsfornemmelse og tillid til egen krop. Efter en hjerneskade skal mange lære at aflæse deres egen krop forfra, og det tager tid. Ridningen giver en rytmisk, forudsigelig bevægelse, som kroppen kan hvile i og lære af. Vi arbejder både fra hesteryg og fra jorden, alt efter dagsformen. Der er ingen fast plan, der skal følges – vi justerer efter, hvad kroppen kan den dag." },
+    { "overskrift": "Nedsat funktionsevne", "tekst": "Ved varigt nedsat fysisk eller psykisk funktionsevne, hvor almindelige træningstilbud ikke rammer. Nogle kan ikke rumme holdtræning, andre får ikke nok ud af øvelser uden mening. Her er øvelserne bundet op på et levende dyr, der giver respons med det samme. Som certificeret funktionel neuroterapeut vælger jeg øvelserne ud fra, hvilke nervebaner der skal aktiveres – rækkefølgen er ikke tilfældig. Og netop denne gruppe kan ofte få dækket udgiften som en nødvendig merudgift efter serviceloven." }
   ],
   "hvem_boks_titel": "Vigtig forudsætning:",
   "hvem_boks_tekst": "Jeg har ingen hjælpemidler til op- og afstigning. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson. Er du i tvivl, om det kan lade sig gøre, så ring – så finder vi ud af det sammen.",

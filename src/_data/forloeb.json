@@ -1,41 +1,37 @@
 {
-  "titel": "Sådan foregår et forløb | Hesteassisteret Praksis",
-  "beskrivelse": "Sådan foregår hesteassisteret behandling og handicapridning hos Lotte Stegeager: fra første samtale til forløbets afslutning. Du behøver ikke kunne ride.",
-
-  "hero_mikrotekst": "Trin for trin",
-  "hero_overskrift": "Sådan foregår et forløb",
+  "titel": "Praktisk info om rideterapi og handicapridning | Hesteassisteret Praksis",
+  "beskrivelse": "Det praktiske ved rideterapi og handicapridning hos Lotte Stegeager: tøj og udstyr, sikkerhed, vejr, forsikring og svar på de spørgsmål, der oftest bliver stillet.",
+  "hero_mikrotekst": "Godt at vide",
+  "hero_overskrift": "Praktisk info",
   "hero_tekst": "Du behøver hverken at kunne ride eller have erfaring med heste. Alt foregår som eneundervisning, og vi går kun så hurtigt frem, som du er tryg ved.",
-
-  "trin": [
-    { "overskrift": "Gratis telefonsamtale", "tekst": "20 minutter uden beregning. Du fortæller om jeres situation, og vi finder sammen ud af, om et forløb her giver mening." },
-    { "overskrift": "Første besøg", "tekst": "Vi mødes på matriklen i Gevninge. Vi hilser på hestene i dit tempo – mange bliver på jorden hele den første gang." },
-    { "overskrift": "Vi aftaler et forløb", "tekst": "Typisk 3–8 gange. Hver session varer 45–60 minutter, eller 90–120 minutter hvis der er brug for mere tid." },
-    { "overskrift": "Vi følger op undervejs", "tekst": "Vi justerer løbende efter, hvad der virker. Nogle forløb kombineres med samtaler, andre er rent hesteassisterede." }
-  ],
-
-  "session_mikrotekst": "En typisk session",
-  "session_overskrift": "Vi starter altid med at komme til stede",
-  "session_tekst": "Vi begynder roligt: hilse på hesten, mærke pelsen, finde vejrtrækningen. Derefter guider jeg dig gennem konkrete øvelser i samspillet med en af mine heste – øvelser der skaber en relation med opmærksomhed, samhørighed og især en oplevelse af forbundethed.\n\nUnder sessionerne laves fysiske øvelser, som stimulerer koordination, balance og kropsholdning – herunder sansemotorisk og psykomotorisk træning. Som certificeret funktionel neuroterapeut arbejder jeg bevidst med at aktivere bestemte nervebaner via sensoriske input.\n\nRideterapien og handicapridningen foregår altid udenfor og så vidt muligt i et digitalt frit rum.",
-  "session_billede": "/billeder/pladsholder-hest.svg",
-  "session_billede_alt": "Ung person står ved siden af hest og børster den",
-
-  "metode_mikrotekst": "Metoden",
-  "metode_overskrift": "Udviklingsstøttende hesteassisteret behandling",
-  "metode_tekst": "Den tilgang, jeg benytter, har jeg selv udviklet og kalder udviklingsstøttende rideterapi og handicapridning. Jeg har overført greb og forståelser fra narrativ terapi og „oversat“ dem til et sanseligt, nonverbalt samspil mellem hest og menneske.\n\nUndtagelsesvis arbejder vi med videooptagelser. Så kan jeg vise udvalgte klip af netop det, som lykkes – for eksempel at afstemme sig i forhold til hesten. Det giver mulighed for at se sig selv udefra og få bekræftet, at man faktisk kan lykkes. Det har ofte en betydelig effekt.\n\nJeg har publiceret artiklen „Hesteassisteret terapi som platform – i mødet med børn og unge i mistrivsel“ i Tidsskrift for Specialpædagogik 2024 nr. 2, hvor metoden beskrives i detaljer.",
-  "metode_billede": "/billeder/pladsholder-natur.svg",
-  "metode_billede_alt": "Rolige omgivelser omkring praksis",
-
   "praktisk_overskrift": "Det praktiske",
   "praktisk_intro": "De ting, det er rart at vide på forhånd.",
   "praktisk_kort": [
-    { "overskrift": "Tøj og udstyr", "tekst": "Tag tøj på, der må blive beskidt, og sko du kan gå på ujævnt underlag i. Ridehjelm og sikkerhedsvest kan lånes her i alle størrelser." },
-    { "overskrift": "Krav ved ridning", "tekst": "Alle, der sidder på en hest, skal bære både ridehjelm og sikkerhedsvest. Ingen undtagelser." },
-    { "overskrift": "Vejret", "tekst": "Alt foregår udendørs. Ved stærk blæst, storm eller kraftig regn kan vi blive nødt til at udsætte – det sker dog sjældent." },
-    { "overskrift": "Mobilitet", "tekst": "Jeg har ingen hjælpemidler til op- og afstigning. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson." },
-    { "overskrift": "Forsikring", "tekst": "Det er en forudsætning, at du selv har en dækkende ulykkesforsikring. Al færdsel på matriklen og omgang med hestene sker på eget ansvar." },
-    { "overskrift": "Kombination med samtaler", "tekst": "Rideterapi kan tilbydes alene eller kombineres med narrativ terapi og familiebehandling." }
+    {
+      "overskrift": "Tøj og udstyr",
+      "tekst": "Tag tøj på, der må blive beskidt, og sko du kan gå på ujævnt underlag i. Ridehjelm og sikkerhedsvest kan lånes her i alle størrelser."
+    },
+    {
+      "overskrift": "Krav ved ridning",
+      "tekst": "Alle, der sidder på en hest, skal bære både ridehjelm og sikkerhedsvest. Ingen undtagelser."
+    },
+    {
+      "overskrift": "Vejret",
+      "tekst": "Alt foregår udendørs. Ved stærk blæst, storm eller kraftig regn kan vi blive nødt til at udsætte – det sker dog sjældent."
+    },
+    {
+      "overskrift": "Mobilitet",
+      "tekst": "Jeg har ingen hjælpemidler til op- og afstigning. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson."
+    },
+    {
+      "overskrift": "Forsikring",
+      "tekst": "Det er en forudsætning, at du selv har en dækkende ulykkesforsikring. Al færdsel på matriklen og omgang med hestene sker på eget ansvar."
+    },
+    {
+      "overskrift": "Kombination med samtaler",
+      "tekst": "Rideterapi kan tilbydes alene eller kombineres med narrativ terapi og familiebehandling."
+    }
   ],
-
   "faq_overskrift": "Spørgsmål og svar",
   "faq": [
     {
@@ -71,7 +67,6 @@
       "svar": "Hesten er grundlæggende nysgerrig og overvinder altid sin frygt – hvis den får tid til det og ikke presses. Allerede med dette afsæt bliver hesten en slags rollemodel for det menneske, den møder med åbenhed.\n\nFlere af de mennesker, jeg har haft i terapi eller til handicapridning, er ofte blevet mødt med fordomme i andre livssammenhænge. Det er ofte allerede ved det første møde med hesten, at der kan etableres et langt mere åbent afsæt for nye erfaringer – og derved nye fortællinger om både sig selv og det at være i samspil med andre. Gennem forløbene kan jeg se, at forsvarsstrategier, frygt og et rystet nervesystem ofte kan nedtones."
     }
   ],
-
   "cta_overskrift": "Skal vi tage en snak?",
   "cta_tekst": "20 minutter uden beregning, hvor du kan fortælle om jeres situation og finde ud af, om det her er noget for jer."
 }

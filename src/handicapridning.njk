@@ -6,16 +6,30 @@ eleventyComputed:
   titel: "{{ handicapridning.titel }}"
   beskrivelse: "{{ handicapridning.beskrivelse }}"
 ---
-<section class="hero">
+<section class="hero hero--top">
   <div class="wrap hero__inner">
     <div class="hero__text">
       <span class="eyebrow">{{ handicapridning.hero_mikrotekst }}</span>
       <h1>{{ handicapridning.hero_overskrift }}</h1>
       <p class="lead">{{ handicapridning.hero_tekst }}</p>
+
+      {# Samme opbygning som paa rideterapi-siden: uddybningen staar inde i
+         tekstsoejlen ved siden af billedet i stedet for i et afsnit nedenunder. #}
+      <div class="hero__uddyb prose">
+        {{ handicapridning.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ handicapridning.hvad_boks_titel }}</strong> {{ handicapridning.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      {# Knapperne er slaaet fra ligesom paa rideterapi-siden. Skal de tilbage,
+         fjernes kommentartegnene omkring blokken herunder.
       <div class="btn-row">
         <a class="btn btn--primary" href="/kontakt/">{{ handicapridning.hero_knap1 }}</a>
         <a class="btn btn--ghost" href="#tilskud">{{ handicapridning.hero_knap2 }}</a>
       </div>
+      #}
+
       <div class="badges">
         {% for m in handicapridning.hero_maerkater %}
         <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
@@ -23,17 +37,7 @@ eleventyComputed:
       </div>
     </div>
     <div class="hero__media">
-      <img src="{{ handicapridning.hero_billede }}" alt="{{ handicapridning.hero_billede_alt }}" width="800" height="600">
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap wrap--narrow prose">
-    <h2>{{ handicapridning.hvad_overskrift }}</h2>
-    {{ handicapridning.hvad_tekst | afsnit | safe }}
-    <div class="note">
-      <strong>{{ handicapridning.hvad_boks_titel }}</strong> {{ handicapridning.hvad_boks_tekst }}
+      <img src="{{ handicapridning.hero_billede }}" alt="{{ handicapridning.hero_billede_alt }}" width="600" height="800">
     </div>
   </div>
 </section>
