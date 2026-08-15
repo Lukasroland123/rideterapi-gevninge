@@ -78,6 +78,9 @@ eleventyComputed:
       <span class="eyebrow">{{ forside.hvorfor_mikrotekst }}</span>
       <h2>{{ forside.hvorfor_overskrift }}</h2>
       {{ forside.hvorfor_tekst | afsnit | safe }}
+      {% if forside.hvorfor_artikel_url %}
+      <p><a class="card__link" href="{{ forside.hvorfor_artikel_url }}" rel="noopener">{{ forside.hvorfor_artikel_tekst }} &rarr;</a></p>
+      {% endif %}
       <div class="note">
         <strong>{{ forside.hvorfor_boks_titel }}</strong>
         {{ forside.hvorfor_boks_tekst }}
@@ -94,7 +97,7 @@ eleventyComputed:
       <h2>{{ forside.fokus_overskrift }}</h2>
       <p>{{ forside.fokus_intro }}</p>
     </div>
-    <div class="grid grid--3">
+    <div class="grid grid--3 grid--3-fast">
       {% for k in forside.fokus_kort %}
       <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
       {% endfor %}

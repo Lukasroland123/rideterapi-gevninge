@@ -15,6 +15,9 @@
     },
     {
       "tekst": "30 års erfaring med heste"
+    },
+    {
+      "tekst": "30 års erfaring med mennesker i mistrivsel"
     }
   ],
   "problemer_overskrift": "Måske står I i noget af det her?",
@@ -35,19 +38,11 @@
     {
       "overskrift": "Traumer og et uroligt nervesystem",
       "tekst": "Konstant vagtsomhed, søvnproblemer eller uro i kroppen – efter PTSD, senhjerneskade eller svære oplevelser."
-    },
-    {
-      "overskrift": "Der er blevet stille om jer",
-      "tekst": "I er blevet mødt med fordomme og krav. Heste dømmer ikke – de møder mennesker præcis som de er."
-    },
-    {
-      "overskrift": "Samtaleterapi virker ikke lige nu",
-      "tekst": "Det er svært at sætte ord på. Her behøver man ikke tale – kroppen og samspillet gør arbejdet."
     }
   ],
-  "tilbud_mikrotekst": "Jeg tilbyder to ting",
+  "tilbud_mikrotekst": "Jeg tilbyder hesteassisteret behandling og handicapridning",
   "tilbud_overskrift": "Behandling og ridning – eller begge dele",
-  "tilbud_intro": "Begge dele foregår som eneundervisning, hvor tempoet sættes af dig. Man behøver ikke kunne ride for at komme her.",
+  "tilbud_intro": "Begge dele foregår som enesessioner, hvor der tages højde for dine forudsætninger, og man behøver ikke kunne ride for at komme her.",
   "tilbud_kort": [
     {
       "overskrift": "Udviklingsstøttende hesteassisteret behandling",
@@ -63,6 +58,8 @@
   "hvorfor_mikrotekst": "Hvorfor heste?",
   "hvorfor_overskrift": "Heste møder mennesker uden filter",
   "hvorfor_tekst": "Heste er byttedyr og derfor usædvanligt sensitive over for deres omgivelser. De er til stede i nuet og reagerer på den stemning, vi møder dem med. Det gør dem til en helt direkte spejling af, hvilke signaler vi sender ud.\n\nNår vi får skærpet blikket for vores egen rolle i samspillet, bliver det muligt at komme tættere på sig selv – og på sin omverden. Mange af de mennesker, jeg møder, er blevet mødt med fordomme andre steder i livet. Hesten har ingen fordomme.",
+  "hvorfor_artikel_tekst": "Hesteassisteret terapi som platform – læs min artikel",
+  "hvorfor_artikel_url": "https://tidsskriftetspecialpaedagogik.dk/vare/fra-nr-2024-2-hesteassisteret-terapi-som-platform-i-moedet-med-boern-og-unge-i-mistrivsel/",
   "hvorfor_billede": "/billeder/pladsholder-natur.svg",
   "hvorfor_billede_alt": "Marken ved praksis i Gevninge",
   "hvorfor_boks_titel": "Fra forskningen:",
@@ -73,27 +70,27 @@
   "fokus_kort": [
     {
       "overskrift": "Selvværd og selvtillid",
-      "tekst": "At mærke at man kan noget, ved noget og vil noget."
+      "tekst": "At mærke at man kan noget, ved noget og vil noget. Hesten svarer på det, du gør – ikke på det, andre har fortalt dig om dig selv. Når noget lykkes i samspillet, er det en erfaring, du selv har gjort dig, og den kan ikke tages fra dig igen. Mange oplever her for første gang i lang tid at blive mødt som betydningsfulde. Det er dét, der bygger selvværd op indefra."
     },
     {
       "overskrift": "Egne og andres grænser",
-      "tekst": "At afstemme sig og mærke, hvor grænsen går – både din og hestens."
+      "tekst": "At afstemme sig og mærke, hvor grænsen går – både din og hestens. Heste svarer med det samme og helt ærligt: kommer man for tæt eller for hurtigt på, trækker de sig, og kommer man roligt, bliver de stående. Det gør grænser til noget, man kan mærke i kroppen, frem for noget der skal forklares. Vi øver det i små skridt, og der er ikke noget rigtigt eller forkert. Fornemmelsen kan tages med videre ind i venskaber, familie og skole."
     },
     {
       "overskrift": "Ro i nervesystemet",
-      "tekst": "At afbalancere et system, der har været i alarmberedskab for længe."
+      "tekst": "At afbalancere et system, der har været i alarmberedskab for længe. Heste er byttedyr og lever af at aflæse stemninger, så de reagerer på uro, længe før vi selv opdager den. Når hesten falder til ro sammen med dig, får kroppen en konkret oplevelse af, at der ikke er fare på færde. Den ro kan man ikke tænke sig til – den skal mærkes. Gennem forløbene ser jeg ofte, at forsvarsstrategier og vagtsomhed tones ned."
     },
     {
       "overskrift": "Samspil og samarbejde",
-      "tekst": "Erfaringer med at lykkes sammen med en anden – der kan overføres til livet udenfor."
+      "tekst": "Erfaringer med at lykkes sammen med en anden – der kan overføres til livet udenfor. At samarbejde med en hest kræver, at man er tydelig, tålmodig og opmærksom på den anden. Det er de samme evner, der skal bruges blandt mennesker, men her er der ingen ord, der kan misforstås. Lykkes det, mærkes det med det samme og hele vejen igennem kroppen. Den slags oplevelser bliver til nye fortællinger om, hvad man kan sammen med andre."
     },
     {
       "overskrift": "Koncentration og nærvær",
-      "tekst": "At være ét sted ad gangen. Forløbene foregår så vidt muligt i et digitalt frit rum."
+      "tekst": "At være ét sted ad gangen. Forløbene foregår så vidt muligt i et digitalt frit rum, hvor telefonen bliver liggende. Heste er til stede i nuet og trækker os med derhen – man kan ikke være halvt til stede sammen med et dyr på 500 kilo. For mange er det en uvant og befriende pause fra alt det, der ellers kalder. Nærvær er noget, man kan træne, og det bliver lettere hver gang."
     },
     {
       "overskrift": "Krop og motorik",
-      "tekst": "Koordination, balance og kropsholdning gennem sansemotorisk træning."
+      "tekst": "Koordination, balance og kropsholdning gennem sansemotorisk træning. Som certificeret funktionel neuroterapeut arbejder jeg bevidst med at aktivere bestemte nervebaner gennem sanserne. Under sessionerne laver vi fysiske øvelser, både fra jorden og fra hesteryg. Hestens bevægelser forplanter sig op gennem kroppen og træner balancen, uden at det føles som træning. Krop og psyke hænger sammen, og derfor arbejder vi altid med begge dele."
     }
   ],
   "anmeldelser_overskrift": "Hvad siger andre?",

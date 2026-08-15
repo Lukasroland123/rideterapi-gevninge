@@ -601,8 +601,7 @@ collections:
           - { name: undertitel, label: "Undertekst i logoet", widget: string }
           - { name: telefon, label: "Mobilnummer (som det vises)", widget: string }
           - { name: telefon_link, label: "Mobilnummer til opkald", widget: string, hint: "Skrives som +45 efterfulgt af nummeret uden mellemrum, fx +4526122329" }
-          - { name: telefon2, label: "Fastnetnummer (som det vises)", widget: string }
-          - { name: telefon2_link, label: "Fastnetnummer til opkald", widget: string, hint: "Fx +4543491091" }
+          - { name: cvr, label: "CVR-nummer", widget: string, hint: "Vises nederst under Kontakt i bunden af siden." }
           - { name: email, label: "E-mailadresse", widget: string }
           - { name: adresse, label: "Vej og husnummer", widget: string }
           - { name: postnr_by, label: "Postnummer og by", widget: string }
