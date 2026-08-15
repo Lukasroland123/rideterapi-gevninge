@@ -507,9 +507,6 @@ collections:
           - { name: detaljer_intro, label: "Introtekst", widget: text }
           - { name: praktisk_link, label: "Tekst på linket til Praktisk info", widget: string }
 
-          - { name: besoeg_mikrotekst, label: "Lille tekst · 'Sådan kommer I i gang'", widget: string }
-          - { name: besoeg_overskrift, label: "Overskrift · besøg og oplæg", widget: string }
-          - { name: besoeg_tekst, label: "Tekst", widget: text }
 
           - { name: forloeb_overskrift, label: "Overskrift · 'Hvad indeholder et forløb'", widget: string }
           - name: forloeb_trin
