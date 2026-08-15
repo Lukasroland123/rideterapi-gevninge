@@ -286,8 +286,6 @@ collections:
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
 
-          - { name: praktisk_overskrift, label: "Overskrift · 'Det praktiske'", widget: string }
-          - { name: praktisk_intro, label: "Introtekst", widget: text }
           - name: praktisk_kort
             label: "De seks praktiske kort"
             widget: list
