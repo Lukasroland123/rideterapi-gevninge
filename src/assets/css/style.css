@@ -432,6 +432,17 @@ blockquote {
 .hero__inner--utop { padding-top: clamp(1.5rem, 3vw, 2.25rem); }
 .resume--top { margin-top: 0; }
 
+/* Billedrammen skal flugte med bunden af "Kort fortalt". Derfor ligger de
+   to i samme raekke, og billedet faar ingen fast hoejde-bredde-forhold —
+   det straekker sig i stedet til raekkens hoejde, som resuméet saetter.
+   Knapperne ligger i raekken nedenunder. */
+@media (min-width: 860px) {
+  .hero__inner--flugt { align-items: stretch; row-gap: 1.75rem; }
+  .hero__inner--flugt > .resume     { grid-column: 1; grid-row: 1; }
+  .hero__inner--flugt > .hero__media { grid-column: 2; grid-row: 1; aspect-ratio: auto; }
+  .hero__inner--flugt > .btn-row    { grid-column: 1; grid-row: 2; margin: 0; }
+}
+
 .hero__uddyb { margin-top: 2rem; }
 .hero__uddyb > h2:first-child { margin-top: 0; }
 

@@ -8,33 +8,33 @@ eleventyComputed:
 ---
 {# Overskriften ligger i fuld bredde over spalterne, saa "Kort fortalt" og
    billedet begynder i samme hoejde og staar side om side. #}
-<section class="hero hero--top">
+<section class="hero">
   <div class="wrap hero__titel">
     <span class="eyebrow">{{ kommuner.hero_mikrotekst }}</span>
     <h1>{{ kommuner.hero_overskrift }}</h1>
   </div>
 
-  <div class="wrap hero__inner hero__inner--utop">
-    <div class="hero__text">
-      {# Resuméet ligger med vilje oeverst: en sagsbehandler skal kunne
-         afgoere relevansen uden at scrolle. #}
-      <div class="resume resume--top">
-        <h2 class="resume__titel">{{ kommuner.resume_overskrift }}</h2>
-        {% for r in kommuner.resume_punkter %}
-        <div class="resume__row">
-          <span class="resume__label">{{ r.label }}</span>
-          <span>{{ r.tekst }}</span>
-        </div>
-        {% endfor %}
+  {# Resuméet og billedet ligger i samme raekke, saa billedrammen straekker
+     sig ned og flugter med bunden af "Kort fortalt". Knapperne ligger i
+     raekken under, i venstre spalte. #}
+  <div class="wrap hero__inner hero__inner--utop hero__inner--flugt">
+    <div class="resume resume--top">
+      <h2 class="resume__titel">{{ kommuner.resume_overskrift }}</h2>
+      {% for r in kommuner.resume_punkter %}
+      <div class="resume__row">
+        <span class="resume__label">{{ r.label }}</span>
+        <span>{{ r.tekst }}</span>
       </div>
-
-      <div class="btn-row">
-        <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
-        <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
-      </div>
+      {% endfor %}
     </div>
+
     <div class="hero__media">
       <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+      <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
     </div>
   </div>
 </section>
