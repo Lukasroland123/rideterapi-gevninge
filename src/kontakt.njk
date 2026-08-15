@@ -29,7 +29,7 @@ eleventyComputed:
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
-          <div><span>Adresse</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26,+4000+Roskilde" rel="noopener">{{ site.adresse }}, {{ site.postnr_by }}</a></div>
+          <div><span>Adresse</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26%2C+Gevninge%2C+4000+Roskilde" rel="noopener">{{ site.adresse }}, {{ site.postnr_by }}</a></div>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
@@ -52,9 +52,6 @@ eleventyComputed:
         <h3>{{ kontakt.ringer_overskrift }}</h3>
         {{ kontakt.ringer_tekst | afsnit | safe }}
       </div>
-      <div class="note" style="margin-top:1.5rem">
-        <strong>{{ kontakt.akut_titel }}</strong> {{ kontakt.akut_tekst }}
-      </div>
     </div>
   </div>
 </section>
@@ -71,7 +68,7 @@ eleventyComputed:
         {% for p in kontakt.vej_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
       </ul>
       <div class="btn-row">
-        <a class="btn btn--brand" href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26,+4000+Roskilde" rel="noopener">{{ kontakt.vej_knap }}</a>
+        <a class="btn btn--brand" href="https://www.google.com/maps/search/?api=1&amp;query=Gevninge+Bygade+26%2C+Gevninge%2C+4000+Roskilde" rel="noopener">{{ kontakt.vej_knap }}</a>
       </div>
     </div>
   </div>

@@ -434,8 +434,6 @@ collections:
 
           - { name: ringer_overskrift, label: "Boks · 'Hvad sker der, når du ringer' · overskrift", widget: string }
           - { name: ringer_tekst, label: "Boks · tekst", widget: text }
-          - { name: akut_titel, label: "Akutboks · fed indledning", widget: string }
-          - { name: akut_tekst, label: "Akutboks · tekst", widget: text }
 
           - { name: vej_overskrift, label: "Overskrift · 'Sådan finder du herud'", widget: string }
           - { name: vej_intro, label: "Introtekst", widget: text }

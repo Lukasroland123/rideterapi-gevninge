@@ -380,6 +380,14 @@ blockquote {
 
 /* Uddybende tekst inde i hero'ens tekstsoejle, saa den staar ved siden
    af billedet i stedet for i et selvstaendigt afsnit nedenunder. */
+/* Portraet: mindre end de oevrige herobilleder, og trukket mod hoejre
+   saa der ikke opstaar et hul mellem tekst og billede. */
+.hero__media--portraet {
+  aspect-ratio: 4 / 5;
+  max-width: 340px;
+  margin-inline-start: auto;
+}
+
 .hero__uddyb { margin-top: 2rem; }
 .hero__uddyb > h2:first-child { margin-top: 0; }
 

@@ -18,20 +18,13 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <div class="hero__media" style="aspect-ratio:4/5">
-      <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}" width="600" height="700">
+    <div class="hero__media hero__media--portraet">
+      <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}" width="600" height="750">
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap wrap--narrow prose">
-    <h2>{{ omlotte.vej_overskrift }}</h2>
-    {{ omlotte.vej_tekst | afsnit | safe }}
-  </div>
-</section>
-
-<section class="section section--sand">
   <div class="wrap">
     <div class="section-head">
       <h2>{{ omlotte.uddannelse_overskrift }}</h2>
@@ -53,6 +46,13 @@ eleventyComputed:
         <p>{{ omlotte.erfaring_tekst }}</p>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ omlotte.vej_overskrift }}</h2>
+    {{ omlotte.vej_tekst | afsnit | safe }}
   </div>
 </section>
 
