@@ -6,16 +6,19 @@ eleventyComputed:
   titel: "{{ kommuner.titel }}"
   beskrivelse: "{{ kommuner.beskrivelse }}"
 ---
+{# Overskriften ligger i fuld bredde over spalterne, saa "Kort fortalt" og
+   billedet begynder i samme hoejde og staar side om side. #}
 <section class="hero hero--top">
-  <div class="wrap hero__inner">
-    <div class="hero__text">
-      <span class="eyebrow">{{ kommuner.hero_mikrotekst }}</span>
-      <h1>{{ kommuner.hero_overskrift }}</h1>
-      <p class="lead">{{ kommuner.hero_tekst }}</p>
+  <div class="wrap hero__titel">
+    <span class="eyebrow">{{ kommuner.hero_mikrotekst }}</span>
+    <h1>{{ kommuner.hero_overskrift }}</h1>
+  </div>
 
-      {# Resuméet ligger med vilje oeverst og ved siden af billedet: en
-         sagsbehandler skal kunne afgoere relevansen uden at scrolle. #}
-      <div class="resume">
+  <div class="wrap hero__inner hero__inner--utop">
+    <div class="hero__text">
+      {# Resuméet ligger med vilje oeverst: en sagsbehandler skal kunne
+         afgoere relevansen uden at scrolle. #}
+      <div class="resume resume--top">
         <h2 class="resume__titel">{{ kommuner.resume_overskrift }}</h2>
         {% for r in kommuner.resume_punkter %}
         <div class="resume__row">

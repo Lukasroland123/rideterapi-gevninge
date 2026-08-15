@@ -429,6 +429,13 @@ blockquote {
 /* Hoejre spalte i hero'en: billede med en faktaboks under */
 .hero__side { display: grid; gap: 1.5rem; align-content: start; }
 
+/* Overskrift i fuld bredde over hero'ens to spalter. Spalterne under skal
+   saa ikke selv have luft foroven, ellers falder de fra hinanden. */
+.hero__titel { padding-top: clamp(2.5rem, 5vw, 4.5rem); }
+.hero__titel h1 { margin-bottom: 0; }
+.hero__inner--utop { padding-top: clamp(1.5rem, 3vw, 2.25rem); }
+.resume--top { margin-top: 0; }
+
 .hero__uddyb { margin-top: 2rem; }
 .hero__uddyb > h2:first-child { margin-top: 0; }
 

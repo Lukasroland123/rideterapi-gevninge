@@ -463,7 +463,6 @@ collections:
         fields:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
-          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
           - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
