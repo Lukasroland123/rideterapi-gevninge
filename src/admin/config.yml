@@ -468,6 +468,9 @@ collections:
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
           - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
 
+          - { name: ord_titel, label: "Boks om ordene · fed indledning", widget: string }
+          - { name: ord_tekst, label: "Boks om ordene · tekst", widget: text, hint: "Forklarer at rideterapi = hesteassisteret behandling, og at handicapridning er en selvstændig ydelse." }
+
           - { name: relevant_overskrift, label: "Overskrift · 'Hvornår er det relevant'", widget: string }
           - { name: relevant_intro, label: "Introtekst", widget: text }
           - name: relevant_kort
@@ -479,8 +482,22 @@ collections:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text }
 
-          - { name: publikation_titel, label: "Publikationsboks · fed indledning", widget: string }
-          - { name: publikation_tekst, label: "Publikationsboks · tekst", widget: text }
+          - { name: forskel_overskrift, label: "Overskrift · 'Hvad adskiller det fra en rideskole'", widget: string }
+          - { name: forskel_intro, label: "Introtekst", widget: text }
+          - name: forskel_kort
+            label: "De fire forskelle"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: forskel_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: forskel_boks_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: besoeg_mikrotekst, label: "Lille tekst · 'Inden der er en sag'", widget: string }
+          - { name: besoeg_overskrift, label: "Overskrift · besøg og oplæg", widget: string }
+          - { name: besoeg_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
 
           - { name: forloeb_overskrift, label: "Overskrift · 'Hvad indeholder et forløb'", widget: string }
           - name: forloeb_trin

@@ -35,8 +35,6 @@
       "tekst": "Genopbygning af balance, kropsfornemmelse og tillid til egen krop gennem hestens bevægelser."
     }
   ],
-  "publikation_titel": "Publiceret metodebeskrivelse:",
-  "publikation_tekst": "„Hesteassisteret terapi som platform – i mødet med børn og unge i mistrivsel“, Tidsskrift for Specialpædagogik, 2024 nr. 2. Artiklen beskriver konkret, hvordan metoden anvendes, og kan rekvireres ved henvendelse.\n\nDesuden medforfatter på den forskningsgodkendte artikel „Jeg er ikke bange for at blive set, men…“ om skam og udskamning som barriere for deltagelse, DPT nr. 3, 2020.",
   "forloeb_overskrift": "Hvad indeholder et forløb?",
   "forloeb_trin": [
     {
@@ -93,5 +91,32 @@
   ],
   "soester_overskrift": "Har I også brug for supervision, familiebehandling eller bisidderstøtte?",
   "soester_tekst": "Ved siden af rideterapien driver Lotte Stegeager praksissen Narrativ Samtale med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision af personalegrupper.",
-  "soester_knap": "Gå til narrativsamtale.dk"
+  "soester_knap": "Gå til narrativsamtale.dk",
+  "ord_titel": "To ydelser — og ét ord, der dækker begge.",
+  "ord_tekst": "Rideterapi er det ord, de fleste søger på, men det, jeg tilbyder, hedder præcist udviklingsstøttende hesteassisteret behandling. Det er et terapeutisk forløb, hvor samspillet med hesten er redskabet, og hvor formålet er trivsel — ikke ridefærdigheder.\n\nDerudover tilbyder jeg kompenserende handicapridning. Det er fysisk, sansemotorisk træning for børn, unge og voksne med fysisk eller psykisk handicap, hvor hestens bevægelser gør arbejdet. De to ting kan visiteres hver for sig eller kombineres i samme forløb.",
+  "forskel_overskrift": "Hvad adskiller det fra en rideskole?",
+  "forskel_intro": "Markedet for rideterapi er meget forskelligartet, og det kan være svært at gennemskue, hvad man visiterer til. Her er de fire ting, der adskiller et forløb her.",
+  "forskel_kort": [
+    {
+      "overskrift": "Det er behandling, ikke undervisning",
+      "tekst": "Formålet er ikke, at barnet skal lære at ride. Formålet er trivsel: ro i nervesystemet, selvværd, grænser og samspil. Ridningen er et middel, og en del af forløbene foregår helt fra jorden."
+    },
+    {
+      "overskrift": "Terapeutfagligheden",
+      "tekst": "Mange rideterapitilbud varetages af fysioterapeuter eller pædagoger. Her er behandleren cand.scient.soc., specialist i narrativ psykoterapi (DISPUK), traumeuddannet og certificeret funktionel neuroterapeut — med 30 års erfaring med heste.\n\nDet betyder, at samtalen ved siden af hesten er fagligt båret, og at der kan arbejdes med traumer inden for forsvarlige rammer."
+    },
+    {
+      "overskrift": "Altid enesessioner",
+      "tekst": "Der er aldrig hold. Barnet har det fulde fokus, og forløbet tilrettelægges efter netop dette barns tempo og dagsform. Det er ofte forudsætningen for, at børn med skolefravær eller angst overhovedet kan møde op."
+    },
+    {
+      "overskrift": "Beskrivelse og statusmøder",
+      "tekst": "Efter aftale udarbejder jeg en skriftlig beskrivelse af forløb, formål og observationer, og jeg deltager i statusmøder. Det aftales særskilt, så I ved på forhånd, hvad I får med tilbage til sagen."
+    }
+  ],
+  "forskel_boks_titel": "Et supplement, ikke en erstatning.",
+  "forskel_boks_tekst": "Et forløb her træder ikke i stedet for psykolog, psykiatrisk behandling eller anden indsats. Det virker bedst som et supplement — et sted, hvor barnet kan møde op uden krav om at forklare sig, mens det øvrige arbejde kører sideløbende.",
+  "besoeg_mikrotekst": "Inden der er en sag",
+  "besoeg_overskrift": "Jeg kommer gerne ud og fortæller om det",
+  "besoeg_tekst": "I er altid velkomne til at ringe til en uforpligtende samtale om, hvad et forløb her indebærer — også før der er et konkret barn at tale om. Det koster ingenting, og der følger ingen henvendelser efter.\n\nJeg kommer også gerne ud til jer og fortæller om metoden, og om hvorfor den virker for børn og unge med særlige behov. Er I flere i et team, der gerne vil forstå tilbuddet, er I lige så velkomne til at komme på besøg her i Gevninge og se stedet og hestene."
 }

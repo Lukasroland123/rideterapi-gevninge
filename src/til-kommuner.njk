@@ -23,6 +23,16 @@ eleventyComputed:
   </div>
 </section>
 
+{# Terminologien forvirrer: "rideterapi" er det ord, folk soeger paa, men
+   det daekker to forskellige ydelser. Det staar derfor foerst paa siden. #}
+<section class="section section--tight">
+  <div class="wrap wrap--narrow">
+    <div class="note">
+      <strong>{{ kommuner.ord_titel }}</strong> {{ kommuner.ord_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="wrap">
     <div class="section-head">
@@ -40,15 +50,37 @@ eleventyComputed:
   </div>
 </section>
 
-{# "Hvem udfoerer forloebet?" er fjernet — den fulde faglige baggrund
-   staar paa /om-lotte/. #}
+{# "Hvem udfoerer forloebet?" og publikationsboksen er fjernet —
+   den fulde faglige baggrund staar paa /om-lotte/. #}
 
 <section class="section section--sand">
-  <div class="wrap wrap--narrow">
-    <div class="note">
-      <strong>{{ kommuner.publikation_titel }}</strong>
-      {{ kommuner.publikation_tekst | afsnit | safe }}
-      <p><a href="/om-lotte/#forskning">Se øvrig litteratur og forskning på området</a></p>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ kommuner.forskel_overskrift }}</h2>
+      <p>{{ kommuner.forskel_intro }}</p>
+    </div>
+    <div class="grid grid--2 grid--2-fast">
+      {% for k in kommuner.forskel_kort %}
+      <article class="card card--flat">
+        <h3>{{ k.overskrift }}</h3>
+        {{ k.tekst | afsnit | safe }}
+      </article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ kommuner.forskel_boks_titel }}</strong> {{ kommuner.forskel_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <span class="eyebrow">{{ kommuner.besoeg_mikrotekst }}</span>
+    <h2>{{ kommuner.besoeg_overskrift }}</h2>
+    {{ kommuner.besoeg_tekst | afsnit | safe }}
+    <div class="btn-row">
+      <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+      <a class="btn btn--ghost" href="mailto:{{ site.email }}?subject=Foresp%C3%B8rgsel%20fra%20kommune">{{ kommuner.hero_knap2 }}</a>
     </div>
   </div>
 </section>

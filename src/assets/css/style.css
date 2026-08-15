@@ -413,9 +413,10 @@ blockquote {
 .grid--2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .grid--3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
-/* Praecis tre i bredden paa store skaerme. Bruges hvor antallet af kort
-   ellers ville braekke skaevt — fx seks kort, der bliver til 4 + 2. */
+/* Praecis to eller tre i bredden paa store skaerme. Bruges hvor antallet af
+   kort ellers ville braekke skaevt — fx seks kort, der bliver til 4 + 2. */
 @media (min-width: 900px) {
+  .grid--2-fast { grid-template-columns: repeat(2, 1fr); }
   .grid--3-fast { grid-template-columns: repeat(3, 1fr); }
 }
 
