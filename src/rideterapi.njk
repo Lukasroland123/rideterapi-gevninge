@@ -18,13 +18,13 @@ eleventyComputed:
       </div>
     </div>
     <div class="hero__media">
-      <img src="{{ rideterapi.hero_billede }}" alt="{{ rideterapi.hero_billede_alt }}" width="800" height="600">
+      <img src="{{ rideterapi.hero_billede }}" alt="{{ rideterapi.hero_billede_alt }}" width="600" height="800">
     </div>
   </div>
-</section>
 
-<section class="section">
-  <div class="wrap wrap--narrow prose">
+  {# Uddybningen ligger bevidst inde i selve hero-feltet, saa den staar paa
+     den samme lysegroenne baggrund som overskriften. #}
+  <div class="wrap wrap--narrow prose hero__uddyb">
     <h2>{{ rideterapi.hvad_overskrift }}</h2>
     {{ rideterapi.hvad_tekst | afsnit | safe }}
     <div class="note">

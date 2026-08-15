@@ -375,6 +375,11 @@ blockquote {
 }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; }
 
+/* Uddybende tekst, der skal ligge paa hero'ens groenne baggrund
+   i stedet for i et hvidt afsnit nedenunder. */
+.hero__uddyb { padding-bottom: clamp(2.5rem, 5vw, 4.5rem); }
+.hero__uddyb > h2:first-child { margin-top: 0; }
+
 .badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
 .badge {
   display: inline-flex; align-items: center; gap: .4rem;
