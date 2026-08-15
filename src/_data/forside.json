@@ -8,7 +8,7 @@
   "hero_billede_alt": "Hestens varme og ro kan 'smitte', når man selv er blevet tryg ved situationen",
   "hero_maerkater": [
     {
-      "tekst": "Jeg tilbyder primært ene-sessioner, fordi arbejdet med hesten tager udgangspunkt i den enkeltes behov, tempo og måde at være i samspillet på. Når vi er én til én, kan jeg have mit fulde fokus på dig og på de små signaler, der opstår mellem dig og hesten. Det giver mulighed for at skabe et roligt og trygt rum, hvor der er tid til at mærke efter, finde egne grænser og gøre sig nye erfaringer, uden at skulle forholde sig til en gruppe samtidig."
+      "tekst": "Jeg tilbyder primært ene-sessioner"
     },
     {
       "tekst": "Mulighed for kommunalt tilskud"
@@ -37,12 +37,12 @@
       "tekst": "Konstant vagtsomhed, søvnproblemer eller uro i kroppen – efter PTSD, senhjerneskade eller svære oplevelser."
     },
     {
-      "overskrift": "Samtaleterapi virker ikke lige nu",
-      "tekst": "Det er svært at sætte ord på. Her behøver man ikke tale – kroppen og samspillet gør arbejdet."
-    },
-    {
       "overskrift": "Der er blevet stille om jer",
       "tekst": "I er blevet mødt med fordomme og krav. Heste dømmer ikke – de møder mennesker præcis som de er."
+    },
+    {
+      "overskrift": "Samtaleterapi virker ikke lige nu",
+      "tekst": "Det er svært at sætte ord på. Her behøver man ikke tale – kroppen og samspillet gør arbejdet."
     }
   ],
   "tilbud_mikrotekst": "Jeg tilbyder to ting",
