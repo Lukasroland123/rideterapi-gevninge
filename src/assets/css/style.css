@@ -518,6 +518,11 @@ blockquote {
 }
 .split__media img { width: 100%; height: 100%; object-fit: cover; }
 
+/* Ramme uden fast form: viser hele billedet uden beskaering, uanset
+   hvilket format billedet har. */
+.split__media--helt { aspect-ratio: auto; }
+.split__media--helt img { height: auto; }
+
 /* =========================================================
    Trin / proces
    ========================================================= */

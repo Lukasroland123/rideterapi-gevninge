@@ -71,8 +71,9 @@ eleventyComputed:
 <!-- HVORFOR HESTE -->
 <section class="section">
   <div class="wrap split">
-    <div class="split__media">
-      <img src="{{ forside.hvorfor_billede }}" alt="{{ forside.hvorfor_billede_alt }}" width="800" height="600">
+    {# Rammen foelger billedets eget format, saa hele motivet er med. #}
+    <div class="split__media split__media--helt">
+      <img src="{{ forside.hvorfor_billede }}" alt="{{ forside.hvorfor_billede_alt }}" width="1600" height="1574">
     </div>
     <div>
       <span class="eyebrow">{{ forside.hvorfor_mikrotekst }}</span>

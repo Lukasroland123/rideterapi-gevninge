@@ -65,8 +65,10 @@ eleventyComputed:
 
 <section class="section section--tint">
   <div class="wrap split split--reverse">
-    <div class="split__media">
-      <img src="{{ rideterapi.hvem_billede }}" alt="{{ rideterapi.hvem_billede_alt }}" width="800" height="600">
+    {# Hele billedet skal kunne ses. Rammen faar derfor ingen fast form —
+       den foelger billedets eget format, saa der aldrig skaeres af. #}
+    <div class="split__media split__media--helt">
+      <img src="{{ rideterapi.hvem_billede }}" alt="{{ rideterapi.hvem_billede_alt }}" width="615" height="621">
     </div>
     <div>
       <span class="eyebrow">{{ rideterapi.hvem_mikrotekst }}</span>
