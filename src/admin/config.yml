@@ -492,8 +492,6 @@ collections:
             fields:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
-          - { name: forskel_boks_titel, label: "Grøn boks · fed indledning", widget: string }
-          - { name: forskel_boks_tekst, label: "Grøn boks · tekst", widget: text }
 
           - { name: besoeg_mikrotekst, label: "Lille tekst · 'Inden der er en sag'", widget: string }
           - { name: besoeg_overskrift, label: "Overskrift · besøg og oplæg", widget: string }
