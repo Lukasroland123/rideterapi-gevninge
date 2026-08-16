@@ -1,0 +1,46 @@
+---
+layout: base.njk
+permalink: /404.html
+side: fejl404
+titel: "Siden findes ikke | Hesteassisteret Praksis"
+beskrivelse: "Siden her findes ikke. Find i stedet rideterapi, handicapridning, priser eller kontakt hos Hesteassisteret Praksis ved Roskilde."
+eleventyExcludeFromCollections: true
+---
+{#
+  Cloudflare Pages serverer denne fil med statuskode 404, naar en adresse
+  ikke findes. Uden den fik man forsiden serveret med status 200, hvilket
+  baade forvirrer besoegende og faar Google til at indeksere stavefejl.
+
+  Filen er bevidst IKKE lagt ind i redigeringssystemet — den er en teknisk
+  side, ikke indhold Lotte skal rette.
+#}
+<div class="pagehead">
+  <div class="wrap">
+    <h1>Siden findes ikke</h1>
+    <p>Adressen fører ingen steder hen. Måske er der en stavefejl i linket.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+
+    <p>Her er de sider, folk oftest leder efter:</p>
+
+    <ul>
+      <li><a href="/rideterapi/">Rideterapi</a> — hesteassisteret behandling for børn og unge</li>
+      <li><a href="/handicapridning/">Handicapridning</a> — kompenserende ridning</li>
+      <li><a href="/forloeb/">Praktisk info</a> — tøj, sikkerhed og spørgsmål</li>
+      <li><a href="/priser/">Priser og tilskud</a></li>
+      <li><a href="/om-lotte/">Om Lotte Stegeager</a></li>
+      <li><a href="/til-kommuner/">Til kommuner og institutioner</a></li>
+      <li><a href="/kontakt/">Kontakt</a></li>
+    </ul>
+
+    <p>
+      Eller gå til <a href="/">forsiden</a>. Kan du ikke finde det, du søger,
+      er du velkommen til at ringe på
+      <a href="tel:{{ site.telefon_link }}">{{ site.telefon }}</a>.
+    </p>
+
+  </div>
+</section>
