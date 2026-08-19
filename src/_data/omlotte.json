@@ -1,9 +1,7 @@
 {
-  "titel": "Om Lotte Stegeager | Hesteassisteret Praksis",
-  "beskrivelse": "Lotte Stegeager – cand.scient.soc., specialist i narrativ psykoterapi, certificeret funktionel neuroterapeut og medlem af Rideterapeut Foreningen. 30 års erfaring med heste.",
   "hero_mikrotekst": "Om mig",
   "hero_overskrift": "Lotte Stegeager",
-  "hero_tekst": "Jeg har arbejdet med heste i over 30 år og med mennesker i mistrivsel siden 1998. Rideterapien er stedet, hvor de to ting mødes.",
+  "hero_tekst": "Jeg har arbejdet med heste i over 40 år og med mennesker i mistrivsel siden 1998. Den Hesteassisterede behandling (Rideterapien) og handicapridningen er stedet, hvor tingene mødes.",
   "hero_billede": "/billeder/lotte-stegeager-portraet.jpg",
   "hero_billede_alt": "Portræt af Lotte Stegeager",
   "hero_maerkater": [
@@ -95,5 +93,7 @@
   "citat_kilde": "Janet L. Jones (PhD), Horse Brain – Human Brain, s. 244",
   "soester_overskrift": "Jeg tilbyder også samtaleterapi og supervision",
   "soester_tekst": "Ved siden af rideterapien driver jeg Narrativ Samtale med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision.",
-  "soester_knap": "Gå til narrativsamtale.dk"
+  "soester_knap": "Gå til narrativsamtale.dk",
+  "titel": "Om Lotte Stegeager | Hesteassisteret Praksis",
+  "beskrivelse": "Lotte Stegeager – cand.scient.soc., specialist i narrativ psykoterapi, certificeret funktionel neuroterapeut og medlem af Rideterapeut Foreningen. 30 års erfaring med heste."
 }
