@@ -1,21 +1,19 @@
 {
-  "titel": "Rideterapi ved Roskilde | Hesteassisteret Praksis",
-  "beskrivelse": "Udviklingsstøttende hesteassisteret behandling for børn og unge med skolefravær, ADHD, autisme, angst og traumer. Individuelle forløb i Gevninge ved Roskilde.",
-  "hero_mikrotekst": "Forløb · Hesteassisteret behandling",
-  "hero_overskrift": "Rideterapi",
-  "hero_tekst": "Et guidet forløb, hvor samspillet med hesten gør arbejdet.",
-  "hero_knap1": "Book en gratis samtale",
+  "hero_mikrotekst": "Forløb · Hesteassisteret behandling (Rideterapi)",
+  "hero_overskrift": "Rideterapi (hesteassisteret behandling)",
+  "hero_tekst": "Et udviklingsstøttende psykoterapeutisk behandlingsforløb, hvor hesten indgår aktivt i arbejdet. Gennem samtaler, samvær og aktiviteter skabes en anderledes og ofte mindre konfronterende ramme (end ved traditionel terapi), hvor relationen til hesten kan understøtte den terapeutiske proces.",
+  "hero_knap1": "Book en uforpligtende 20 min. samtale",
   "hero_knap2": "Se handicapridning i stedet",
   "hero_billede": "/billeder/rideterapi-pande-mod-pony.jpg",
-  "hero_billede_alt": "Person står pande mod pande med en sort pony, hvis manke er pyntet med blomster",
-  "hvad_tekst": "Rideterapi er et hesteassisteret guidet forløb til børn og unge med skolefravær, ADHD, autisme, angst eller traumer – og til voksne, der har svært ved at sætte ord på. Ved at opleve hestens respons på ens egne handlinger, og ved at mærke hestens bevægelser, pels, puls og rytme, stimuleres en række forskellige sanser. Det kan danne fundament for nærvær, ro og oplevelsen af samhørighed.\n\nTilgangen har jeg selv udviklet. Jeg har taget greb og forståelser fra narrativ terapi og „oversat“ dem til et sanseligt og nonverbalt samspil mellem hest og menneske. Derfor kalder jeg den udviklingsstøttende rideterapi.\n\nDet betyder blandt andet, at vi ikke leder efter fejl og mangler. Vi leder efter det, du kan, ved og vil – og bruger hesten som den, der viser det.",
+  "hero_billede_alt": "Samtaler kan blive lettere, når de ikke begynder ansigt til ansigt men side om side med en hest",
+  "hvad_tekst": "Rideterapi er, hos mig, et hesteassisteret guidet behandlingsforløb til børn og unge med skolefravær, ADHD, autisme, angst eller traumer, Samt til voksne. Ved at opleve hestens respons på ens egne handlinger, og ved at mærke hestens bevægelser, pels, puls og rytme, stimuleres en række forskellige sanser. Det kan danne fundament for nærvær, ro og oplevelsen af samhørighed. Denne sansende tilgang, kan skabe en tryg og konstruktiv ramme for de terapeutiske samtaler, som kan udfolde sig under forløbet.\n\nTilgangen har jeg selv udviklet. Metodiske greb og forståelser fra narrativ terapi, og neuropsykologi  er „oversat“ til en til et sanseligt og nonverbalt samspil mellem hest og menneske, som kan understøtte de psykoterapeutiske samtaler der udfolder sig undervejs i forløbet. Hvilket jeg har kaldt 'Udviklingsstøttende hesteassisteret behandling'.",
   "hvad_boks_titel": "Du behøver ikke at ride.",
-  "hvad_boks_tekst": "Rideterapi handler ikke nødvendigvis om at ride, men om det samspil, der kan skabes mellem menneske og hest. Det kan sagtens foregå fra jorden, og mange bliver på jorden hele det første besøg.",
-  "hvorfor_mikrotekst": "Hvorfor det virker",
+  "hvad_boks_tekst": "Rideterapi handler ikke nødvendigvis om at ride, men om det samspil, der kan skabes mellem menneske og hest. Samt om hvordan denne ramme kan understøtte terapeutiske samtaler og behandlingsforløb.",
+  "hvorfor_mikrotekst": "Hvorfor det virker?",
   "hvorfor_overskrift": "Hesten dømmer ikke",
-  "hvorfor_tekst": "Hesten er grundlæggende nysgerrig og overvinder altid sin frygt – hvis den får tid til det og ikke presses. Allerede med det afsæt bliver hesten en slags rollemodel for det menneske, den møder med åbenhed.\n\nMange af dem, jeg møder, er blevet mødt med fordomme andre steder i livet: i skolen, i systemet, nogle gange derhjemme. Det er ofte allerede ved det første møde med hesten, at der kan etableres et langt mere åbent afsæt for nye erfaringer – og dermed nye fortællinger om både sig selv og om det at være sammen med andre.\n\nGennem forløbene kan jeg se, at forsvarsstrategier, frygt og et „rystet“ nervesystem ofte kan tones ned. Følelsen af forbundethed går direkte imod den ensomhed, som flere af mine klienter kender alt for godt.",
+  "hvorfor_tekst": "Hesten er grundlæggende nysgerrig og overvinder næsten altid sin frygt, hvis den får tid til det og ikke presses. Allerede med det afsæt bliver hesten en slags rollemodel for det menneske, den møder med åbenhed.\n\nMange af dem, jeg møder, er blevet mødt med fordomme andre steder i livet: i skolen, i systemet, nogle gange derhjemme. Det er ofte allerede ved det første møde med hesten, at der kan etableres et langt mere åbent afsæt for nye erfaringer, og dermed nye fortællinger om både sig selv og om det at være sammen med andre.\n\nGennem forløbene kan jeg se, at forsvarsstrategier, frygt og et „rystet“ nervesystem ofte kan nedtones. Følelsen af forbundethed går direkte imod den ensomhed, som flere af mine klienter kender alt for godt.",
   "hvorfor_billede": "/billeder/rideterapi-barn-og-pony-efteraar.jpg",
-  "hvorfor_billede_alt": "Barn i blå jakke og grøn hætte står med bøjet hoved tæt ved en pony på en efterårsmark",
+  "hvorfor_billede_alt": "Hesten kender ikke til diagnoser, nederlag eller forventninger, den møder dig, som du er.",
   "fokus_overskrift": "Hvad arbejder vi med?",
   "fokus_intro": "Det centrale er at blive mødt, som man er – som betydningsfuld.",
   "fokus_kort": [
@@ -46,7 +44,7 @@
   ],
   "hvem_mikrotekst": "Målgruppe",
   "hvem_overskrift": "Hvem kan henvende sig?",
-  "hvem_indledning": "Det er primært børn og unge, jeg arbejder med – børn og unge, som af forskellige årsager er i mistrivsel:",
+  "hvem_indledning": "Det er primært børn og unge, jeg arbejder med børn og unge, som af forskellige årsager er i mistrivsel:",
   "hvem_punkter": [
     {
       "tekst": "Skolefravær og skolevægring"
@@ -66,39 +64,41 @@
   ],
   "hvem_afslutning": "Også voksne med senhjerneskade, PTSD, traumer og angst nyder godt af samværet med mine heste.\n\nVigtigt: Jeg har ingen hjælpemidler, så du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson.",
   "hvem_billede": "/billeder/rideterapi-barn-rider-med-lotte.jpg",
-  "hvem_billede_alt": "Barn med ridehjelm sidder på en islandshest, mens Lotte står ved siden af i sneen",
+  "hvem_billede_alt": "Når samtalen blot opstår undervejs, kan det svære blive lettere at sætte ord på.",
   "metode_overskrift": "Sådan arbejder jeg",
-  "metode_tekst": "Jeg guider dig gennem konkrete øvelser i samspillet med en af mine heste, så der skabes en relation, der indeholder opmærksomhed, samhørighed og især en oplevelse af forbundethed.\n\nForløbene foregår så vidt muligt i et digitalt frit rum. Undtagelsesvis arbejder vi med videooptagelser. Så kan jeg vise dig udvalgte klip af netop det, som lykkes – for eksempel at afstemme sig i forhold til hesten. Det giver mulighed for at se sig selv udefra og få bekræftet, at man faktisk kan lykkes. Den form for „bevidning“ har ofte en betydelig og konstruktiv effekt.\n\nSom certificeret funktionel neuroterapeut arbejder jeg desuden bevidst med at aktivere bestemte nervebaner via sensoriske input. Under sessionerne laves fysiske øvelser, som stimulerer koordination, balance og kropsholdning.",
-  "metode_boks_titel": "Fagligt belæg:",
+  "metode_tekst": "Jeg guider dig gennem konkrete øvelser i samspillet med en af mine heste, så der skabes en relation, der indeholder opmærksomhed, samhørighed og især en oplevelse af forbundethed.\n\nDen psykoterapeutiske samtale er en central del af forløbet. Med afsæt i narrativ psykoterapi undersøger vi sammen det, der fylder eller står i vejen i dit liv, men også dine erfaringer, værdier, håb og det, du gerne vil kunne bevæge dig hen imod. Samtalerne kan foregå undervejs i arbejdet med hesten, på en ridetur eller i mere rolige rammer før eller efter samværet med hesten.\n\nDet, der opstår i mødet med hesten, kan samtidig bringes ind i den terapeutiske samtale. Hesten reagerer umiddelbart på blandt andet kontakt, bevægelse, nærvær og grænsesætning, og konkrete oplevelser sammen med hesten kan derfor give et andet udgangspunkt for samtalen end det, der opstår, når man sidder over for hinanden i et traditionelt terapirum. For nogle, ikke mindst børn og unge, kan det gøre den terapeutiske samtale mindre konfronterende og give mulighed for at nærme sig det svære mere indirekte.\n\nForløbene foregår så vidt muligt i et digitalt frit rum. Undtagelsesvis kan der arbejdes med videooptagelser (med skriftlig tilladelse). Så kan jeg vise dig udvalgte klip af netop det, som lykkes, for eksempel at afstemme dig i forhold til hesten. Det giver mulighed for at se dig selv udefra og få bekræftet, at du faktisk kan lykkes. Den form for „bevidning“ har ofte en betydelig og konstruktiv effekt.\n\nSom certificeret funktionel neuroterapeut arbejder jeg desuden bevidst med at aktivere bestemte nervebaner via sensoriske input. Under sessionerne laves fysiske øvelser, som stimulerer koordination, balance og kropsholdning.",
+  "metode_boks_titel": "Fagligt bidrag til debatten om hesteassisteret behandling:",
   "metode_boks_tekst": "Jeg har publiceret artiklen „Hesteassisteret terapi som platform – i mødet med børn og unge i mistrivsel“ i Tidsskrift for Specialpædagogik, 2024 nr. 2.",
   "metode_boks_link": "Se litteratur og forskning på området",
-  "faq_overskrift": "Spørgsmål om rideterapi",
+  "faq_overskrift": "Spørgsmål om Rideterapi / Hesteassisteret terapi og behandling",
   "faq": [
     {
       "spoergsmaal": "Skal man op på hesten?",
-      "svar": "Nej. Rideterapi handler ikke kun om ridning, men i mindst lige så høj grad om måden at være sammen med heste på. Du skal være tryg ved situationen og i relationen til hesten – og det kan sagtens foregå fra jorden."
+      "svar": "Nej. Rideterapi/hesteassisteret terapi og behandling  handler ikke kun om ridning, men i mindst lige så høj grad om måden at være sammen med heste på. Du skal være/blive tryg ved situationen og i relationen til hesten, og det kan sagtens foregå fra jorden."
     },
     {
       "spoergsmaal": "Kan man være flere om det samtidig?",
-      "svar": "Nej, her tilbyder jeg udelukkende eneundervisning. Så er mit fulde fokus på dig og det samspil, du har med en af mine heste."
+      "svar": "Her tilbydes primært enesessioner. Så er mit fulde fokus på dig og det samspil, du har med en af mine heste. Der er efter særaftale mulighed for at flere kan deltage samtidig."
     },
     {
       "spoergsmaal": "Kan rideterapi kombineres med samtaler?",
-      "svar": "Ja. Rideterapi kan tilbydes alene eller kombineres med narrativ terapi og familiebehandling. For mange børn og unge er kombinationen den, der virker bedst: noget kan siges ved siden af en hest, som ikke kan siges over et bord."
+      "svar": "Ja. Rideterapi er hos os en kombination af samspil med hesten og samtaleterapi/behandling.   For mange børn og unge (og voksne) er kombinationen den, der virker bedst: noget kan siges ved siden af en hest, som kan være vanskeligt at sige med et bord imellem klienten og terapeuten.\nYderligere kan rideterapi/hesteassisteret terapi kombineres med familiebehandling."
     },
     {
       "spoergsmaal": "Hvorfor er heste særligt egnede i behandling?",
-      "svar": "Heste er byttedyr og derfor usædvanligt sensitive og opmærksomme på deres omgivelser – en sensitivitet, der kan bringes konstruktivt i spil i terapi, hvor klienten får en uforbeholden „her og nu“-respons. Heste er samtidig flokdyr og derfor særligt opmærksomme på både adfærd og de følelser, der kommer til udtryk.\n\nI modsætning til mere traditionelle former for behandling er mødet mellem hest og menneske kendetegnet ved en fysisk nærhed, der bidrager med en sensorisk modalitet – en fornemmelse af den energi, der er i samspillet, som stimuleres gennem mange sanser samtidig: se, høre, lugte, føle."
+      "svar": "Heste er byttedyr og derfor usædvanligt sensitive og opmærksomme på deres omgivelser, en sensitivitet, der kan bringes konstruktivt i spil i terapi/behandling, hvor klienten får en uforbeholden „her og nu“-respons. Heste er samtidig flokdyr og derfor særligt opmærksomme på både adfærd og de følelser/stemninger, der kommer til udtryk.\n\nI modsætning til mere traditionelle former for behandling er mødet mellem hest og menneske kendetegnet ved en fysisk nærhed, der bidrager med en sensorisk modalitet, en fornemmelse af den energi, der er i samspillet, som stimuleres gennem mange sanser samtidig: se, høre, lugte, føle."
     },
     {
       "spoergsmaal": "Hvor lang tid tager et forløb?",
-      "svar": "Typisk aftales et forløb af 3–8 gange. Hver session varer 45–60 minutter, eller 90–120 minutter hvis der er brug for mere tid. Tidsrammen tilpasses efter den enkeltes behov, og vi justerer undervejs."
+      "svar": "Det er meget forskelligt. Der tilbydes en kontrakt, hvor du kan komme enten en gang om ugen, eller hver anden uge. Hver session varer 45–60 minutter, eller 90–120 minutter. Tidsrammen tilpasses efter den enkeltes behov, og vi kan ofte justerer undervejs."
     }
   ],
   "faq_knap": "Se alle praktiske spørgsmål og svar",
   "kryds_overskrift": "Er der brug for handicapridning i stedet?",
-  "kryds_tekst": "Ved fysisk eller psykisk handicap arbejder jeg kompenserende med balance, koordination og kropsholdning – og der kan søges kommunalt tilskud.",
+  "kryds_tekst": "Ved fysisk eller psykisk handicap arbejder jeg kompenserende med balance, koordination og kropsholdning, og der kan søges kommunalt tilskud.",
   "kryds_knap": "Læs om handicapridning",
   "cta_overskrift": "Er I i tvivl, om det er noget for jer?",
-  "cta_tekst": "Ring og få 20 minutter uden beregning. Du fortæller om situationen, og så finder vi sammen ud af, om det giver mening."
+  "cta_tekst": "Ring og få 20 minutter samtale uden beregning. Du fortæller om situationen, og så finder vi sammen ud af, om det giver mening.",
+  "titel": "Rideterapi ved Roskilde | Hesteassisteret Praksis",
+  "beskrivelse": "Udviklingsstøttende hesteassisteret behandling for børn og unge med skolefravær, ADHD, autisme, angst og traumer. Individuelle forløb i Gevninge ved Roskilde."
 }
