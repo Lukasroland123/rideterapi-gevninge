@@ -1,32 +1,32 @@
 {
-  "titel": "Priser og tilskud til rideterapi | Hesteassisteret Praksis",
-  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, og vejledning i at søge kommunalt tilskud efter servicelovens §41 og §100.",
   "hero_mikrotekst": "Åbent og gennemskueligt",
-  "hero_overskrift": "Priser og tilskud",
-  "hero_tekst": "Prisen på rideterapi og handicapridning afhænger af opgaven og af, hvor lang tid der er brug for. Derfor aftaler vi altid prisen på forhånd – ingen overraskelser.",
-  "pris1_overskrift": "Rideterapi og handicapridning",
-  "pris1_beloeb": "Efter aftale",
+  "hero_overskrift": "Priser og kontrakter",
+  "hero_tekst": "Ved opstart underskrives kontrakt og ansvarserklæring.\n\nDer betales månedsvis forud for både hesteassisteret behandling og handicapridningen. Ved opstart betales desuden et depositum svarende til én måneds betaling. Depositummet dækker den sidste måned ved opsigelse.\n\nDer er én måneds opsigelse til udgangen af en kalendermåned. Det betyder, at depositummet dækker den efterfølgende og sidste måned, uanset hvornår i måneden opsigelsen gives.\n\nVed ferie reduceres prisen ud fra antal feriedage i en given måned. \n\nVed afbud fra deltagers side gives der ikke erstatningstid. \nHvis jeg er nødt til at aflyse en aftalt tid, tilbydes en erstatningstid.",
+  "pris1_overskrift": "Hesteassisteret behandling (Rideterapi) og handicapridning",
+  "pris1_beloeb": "Fast pris",
   "pris1_enhed": "Typisk 45–60 min. eller 90–120 min.",
-  "pris1_tekst": "Prisen er opgaveafhængig og fastsættes i dialog med dig, inden vi går i gang. Individuel rideterapi og handicapridning kan tilbydes separat eller kombineres med narrativ terapi og familiebehandling.\n\nVær opmærksom på, at rideterapi ikke nødvendigvis handler om at ride, men om det samspil, der kan skabes mellem menneske og hest.",
+  "pris1_tekst": "Individuel hesteassistert behandling (rideterapi) og handicapridning kan tilbydes separat eller kombineres med narrativ terapi og familiebehandling.\n\nVær opmærksom på, at hesteassisteret behandling (rideterapi) ikke nødvendigvis handler om at ride, men om det samspil, der kan skabes mellem menneske og hest.",
   "pris1_knap": "Få et konkret tilbud",
   "pris2_overskrift": "Gratis indledende samtale",
-  "pris2_beloeb": "0 kr.",
+  "pris2_beloeb": "uden beregning",
   "pris2_enhed": "20 minutter, uforpligtende",
-  "pris2_tekst": "Jeg tilbyder en konsultation på 20 minutter uden beregning til alle potentielle klienter. Det giver dig mulighed for at beskrive netop den situation, du står i, stille spørgsmål om min erfaring og komme til en beslutning om, hvorvidt jeg er den rette for dig.",
+  "pris2_tekst": "Jeg tilbyder en konsultation på 20 minutter uden beregning til alle potentielle klienter. Det giver dig mulighed for at beskrive netop den situation, du står i, stille spørgsmål om min erfaring og komme til en beslutning om, hvorvidt det vi tilbyder her er den rette for dig.",
   "pris_note_titel": "Bemærk:",
-  "pris_note_tekst": "Ved forløb finansieret via kommuner, forsikringsselskaber, virksomheder eller institutioner aftales prisen særskilt. Kontakt mig for en skriftlig aftale.",
+  "pris_note_tekst": "Vi har samarbejde med flere kommuner.",
   "tilskud_mikrotekst": "Vidste du det?",
   "tilskud_overskrift": "Du kan søge om tilskud til handicapridning",
-  "tilskud_intro": "Mange ved ikke, at rideterapi og handicapridning kan dækkes som en nødvendig merudgift efter serviceloven. Det er værd at undersøge.",
+  "tilskud_intro": "Mange ved ikke, at bl.a. handicapridning i nogle tilfælde kan dækkes delvist af den kommune du /dit barn bor i.",
   "tilskud_kort": [
     {
-      "overskrift": "Børn under 18 år – servicelovens § 41",
-      "tekst": "„Kommunalbestyrelsen skal yde dækning af nødvendige merudgifter ved forsørgelse i hjemmet af et barn under 18 år med betydelig og varigt nedsat fysisk eller psykisk funktionsevne eller indgribende kronisk eller langvarig lidelse.“\n\nDet er en betingelse, at merudgifterne er en konsekvens af den nedsatte funktionsevne og ikke kan dækkes efter andre bestemmelser. Udmålingen sker på grundlag af de sandsynliggjorte merudgifter for det enkelte barn – for eksempel til individuel befordring og fritidsaktiviteter. Og netop her kan der være tale om rideterapi."
+      "overskrift": "Børn under 18 år",
+      "tekst": "Børn og unge med en funktionsnedsættelse skal så vidt muligt have de samme muligheder for et aktivt og meningsfuldt fritidsliv som andre børn og unge. Det er også en del af intentionen i Barnets Lov.\nNår en funktionsnedsættelse betyder, at et almindeligt fritidstilbud ikke er muligt, kan der i nogle tilfælde være mulighed for støtte til de ekstra udgifter, der følger med et særligt tilrettelagt tilbud som handicapridning. Det vil altid bero på kommunens konkrete og individuelle vurdering.\nEfter aftale kan jeg tilbyde sparring ved udarbejdelse af en ansøgning."
     },
     {
-      "overskrift": "Voksne – servicelovens § 100",
-      "tekst": "Som voksen kan der søges tilskud til nødvendige merudgifter via § 100 i serviceloven. Betingelserne minder om dem for børn: merudgiften skal være en følge af en varigt nedsat funktionsevne.\n\nDu søger hos din bopælskommune. Jeg kan udarbejde en beskrivelse af forløbet og dets formål, som du kan vedlægge din ansøgning."
+      "overskrift": "Voksne",
+      "tekst": "For voksne med en senhjerneskade kan der være behov for at genopbygge balance, kropsfornemmelse og tillid til egen krop. Det kan tage tid at lære kroppens signaler og muligheder at kende på ny.\nHestens rolige, rytmiske bevægelser og samspillet med den giver mulighed for at arbejde med både balance, koordination og kropslig opmærksomhed i en meningsfuld aktivitet. Der arbejdes både fra hesteryg og fra jorden, og altid med afsæt i den enkeltes dagsform. Der er ikke en fast plan, der skal følges, tempo og aktiviteter tilpasses det, der er muligt den enkelte dag."
     }
   ],
-  "tilskud_knap": "Spørg mig om tilskudsansøgning"
+  "tilskud_knap": "Spørg mig om tilskudsansøgning",
+  "titel": "Priser og tilskud til rideterapi | Hesteassisteret Praksis",
+  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, vejledning i at søge kommunalt tilskud efter serviceloven og Barnets lov"
 }
