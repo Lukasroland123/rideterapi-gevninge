@@ -1,27 +1,25 @@
 {
-  "titel": "Handicapridning ved Roskilde | Hesteassisteret Praksis",
-  "beskrivelse": "Kompenserende handicapridning for børn, unge og voksne med fysisk eller psykisk handicap. Sansemotorisk træning ved certificeret funktionel neuroterapeut. Mulighed for kommunalt tilskud efter §41 og §100.",
-  "hero_mikrotekst": "Forløb · Kompenserende ridning",
+  "hero_mikrotekst": "Forløb · Kompenserende Handicapridning",
   "hero_overskrift": "Handicapridning",
   "hero_tekst": "Hestens bevægelser stimulerer balance, koordination og kropsholdning – uden at det føles som træning. For børn, unge og voksne med fysisk eller psykisk handicap.",
-  "hero_knap1": "Book en gratis samtale",
+  "hero_knap1": "Book en uforpligtende 20 min. samtale",
   "hero_knap2": "Kan I søge tilskud?",
   "hero_billede": "/billeder/handicapridning-omfavner-pony.jpg",
-  "hero_billede_alt": "Person med armen om en shetlandsponys ryg på en mark en vinterdag",
+  "hero_billede_alt": "Nærhed; at mærke hestens varme, duften af hø og lytte til dens rytmiske gumlen",
   "hero_maerkater": [
     {
-      "tekst": "Certificeret funktionel neuroterapeut"
+      "tekst": "Certificeret funktionel neuroterapeut, og med fokus på neuropsykologi"
     },
     {
-      "tekst": "Kun eneundervisning"
+      "tekst": "Primært enesessioner"
     }
   ],
-  "hvad_tekst": "Mennesker med psykiske eller fysiske handicap kan ofte blive stimuleret konstruktivt af både samværet med hestene og af selve ridningen. Gennem hestens bevægelser stimuleres en række forskellige sanser hos rytteren, hvilket kan have gavnlig effekt for et menneske, der er ramt af handicap eller sygdom.\n\nHestens skridt overfører en bevægelse til rytterens bækken og ryg, som minder om menneskets egen gang. Det er den bevægelse, der gør ridningen kompenserende: kroppen arbejder, uden at man skal koncentrere sig om at træne.",
+  "hvad_tekst": "Mennesker med psykiske eller fysiske handicap kan ofte blive stimuleret konstruktivt af både samværet med hestene og af selve ridningen. Gennem hestens bevægelser stimuleres en række forskellige sanser hos rytteren, hvilket kan have gavnlig effekt for et menneske, der er ramt af handicap eller sygdom.\nHestens skridt overfører bevægelser til rytterens bækken og ryg, som minder om bevægelserne under menneskets egen gang. Den rytmiske bevægelse stimulerer balance, kropsholdning og koordination, og for mange mennesker med funktionsnedsættelser har ridningen en kompenserende effekt, fordi kroppen aktiveres og udfordres gennem en meningsfuld aktivitet frem for traditionel træning.",
   "hvad_boks_titel": "Det handler ikke kun om at ride.",
-  "hvad_boks_tekst": "En del af arbejdet foregår fra jorden – at føre, børste, mærke og være sammen med hesten. Vi finder den form, der passer til kroppen og til dagsformen.",
+  "hvad_boks_tekst": "En del af arbejdet foregår fra jorden, at føre, børste, mærke og være sammen med hesten. Vi finder den form, der passer til kroppen og til dagsformen.",
   "neuro_mikrotekst": "Fagligt afsæt",
   "neuro_overskrift": "Funktionel neuroterapi",
-  "neuro_indledning": "Som certificeret funktionel neuroterapeut arbejder jeg bevidst med at aktivere specifikke nervebaner via sensoriske input. Det er ikke tilfældigt, hvilke øvelser vi laver, eller i hvilken rækkefølge.\n\nUnder sessionerne laves fysiske øvelser, som blandt andet stimulerer:",
+  "neuro_indledning": "Handicapridningen tager afsæt i en helhedsorienteret tilgang til krop, sanser, trivsel og relation. Viden fra funktionel neuroterapi inddrages sammen med pædagogiske og terapeutiske perspektiver, så aktiviteter og øvelser kan tilpasses den enkeltes behov og forudsætninger.\n\nØvelser og aktiviteter kan blandt andet understøtte:",
   "neuro_punkter": [
     {
       "tekst": "Koordination"
@@ -39,68 +37,70 @@
       "tekst": "Psykomotorik"
     }
   ],
-  "neuro_afslutning": "Via ridningen skabes en skærpet opmærksomhed på sammenhængen mellem den fysiske krop og psyken. For mange er det først i kroppen, at roen kommer.",
+  "neuro_afslutning": "I samværet med hesten bringes både krop, sanser og relation i spil. Hestens bevægelser, nærvær og det, der opstår i kontakten mellem hest og menneske, kan være med til at skabe ro og en større fornemmelse af sig selv. For mange begynder roen netop i kroppen.",
   "neuro_billede": "/billeder/handicapridning-barn-paa-hesteryg.jpg",
-  "neuro_billede_alt": "Barn ligger afslappet på tværs af en islandshests ryg, mens Lotte står smilende ved siden af",
+  "neuro_billede_alt": "Nærhed til hesten giver plads til ro, kropslig sansning og tryghed.",
   "hvem_overskrift": "Hvem kan henvende sig?",
-  "hvem_intro": "De fleste kan have glæde af at være i samvær med heste.",
+  "hvem_intro": "De fleste kan have glæde af at være i samvær med heste. Hesten inviterer til nærvær, kontakt og aktivitet på andre måder end gennem ord. I handicapridningen tages der udgangspunkt i den enkeltes forudsætninger og behov, og i de muligheder, der opstår i samspillet med hesten.",
   "hvem_kort": [
     {
-      "overskrift": "Børn og unge med handicap",
-      "tekst": "Børn og unge, som skal håndtere et fysisk eller psykisk handicap eller en diagnose i hverdagen. Mange har allerede prøvet genoptræning i et lokale og er kørt trætte i det. Her sidder de på en hest ude i det fri, og træningen sker af sig selv, mens de har travlt med noget andet. Hestens skridt overfører en bevægelse til bækken og ryg, der minder om menneskets egen gang, og det er dét, der gør ridningen kompenserende. For de fleste børn føles det som en fritidsaktivitet, ikke som behandling."
+      "overskrift": "Børn og unge med funktionsnedsættelse (handicap)",
+      "tekst": "Handicapridning er for børn og unge, som lever med et fysisk eller psykisk handicap eller en diagnose, og som har brug for særlige rammer for at kunne deltage i en fritidsaktivitet.\n\nHer er hesten og samværet med den omdrejningspunktet. At ride, strigle, hente hesten på folden eller bare være sammen med den giver mulighed for nærvær, bevægelse og oplevelsen af at kunne noget sammen med et andet levende væsen.\n\nSamtidig arbejder kroppen hele tiden. Hestens skridt overfører rytmiske bevægelser til bækken og ryg, som minder om bevægelserne under menneskets egen gang, og kroppen må løbende finde balance og tilpasse sig hestens bevægelser. På den måde kan handicapridningen både være en meningsfuld fritidsaktivitet og samtidig understøtte den enkeltes kropslige, psykiske og sociale udvikling."
     },
     {
       "overskrift": "Voksne med senhjerneskade",
-      "tekst": "Hvor der er brug for at genopbygge balance, kropsfornemmelse og tillid til egen krop. Efter en hjerneskade skal mange lære at aflæse deres egen krop forfra, og det tager tid. Ridningen giver en rytmisk, forudsigelig bevægelse, som kroppen kan hvile i og lære af. Vi arbejder både fra hesteryg og fra jorden, alt efter dagsformen. Der er ingen fast plan, der skal følges – vi justerer efter, hvad kroppen kan den dag."
+      "tekst": "For voksne med en senhjerneskade kan der være behov for at genopbygge balance, kropsfornemmelse og tillid til egen krop. Det kan tage tid at lære kroppens signaler og muligheder at kende på ny.\nHestens rolige, rytmiske bevægelser og samspillet med den giver mulighed for at arbejde med både balance, koordination og kropslig opmærksomhed i en meningsfuld aktivitet. Der arbejdes både fra hesteryg og fra jorden, og altid med afsæt i den enkeltes dagsform. Der er ikke en fast plan, der skal følges, tempo og aktiviteter tilpasses det, der er muligt den enkelte dag."
     },
     {
       "overskrift": "Nedsat funktionsevne",
-      "tekst": "Ved varigt nedsat fysisk eller psykisk funktionsevne, hvor almindelige træningstilbud ikke rammer. Nogle kan ikke rumme holdtræning, andre får ikke nok ud af øvelser uden mening. Her er øvelserne bundet op på et levende dyr, der giver respons med det samme. Som certificeret funktionel neuroterapeut vælger jeg øvelserne ud fra, hvilke nervebaner der skal aktiveres – rækkefølgen er ikke tilfældig. Og netop denne gruppe kan ofte få dækket udgiften som en nødvendig merudgift efter serviceloven."
+      "tekst": "Ved varigt nedsat fysisk eller psykisk funktionsevne kan der være brug for et tilbud, som tager højde for hele mennesket – ikke kun den enkelte funktionsnedsættelse. Nogle har svært ved at rumme holdaktiviteter, mens andre har brug for, at bevægelse og øvelser indgår i en sammenhæng, der opleves meningsfuld.\nHer danner hesten, relationen og de konkrete aktiviteter rammen. Med afsæt i både pædagogisk, terapeutisk og neurofaglig viden tilrettelægges forløbet individuelt, så krop, sanser, relation og trivsel tænkes sammen. Øvelserne tilpasses den enkeltes ressourcer, behov og dagsform, og indgår naturligt i samværet med hesten."
     }
   ],
   "hvem_boks_titel": "Vigtig forudsætning:",
-  "hvem_boks_tekst": "Jeg har ingen hjælpemidler til op- og afstigning. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson. Er du i tvivl, om det kan lade sig gøre, så ring – så finder vi ud af det sammen.",
-  "tilskud_mikrotekst": "Det er der mange, der ikke ved",
-  "tilskud_overskrift": "I kan søge kommunen om tilskud",
-  "tilskud_intro": "Handicapridning kan dækkes som en nødvendig merudgift efter serviceloven. Det er værd at undersøge, før I giver op på grund af prisen.",
+  "hvem_boks_tekst": "Jeg har ingen hjælpemidler til op- og afstigning, udover en helt almindelig opstigningsskammel. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson. Er du i tvivl, om det kan lade sig gøre, så ring, så finder vi ud af det sammen.",
+  "tilskud_mikrotekst": "Måske ved du det ikke, men",
+  "tilskud_overskrift": "Du kan søge kommunen om tilskud",
+  "tilskud_intro": "Økonomien behøver ikke nødvendigvis at stå i vejen for et forløb. I nogle tilfælde kan der søges kommunal støtte til handicapridning, og det kan derfor være værd at undersøge, hvilke muligheder der findes.",
   "tilskud_kort": [
     {
-      "overskrift": "Børn under 18 år – servicelovens § 41",
-      "tekst": "„Kommunalbestyrelsen skal yde dækning af nødvendige merudgifter ved forsørgelse i hjemmet af et barn under 18 år med betydelig og varigt nedsat fysisk eller psykisk funktionsevne eller indgribende kronisk eller langvarig lidelse.“\n\nDet er en betingelse, at merudgifterne er en konsekvens af den nedsatte funktionsevne og ikke kan dækkes efter andre bestemmelser. Udmålingen sker på grundlag af de sandsynliggjorte merudgifter for det enkelte barn – for eksempel til individuel befordring og fritidsaktiviteter. Og netop her kan der være tale om rideterapi og handicapridning."
+      "overskrift": "Børn under 18 år med funktionsnedsættelser",
+      "tekst": "Børn og unge med en funktionsnedsættelse skal så vidt muligt have de samme muligheder for et aktivt og meningsfuldt fritidsliv som andre børn og unge. Det er også en del af intentionen i Barnets Lov.\nNår en funktionsnedsættelse betyder, at et almindeligt fritidstilbud ikke er muligt, kan der i nogle tilfælde være mulighed for støtte til de ekstra udgifter, der følger med et særligt tilrettelagt tilbud som handicapridning. Det vil altid bero på kommunens konkrete og individuelle vurdering.\nEfter aftale kan jeg tilbyde sparring ved udarbejdelse af en ansøgning."
     },
     {
-      "overskrift": "Voksne – servicelovens § 100",
-      "tekst": "Som voksen kan der søges tilskud til nødvendige merudgifter via § 100 i serviceloven. Betingelserne minder om dem for børn: merudgiften skal være en følge af en varigt nedsat funktionsevne.\n\nI søger hos bopælskommunen. Jeg kan efter aftale udarbejde en beskrivelse af forløbet og dets formål, som I kan vedlægge ansøgningen."
+      "overskrift": "Voksne  med funktionsnedsættelser",
+      "tekst": "Voksne med en varigt nedsat funktionsevne skal så vidt muligt have mulighed for at leve et aktivt liv og deltage i aktiviteter på lige fod med andre. Når en funktionsnedsættelse medfører ekstra udgifter for at kunne deltage, kan der i nogle tilfælde søges om støtte gennem kommunen efter serviceloven.\nAnsøgningen sker til bopælskommunen. Efter aftale kan jeg tilbyde sparring ved udarbejdelse af en ansøgning."
     }
   ],
-  "tilskud_knap1": "Spørg mig om ansøgningen",
+  "tilskud_knap1": "Spørg mig sparring til din ansøgningen",
   "tilskud_knap2": "Er du sagsbehandler? Læs her",
   "sikkerhed_overskrift": "Sikkerhed",
-  "sikkerhed_tekst": "Det er et krav her hos os, at alle, som sidder på en hest, bærer både ridehjelm og sikkerhedsvest. Der er ingen undtagelser. Har I ikke selv udstyr med, kan begge dele lånes – jeg har alle størrelser.\n\nAl omgang med mine heste, herunder ridning, samt færdsel på området foregår på eget ansvar. Det er en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nDa jeg i mit samvær med heste og mennesker er meget opmærksom på og kender hestenes signaler, har jeg ikke oplevet nogen alvorlige ulykker igennem de sidste 30 år. Samtidig er heste levende væsner, så selvom jeg har et indgående kendskab til dem, vil der altid være risiko for, at der opstår noget uforudsigeligt.",
+  "sikkerhed_tekst": "Det er et krav her hos os, at alle, som sidder på en hest, bærer både ridehjelm og sikkerhedsvest. Har I ikke selv udstyr med, kan begge dele lånes. Vi har alle størrelser.\n\nAl omgang med hestene, herunder ridning, samt færdsel på området foregår på eget ansvar. Det er en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nDa jeg i mit samvær med heste og mennesker er meget opmærksom på og kender hestenes signaler, har jeg ikke oplevet nogen alvorlige ulykker. Samtidig er heste levende væsner, så selvom jeg har et indgående kendskab til dem, vil der altid være risiko for, at der opstår noget uforudsigeligt.",
   "sikkerhed_link": "Læs mere om ansvar og forsikring",
   "faq_overskrift": "Spørgsmål om handicapridning",
   "faq": [
     {
       "spoergsmaal": "Hvor længe varer en session?",
-      "svar": "Typisk 45–60 minutter, men tidsrammen tilpasses efter den enkeltes behov – nogle har brug for 90–120 minutter, andre for kortere. Almindeligvis aftales et forløb af 3–8 gange, men mange fortsætter længere."
+      "svar": "En session er på 45–60 minutter, men tidsrammen tilpasses efter den enkeltes behov. Nogle ønsker en dobbeltsession på 90–120 minutter."
     },
     {
       "spoergsmaal": "Kan man deltage flere sammen?",
-      "svar": "Nej, her tilbydes udelukkende eneundervisning, så mit fulde fokus er på dig. En støtteperson eller forælder er naturligvis velkommen til at være med."
+      "svar": "Her tilbydes primært enesessioner, så mit fulde fokus er på dig. En støtteperson eller forælder er naturligvis velkommen til at være med og kigge på."
     },
     {
       "spoergsmaal": "Hvad hvis vejret er dårligt?",
-      "svar": "Handicapridningen foregår altid udenfor. Hvis vejret er virkelig dårligt – stærk blæst, storm eller kraftig regn – kan vi blive nødt til at udsætte aftalen. Det sker dog sjældent."
+      "svar": "Handicapridningen foregår som udgangspunkt altid udendørs og i tæt kontakt med hestene. Kun når vejret gør det sikkerhedsmæssigt uforsvarligt, tilpasses forløbet. Vi er sammen med hestene, så længe forholdene tillader det, og resten af tiden kan foregå indendørs med aktiviteter og øvelser, der understøtter det, vi arbejder med sammen med hesten og i ridningen.\nDet er dog sjældent nødvendigt, med den rette påklædning kan vi være ude i langt det meste slags vejr."
     },
     {
-      "spoergsmaal": "Kan handicapridning kombineres med terapi?",
-      "svar": "Ja. Handicapridning kan tilbydes separat, men kan også kombineres med hesteassisteret behandling, narrativ terapi eller familiebehandling. For mange giver kombinationen den bedste effekt."
+      "spoergsmaal": "Kan handicapridning kombineres med hesteassisteret behandling?",
+      "svar": "Ja. Handicapridning kan stå alene som en meningsfuld fritidsaktivitet, men kan også kombineres med et hesteassisteret behandlingsforløb, narrativ terapi eller familiebehandling. Kombinationen giver mulighed for at arbejde mere helhedsorienteret, hvor erfaringerne fra samværet med hesten kan inddrages i behandlings arbejdet, og det, der arbejdes med i samtalerne, kan få plads i samværet med hesten."
     }
   ],
   "faq_knap": "Se alle praktiske spørgsmål og svar",
   "kryds_overskrift": "Handler det mere om trivsel end om kroppen?",
   "kryds_tekst": "Ved skolefravær, angst, ADHD, autisme eller traumer arbejder jeg med udviklingsstøttende hesteassisteret behandling.",
-  "kryds_knap": "Læs om rideterapi",
+  "kryds_knap": "Læs om hesteassisteret behandling / rideterapi",
   "cta_overskrift": "Skal vi finde ud af, om det kan lade sig gøre?",
-  "cta_tekst": "Ring og få 20 minutter uden beregning. Fortæl om situationen, så vurderer vi sammen, om handicapridning her er det rigtige."
+  "cta_tekst": "Ring og få 20 minutter uden beregning. Fortæl om situationen, så vurderer vi sammen, om handicapridning her er det rigtige.",
+  "titel": "Handicapridning ved Roskilde | Hesteassisteret Praksis",
+  "beskrivelse": "Kompenserende handicapridning for børn, unge og voksne. Individuelle forløb med hesten med fokus på bevægelse, sanser, relation og trivsel."
 }
