@@ -1,13 +1,11 @@
 {
-  "titel": "Praktisk info om rideterapi og handicapridning | Hesteassisteret Praksis",
-  "beskrivelse": "Det praktiske ved rideterapi og handicapridning hos Lotte Stegeager: tøj og udstyr, sikkerhed, vejr, forsikring og svar på de spørgsmål, der oftest bliver stillet.",
   "hero_mikrotekst": "Godt at vide",
   "hero_overskrift": "Praktisk info",
-  "hero_tekst": "Du behøver hverken at kunne ride eller have erfaring med heste. Alt foregår som eneundervisning, og vi går kun så hurtigt frem, som du er tryg ved.",
+  "hero_tekst": "Du behøver hverken at kunne ride eller have erfaring med heste. Alt foregår som enesessioner, med mindre andet er aftalt, og vi går kun så hurtigt frem, som du er tryg ved.",
   "praktisk_kort": [
     {
       "overskrift": "Tøj og udstyr",
-      "tekst": "Tag tøj på, der må blive beskidt, og sko du kan gå på ujævnt underlag i. Ridehjelm og sikkerhedsvest kan lånes her i alle størrelser."
+      "tekst": "Tag tøj på, der må blive beskidt, og sko du kan gå på ujævnt underlag i. \nBrug fodtøj der ikke har en glat sål, men i stedet en lille markering af hælen, sådan at din sko ikke glider i stigebøjlen.\nBrug gerne (ride)bukser med 'full grip', så du kan sidde stabilt i sadlen.\nRidehjelm og sikkerhedsvest kan lånes her i næsten alle størrelser.\nønsker du vejledning i forhold til beklædning og fodtøj, så kontakt mig gerne."
     },
     {
       "overskrift": "Krav ved ridning",
@@ -15,11 +13,11 @@
     },
     {
       "overskrift": "Vejret",
-      "tekst": "Alt foregår udendørs. Ved stærk blæst, storm eller kraftig regn kan vi blive nødt til at udsætte – det sker dog sjældent."
+      "tekst": "Alt foregår som udgangspunkt altid udendørs og i tæt kontakt med hestene. Kun når vejret gør det sikkerhedsmæssigt uforsvarligt, tilpasses forløbet. Vi er sammen med hestene, så længe forholdene tillader det, og resten af tiden kan foregå indendørs med aktiviteter og øvelser, der understøtter det, vi arbejder med sammen med hesten og i ridningen.\nDet er dog sjældent nødvendigt, med den rette påklædning kan vi være ude i langt det meste slags vejr."
     },
     {
       "overskrift": "Mobilitet",
-      "tekst": "Jeg har ingen hjælpemidler til op- og afstigning. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson."
+      "tekst": "Jeg har ingen hjælpemidler til op- og afstigning, udover en almindelig opstigningsskammel. Du skal kunne gå ved egen hjælp eller med hjælp fra din støtteperson."
     },
     {
       "overskrift": "Forsikring",
@@ -27,26 +25,29 @@
     },
     {
       "overskrift": "Kombination med samtaler",
-      "tekst": "Rideterapi kan tilbydes alene eller kombineres med narrativ terapi og familiebehandling."
+      "tekst": "Både Hesteassisteret behandling (Rideterapi) og handicapridning kan tilbydes alene eller som integreret forløb, og kan også kombineres med narrativ terapi og familiebehandling."
     }
   ],
+  "ansvar_overskrift": "Ansvar og forsikring",
+  "ansvar_intro": "Al omgang med hestene herunder ridning, både på ejendommen og uden for den, foregår på eget ansvar. Virksomheden kan på ingen måde gøres erstatningsansvarlig.",
+  "ansvar_tekst": "Min praksis ligger på min private matrikel. Al færdsel på matriklen og al omgang med hestene herunder ridning, både på ejendommen og uden for den, foregår på eget ansvar. Virksomheden kan på ingen måde gøres erstatningsansvarlig.\n\nFor at kunne deltage i hesteassisteret behandling (rideterapi) og handicapridning er det en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nJeg tager naturligvis de sikkerhedsforanstaltninger, jeg er opmærksom på, og alle der sidder på en hest, skal bære både ridehjelm og sikkerhedsvest, som kan lånes her. Igennem de sidste 30 år har jeg ikke oplevet nogen alvorlige ulykker. Men heste er levende væsner, og der vil altid være risiko for noget uforudsigeligt.",
   "faq_overskrift": "Spørgsmål og svar",
   "faq": [
     {
       "spoergsmaal": "Skal man op på hesten?",
-      "svar": "Nej. Rideterapi og handicapridning handler ikke kun om ridning, men i mindst lige så høj grad om måden at være sammen med heste på. Du skal være tryg ved situationen og i relationen til hesten – og det kan sagtens foregå fra jorden."
+      "svar": "Nej ikke nødvendigvis. Hesteassisteret behandling (Rideterapi) og handicapridning handler ikke kun om ridning, men i mindst lige så høj grad om måden at være sammen med heste på. Du skal være tryg ved situationen og i relationen til hesten, og det kan sagtens foregå fra jorden."
     },
     {
       "spoergsmaal": "Kan man være flere om at deltage samtidig?",
-      "svar": "Nej, her tilbyder jeg udelukkende eneundervisning. Så er mit fulde fokus på dig og det samspil, du har med en af mine heste."
+      "svar": "Der  tilbydes primært enesessioner. Så er mit fulde fokus på dig og det samspil, du har med en af mine heste.\nDer kan laves særaftaler om at flere deltager samtidig."
     },
     {
       "spoergsmaal": "Skal jeg have ridehjelm og ridevest med?",
-      "svar": "Det er fint, hvis du har mulighed for at tage en ridehjelm og sikkerhedsvest med, som du er vant til og som passer dig. Hvis ikke, kan du låne begge dele af mig. Det er et krav her hos os, at alle, som sidder på en hest, har både ridehjelm og sikkerhedsvest på. Jeg har alle størrelser til rådighed."
+      "svar": "Det er fint, hvis du har mulighed for at tage en ridehjelm og sikkerhedsvest med, som du er vant til og som passer dig. Hvis ikke, kan du låne begge dele af mig. Det er et krav her hos os, at alle, som sidder på en hest, har både ridehjelm og sikkerhedsvest på. Jeg har næsten alle størrelser til rådighed."
     },
     {
       "spoergsmaal": "Hvad hvis vejret er dårligt?",
-      "svar": "Rideterapien og handicapridningen foregår altid udenfor. Hvis vejret er virkelig dårligt – stærk blæst, storm eller kraftig regn – kan vi blive nødt til at udsætte vores aftale. Det sker dog sjældent."
+      "svar": "Alt foregår som udgangspunkt altid udendørs og i tæt kontakt med hestene. Kun når vejret gør det sikkerhedsmæssigt uforsvarligt, tilpasses forløbet. Vi er sammen med hestene, så længe forholdene tillader det, og resten af tiden kan foregå indendørs med aktiviteter og øvelser, der understøtter det, vi arbejder med sammen med hesten og i ridningen.\nDet er dog sjældent nødvendigt, med den rette påklædning kan vi være ude i langt det meste slags vejr."
     },
     {
       "spoergsmaal": "Hvem kan henvende sig?",
@@ -54,18 +55,17 @@
     },
     {
       "spoergsmaal": "Hvis ansvar er det, hvis der sker noget uventet?",
-      "svar": "Al omgang med mine heste, herunder også ridning, samt færdsel på området foregår på eget ansvar. Virksomheden kan på ingen måde gøres erstatningsansvarlig. Du skal selv have en ulykkesforsikring for at kunne modtage rideterapi og handicapridning.\n\nDa jeg i mit samvær med heste, børn, unge og voksne er meget opmærksom på og kender hestenes signaler, har jeg ikke oplevet nogen alvorlige ulykker igennem de sidste 30 år. Samtidig er heste levende væsner, så selvom jeg har et indgående kendskab til dem, vil der altid være risiko for, at der opstår noget uforudsigeligt."
+      "svar": "Al omgang med mine heste, herunder også ridning, samt færdsel på området foregår på eget ansvar. Virksomheden kan på ingen måde gøres erstatningsansvarlig. Du skal selv have en ulykkesforsikring for at kunne modtage Hesteassisteret behandling (rideterapi) og handicapridning.\n\nDa jeg i mit samvær med heste, børn, unge og voksne er meget opmærksom på og kender hestenes signaler, har jeg ikke oplevet nogen alvorlige ulykker igennem de sidste 30 år. Samtidig er heste levende væsner, så selvom jeg har et indgående kendskab til dem, vil der altid være risiko for, at der opstår noget uforudsigeligt."
     },
     {
-      "spoergsmaal": "Hvorfor er heste særligt egnede i behandling?",
-      "svar": "Heste er byttedyr, og det betyder, at de er særligt sensitive og opmærksomme på deres omgivelser – en sensitivitet, der kan bringes konstruktivt i spil i terapi, hvor klienten får en uforbeholden „her og nu“-respons. Derudover er heste flokdyr og derfor særligt opmærksomme på både adfærd og de følelser, der kommer til udtryk.\n\nI modsætning til mere traditionelle former for behandling er mødet mellem hest og menneske kendetegnet ved en fysisk nærhed, der bidrager med en sensorisk modalitet – en fornemmelse af den energi, der er i samspillet, som stimuleres gennem mange sanser samtidig: se, høre, lugte, føle."
+      "spoergsmaal": "Hvorfor er heste særligt egnede i behandling og til handicapridning?",
+      "svar": "Heste er byttedyr, og det betyder, at de er særligt sensitive og opmærksomme på deres omgivelser – en sensitivitet, der kan bringes konstruktivt i spil i terapi, hvor klienten får en uforbeholden „her og nu“-respons. Derudover er heste flokdyr og derfor særligt opmærksomme på både adfærd og de følelser, der kommer til udtryk.\n\nI modsætning til mere traditionelle former for behandling er mødet mellem hest og menneske kendetegnet ved en fysisk nærhed, der bidrager med en sensorisk modalitet, en fornemmelse af den energi, der er i samspillet, som stimuleres gennem mange sanser samtidig: se, høre, lugte, føle."
     },
     {
       "spoergsmaal": "Hvorfor møder heste os uden fordomme?",
-      "svar": "Hesten er grundlæggende nysgerrig og overvinder altid sin frygt – hvis den får tid til det og ikke presses. Allerede med dette afsæt bliver hesten en slags rollemodel for det menneske, den møder med åbenhed.\n\nFlere af de mennesker, jeg har haft i terapi eller til handicapridning, er ofte blevet mødt med fordomme i andre livssammenhænge. Det er ofte allerede ved det første møde med hesten, at der kan etableres et langt mere åbent afsæt for nye erfaringer – og derved nye fortællinger om både sig selv og det at være i samspil med andre. Gennem forløbene kan jeg se, at forsvarsstrategier, frygt og et rystet nervesystem ofte kan nedtones."
+      "svar": "Hesten er grundlæggende nysgerrig og overvinder næsten altid sin frygt, hvis den får tid til det og ikke presses. Allerede med dette afsæt bliver hesten en slags rollemodel for det menneske, den møder med åbenhed.\n\nFlere af de mennesker, jeg har haft i Hesteassisteret behandling eller til handicapridning, er ofte blevet mødt med fordomme i andre livssammenhænge. Det er ofte allerede ved det første møde med hesten, at der kan etableres et langt mere åbent afsæt for nye erfaringer, og derved nye fortællinger om både sig selv og det at være i samspil med andre. Gennem forløbene kan jeg se, at forsvarsstrategier, frygt og et rystet nervesystem ofte kan nedtones."
     }
   ],
-  "ansvar_overskrift": "Ansvar og forsikring",
-  "ansvar_intro": "Det er vigtigt for mig, at det her står helt klart, inden vi går i gang.",
-  "ansvar_tekst": "Min praksis ligger på min private matrikel. Al færdsel på matriklen og al omgang med mine heste – herunder ridning, både på ejendommen og uden for den – foregår på eget ansvar. Virksomheden kan på ingen måde gøres erstatningsansvarlig.\n\nFor at kunne deltage i rideterapi og handicapridning er det en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nJeg tager naturligvis de sikkerhedsforanstaltninger, jeg er opmærksom på, og alle der sidder på en hest, skal bære både ridehjelm og sikkerhedsvest – som kan lånes her. Igennem de sidste 30 år har jeg ikke oplevet nogen alvorlige ulykker. Men heste er levende væsner, og der vil altid være risiko for noget uforudsigeligt."
+  "titel": "Praktisk info om hesteassisteret behandling (rideterapi) og handicapridning | Hesteassisteret Praksis",
+  "beskrivelse": "Det praktiske ved rideterapi og handicapridning hos Lotte Stegeager: tøj og udstyr, sikkerhed, vejr, forsikring og svar på de spørgsmål, der oftest bliver stillet."
 }
