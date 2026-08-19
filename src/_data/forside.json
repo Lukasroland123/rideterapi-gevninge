@@ -1,11 +1,11 @@
 {
-  "hero_mikrotekst": "Godkendt af Rideterapeut Foreningen og Dansk Psykoterapeut forening",
+  "hero_mikrotekst": "Medlem af Rideterapeut Foreningen og Dansk Psykoterapeut forening",
   "hero_overskrift": "Hesteassisteret Praksis for mennesker i mistrivsel og med diagnoser",
   "hero_tekst": "Hesteassisteret behandling og handicapridning kan understøtte trivsel, og er  særligt relevant ved skolefravær, ADHD, autisme, angst, traumer og handicap. Individuelle forløb i rolige omgivelser 10 km fra Roskilde.",
   "hero_knap1": "Book en samtale på 20 min.",
   "hero_knap2": "Se hvordan et forløb foregår",
   "hero_billede": "/billeder/forside-barn-paa-hesteryg.jpg",
-  "hero_billede_alt": "Barn med ridehjelm ligger smilende hen over ryggen på en islandshest under en klar blå himmel",
+  "hero_billede_alt": "Det kan virke afslappende at mærke hestens varme, pels og vejrtrækning, mens man ligger på den ryg.",
   "hero_maerkater": [
     {
       "tekst": "primært ene-sessioner"
@@ -14,10 +14,10 @@
       "tekst": "Mulighed for at søge kommunalt tilskud"
     },
     {
-      "tekst": "30 års erfaring med heste"
+      "tekst": "mere end 40 års erfaring med heste"
     },
     {
-      "tekst": "30 års erfaring med mennesker i mistrivsel"
+      "tekst": "mere end 30 års erfaring med mennesker i mistrivsel"
     }
   ],
   "problemer_overskrift": "Måske står I i noget af det her?",
@@ -33,33 +33,33 @@
     },
     {
       "overskrift": "Handicap og funktionsnedsættelse",
-      "tekst": "Der er brug for træning af balance, koordination og kropsholdning – i en form, der ikke føles som træning."
+      "tekst": "Der er brug for træning af balance, koordination og kropsholdning, i en form, der ikke føles som træning."
     },
     {
       "overskrift": "Traumer og et uroligt nervesystem",
-      "tekst": "Konstant vagtsomhed, søvnproblemer eller uro i kroppen – efter PTSD, senhjerneskade eller svære oplevelser."
+      "tekst": "Konstant vagtsomhed, søvnproblemer eller uro i kroppen evt. PTSD, senhjerneskade eller svære oplevelser."
     }
   ],
   "tilbud_mikrotekst": "Jeg tilbyder hesteassisteret behandling og handicapridning",
-  "tilbud_overskrift": "Behandling og ridning – eller begge dele",
-  "tilbud_intro": "Begge dele foregår som enesessioner, hvor der tages højde for dine forudsætninger, og man behøver ikke kunne ride for at komme her.",
+  "tilbud_overskrift": "Hesteassisteret behandling og handicapridning – eller begge dele integreret i hinanden",
+  "tilbud_intro": "Begge dele foregår som enesessioner, hvor der tages højde for dine forudsætninger, behov og ønsker, og man behøver ikke kunne ride for at komme her.",
   "tilbud_kort": [
     {
-      "overskrift": "Udviklingsstøttende hesteassisteret behandling",
-      "tekst": "Et guidet forløb, hvor du oplever hestens respons på dine egne handlinger. Ved at mærke hestens bevægelser, puls, pels og rytme stimuleres en række sanser, som kan danne fundament for nærvær, ro og oplevelsen af samhørighed.\n\nMetoden har jeg selv udviklet ved at „oversætte“ narrativ terapi til et sanseligt og nonverbalt samspil mellem hest og menneske.",
+      "overskrift": "Udviklingsstøttende hesteassisteret behandling (ofte kaldet rideterapi)",
+      "tekst": "Et guidet forløb, hvor du oplever hestens respons på dine egne handlinger. Ved at mærke hestens bevægelser, puls, pels og rytme stimuleres en række sanser, som kan danne fundament for nærvær, ro og oplevelsen af samhørighed.\n\nMetoden har jeg selv udviklet ved at „oversætte“ narrativ terapi og viden om nervesystemet / neuroanatomi til et sanseligt og (non)verbalt samspil mellem hest og menneske.",
       "link_tekst": "Læs om rideterapi"
     },
     {
       "overskrift": "Kompenserende handicapridning",
-      "tekst": "Mennesker med psykiske eller fysiske handicap bliver ofte stimuleret konstruktivt af både samværet med hestene og selve ridningen. Gennem hestens bevægelser aktiveres sanser, der kan have gavnlig effekt for den, der er ramt af handicap eller sygdom.\n\nSom certificeret funktionel neuroterapeut arbejder jeg målrettet med koordination, balance og kropsholdning – sansemotorisk og psykomotorisk træning.",
+      "tekst": "Mennesker med psykiske eller fysiske handicap bliver ofte stimuleret konstruktivt af både samværet med hestene og selve ridningen. Gennem hestens bevægelser aktiveres sanser, der kan have gavnlig effekt for den, der er ramt af handicap eller sygdom.\n\nSom certificeret funktionel neuroterapeut arbejder jeg målrettet med koordination, balance og kropsholdning, sansemotorisk og psykomotorisk træning.",
       "link_tekst": "Læs om handicapridning"
     }
   ],
   "hvorfor_mikrotekst": "Hvorfor heste?",
   "hvorfor_overskrift": "Heste møder mennesker uden filter",
-  "hvorfor_tekst": "Heste er byttedyr og derfor usædvanligt sensitive over for deres omgivelser. De er til stede i nuet og reagerer på den stemning, vi møder dem med. Det gør dem til en helt direkte spejling af, hvilke signaler vi sender ud.\n\nNår vi får skærpet blikket for vores egen rolle i samspillet, bliver det muligt at komme tættere på sig selv – og på sin omverden. Mange af de mennesker, jeg møder, er blevet mødt med fordomme andre steder i livet. Hesten har ingen fordomme.",
+  "hvorfor_tekst": "Heste er byttedyr og derfor usædvanligt sensitive over for deres omgivelser. De er til stede i nuet og reagerer på den stemning, vi møder dem med. Det gør dem ofte til en spejling af, hvilke signaler vi sender ud.\n\nNår vi får skærpet blikket for vores egen rolle i samspillet, bliver det muligt at komme tættere på sig selv, og på sin omverden. Mange af de mennesker, jeg møder, er blevet mødt med fordomme andre steder i livet. Hesten har ingen fordomme, og netop derfor kan mødet mellem mennesket og  hesten, åbne for en oplevelse af forbundethed.",
   "hvorfor_billede": "/billeder/forside-barn-og-hest-i-sne.jpg",
-  "hvorfor_billede_alt": "Smilende barn i vinterjakke rækker hånden frem mod en islandshests mule i sneen",
+  "hvorfor_billede_alt": "oplevelsen af nærhed, samhørighed og forbundethed kan opstå.",
   "hvorfor_boks_titel": "Fra forskningen:",
   "hvorfor_boks_tekst": "Et amerikansk studie fra 2014 fulgte 130 unge gennem 12 ugers hesteassisteret forløb og fandt et betydeligt fald i stresshormonet kortisol. Et andet studie med 66 deltagere over 8 måneder viste markant reduktion af angst og depression samt styrket selvværd.",
   "hvorfor_boks_link": "Se kilder og litteratur",
@@ -68,48 +68,48 @@
   "fokus_kort": [
     {
       "overskrift": "Selvværd og selvtillid",
-      "tekst": "At mærke at man kan noget, ved noget og vil noget. Hesten svarer på det, du gør – ikke på det, andre har fortalt dig om dig selv. Når noget lykkes i samspillet, er det en erfaring, du selv har gjort dig, og den kan ikke tages fra dig igen. Mange oplever her for første gang i lang tid at blive mødt som betydningsfulde. Det er dét, der bygger selvværd op indefra."
+      "tekst": "At mærke at man kan noget, ved noget og vil noget. Hesten svarer på det, du gør, ikke på det, andre har fortalt dig om dig selv. Når noget lykkes i samspillet, er det en erfaring, du selv har gjort dig, og den kan ikke tages fra dig igen. Mange oplever her for første gang i lang tid at blive mødt som betydningsfulde. Det kan skabe grundlaget for at bygge selvværd op indefra."
     },
     {
       "overskrift": "Egne og andres grænser",
-      "tekst": "At afstemme sig og mærke, hvor grænsen går – både din og hestens. Heste svarer med det samme og helt ærligt: kommer man for tæt eller for hurtigt på, trækker de sig, og kommer man roligt, bliver de stående. Det gør grænser til noget, man kan mærke i kroppen, frem for noget der skal forklares. Vi øver det i små skridt, og der er ikke noget rigtigt eller forkert. Fornemmelsen kan tages med videre ind i venskaber, familie og skole."
+      "tekst": "At afstemme sig og mærke, hvor grænsen går, både din og hestens. Heste svarer med det samme og helt ærligt: kommer man for tæt eller for hurtigt på, trækker de sig, og kommer man roligt, bliver de stående. Det gør grænser til noget, man kan mærke i kroppen, frem for noget der skal forklares. Vi øver det det i et afstemt tempo og i små skridt, . Fornemmelsen kan tages med videre ind i venskaber, familie og skole, og andre sociale sammenhænge."
     },
     {
       "overskrift": "Ro i nervesystemet",
-      "tekst": "At afbalancere et system, der har været i alarmberedskab for længe. Heste er byttedyr og lever af at aflæse stemninger, så de reagerer på uro, længe før vi selv opdager den. Når hesten falder til ro sammen med dig, får kroppen en konkret oplevelse af, at der ikke er fare på færde. Den ro kan man ikke tænke sig til – den skal mærkes. Gennem forløbene ser jeg ofte, at forsvarsstrategier og vagtsomhed tones ned."
+      "tekst": "At afbalancere et system, der har været i alarmberedskab længe, måske 'for længe'. Heste er byttedyr og har oprindeligt i naturen overlever af at aflæse stemninger, så de reagerer på uro, længe før vi selv opdager den. Når hesten falder til ro sammen med dig, får kroppen en konkret oplevelse af, at der ikke er fare på færde. Den ro kan man ikke tænke sig til, den skal mærkes. Gennem forløbene ser jeg ofte, at forsvarsstrategier og vagtsomhed tones ned betydeligt."
     },
     {
       "overskrift": "Samspil og samarbejde",
-      "tekst": "Erfaringer med at lykkes sammen med en anden – der kan overføres til livet udenfor. At samarbejde med en hest kræver, at man er tydelig, tålmodig og opmærksom på den anden. Det er de samme evner, der skal bruges blandt mennesker, men her er der ingen ord, der kan misforstås. Lykkes det, mærkes det med det samme og hele vejen igennem kroppen. Den slags oplevelser bliver til nye fortællinger om, hvad man kan sammen med andre."
+      "tekst": "Erfaringer med at lykkes sammen med en anden, der kan overføres til livet udenfor. At samarbejde med en hest kræver, at man er tydelig, tålmodig og opmærksom på den anden/hesten. Det er de samme evner, der skal bruges blandt mennesker, men her er der ingen ord, der kan misforstås. Lykkes det, mærkes det med det samme og hele vejen igennem kroppen. Den slags oplevelser bliver til nye fortællinger om, hvad man kan sammen med andre."
     },
     {
       "overskrift": "Koncentration og nærvær",
-      "tekst": "At være ét sted ad gangen. Forløbene foregår så vidt muligt i et digitalt frit rum, hvor telefonen bliver liggende. Heste er til stede i nuet og trækker os med derhen – man kan ikke være halvt til stede sammen med et dyr på 500 kilo. For mange er det en uvant og befriende pause fra alt det, der ellers kalder. Nærvær er noget, man kan træne, og det bliver lettere hver gang."
+      "tekst": "At være ét sted ad gangen. Forløbene foregår så vidt muligt i et digitalt frit rum, hvor telefonen bliver liggende. Heste er til stede i nuet og trækker os med derhen, man kan ikke være halvt til stede sammen med et dyr på 400 kilo. For mange er det en uvant og befriende pause fra alt det, der ellers kalder. Nærvær er noget, man kan træne, og det bliver lettere hver gang."
     },
     {
       "overskrift": "Krop og motorik",
-      "tekst": "Koordination, balance og kropsholdning gennem sansemotorisk træning. Som certificeret funktionel neuroterapeut arbejder jeg bevidst med at aktivere bestemte nervebaner gennem sanserne. Under sessionerne laver vi fysiske øvelser, både fra jorden og fra hesteryg. Hestens bevægelser forplanter sig op gennem kroppen og træner balancen, uden at det føles som træning. Krop og psyke hænger sammen, og derfor arbejder vi altid med begge dele."
+      "tekst": "Koordination, balance og kropsholdning gennem sansemotorisk træning. Som certificeret funktionel neuroterapeut arbejder jeg bevidst med at aktivere bestemte nervebaner gennem sanserne. Under sessionerne laver vi fysiske øvelser, både fra jorden og fra hesteryg. Hestens bevægelser forplanter sig op gennem kroppen og træner balancen, uden at det føles som træning. Krop og psyke hænger sammen, og derfor arbejder vi med begge dele."
     }
   ],
   "anmeldelser_overskrift": "Hvad siger andre?",
   "anmeldelser_citater": [
     {
-      "tekst": "Min datter har været ramt af angst i en periode, som har forhindret hende i at komme i skole og deltage i sociale aktiviteter. Et forløb hos Lotte, med bl.a. rideterapi og samtaler, har givet hende mere lyst til at stå op om morgenen, og givet hende mod på – og mere lyst til livet.",
-      "hvem": "Stine, 43 år – forælder på tabt arbejdsfortjeneste"
+      "tekst": "Jeg kom til Lotte med et ungt menneske som havde mistet tilliden til andre mennesker og var i voldsom mistrivsel. Alle tiltag havde slået fejl, folkeskole, familiecentret, behandlingsskole. Meget var prøvet, men ingen formåede at skabe tillid, eller helt oprigtigt at se den unge.\nLotte mødte dette unge menneske med respekt, omsorg, forståelse og ikke mindst et løfte om ikke at overskride grænser, overholde den aftalte ramme for dagens terapi, fortrolighed og forståelse for den unges dagsform. Lotte formåede som den eneste professionelle, udover den unges støtte/kontaktperson, at få en relation og få den unge til at føle sig tryg nok til at tale og ligeså stille åbne op for udfordringer. Lotte mødte den unge med en stor oprigtighed og som den eneste jeg gennem mit 12 årige nære kendskab til den unge, så og forstod hun den unge.\nHistorien er lang.... I korte træk har Lotte gjort en livsforandrende forskel for den unge. Med sin professionelle og omsorgsfulde tilgang, har hun hjulpet den unge til at tro på at vedkommende ikke er forkert, ingen skyld har i den langvarige mistrivsel, fået løst op for en masse tilbageholdte følelser og givet stort håb for fremtiden.\nJeg giver Lotte min bedste og varmeste anbefaling, hun er et af de mest oprigtige , dygtige og hjertevarme mennesker jeg har mødt. Lotte har gjort en stor forskel i en ellers håbløs situation.",
+      "hvem": "Hanne Nolte (pædagogisk støtteperson for en ung)"
     },
     {
-      "tekst": "At møde Lotte var som at møde en ven, jeg ikke vidste jeg havde. Hun hjalp mig med at finde glæde og et handlekraftigt sted i mig selv. Hun har mine varmeste anbefalinger. Tusind tak.",
-      "hvem": "Jacob, 44 år"
+      "tekst": "For min datter på 10 år var mødet og kontakten med Lotte og hendes heste altid det ugentlige højdepunkt, da vi gik til rideterapi hos Lotte i 2025 i en meget svær periode.\nLotte formåede fra starten at skabe tryghed for min datter. Hun så hendes styrker og interesse for bl.a. ridning og gymnastik, brugte det i rideterapien, og gymnastikøvelser på hest udfoldede sig gradvist mere og mere. Lotte boostede hendes selvtillid.\nMin datter ELSKEDE rideterapien, og hun havde altid en særlig energi og fortællelyst på vej hjem fra Lotte.\nHun profiterede af forløbet ved at åbne gradvist mere og mere op i samtaler med Lotte, samtidig med vi lykkedes i at skabe positive erfaringer for min datter i at være væk fra sin mor ifm. hendes separationsangst.\nJeg vil til hver en tid anbefale Lotte.",
+      "hvem": "Tina Holst (mor)"
     }
   ],
   "anmeldelser_knap": "Læs anmeldelserne på Google",
   "cta_overskrift": "Er du i tvivl, om det er noget for jer?",
-  "cta_tekst": "Så ring. Jeg tilbyder en samtale på 20 minutter uden beregning, hvor du kan fortælle om jeres situation, spørge ind til min erfaring og finde ud af, om jeg er den rette.",
-  "soester_overskrift": "Søger du samtaleterapi, familiebehandling eller supervision?",
+  "cta_tekst": "Så ring. Jeg tilbyder en samtale på 20 minutter uden beregning, hvor du kan fortælle om jeres situation, spørge ind til min erfaring og finde ud af om det er noget du kunne tænke dig at gå videre med.",
+  "soester_overskrift": "Søger du samtaleterapi, supervision, familiebehandling eller bisidderstøtte?",
   "soester_tekst": "Jeg driver også Narrativ Samtale, hvor jeg tilbyder individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision.",
   "soester_knap": "Gå til narrativsamtale.dk",
   "titel": "Rideterapi & handicapridning ved Roskilde | Lotte Stegeager",
-  "beskrivelse": "Hesteassisteret behandling og handicapridning for børn, unge og voksne. Ved skolefravær, ADHD, autisme, angst og handicap. Praksis i Gevninge, 10 km fra Roskilde.",
-  "hvorfor_artikel_url": "https://tidsskriftetspecialpaedagogik.dk/vare/fra-nr-2024-2-hesteassisteret-terapi-som-platform-i-moedet-med-boern-og-unge-i-mistrivsel/",
-  "hvorfor_artikel_tekst": "Hesteassisteret terapi som platform – læs min artikel"
+  "beskrivelse": "Hesteassisteret behandling, rideterapi og handicapridning for børn, unge og voksne. bl.a. ved skolefravær, ADHD, autisme, angst, PTSD og andre handicap. Praksis i Gevninge, 10 km fra Roskilde.",
+  "hvorfor_artikel_tekst": "Hesteassisteret terapi som platform – læs min artikel",
+  "hvorfor_artikel_url": "https://tidsskriftetspecialpaedagogik.dk/vare/fra-nr-2024-2-hesteassisteret-terapi-som-platform-i-moedet-med-boern-og-unge-i-mistrivsel/"
 }
