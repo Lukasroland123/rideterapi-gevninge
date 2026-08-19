@@ -1,7 +1,7 @@
 {
   "hero_mikrotekst": "Forløb · Kompenserende Handicapridning",
   "hero_overskrift": "Handicapridning",
-  "hero_tekst": "Hestens bevægelser stimulerer balance, koordination og kropsholdning – uden at det føles som træning. For børn, unge og voksne med fysisk eller psykisk handicap.",
+  "hero_tekst": "Handicapridning for børn, unge og voksne med fysisk eller psykisk funktionsnedsættelse. Her er hesten og samspillet omdrejningspunktet for en meningsfuld aktivitet, hvor krop, sanser, relation og trivsel tænkes sammen.",
   "hero_knap1": "Book en uforpligtende 20 min. samtale",
   "hero_knap2": "Kan I søge tilskud?",
   "hero_billede": "/billeder/handicapridning-omfavner-pony.jpg",
@@ -14,7 +14,7 @@
       "tekst": "Primært enesessioner"
     }
   ],
-  "hvad_tekst": "Mennesker med psykiske eller fysiske handicap kan ofte blive stimuleret konstruktivt af både samværet med hestene og af selve ridningen. Gennem hestens bevægelser stimuleres en række forskellige sanser hos rytteren, hvilket kan have gavnlig effekt for et menneske, der er ramt af handicap eller sygdom.\nHestens skridt overfører bevægelser til rytterens bækken og ryg, som minder om bevægelserne under menneskets egen gang. Den rytmiske bevægelse stimulerer balance, kropsholdning og koordination, og for mange mennesker med funktionsnedsættelser har ridningen en kompenserende effekt, fordi kroppen aktiveres og udfordres gennem en meningsfuld aktivitet frem for traditionel træning.",
+  "hvad_tekst": "Samværet med hesten rummer meget mere end selve ridningen. Kontakten, nærværet og de fælles aktiviteter giver mulighed for både bevægelse, sansning og relation, med udgangspunkt i den enkeltes forudsætninger og det, der giver mening.\n\nNår man rider, overfører hestens skridt rytmiske bevægelser til bækken og ryg, som minder om bevægelserne under menneskets egen gang. Kroppen inviteres naturligt til at finde balance, koordinere og tilpasse sig hestens bevægelser. På den måde kan ridningen have en kompenserende betydning, samtidig med at den først og fremmest opleves som en meningsfuld aktivitet sammen med hesten.",
   "hvad_boks_titel": "Det handler ikke kun om at ride.",
   "hvad_boks_tekst": "En del af arbejdet foregår fra jorden, at føre, børste, mærke og være sammen med hesten. Vi finder den form, der passer til kroppen og til dagsformen.",
   "neuro_mikrotekst": "Fagligt afsæt",
@@ -74,7 +74,7 @@
   "tilskud_knap1": "Spørg mig sparring til din ansøgningen",
   "tilskud_knap2": "Er du sagsbehandler? Læs her",
   "sikkerhed_overskrift": "Sikkerhed",
-  "sikkerhed_tekst": "Det er et krav her hos os, at alle, som sidder på en hest, bærer både ridehjelm og sikkerhedsvest. Har I ikke selv udstyr med, kan begge dele lånes. Vi har alle størrelser.\n\nAl omgang med hestene, herunder ridning, samt færdsel på området foregår på eget ansvar. Det er en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nDa jeg i mit samvær med heste og mennesker er meget opmærksom på og kender hestenes signaler, har jeg ikke oplevet nogen alvorlige ulykker. Samtidig er heste levende væsner, så selvom jeg har et indgående kendskab til dem, vil der altid være risiko for, at der opstår noget uforudsigeligt.",
+  "sikkerhed_tekst": "Det er et krav her hos os, at alle, som sidder på en hest, bærer både ridehjelm og sikkerhedsvest. Har I ikke selv udstyr med, kan begge dele lånes. Vi har næsten alle størrelser.\n\nAl omgang med hestene, herunder ridning, samt færdsel på området foregår på eget ansvar. Det er en forudsætning, at du selv har en dækkende ulykkesforsikring.\n\nDa jeg i mit samvær med heste og mennesker er meget opmærksom på og kender hestenes signaler, har jeg ikke oplevet nogen alvorlige ulykker. Samtidig er heste levende væsner, så selvom jeg har et indgående kendskab til dem, vil der altid være risiko for, at der opstår noget uforudsigeligt.",
   "sikkerhed_link": "Læs mere om ansvar og forsikring",
   "faq_overskrift": "Spørgsmål om handicapridning",
   "faq": [
@@ -84,7 +84,7 @@
     },
     {
       "spoergsmaal": "Kan man deltage flere sammen?",
-      "svar": "Her tilbydes primært enesessioner, så mit fulde fokus er på dig. En støtteperson eller forælder er naturligvis velkommen til at være med og kigge på."
+      "svar": "Her tilbydes primært enesessioner, så mit fulde fokus er på dig. En støtteperson eller forælder er naturligvis velkommen til at være med og kigge på. \nEfter forudgående aftale, kan der I nogle sammenhænge være flere deltagere."
     },
     {
       "spoergsmaal": "Hvad hvis vejret er dårligt?",
@@ -92,12 +92,12 @@
     },
     {
       "spoergsmaal": "Kan handicapridning kombineres med hesteassisteret behandling?",
-      "svar": "Ja. Handicapridning kan stå alene som en meningsfuld fritidsaktivitet, men kan også kombineres med et hesteassisteret behandlingsforløb, narrativ terapi eller familiebehandling. Kombinationen giver mulighed for at arbejde mere helhedsorienteret, hvor erfaringerne fra samværet med hesten kan inddrages i behandlings arbejdet, og det, der arbejdes med i samtalerne, kan få plads i samværet med hesten."
+      "svar": "Ja. Handicapridning kan stå alene som en meningsfuld fritidsaktivitet, men kan også kombineres med et hesteassisteret behandlingsforløb, narrativ terapi eller familiebehandling. Kombinationen giver mulighed for at arbejde endnu mere helhedsorienteret, hvor erfaringerne fra samværet med hesten kan inddrages i behandlings arbejdet, og det, der arbejdes med i samtalerne, kan få plads i samværet med hesten."
     }
   ],
   "faq_knap": "Se alle praktiske spørgsmål og svar",
   "kryds_overskrift": "Handler det mere om trivsel end om kroppen?",
-  "kryds_tekst": "Ved skolefravær, angst, ADHD, autisme eller traumer arbejder jeg med udviklingsstøttende hesteassisteret behandling.",
+  "kryds_tekst": "Ved skolefravær, angst, ADHD, autisme eller traumer inddrager jeg ofte dele af den udviklingsstøttende hesteassisteret behandling.",
   "kryds_knap": "Læs om hesteassisteret behandling / rideterapi",
   "cta_overskrift": "Skal vi finde ud af, om det kan lade sig gøre?",
   "cta_tekst": "Ring og få 20 minutter uden beregning. Fortæl om situationen, så vurderer vi sammen, om handicapridning her er det rigtige.",
