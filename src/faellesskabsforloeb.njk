@@ -1,0 +1,224 @@
+---
+layout: base.njk
+permalink: /faellesskabsforloeb/
+side: faellesskabsforloeb
+eleventyComputed:
+  titel: "{{ faellesskabsforloeb.titel }}"
+  beskrivelse: "{{ faellesskabsforloeb.beskrivelse }}"
+  og_billede: "{{ faellesskabsforloeb.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ faellesskabsforloeb.hero_mikrotekst }}</span>
+      <h1>{{ faellesskabsforloeb.hero_overskrift }}</h1>
+      <p class="lead">{{ faellesskabsforloeb.hero_tekst }}</p>
+
+      {# Samme opbygning som paa rideterapi- og handicapridningssiden:
+         uddybningen staar inde i tekstsoejlen ved siden af billedet. #}
+      <div class="hero__uddyb prose">
+        {{ faellesskabsforloeb.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ faellesskabsforloeb.hvad_boks_titel }}</strong> {{ faellesskabsforloeb.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      {# Knapperne er slaaet fra som paa de to andre forloebssider. Skal de
+         tilbage, fjernes kommentartegnene omkring blokken herunder.
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">{{ faellesskabsforloeb.hero_knap1 }}</a>
+        <a class="btn btn--ghost" href="/rideterapi/">{{ faellesskabsforloeb.hero_knap2 }}</a>
+      </div>
+      #}
+
+      {# Maerkaterne er de faa haarde tal om forloebet: gruppestoerrelse,
+         varighed og sted. De staar hoejt paa siden, fordi det er praecis
+         den slags konkrete svar en soegemaskine og en AI kan citere. #}
+      <div class="badges">
+        {% for m in faellesskabsforloeb.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {# Tom ramme indtil Lotte har valgt et billede. Laegger hun et op i
+       CMS'et, traeder <img> automatisk ind i stedet. #}
+    <div class="hero__media">
+      {% if faellesskabsforloeb.hero_billede %}
+      <img src="{{ faellesskabsforloeb.hero_billede }}" alt="{{ faellesskabsforloeb.hero_billede_alt }}">
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div class="split__media">
+      {% if faellesskabsforloeb.lille_billede %}
+      <img src="{{ faellesskabsforloeb.lille_billede }}" alt="{{ faellesskabsforloeb.lille_billede_alt }}">
+      {% endif %}
+    </div>
+    <div>
+      <span class="eyebrow">{{ faellesskabsforloeb.lille_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.lille_overskrift }}</h2>
+      {{ faellesskabsforloeb.lille_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--reverse">
+    <div class="split__media">
+      {% if faellesskabsforloeb.tredje_billede %}
+      <img src="{{ faellesskabsforloeb.tredje_billede }}" alt="{{ faellesskabsforloeb.tredje_billede_alt }}">
+      {% endif %}
+    </div>
+    <div>
+      <span class="eyebrow">{{ faellesskabsforloeb.tredje_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.tredje_overskrift }}</h2>
+      {{ faellesskabsforloeb.tredje_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ faellesskabsforloeb.grupper_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.grupper_overskrift }}</h2>
+      <p>{{ faellesskabsforloeb.grupper_intro }}</p>
+    </div>
+    <div class="grid grid--3 grid--3-fast">
+      {% for k in faellesskabsforloeb.grupper_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow">{{ faellesskabsforloeb.isolation_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.isolation_overskrift }}</h2>
+    </div>
+    <div class="prose">
+      {{ faellesskabsforloeb.isolation_indledning | afsnit | safe }}
+      <ul>
+        {% for p in faellesskabsforloeb.isolation_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ faellesskabsforloeb.isolation_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div class="split__media">
+      {% if faellesskabsforloeb.hvad_laver_billede %}
+      <img src="{{ faellesskabsforloeb.hvad_laver_billede }}" alt="{{ faellesskabsforloeb.hvad_laver_billede_alt }}">
+      {% endif %}
+    </div>
+    <div>
+      <span class="eyebrow">{{ faellesskabsforloeb.hvad_laver_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.hvad_laver_overskrift }}</h2>
+      {{ faellesskabsforloeb.hvad_laver_indledning | afsnit | safe }}
+      <ul>
+        {% for p in faellesskabsforloeb.hvad_laver_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ faellesskabsforloeb.hvad_laver_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--reverse">
+    <div class="split__media">
+      {% if faellesskabsforloeb.maalgruppe_billede %}
+      <img src="{{ faellesskabsforloeb.maalgruppe_billede }}" alt="{{ faellesskabsforloeb.maalgruppe_billede_alt }}">
+      {% endif %}
+    </div>
+    <div>
+      <span class="eyebrow">{{ faellesskabsforloeb.maalgruppe_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.maalgruppe_overskrift }}</h2>
+      {{ faellesskabsforloeb.maalgruppe_indledning | afsnit | safe }}
+      <ul>
+        {% for p in faellesskabsforloeb.maalgruppe_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ faellesskabsforloeb.maalgruppe_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow">{{ faellesskabsforloeb.fagligt_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.fagligt_overskrift }}</h2>
+    </div>
+    <div class="prose">
+      {{ faellesskabsforloeb.fagligt_tekst | afsnit | safe }}
+      <div class="note">
+        <strong>{{ faellesskabsforloeb.fagligt_boks_titel }}</strong> {{ faellesskabsforloeb.fagligt_boks_tekst }}
+        <a href="/om-lotte/#forskning">{{ faellesskabsforloeb.fagligt_boks_link }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ faellesskabsforloeb.forloeb_mikrotekst }}</span>
+      <h2>{{ faellesskabsforloeb.forloeb_overskrift }}</h2>
+    </div>
+    <div class="steps">
+      {% for t in faellesskabsforloeb.forloeb_trin %}
+      <article class="step"><h3>{{ t.overskrift }}</h3><p>{{ t.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ faellesskabsforloeb.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in faellesskabsforloeb.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+    <p style="margin-top:2rem">
+      <a class="btn btn--ghost" href="/forloeb/">{{ faellesskabsforloeb.faq_knap }}</a>
+    </p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ faellesskabsforloeb.kryds_overskrift }}</h3>
+        <p>{{ faellesskabsforloeb.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="/rideterapi/">{{ faellesskabsforloeb.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ faellesskabsforloeb.cta_overskrift }}</h2>
+      <p>{{ faellesskabsforloeb.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser og muligheder for kommunal finansiering</a>
+      </div>
+    </div>
+  </div>
+</section>

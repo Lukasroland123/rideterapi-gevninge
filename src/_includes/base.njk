@@ -14,7 +14,7 @@
 <meta property="og:title" content="{{ titel | safe }}">
 <meta property="og:description" content="{{ beskrivelse | safe }}">
 <meta property="og:url" content="{{ site.domaene }}{{ page.url }}">
-<meta property="og:image" content="{{ site.domaene }}{{ og_billede | default("/billeder/forside-barn-paa-hesteryg.jpg") }}">
+<meta property="og:image" content="{{ site.domaene }}{{ og_billede | default("/billeder/forside-barn-paa-hesteryg.jpg", true) }}">
 <meta name="twitter:card" content="summary_large_image">
 
 {#- Struktureret data ligger i sin egen fil, saa den kan vokse uden at goere
@@ -47,10 +47,11 @@
       <a href="/"{% if side == 'forside' %} aria-current="page"{% endif %}>Forside</a>
 
       <div class="nav__group">
-        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-forloeb"{% if side in ['rideterapi','handicapridning','forloeb'] %} aria-current="true"{% endif %}>Forløb</button>
+        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-forloeb"{% if side in ['rideterapi','handicapridning','faellesskabsforloeb','forloeb'] %} aria-current="true"{% endif %}>Forløb</button>
         <ul class="nav__sub" id="undermenu-forloeb">
           <li><a href="/rideterapi/"{% if side == 'rideterapi' %} aria-current="page"{% endif %}>Rideterapi<small>Hesteassisteret behandling</small></a></li>
           <li><a href="/handicapridning/"{% if side == 'handicapridning' %} aria-current="page"{% endif %}>Handicapridning<small>Kompenserende ridning</small></a></li>
+          <li><a href="/faellesskabsforloeb/"{% if side == 'faellesskabsforloeb' %} aria-current="page"{% endif %}>Fællesskabsforløb<small>Gruppeforløb i små hold</small></a></li>
           <li><a href="/forloeb/"{% if side == 'forloeb' %} aria-current="page"{% endif %}>Praktisk info<small>Tøj, sikkerhed og spørgsmål</small></a></li>
         </ul>
       </div>
@@ -86,6 +87,7 @@
           <li><a href="/">Forside</a></li>
           <li><a href="/rideterapi/">Rideterapi</a></li>
           <li><a href="/handicapridning/">Handicapridning</a></li>
+          <li><a href="/faellesskabsforloeb/">Fællesskabsforløb</a></li>
           <li><a href="/forloeb/">Praktisk info</a></li>
           <li><a href="/priser/">Priser &amp; tilskud</a></li>
           <li><a href="/om-lotte/">Om Lotte</a></li>

@@ -1,14 +1,14 @@
 {
   "hero_mikrotekst": "Medlem af Rideterapeutforeningen og Dansk Psykoterapeutforening",
   "hero_overskrift": "Hesteassisteret Praksis for mennesker i mistrivsel og med diagnoser",
-  "hero_tekst": "Hesteassisteret behandling og handicapridning kan understøtte trivsel, og er  særligt relevant ved skolefravær, ADHD, autisme, angst, traumer og handicap. Individuelle forløb i rolige omgivelser 10 km fra Roskilde.",
+  "hero_tekst": "Hesteassisteret behandling, handicapridning og fællesskabsforløb kan understøtte trivsel, og er særligt relevant ved skolefravær, ADHD, autisme, angst, traumer og handicap. Forløbene, individuelle eller fælles, foregår i rolige omgivelser 10 km fra Roskilde.",
   "hero_knap1": "Book en samtale på 20 min.",
   "hero_knap2": "Se hvordan et forløb foregår",
   "hero_billede": "/billeder/forside-barn-paa-hesteryg.jpg",
   "hero_billede_alt": "Det kan virke afslappende at mærke hestens varme, pels og vejrtrækning, mens man ligger på den ryg.",
   "hero_maerkater": [
     {
-      "tekst": "primært ene-sessioner"
+      "tekst": "ene-sessioner eller fællesskabssessioner"
     },
     {
       "tekst": "Mulighed for at søge kommunalt tilskud"
@@ -40,9 +40,9 @@
       "tekst": "Konstant vagtsomhed, søvnproblemer eller uro i kroppen evt. PTSD, senhjerneskade eller svære oplevelser."
     }
   ],
-  "tilbud_mikrotekst": "Jeg tilbyder hesteassisteret behandling og handicapridning",
-  "tilbud_overskrift": "Hesteassisteret behandling og handicapridning – eller begge dele integreret i hinanden",
-  "tilbud_intro": "Begge dele foregår som enesessioner, hvor der tages højde for dine forudsætninger, behov og ønsker, og man behøver ikke kunne ride for at komme her.",
+  "tilbud_mikrotekst": "Jeg tilbyder hesteassisteret behandling, handicapridning og fællesskabsforløb",
+  "tilbud_overskrift": "Hesteassisteret behandling, handicapridning og fællesskabsforløb – eller flere dele integreret i hinanden",
+  "tilbud_intro": "De to første foregår som enesessioner, hvor der tages højde for dine forudsætninger, behov og ønsker. Fællesskabsforløbet foregår i en lille, fast gruppe. Man behøver ikke kunne ride for at komme her.",
   "tilbud_kort": [
     {
       "overskrift": "Udviklingsstøttende hesteassisteret behandling (ofte kaldet rideterapi)",
@@ -53,6 +53,11 @@
       "overskrift": "Kompenserende handicapridning",
       "tekst": "Mennesker med psykiske eller fysiske handicap bliver ofte stimuleret konstruktivt af både samværet med hestene og selve ridningen. Gennem hestens bevægelser aktiveres sanser, der kan have gavnlig effekt for den, der er ramt af handicap eller sygdom.\n\nSom certificeret funktionel neuroterapeut arbejder jeg målrettet med koordination, balance og kropsholdning, sansemotorisk og psykomotorisk træning.",
       "link_tekst": "Læs om handicapridning"
+    },
+    {
+      "overskrift": "Hesteassisteret fællesskabsforløb",
+      "tekst": "Et pædagogisk gruppeforløb for børn og unge, som gennem kortere eller længere tid har haft svært ved at komme i skole og har fået afstand til de sociale fællesskaber, der normalt følger med hverdagen.\n\nForløbene foregår i små, faste grupper på 2–4 deltagere, hvor hestene og aktiviteterne omkring dem er det, vi er sammen om. Man kan begynde med bare at være med.",
+      "link_tekst": "Læs om fællesskabsforløb"
     }
   ],
   "hvorfor_mikrotekst": "Hvorfor heste?",

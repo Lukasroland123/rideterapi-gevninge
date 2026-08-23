@@ -63,11 +63,11 @@ collections:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text }
 
-          - { name: tilbud_mikrotekst, label: "Lille tekst · afsnittet om de to tilbud", widget: string }
+          - { name: tilbud_mikrotekst, label: "Lille tekst · afsnittet om de tre tilbud", widget: string }
           - { name: tilbud_overskrift, label: "Overskrift", widget: string }
           - { name: tilbud_intro, label: "Introtekst", widget: text }
           - name: tilbud_kort
-            label: "De to tilbud"
+            label: "De tre tilbud"
             widget: list
             allow_add: false
             allow_remove: false
@@ -125,6 +125,7 @@ collections:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: svar, label: "Kort svar med de konkrete tal", widget: text, hint: "2-3 sætninger i jeg-form med det, der kan svares konkret på: hvor længe varer det, hvor ofte, hvad koster det, hvad kan man søge tilskud til. Det er dem, Google og AI-tjenester citerer. Gentag ikke noget, der allerede står i afsnittet ved siden af." }
           - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
@@ -200,6 +201,7 @@ collections:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: svar, label: "Kort svar med de konkrete tal", widget: text, hint: "2-3 sætninger i jeg-form med det, der kan svares konkret på: hvor længe varer det, hvor ofte, hvad koster det, hvad kan man søge tilskud til. Det er dem, Google og AI-tjenester citerer. Gentag ikke noget, der allerede står i afsnittet ved siden af." }
           - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
@@ -283,6 +285,124 @@ collections:
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text }
 
       # ---------------------------------------------------------------
+      - name: faellesskabsforloeb
+        label: "Fællesskabsforløb"
+        file: "src/_data/faellesskabsforloeb.json"
+        description: "Det hesteassisterede fællesskabsforløb i små grupper."
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
+          - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
+          - { name: hero_billede, label: "Stort billede øverst", widget: image }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+          - name: hero_maerkater
+            label: "De fire små mærkater"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Tekst", widget: string }
+
+          - { name: hvad_tekst, label: "Tekst ved siden af billedet øverst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: hvad_boks_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: lille_mikrotekst, label: "Lille tekst · 'Et lille fællesskab'", widget: string }
+          - { name: lille_overskrift, label: "Overskrift", widget: string }
+          - { name: lille_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: lille_billede, label: "Billede", widget: image }
+          - { name: lille_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+
+          - { name: tredje_mikrotekst, label: "Lille tekst · 'Det fælles tredje'", widget: string }
+          - { name: tredje_overskrift, label: "Overskrift", widget: string }
+          - { name: tredje_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: tredje_billede, label: "Billede", widget: image }
+          - { name: tredje_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+
+          - { name: grupper_mikrotekst, label: "Lille tekst · 'Et overskueligt sted at være sammen'", widget: string }
+          - { name: grupper_overskrift, label: "Overskrift · 'Hvorfor små grupper?'", widget: string }
+          - { name: grupper_intro, label: "Introtekst", widget: text }
+          - name: grupper_kort
+            label: "De tre kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: isolation_mikrotekst, label: "Lille tekst · 'Fra isolation til deltagelse'", widget: string }
+          - { name: isolation_overskrift, label: "Overskrift", widget: string }
+          - { name: isolation_indledning, label: "Tekst før punktlisten", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - name: isolation_punkter
+            label: "Punktlisten"
+            widget: list
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: isolation_afslutning, label: "Tekst efter punktlisten", widget: text }
+
+          - { name: hvad_laver_mikrotekst, label: "Lille tekst · 'Hvad laver vi?'", widget: string }
+          - { name: hvad_laver_overskrift, label: "Overskrift", widget: string }
+          - { name: hvad_laver_indledning, label: "Tekst før punktlisten", widget: text }
+          - name: hvad_laver_punkter
+            label: "Punktlisten"
+            widget: list
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: hvad_laver_afslutning, label: "Tekst efter punktlisten", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: hvad_laver_billede, label: "Billede", widget: image }
+          - { name: hvad_laver_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+
+          - { name: maalgruppe_mikrotekst, label: "Lille tekst · 'Målgruppe'", widget: string }
+          - { name: maalgruppe_overskrift, label: "Overskrift", widget: string }
+          - { name: maalgruppe_indledning, label: "Tekst før punktlisten", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - name: maalgruppe_punkter
+            label: "Punktlisten"
+            widget: list
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: maalgruppe_afslutning, label: "Tekst efter punktlisten", widget: text }
+          - { name: maalgruppe_billede, label: "Billede", widget: image }
+          - { name: maalgruppe_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+
+          - { name: fagligt_mikrotekst, label: "Lille tekst · 'Fagligt afsæt'", widget: string }
+          - { name: fagligt_overskrift, label: "Overskrift", widget: string }
+          - { name: fagligt_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: fagligt_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: fagligt_boks_tekst, label: "Grøn boks · tekst", widget: text }
+          - { name: fagligt_boks_link, label: "Grøn boks · tekst på linket", widget: string }
+
+          - { name: forloeb_mikrotekst, label: "Lille tekst · 'Sådan foregår et forløb'", widget: string }
+          - { name: forloeb_overskrift, label: "Overskrift", widget: string }
+          - name: forloeb_trin
+            label: "De nummererede trin"
+            widget: list
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: faq_overskrift, label: "Overskrift · spørgsmål og svar", widget: string }
+          - name: faq
+            label: "Spørgsmål og svar"
+            widget: list
+            fields:
+              - { name: spoergsmaal, label: "Spørgsmål", widget: string }
+              - { name: svar, label: "Svar", widget: text }
+          - { name: faq_knap, label: "Tekst på knappen under spørgsmålene", widget: string }
+
+          - { name: kryds_overskrift, label: "Henvisning til rideterapi · overskrift", widget: string }
+          - { name: kryds_tekst, label: "Henvisning · tekst", widget: text }
+          - { name: kryds_knap, label: "Henvisning · knaptekst", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string, hint: "Vises i browserfanen og i Google." }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text, hint: "Cirka 150 tegn." }
+
+      # ---------------------------------------------------------------
       - name: forloeb
         label: "Praktisk info"
         file: "src/_data/forloeb.json"
@@ -325,6 +445,7 @@ collections:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: svar, label: "Kort svar med de konkrete tal", widget: text, hint: "2-3 sætninger i jeg-form med det, der kan svares konkret på: hvor længe varer det, hvor ofte, hvad koster det, hvad kan man søge tilskud til. Det er dem, Google og AI-tjenester citerer. Gentag ikke noget, der allerede står i afsnittet ved siden af." }
 
           - { name: pris1_overskrift, label: "Priskort 1 · overskrift", widget: string }
           - { name: pris1_beloeb, label: "Priskort 1 · det store beløb", widget: string }

@@ -55,8 +55,8 @@ eleventyComputed:
       <h2>{{ forside.tilbud_overskrift }}</h2>
       <p>{{ forside.tilbud_intro }}</p>
     </div>
-    {% set maal = ['/rideterapi/', '/handicapridning/'] %}
-    <div class="grid grid--2">
+    {% set maal = ['/rideterapi/', '/handicapridning/', '/faellesskabsforloeb/'] %}
+    <div class="grid grid--3 grid--3-fast">
       {% for k in forside.tilbud_kort %}
       <article class="card">
         <h3>{{ k.overskrift }}</h3>

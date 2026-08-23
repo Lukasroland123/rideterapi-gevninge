@@ -1,6 +1,7 @@
 {
   "hero_mikrotekst": "Forløb · Kompenserende Handicapridning",
   "hero_overskrift": "Handicapridning",
+  "svar": "En session varer 45–60 minutter og foregår udendørs, tilrettelagt efter den enkelte. I kan søge kommunalt tilskud hos jeres bopælskommune efter servicelovens § 41 for børn under 18 år og § 100 for voksne.",
   "hero_tekst": "Handicapridning for børn, unge og voksne med fysisk eller psykisk funktionsnedsættelse. Her er hesten og samspillet omdrejningspunktet for en meningsfuld aktivitet, hvor krop, sanser, relation og trivsel tænkes sammen.",
   "hero_knap1": "Book en uforpligtende 20 min. samtale",
   "hero_knap2": "Kan I søge tilskud?",
@@ -11,7 +12,7 @@
       "tekst": "Certificeret funktionel neuroterapeut, og med fokus på neuropsykologi"
     },
     {
-      "tekst": "Primært enesessioner"
+      "tekst": "Ene-sessioner eller fællesskabssessioner"
     }
   ],
   "hvad_tekst": "Samværet med hesten rummer meget mere end selve ridningen. Kontakten, nærværet og de fælles aktiviteter giver mulighed for både bevægelse, sansning og relation, med udgangspunkt i den enkeltes forudsætninger og det, der giver mening.\n\nNår man rider, overfører hestens skridt rytmiske bevægelser til bækken og ryg, som minder om bevægelserne under menneskets egen gang. Kroppen inviteres naturligt til at finde balance, koordinere og tilpasse sig hestens bevægelser. På den måde kan ridningen have en kompenserende betydning, samtidig med at den først og fremmest opleves som en meningsfuld aktivitet sammen med hesten.",
@@ -84,7 +85,7 @@
     },
     {
       "spoergsmaal": "Kan man deltage flere sammen?",
-      "svar": "Her tilbydes primært enesessioner, så mit fulde fokus er på dig. En støtteperson eller forælder er naturligvis velkommen til at være med og kigge på. \nEfter forudgående aftale, kan der I nogle sammenhænge være flere deltagere."
+      "svar": "Ja, begge dele er muligt. Handicapridningen tilbydes som enesessioner, så mit fulde fokus er på dig, og en støtteperson eller forælder er naturligvis velkommen til at være med og kigge på. Efter forudgående aftale kan der i nogle sammenhænge være flere deltagere.\n\nDerudover tilbyder jeg hesteassisteret fællesskabsforløb, hvor 2–4 børn og unge deltager i en fast gruppe."
     },
     {
       "spoergsmaal": "Hvad hvis vejret er dårligt?",

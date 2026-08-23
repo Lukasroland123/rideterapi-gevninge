@@ -71,6 +71,7 @@
         "Hesteassisteret terapi",
         "Rideterapi",
         "Handicapridning",
+        "Hesteassisterede faellesskabsforloeb",
         "Narrativ terapi",
         "Traumebehandling",
         "Skolefravaer",
@@ -218,6 +219,48 @@
         "audienceType": "Boern, unge og voksne med fysisk eller psykisk handicap eller funktionsnedsaettelse"
       },
       "availableLanguage": "da"
+    }
+    {%- endif %}
+
+    {%- if side == 'faellesskabsforloeb' %}
+    ,{
+      "@type": "Service",
+      "@id": {{ (site.domaene + page.url + "#ydelse") | dump | safe }},
+      "name": "Hesteassisteret faellesskabsforloeb - paedagogisk gruppeforloeb",
+      "description": {{ faellesskabsforloeb.beskrivelse | dump | safe }},
+      {#- serviceType siger hvad ydelsen ER. Her staar "paedagogisk" og ikke
+          "terapi", fordi det er den skelnen Lotte selv goer paa siden. Skrev
+          vi terapi, ville schemaet modsige broedteksten - og saa er det
+          schemaet, maskinen gentager. -#}
+      "serviceType": "Paedagogisk gruppeforloeb med heste",
+      "provider": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Region Sjaelland" },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Boern og unge med bekymrende eller laengerevarende skolefravaer, angst, social usikkerhed, ADHD eller autisme, hvor isolation og ensomhed er ved at blive en del af situationen"
+      },
+      "availableLanguage": "da"
+    }
+    ,{
+      {#- Endnu en FAQPage. Den er lovlig, fordi den ligger paa sin egen URL
+          og beskriver sine egne spoergsmaal. De fem svar her er de mest
+          konkrete paa hele siden - gruppestoerrelse, ridning, betaling -
+          og det er praecis dem, en model kan hente som faerdig passage. -#}
+      "@type": "FAQPage",
+      "@id": {{ (site.domaene + page.url + "#faq") | dump | safe }},
+      "isPartOf": { "@id": {{ (site.domaene + page.url + "#webpage") | dump | safe }} },
+      "mainEntity": [
+        {%- for f in faellesskabsforloeb.faq %}
+        {
+          "@type": "Question",
+          "name": {{ f.spoergsmaal | dump | safe }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ f.svar | dump | safe }}
+          }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ]
     }
     {%- endif %}
 

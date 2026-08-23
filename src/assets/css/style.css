@@ -368,6 +368,18 @@ blockquote {
 }
 .hero h1 { margin-bottom: .6rem; }
 .hero__text p.lead { margin-bottom: 0; }
+.hero__text p.lead + p { margin-top: 1.1em; }
+
+/* Det korte, konkrete svar staar en anelse inde med en tankestreg foran, saa
+   det laeses som en tilfoejelse til afsnittet over det og ikke som endnu et
+   afsnit i traeden. Stregen ligger i ::before og ikke i teksten, saa den ikke
+   skal skrives i CMS'et og ikke foelger med, hvis nogen kopierer afsnittet. */
+.svar { padding-left: 1.5rem; position: relative; }
+.svar::before {
+  content: "–";
+  position: absolute; left: 0; top: 0;
+  color: var(--brand); font-weight: 600;
+}
 
 .hero__media {
   border-radius: var(--radius-lg);
@@ -459,6 +471,9 @@ blockquote {
 .pagehead { background: var(--brand-tint); padding: clamp(2.5rem, 5vw, 4rem) 0; }
 .pagehead h1 { margin-bottom: .4rem; }
 .pagehead p { max-width: 70ch; color: var(--ink-soft); font-size: 1.15rem; margin-bottom: 0; }
+/* Svar-foerst-afsnittet staar foerst, Lottes egen indledning lige under.
+   Afsnittene ovenfor har ingen bundmargen, saa afstanden saettes her. */
+.pagehead p + p { margin-top: 1.1em; }
 
 /* =========================================================
    Kort / grid

@@ -1,0 +1,183 @@
+{
+  "hero_mikrotekst": "Forløb · Hesteassisteret fællesskabsforløb",
+  "hero_overskrift": "Hesteassisteret fællesskabsforløb",
+  "hero_tekst": "Et pædagogisk gruppeforløb for børn og unge, som gennem kortere eller længere tid har haft svært ved at komme i skole og har fået afstand til de sociale fællesskaber, der normalt følger med hverdagen.",
+  "hero_knap1": "Book en uforpligtende 20 min. samtale",
+  "hero_knap2": "Se rideterapi i stedet",
+  "hero_billede": "",
+  "hero_billede_alt": "",
+  "hero_maerkater": [
+    {
+      "tekst": "Små, faste grupper på 2–4 børn og unge"
+    },
+    {
+      "tekst": "Typisk 10–12 gange á 90 minutter, én gang om ugen"
+    },
+    {
+      "tekst": "Man behøver ikke kunne ride"
+    },
+    {
+      "tekst": "Gevninge ved Roskilde"
+    }
+  ],
+  "hvad_tekst": "Forløbene foregår i små, faste grupper på 2–4 børn eller unge. Her er hestene og aktiviteterne omkring dem det, vi er sammen om.\n\nFormålet er at skabe et overskueligt fællesskab, hvor der kan opstå nye erfaringer med deltagelse, relationer og det at høre til, erfaringer, som på sigt kan få betydning for deltagelse i andre fællesskaber, også i skolen.",
+  "hvad_boks_titel": "Man kan begynde med bare at være med.",
+  "hvad_boks_tekst": "Man behøver ikke være god til at tale, være udadvendt eller vide, hvordan man skal være sammen med de andre.",
+  "lille_mikrotekst": "Et lille fællesskab",
+  "lille_overskrift": "Når man har været væk fra de andre",
+  "lille_tekst": "Langvarigt eller gentaget skolefravær handler ikke kun om de timer, man ikke er i skole. For nogle børn og unge betyder det også, at kontakten til kammerater og hverdagens fællesskaber langsomt bliver mindre.\n\nJo længere tid man har været væk, desto større kan afstanden opleves. Nogle bliver ensomme. Andre får en oplevelse af at være anderledes eller forkerte, fordi de andre tilsyneladende kan noget, som de selv har svært ved.\n\nI det hesteassisterede fællesskabsforløb er udgangspunktet at skabe et lille og overskueligt sted, hvor det igen kan blive muligt at være sammen med andre.",
+  "lille_billede": "",
+  "lille_billede_alt": "",
+  "tredje_mikrotekst": "Det fælles tredje",
+  "tredje_overskrift": "Vi mødes om hestene",
+  "tredje_tekst": "Hestene giver gruppen noget konkret at være fælles om.\n\nVi skal måske hente en hest på folden, strigle den, finde udstyr, gå en tur, ride eller løse en lille opgave sammen. Opmærksomheden behøver derfor ikke hele tiden være rettet mod én selv eller mod de andre i gruppen.\n\nI pædagogikken beskrives dette blandt andet gennem Michael Husens begreb det fælles tredje: at relationer kan opstå og udvikle sig, når mennesker er sammen om noget, som findes uden for dem selv. Her er hesten det fælles tredje.\n\nDet betyder, at samvær ikke nødvendigvis begynder med samtale. Det kan begynde med, at to børn står på hver sin side af den samme hest og børster. At én holder grimen, mens en anden åbner lågen. Eller at man sammen opdager noget, hesten gør.\n\nRelationen kan få lov til at opstå undervejs.",
+  "tredje_billede": "",
+  "tredje_billede_alt": "",
+  "grupper_mikrotekst": "Et overskueligt sted at være sammen",
+  "grupper_overskrift": "Hvorfor små grupper?",
+  "grupper_intro": "En gruppe på 2–4 deltagere er stor nok til, at der kan opstå et fællesskab, men lille nok til, at den enkelte ikke forsvinder i mængden.",
+  "grupper_kort": [
+    {
+      "overskrift": "At være med på forskellige måder",
+      "tekst": "Man behøver ikke tage ordet, være hurtig eller opsøgende for at have en plads i gruppen. Nogle deltager meget aktivt, andre har brug for først at se på eller være lidt i periferien. Begge dele kan være måder at være med på."
+    },
+    {
+      "overskrift": "At opdage, at man ikke er den eneste",
+      "tekst": "Deltagerne har forskellige historier, men de deler erfaringen af, at skole og deltagelse i skolens fællesskaber er blevet svært. Mødet med andre, som kender noget af det samme, kan være med til at mindske oplevelsen af at stå alene eller være forkert."
+    },
+    {
+      "overskrift": "At få nye erfaringer sammen med andre",
+      "tekst": "Når man lykkes med noget sammen, får hentet hesten, finder en løsning eller hjælper hinanden, opstår konkrete erfaringer med, at samvær med andre også kan være trygt, meningsfuldt og rart. Det er ikke noget, der skal forklares. Det er noget, der kan opleves."
+    }
+  ],
+  "isolation_mikrotekst": "Fra isolation til deltagelse",
+  "isolation_overskrift": "Små erfaringer kan få betydning andre steder",
+  "isolation_indledning": "For et barn eller en ung, der har været meget hjemme, kan springet direkte tilbage til en skoleklasse opleves meget stort.\n\nDen lille gruppe kan blive et sted imellem. Et sted, hvor man igen kan gøre sig erfaringer med:",
+  "isolation_punkter": [
+    {
+      "tekst": "at møde op"
+    },
+    {
+      "tekst": "at blive genkendt"
+    },
+    {
+      "tekst": "at have en plads"
+    },
+    {
+      "tekst": "at blive savnet, når man ikke er der"
+    },
+    {
+      "tekst": "at være en del af noget sammen med andre"
+    }
+  ],
+  "isolation_afslutning": "Forløbet har ikke som mål at presse barnet tilbage i skole. Men erfaringerne fra det lille fællesskab kan blive en del af en bevægelse hen imod igen at kunne deltage i andre sociale sammenhænge, herunder skolens fællesskaber.",
+  "hvad_laver_mikrotekst": "Hvad laver vi?",
+  "hvad_laver_overskrift": "Hestene sætter rammen",
+  "hvad_laver_indledning": "Indholdet tilpasses gruppens alder og forudsætninger, men kan blandt andet være:",
+  "hvad_laver_punkter": [
+    {
+      "tekst": "at hente og bringe hestene på folden"
+    },
+    {
+      "tekst": "strigling og anden omsorg for hestene"
+    },
+    {
+      "tekst": "arbejde med hestene fra jorden"
+    },
+    {
+      "tekst": "mindre opgaver, der kræver samarbejde"
+    },
+    {
+      "tekst": "ridning efter den enkeltes lyst og forudsætninger"
+    },
+    {
+      "tekst": "ture med hestene i naturen"
+    },
+    {
+      "tekst": "fælles pauser og samtaler, når de opstår naturligt"
+    }
+  ],
+  "hvad_laver_afslutning": "Man behøver ikke kunne ride, og det er heller ikke nødvendigt at have erfaring med heste.\n\nRidning er ikke målet med forløbet. Hestene og livet omkring dem skaber rammen for fællesskabet.",
+  "hvad_laver_billede": "",
+  "hvad_laver_billede_alt": "",
+  "maalgruppe_mikrotekst": "Målgruppe",
+  "maalgruppe_overskrift": "Hvem er forløbet for?",
+  "maalgruppe_indledning": "Forløbet er målrettet børn og unge, som har bekymrende eller længerevarende skolefravær, og hvor afstand til jævnaldrende, isolation eller ensomhed kan være ved at blive en del af situationen.\n\nDet kan blandt andet være børn og unge med:",
+  "maalgruppe_punkter": [
+    {
+      "tekst": "længerevarende eller tilbagevendende skolefravær"
+    },
+    {
+      "tekst": "angst eller social usikkerhed"
+    },
+    {
+      "tekst": "ADHD eller autisme"
+    },
+    {
+      "tekst": "oplevelse af isolation og ensomhed"
+    },
+    {
+      "tekst": "vanskeligheder ved at indgå i større sociale sammenhænge"
+    }
+  ],
+  "maalgruppe_afslutning": "Det afgørende er ikke en bestemt diagnose, men at barnet eller den unge kan have glæde af et lille og forudsigeligt fællesskab omkring hestene.",
+  "maalgruppe_billede": "",
+  "maalgruppe_billede_alt": "",
+  "fagligt_mikrotekst": "Fagligt afsæt",
+  "fagligt_overskrift": "Pædagogisk tilbud, ikke et gruppeterapeutisk tilbud",
+  "fagligt_tekst": "Hesteassisterede fællesskabsforløb er først og fremmest et pædagogisk og relationsorienteret tilbud.\n\nDet adskiller sig dermed fra den udviklingsstøttende hesteassisterede behandling, som også tilbydes, hvor der er tale om et individuelt psykoterapeutisk behandlingsforløb.\n\nDet faglige afsæt for fællesskabsforløbene findes blandt andet i pædagogisk og relationel teori om deltagelse, tilhør og det fælles tredje.\n\nSamtidig inddrager jeg min mangeårige erfaring med børn og unge i mistrivsel, narrativ praksis, specialpædagogik og hesteassisteret arbejde.",
+  "fagligt_boks_titel": "Forskning på området:",
+  "fagligt_boks_tekst": "Et igangværende dansk forskningsprojekt undersøger, hvordan hesteassisterede tilbud kan understøtte trivsel og deltagelse hos børn og unge i mistrivsel – og skabe mulige veje tilbage til skole- og fritidsfællesskaber. (Kilde: Guldager, J.D. m.fl. (2026–2027). Hest på skoleskemaet – Hesteassisterede mellemformer som en inklusionsfremmende praksis for børn og unge i betydelig mistrivsel. NUBU / UC SYD, Professionshøjskolen Absalon, UCL og UCN.)",
+  "fagligt_boks_link": "Se litteratur og forskning på området",
+  "forloeb_mikrotekst": "Sådan foregår et forløb",
+  "forloeb_overskrift": "Fra første samtale til fast gruppe",
+  "forloeb_trin": [
+    {
+      "overskrift": "Samtale før opstart",
+      "tekst": "Før opstart afholdes en samtale med forældre og eventuelt skole, PPR, sagsbehandler eller anden relevant fagperson, så det vurderes, om tilbuddet passer til barnet eller den unge."
+    },
+    {
+      "overskrift": "Gruppen sættes sammen",
+      "tekst": "Grupperne består af 2–4 børn eller unge og sammensættes med blik for alder, forudsætninger og det, deltagerne står i."
+    },
+    {
+      "overskrift": "Faste rammer",
+      "tekst": "Der lægges vægt på genkendelighed og kontinuitet. Derfor er udgangspunktet en fast gruppe, som mødes over et aftalt antal gange. Typisk 10–12 gange á 90 minutter, én gang om ugen. Dette kan tilpasses."
+    },
+    {
+      "overskrift": "Privat eller gennem kommunen",
+      "tekst": "Forløbet kan rekvireres privat eller i samarbejde med skole, institution eller kommune."
+    }
+  ],
+  "faq_overskrift": "Spørgsmål om hesteassisterede fællesskabsforløb",
+  "faq": [
+    {
+      "spoergsmaal": "Skal mit barn kunne ride?",
+      "svar": "Nej. Man behøver hverken kunne ride eller have tidligere erfaring med heste. Meget af samværet foregår fra jorden."
+    },
+    {
+      "spoergsmaal": "Er det rideterapi?",
+      "svar": "Nej. Fællesskabsforløbet er et pædagogisk gruppeforløb med fokus på deltagelse, relationer og fællesskab. Har barnet brug for et individuelt terapeutisk behandlingsforløb, tilbyder jeg udviklingsstøttende hesteassisteret behandling."
+    },
+    {
+      "spoergsmaal": "Hvor mange er der på et hold?",
+      "svar": "Der er 2–4 børn eller unge i en gruppe. Den lille gruppestørrelse er en væsentlig del af tilbuddet."
+    },
+    {
+      "spoergsmaal": "Skal barnet være klar til at være socialt?",
+      "svar": "Nej. Netop ikke. Der er plads til forskellige måder at deltage på. Det kan i begyndelsen være nok at møde op, være i nærheden af de andre og være sammen om hesten."
+    },
+    {
+      "spoergsmaal": "Kan kommunen eller skolen betale for et forløb?",
+      "svar": "Forløb kan rekvireres af blandt andet kommuner, skoler og institutioner. Der kan efter aftale udarbejdes beskrivelse af formål og forløb samt deltages i statusmøder."
+    }
+  ],
+  "faq_knap": "Se alle praktiske spørgsmål og svar",
+  "kryds_overskrift": "Er der brug for et individuelt forløb i stedet?",
+  "kryds_tekst": "Har barnet brug for et individuelt psykoterapeutisk behandlingsforløb, tilbyder jeg udviklingsstøttende hesteassisteret behandling, også kaldet rideterapi.",
+  "kryds_knap": "Læs om rideterapi",
+  "cta_overskrift": "Er I i tvivl, om det kunne være noget?",
+  "cta_tekst": "Ring og få en samtale på 20 minutter uden beregning. Her kan I fortælle lidt om situationen, og vi kan sammen vurdere, om et hesteassisteret fællesskabsforløb kunne være en meningsfuld ramme.",
+  "titel": "Hesteassisteret fællesskabsforløb ved Roskilde | Hesteassisteret Praksis",
+  "beskrivelse": "Pædagogisk gruppeforløb for børn og unge med skolefravær. Små, faste hold på 2–4 deltagere omkring hestene i Gevninge ved Roskilde. Typisk 10–12 gange á 90 minutter."
+}
