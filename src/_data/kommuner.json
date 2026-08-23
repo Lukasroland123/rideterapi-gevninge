@@ -1,6 +1,6 @@
 {
   "hero_mikrotekst": "Til sagsbehandlere, PPR, skoler og institutioner",
-  "hero_overskrift": "Til dig, der skal finde et tilbud til et barn eller en ung",
+  "hero_overskrift": "Til dig, der skal finde et tilbud til et barn, en ung eller en voksen",
   "hero_knap2": "Send en forespørgsel",
   "hero_billede": "/billeder/kommuner-barn-rider-med-lotte.jpg",
   "hero_billede_alt": "Når nærvær giver mod til lidt mere.",
@@ -55,28 +55,28 @@
       "tekst": "Hvor barnet, den unge eller voksne har trukket sig fra fællesskaber, og troen på sig selv kan være blevet mindre over tid. Gennem relationen til hesten, individuelt eller i et lille fællesskab, kan der opstå erfaringer med ro, deltagelse, mestring og det at høre til. Små oplevelser, der lykkes, kan få betydning langt ud over tiden med hesten."
     },
     {
-      "overskrift": "Voksne med senhjerneskade eller andre funktionsnedsættelser",
-      "tekst": "Genopbygning af balance, kropsfornemmelse og tillid til egen krop. Ridningens rytmiske og forudsigelige bevægelse er noget, kroppen kan hvile i og lære af. Vi arbejder både fra hesteryg og fra jorden, alt efter dagsformen."
+      "overskrift": "Voksne med funktionsnedsættelser",
+      "tekst": "For voksne med funktionsnedsættelser kan samværet med hesten skabe en meningsfuld ramme for nærvær, glæde, deltagelse og oplevelsen af at kunne noget på egne præmisser. Forløbet tilpasses den enkelte og kan rumme både ridning, samvær med hesten fra jorden og rolige stunder omkring den, altid med blik for hele mennesket og den aktuelle dagsform."
     }
   ],
   "forskel_overskrift": "Hvad adskiller det fra en rideskole?",
-  "forskel_intro": "Markedet for rideterapi er forskelligartet. Her er de fire ting, der adskiller et forløb her.",
+  "forskel_intro": "Vores hesteassisterede forløb er fagligt funderede indsatser med et pædagogisk, terapeutisk eller kompenserende formål. Her er fire forhold, der tydeliggør forskellen fra almindelig rideundervisning.",
   "forskel_kort": [
     {
-      "overskrift": "Behandling, ikke undervisning",
-      "tekst": "Formålet er trivsel, ikke ridefærdigheder. En del af forløbene foregår helt fra jorden, og nogle børn kommer slet ikke op på hesten det første stykke tid. Der er intet pensum og ingen prøver — kun det, der giver mening for det enkelte barn."
+      "overskrift": "Behandling tilgang og terapeutisk faglighed",
+      "tekst": "Forløbene har trivsel, udvikling og deltagelse som formål, ikke ridefærdigheder. Hesten kan indgå fra jorden, fra ryggen eller som ramme om samtalen og kan være en særlig vej til kontakt med børn og unge, som har svært ved at finde sig til rette i mere traditionelle samtale- og behandlingstilbud.\nBehandlingen varetages af cand.scient.soc. med specialisering i narrativ psykoterapi, traumeuddannelse og 30 års erfaring med heste. Det gør det muligt at tilrettelægge en helhedsorienteret indsats, hvor hesteassisteret behandling efter behov kan stå alene eller indgå i et bredere forløb med individuelle samtaler, forældresamtaler eller familiebehandling.\nDer kan således arbejdes med både barnets eller den unges egen situation og med de relationer og sammenhænge, som vedkommende er en del af."
     },
     {
-      "overskrift": "Terapeutfagligheden",
-      "tekst": "Mange rideterapitilbud drives af fysioterapeuter eller pædagoger. Her er behandleren cand.scient.soc., specialist i narrativ psykoterapi og traumeuddannet, med 30 års erfaring med heste. Det betyder, at samtalen ved siden af hesten er fagligt båret, og at der kan arbejdes med traumer inden for forsvarlige rammer."
+      "overskrift": "Pædagogisk afsæt",
+      "tekst": "Det pædagogiske afsæt bygger på en relationel og kontekstuel forståelse af, at menneskers muligheder for trivsel og deltagelse udvikles i samspil med de fællesskaber og sammenhænge, de er en del af. Derfor er fokus ikke alene på den enkeltes vanskeligheder, men også på at skabe rammer, hvor nye erfaringer med mestring, tilhør og deltagelse kan blive mulige.\nDette perspektiv går på tværs af alle tre tilbud, men træder særligt frem i de hesteassisterede fællesskabsforløb for børn og unge med bekymrende skolefravær. Her bliver hestene et fælles tredje i et lille og overskueligt fællesskab, hvor barnet eller den unge kan få erfaringer med at være sammen med andre uden de krav og forventninger, som tidligere kan have gjort deltagelse vanskelig. Forløbet kan dermed indgå som en pædagogisk bro til øget deltagelse i andre fællesskaber, herunder skolefællesskabet."
     },
     {
-      "overskrift": "Altid enesessioner",
-      "tekst": "Aldrig hold. Barnet har det fulde fokus, og forløbet tilrettelægges efter netop dette barns tempo og dagsform. Det er ofte forudsætningen for, at børn med skolefravær eller angst overhovedet møder op. En forælder eller støtteperson er velkommen til at være med."
+      "overskrift": "Helhedsorienteret tilgang i mødet med mennesker med funktionsnedsættelser",
+      "tekst": "En funktionsnedsættelse er én del af et menneskes liv, ikke en definition af, hvem man er. Derfor tager forløbene afsæt i hele mennesket og i det, der er betydningsfuldt for den enkelte: relationer, deltagelse, glæde, selvbestemmelse og mulighed for at være med på egne præmisser.\nDet adskiller tilbuddet fra almindelig (handicap)rideundervisning, hvor funktions og færdighedstræning ofte er i centrum. Her tilpasses samværet med hesten den enkelte. Min faglige baggrund, herunder som certificeret funktionel neuroterapeut, understøtter et helhedsorienteret blik på fysiske, psykiske, sociale og relationelle forhold på tværs af de tre forskellige forløb der tilbydes."
     },
     {
-      "overskrift": "Dokumentation til sagen",
-      "tekst": "Skriftlig beskrivelse af forløb, formål og observationer samt deltagelse i statusmøder efter aftale. Det aftales særskilt, når opgaven bekræftes, så I ved på forhånd, hvad I får med tilbage til sagen. Jeg kan også skrive en beskrivelse til brug for en ansøgning om merudgift."
+      "overskrift": "Dokumentation til sagen og mulighed for deltagelse i statusmøder mv.",
+      "tekst": "Skriftlig beskrivelse af forløb, formål og observationer samt deltagelse i statusmøder efter aftale. Det aftales særskilt, når opgaven bekræftes."
     }
   ],
   "detaljer_overskrift": "Detaljer",
@@ -86,34 +86,34 @@
   "forloeb_trin": [
     {
       "overskrift": "Indledende afklaring",
-      "tekst": "Gratis samtale på 20 minutter med jer og/eller familien, hvor formål og forventninger afstemmes, inden noget sættes i gang."
+      "tekst": "Uforpligtende samtale på 20 minutter med jer og/eller familien, hvor formål og forventninger afstemmes, inden noget sættes i gang.\nMulighed for deltagelse ved et forberedende møde inden eventuel opstart. Aftales særskilt."
     },
     {
-      "overskrift": "Individuelle sessioner",
-      "tekst": "Udelukkende eneundervisning, 45–60 min. eller 90–120 min. Typisk 3–8 gange, men rammen tilpasses opgaven."
+      "overskrift": "Både Individuelle sessioner og mindre gruppeforløb",
+      "tekst": "både enesessioner, 45–60 min. eller 90–120 min. Eller gruppeforløb  på 90-120 minutter. Rammen tilpasses opgaven."
     },
     {
       "overskrift": "Løbende justering",
-      "tekst": "Indholdet tilpasses efter, hvad der virker. Rideterapi kan kombineres med narrativ terapi og familiebehandling."
+      "tekst": "Indholdet tilpasses efter, hvad der virker. Hesteassisteret praksis kan kombineres med narrativ terapi og familiebehandling."
     },
     {
       "overskrift": "Afrapportering efter aftale",
-      "tekst": "Jeg kan udarbejde en skriftlig beskrivelse af forløb, formål og observationer samt deltage i statusmøder – det aftales særskilt."
+      "tekst": "Der kan udarbejde en skriftlig beskrivelse af forløb, formål og observationer samt deltage i statusmøder, dette aftales særskilt."
     }
   ],
   "lov_overskrift": "Lovgrundlag og finansiering",
-  "lov_intro": "Forløb kan enten rekvireres direkte af kommune, institution, virksomhed eller forsikringsselskab – eller søges som merudgift af borgeren selv.",
-  "lov_kort1_overskrift": "Servicelovens § 41 – børn under 18 år",
-  "lov_kort1_tekst": "Dækning af nødvendige merudgifter ved forsørgelse i hjemmet af et barn under 18 år med betydelig og varigt nedsat fysisk eller psykisk funktionsevne eller indgribende kronisk eller langvarig lidelse.\n\nUdmålingen sker på grundlag af de sandsynliggjorte merudgifter for det enkelte barn, for eksempel til individuel befordring og fritidsaktiviteter – og netop her kan der være tale om rideterapi og handicapridning.",
-  "lov_kort2_overskrift": "Servicelovens § 100 – voksne",
-  "lov_kort2_tekst": "Tilskud til nødvendige merudgifter ved varigt nedsat fysisk eller psykisk funktionsevne.",
+  "lov_intro": "Forløb kan enten rekvireres direkte af kommune, institution, virksomhed eller forsikringsselskab, eller ved direkte henvendelse fra borgeren selv.",
+  "lov_kort1_overskrift": "Børn under 18 år",
+  "lov_kort1_tekst": "For børn og unge kan et hesteassisteret forløb indgå i en kommunal indsats ved særlige støttebehov med afsæt i barnets perspektiv, ressourcer og konkrete situation. Afhængigt af formålet kan der være tale om en behandlings- eller støtteindsats med fokus på trivsel, udvikling og deltagelse eller om kompensation for nødvendige merudgifter, der følger af en funktionsnedsættelse. Indsatsen tilrettelægges altid efter en konkret og individuel vurdering.",
+  "lov_kort2_overskrift": "voksne",
+  "lov_kort2_tekst": "For voksne kan et hesteassisteret forløb indgå i en kommunal indsats ved betydelig fysisk eller psykisk funktionsnedsættelse eller særlige sociale problemstillinger. Afhængigt af den enkeltes behov og formålet med indsatsen kan der være tale om socialpædagogisk støtte, en behandlingsmæssig indsats eller kompensation for følgerne af en varig funktionsnedsættelse, med fokus på trivsel, deltagelse, livsudfoldelse og mulighed for et meningsfuldt hverdagsliv.",
   "lov_kort2_overskrift2": "Direkte rekvirering",
-  "lov_kort2_tekst2": "Ved forløb finansieret via kommuner, forsikringsselskaber, virksomheder og institutioner aftales prisen særskilt. Fakturering, eventuelt EAN-nummer og rekvisitionsnummer aftales, når opgaven bekræftes.",
+  "lov_kort2_tekst2": "Ved forløb finansieret via kommuner, forsikringsselskaber, virksomheder og institutioner aftales prisen særskilt. Der fakturering forud.",
   "praktisk_overskrift": "Det praktiske",
   "praktisk_kort": [
     {
       "overskrift": "Sted og transport",
-      "tekst": "Gevninge Bygade 26, 4000 Roskilde — 10 km fra Roskilde. Gratis parkering overfor. Bus fra Roskilde og Lejre station."
+      "tekst": "Gevninge Bygade 26, 4000 Roskilde, 10 km fra Roskilde. Parkering overfor eller i vores indkørsel. Bus fra Roskilde og Lejre station."
     },
     {
       "overskrift": "Tidspunkter",
@@ -121,12 +121,12 @@
     },
     {
       "overskrift": "Udkørsel",
-      "tekst": "Besøg i hjemmet eller på institutionen er muligt mod udkørselstillæg."
+      "tekst": "Besøg i hjemmet eller på institutionen er muligt mod udkørselstillæg, og ved konkret timeoptælling."
     }
   ],
   "soester_overskrift": "Har I også brug for supervision, familiebehandling eller bisidderstøtte?",
-  "soester_tekst": "Ved siden af rideterapien driver Lotte Stegeager praksissen Narrativ Samtale med individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision af personalegrupper.",
+  "soester_tekst": "Ved siden af Hesteassisteret Praksis tilbydes individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision af personalegrupper, i regi af firmaet Narrativ Samtale.",
   "soester_knap": "Gå til narrativsamtale.dk",
   "titel": "Til kommuner og institutioner | Hesteassisteret Praksis",
-  "beskrivelse": "Information til sagsbehandlere, PPR, skoler og institutioner om hesteassisteret behandling og handicapridning: målgrupper, fagligt grundlag, dokumentation, lovgrundlag og rekvirering."
+  "beskrivelse": "Information til sagsbehandlere, PPR, skoler og institutioner om hesteassisteret behandling, fællesskabsforløb og handicapridning: målgrupper, fagligt grundlag, dokumentation, lovgrundlag og rekvirering."
 }
