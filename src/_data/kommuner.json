@@ -3,13 +3,12 @@
   "hero_overskrift": "Til dig, der skal finde et tilbud til et barn, en ung eller en voksen",
   "hero_knap2": "Send en forespørgsel",
   "hero_billede": "/billeder/kommuner-barn-rider-med-lotte.jpg",
-  "hero_billede_alt": "Barn med ridehjelm sidder på en lysebrun islandshest, mens Lotte går ved siden af i et snedækket landskab i aftenlys",
-  "hero_billedtekst": "Når nærvær giver mod til lidt mere.",
+  "hero_billede_alt": "Når nærvær giver mod til lidt mere.",
   "resume_overskrift": "Kort fortalt",
   "resume_punkter": [
     {
       "label": "Målgruppe",
-      "tekst": "Børn, unge i mistrivsel, skolefravær, ADHD, autisme, angst, andre diagnoser og traumer eller andre funktionsnedsættelser. voksne i mistrivsel og/eller med funktionsnedsættelser."
+      "tekst": "Børn, unge i mistrivsel, skolefravær, ADHD, autisme, angst, andre diagnoser og traumer eller andre funktionsnedsættelser. Voksne i mistrivsel og/eller med funktionsnedsættelser."
     },
     {
       "label": "Ydelser",
@@ -56,8 +55,8 @@
       "tekst": "Hvor barnet, den unge eller voksne har trukket sig fra fællesskaber, og troen på sig selv kan være blevet mindre over tid. Gennem relationen til hesten, individuelt eller i et lille fællesskab, kan der opstå erfaringer med ro, deltagelse, mestring og det at høre til. Små oplevelser, der lykkes, kan få betydning langt ud over tiden med hesten."
     },
     {
-      "overskrift": "Voksne med funktionsnedsættelser",
-      "tekst": "For voksne med funktionsnedsættelser kan samværet med hesten skabe en meningsfuld ramme for nærvær, glæde, deltagelse og oplevelsen af at kunne noget på egne præmisser. Forløbet tilpasses den enkelte og kan rumme både ridning, samvær med hesten fra jorden og rolige stunder omkring den, altid med blik for hele mennesket og den aktuelle dagsform."
+      "overskrift": "Voksne i mistrivsel og / eller med funktionsnedsættelser",
+      "tekst": "For voksne i mistrivsel og / eller med funktionsnedsættelser kan samværet med hesten skabe en meningsfuld ramme for nærvær, glæde, deltagelse og oplevelsen af at kunne noget på egne præmisser. Forløbet tilpasses den enkelte og kan rumme både ridning, samvær med hesten fra jorden og rolige stunder omkring den, altid med blik for hele mennesket og den aktuelle dagsform."
     }
   ],
   "forskel_overskrift": "Hvad adskiller det fra en rideskole?",
