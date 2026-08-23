@@ -1,6 +1,6 @@
 {
   "hero_mikrotekst": "Til sagsbehandlere, PPR, skoler og institutioner",
-  "hero_overskrift": "Til dig, der skal finde et tilbud til et barn",
+  "hero_overskrift": "Til dig, der skal finde et tilbud til et barn eller en ung",
   "hero_knap2": "Send en forespørgsel",
   "hero_billede": "/billeder/kommuner-barn-rider-med-lotte.jpg",
   "hero_billede_alt": "Når nærvær giver mod til lidt mere.",
@@ -16,7 +16,7 @@
     },
     {
       "label": "Behandler",
-      "tekst": "Cand.scient.soc., specialist i narrativ psykoterapi, traumeuddannet og certificeret funktionel neuroterapeut. 40 års erfaring med heste.\nMedlem af Rideterapeutforeningen og Dansk Psykoterapeutforening MPF."
+      "tekst": "Cand.scient.soc., specialist i narrativ psykoterapi, traumeuddannet og certificeret funktionel neuroterapeut. 30 års erfaring med heste.\nMedlem af Rideterapeut Foreningen og Dansk Psykoterapeutforening MPF."
     },
     {
       "label": "Omfang",
@@ -24,7 +24,7 @@
     },
     {
       "label": "Finansiering",
-      "tekst": "Rekvireres direkte af kommune eller institution — eller søges af borgeren som merudgift efter servicelovens § 41 eller § 100."
+      "tekst": "Rekvireres direkte af kommune, institution eller anden instans."
     },
     {
       "label": "Sted",
@@ -32,30 +32,30 @@
     }
   ],
   "relevant_overskrift": "Hvornår kan et forløb her være relevant?",
-  "relevant_intro": "Typisk når andet er prøvet, og barnet er gået i stå.",
+  "relevant_intro": "Vi tilbyder hesteassisterede forløb til børn, unge og voksne, hvor indsatsen tilpasses den enkeltes behov og situation. Tilbuddene spænder fra individuel hesteassisteret behandling og kompenserende handicapridning til hesteassisterede fællesskabsforløb i små grupper, med fokus på deltagelse, relationer og tilhør.",
   "relevant_kort": [
     {
       "overskrift": "Skolefravær og skolevægring",
-      "tekst": "Ingen mødepligt og ingen præstation — kun en hest, der venter. For mange er det det første sted, de møder op frivilligt efter måneders fravær. Der stilles ingen krav om at forklare, hvorfor det er blevet svært."
+      "tekst": "Deltagelse er baseret på lyst og der er ikke forventning om præstationer, kun en hest, der venter. For mange er det det første sted, de møder op frivilligt efter måneders fravær fra sociale aktiviteter. Der stilles ingen krav om at forklare, hvorfor det er blevet svært."
     },
     {
       "overskrift": "ADHD og autisme",
-      "tekst": "Hesten giver en umiddelbar og fordomsfri respons på barnets egne signaler. Det sociale samspil bliver konkret og til at aflæse, fordi der ikke er tonefald eller ansigtsudtryk at tyde. Mange oplever det som langt mindre krævende end kontakt med andre mennesker."
+      "tekst": "Hesten giver en umiddelbar og fordomsfri respons på barnets egne signaler. Det sociale samspil bliver konkret og til at aflæse, fordi der ikke er tonefald eller ansigtsudtryk at tyde. Mange oplever at hesten, som det fælles tredje, gør kontakten med andre mennesker nemmere."
     },
     {
       "overskrift": "Traumer og PTSD",
-      "tekst": "Hvor nervesystemet er i alarmberedskab, og samtale alene er for konfronterende. Arbejdet foregår gennem kroppen og sanserne frem for gennem ord. Vi går kun så hurtigt frem, som barnet kan holde til, og stopper når det er nok."
+      "tekst": "Hvor nervesystemet er i alarmberedskab, og samtale alene er for konfronterende. Arbejdet foregår gennem kroppen og sanserne frem for kun gennem ord. tempoet tilpasses efter den enkelte deltagers behov og forudsætninger."
     },
     {
-      "overskrift": "Fysisk eller psykisk handicap",
-      "tekst": "Kompenserende handicapridning med sansemotorisk træning ved certificeret funktionel neuroterapeut. Hestens skridt overfører en bevægelse til bækken og ryg, der minder om menneskets egen gang. Kroppen arbejder, uden at det føles som træning."
+      "overskrift": "Fysisk eller psykisk funktionsnedsættelse",
+      "tekst": "Individuelt tilrettelagt handicapridning med fokus på glæden ved hesten, relationen, oplevelsen af at mestre og muligheden for at deltage i en meningsfuld (fritids)aktivitet på egne præmisser. Forløbet tilpasses den enkelte og rummer både kropslige, sanselige, sociale og følelsesmæssige erfaringer."
     },
     {
       "overskrift": "Angst, stress og depression",
-      "tekst": "Hvor barnet har trukket sig fra fællesskaber, og selvværdet er slidt ned over tid. Her er ingen at blive sammenlignet med og ingenting at falde igennem til. De små ting, der lykkes med hesten, bliver til erfaringer, barnet kan tage med videre."
+      "tekst": "Hvor barnet, den unge eller voksne har trukket sig fra fællesskaber, og troen på sig selv kan være blevet mindre over tid. Gennem relationen til hesten, individuelt eller i et lille fællesskab, kan der opstå erfaringer med ro, deltagelse, mestring og det at høre til. Små oplevelser, der lykkes, kan få betydning langt ud over tiden med hesten."
     },
     {
-      "overskrift": "Voksne med senhjerneskade",
+      "overskrift": "Voksne med senhjerneskade eller andre funktionsnedsættelser",
       "tekst": "Genopbygning af balance, kropsfornemmelse og tillid til egen krop. Ridningens rytmiske og forudsigelige bevægelse er noget, kroppen kan hvile i og lære af. Vi arbejder både fra hesteryg og fra jorden, alt efter dagsformen."
     }
   ],
@@ -68,7 +68,7 @@
     },
     {
       "overskrift": "Terapeutfagligheden",
-      "tekst": "Mange rideterapitilbud drives af fysioterapeuter eller pædagoger. Her er behandleren cand.scient.soc., specialist i narrativ psykoterapi og traumeuddannet, med 40 års erfaring med heste. Det betyder, at samtalen ved siden af hesten er fagligt båret, og at der kan arbejdes med traumer inden for forsvarlige rammer."
+      "tekst": "Mange rideterapitilbud drives af fysioterapeuter eller pædagoger. Her er behandleren cand.scient.soc., specialist i narrativ psykoterapi og traumeuddannet, med 30 års erfaring med heste. Det betyder, at samtalen ved siden af hesten er fagligt båret, og at der kan arbejdes med traumer inden for forsvarlige rammer."
     },
     {
       "overskrift": "Altid enesessioner",
