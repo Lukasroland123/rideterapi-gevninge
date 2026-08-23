@@ -23,9 +23,12 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <div class="hero__media">
-      <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}" width="600" height="800">
-    </div>
+    <figure class="figur">
+      <div class="hero__media">
+        <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}" width="600" height="800">
+      </div>
+      {% if forside.hero_billedtekst %}<figcaption>{{ forside.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
   </div>
 </section>
 
@@ -72,9 +75,12 @@ eleventyComputed:
 <section class="section">
   <div class="wrap split">
     {# Rammen foelger billedets eget format, saa hele motivet er med. #}
-    <div class="split__media split__media--helt">
-      <img src="{{ forside.hvorfor_billede }}" alt="{{ forside.hvorfor_billede_alt }}" width="1600" height="1574">
-    </div>
+    <figure class="figur">
+      <div class="split__media split__media--helt">
+        <img src="{{ forside.hvorfor_billede }}" alt="{{ forside.hvorfor_billede_alt }}" width="1600" height="1574">
+      </div>
+      {% if forside.hvorfor_billedtekst %}<figcaption>{{ forside.hvorfor_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ forside.hvorfor_mikrotekst }}</span>
       <h2>{{ forside.hvorfor_overskrift }}</h2>

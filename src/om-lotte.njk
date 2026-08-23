@@ -18,9 +18,12 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <div class="hero__media hero__media--portraet">
-      <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}" width="600" height="750">
-    </div>
+    <figure class="figur">
+      <div class="hero__media hero__media--portraet">
+        <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}" width="600" height="750">
+      </div>
+      {% if omlotte.hero_billedtekst %}<figcaption>{{ omlotte.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
   </div>
 </section>
 
@@ -58,9 +61,12 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split split--reverse">
-    <div class="split__media">
-      <img src="{{ omlotte.neuro_billede }}" alt="{{ omlotte.neuro_billede_alt }}" width="800" height="600">
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        <img src="{{ omlotte.neuro_billede }}" alt="{{ omlotte.neuro_billede_alt }}" width="800" height="600">
+      </div>
+      {% if omlotte.neuro_billedtekst %}<figcaption>{{ omlotte.neuro_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ omlotte.neuro_mikrotekst }}</span>
       <h2>{{ omlotte.neuro_overskrift }}</h2>

@@ -31,17 +31,23 @@ eleventyComputed:
       </div>
       #}
     </div>
-    <div class="hero__media">
-      <img src="{{ rideterapi.hero_billede }}" alt="{{ rideterapi.hero_billede_alt }}" width="600" height="800">
-    </div>
+    <figure class="figur">
+      <div class="hero__media">
+        <img src="{{ rideterapi.hero_billede }}" alt="{{ rideterapi.hero_billede_alt }}" width="600" height="800">
+      </div>
+      {% if rideterapi.hero_billedtekst %}<figcaption>{{ rideterapi.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
   </div>
 </section>
 
 <section class="section section--sand">
   <div class="wrap split">
-    <div class="split__media">
-      <img src="{{ rideterapi.hvorfor_billede }}" alt="{{ rideterapi.hvorfor_billede_alt }}" width="800" height="600">
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        <img src="{{ rideterapi.hvorfor_billede }}" alt="{{ rideterapi.hvorfor_billede_alt }}" width="800" height="600">
+      </div>
+      {% if rideterapi.hvorfor_billedtekst %}<figcaption>{{ rideterapi.hvorfor_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ rideterapi.hvorfor_mikrotekst }}</span>
       <h2>{{ rideterapi.hvorfor_overskrift }}</h2>
@@ -68,9 +74,12 @@ eleventyComputed:
   <div class="wrap split split--reverse">
     {# Hele billedet skal kunne ses. Rammen faar derfor ingen fast form —
        den foelger billedets eget format, saa der aldrig skaeres af. #}
-    <div class="split__media split__media--helt">
-      <img src="{{ rideterapi.hvem_billede }}" alt="{{ rideterapi.hvem_billede_alt }}" width="615" height="621">
-    </div>
+    <figure class="figur">
+      <div class="split__media split__media--helt">
+        <img src="{{ rideterapi.hvem_billede }}" alt="{{ rideterapi.hvem_billede_alt }}" width="615" height="621">
+      </div>
+      {% if rideterapi.hvem_billedtekst %}<figcaption>{{ rideterapi.hvem_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ rideterapi.hvem_mikrotekst }}</span>
       <h2>{{ rideterapi.hvem_overskrift }}</h2>

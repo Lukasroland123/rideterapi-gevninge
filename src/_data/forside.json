@@ -5,7 +5,8 @@
   "hero_knap1": "Book en samtale på 20 min.",
   "hero_knap2": "Se hvordan et forløb foregår",
   "hero_billede": "/billeder/forside-barn-paa-hesteryg.jpg",
-  "hero_billede_alt": "Det kan virke afslappende at mærke hestens varme, pels og vejrtrækning, mens man ligger på den ryg.",
+  "hero_billede_alt": "Barn med ridehjelm ligger fremadlænet på ryggen af en lysebrun hest og smiler mod kameraet",
+  "hero_billedtekst": "Det kan virke afslappende at mærke hestens varme, pels og vejrtrækning, mens man ligger på dens ryg.",
   "hero_maerkater": [
     {
       "tekst": "ene-sessioner eller fællesskabssessioner"
@@ -64,7 +65,8 @@
   "hvorfor_overskrift": "Heste møder mennesker uden filter",
   "hvorfor_tekst": "Heste er byttedyr og derfor usædvanligt sensitive over for deres omgivelser. De er til stede i nuet og reagerer på den stemning, vi møder dem med. Det gør dem ofte til en spejling af, hvilke signaler vi sender ud.\n\nNår vi får skærpet blikket for vores egen rolle i samspillet, bliver det muligt at komme tættere på sig selv, og på sin omverden. Mange af de mennesker, jeg møder, er blevet mødt med fordomme andre steder i livet. Hesten har ingen fordomme, og netop derfor kan mødet mellem mennesket og  hesten, åbne for en oplevelse af forbundethed.",
   "hvorfor_billede": "/billeder/forside-barn-og-hest-i-sne.jpg",
-  "hvorfor_billede_alt": "oplevelsen af nærhed, samhørighed og forbundethed kan opstå.",
+  "hvorfor_billede_alt": "Smilende barn i vinterjakke rækker en vante frem mod en brun hests mule i en snedækket fold",
+  "hvorfor_billedtekst": "Oplevelsen af nærhed, samhørighed og forbundethed kan opstå.",
   "hvorfor_boks_titel": "Fra forskningen:",
   "hvorfor_boks_tekst": "Et amerikansk studie fra 2014 fulgte 130 unge gennem 12 ugers hesteassisteret forløb og fandt et betydeligt fald i stresshormonet kortisol. Et andet studie med 66 deltagere over 8 måneder viste markant reduktion af angst og depression samt styrket selvværd.",
   "hvorfor_boks_link": "Se kilder og litteratur",

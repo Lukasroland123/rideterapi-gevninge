@@ -6,7 +6,8 @@
   "hero_knap1": "Book en uforpligtende 20 min. samtale",
   "hero_knap2": "Kan I søge tilskud?",
   "hero_billede": "/billeder/handicapridning-omfavner-pony.jpg",
-  "hero_billede_alt": "Nærhed; at mærke hestens varme, duften af hø og lytte til dens rytmiske gumlen",
+  "hero_billede_alt": "Person i blå kedeldragt står med armen hvilende over ryggen af en mørk shetlandspony, der spiser hø",
+  "hero_billedtekst": "Nærhed; at mærke hestens varme, duften af hø og lytte til dens rytmiske gumlen",
   "hero_maerkater": [
     {
       "tekst": "Certificeret funktionel neuroterapeut, og med fokus på neuropsykologi"
@@ -40,7 +41,8 @@
   ],
   "neuro_afslutning": "I samværet med hesten bringes både krop, sanser og relation i spil. Hestens bevægelser, nærvær og det, der opstår i kontakten mellem hest og menneske, kan være med til at skabe ro og en større fornemmelse af sig selv. For mange begynder roen netop i kroppen.",
   "neuro_billede": "/billeder/handicapridning-barn-paa-hesteryg.jpg",
-  "neuro_billede_alt": "Nærhed til hesten giver plads til ro, kropslig sansning og tryghed.",
+  "neuro_billede_alt": "Barn i flyverdragt ligger på ryggen tværs over en lysebrun hest i sneen, mens Lotte står ved siden af og smiler",
+  "neuro_billedtekst": "Nærhed til hesten giver plads til ro, kropslig sansning og tryghed.",
   "hvem_overskrift": "Hvem kan henvende sig?",
   "hvem_intro": "De fleste kan have glæde af at være i samvær med heste. Hesten inviterer til nærvær, kontakt og aktivitet på andre måder end gennem ord. I handicapridningen tages der udgangspunkt i den enkeltes forudsætninger og behov, og i de muligheder, der opstår i samspillet med hesten.",
   "hvem_kort": [

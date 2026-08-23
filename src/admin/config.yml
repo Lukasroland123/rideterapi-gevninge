@@ -43,7 +43,8 @@ collections:
           - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
-          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string, hint: "Læses højt for blinde og bruges af Google. Skriv hvad man ser." }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - name: hero_maerkater
             label: "De tre små mærkater"
             widget: list
@@ -80,7 +81,8 @@ collections:
           - { name: hvorfor_overskrift, label: "Overskrift", widget: string }
           - { name: hvorfor_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: hvorfor_billede, label: "Billede", widget: image }
-          - { name: hvorfor_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hvorfor_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hvorfor_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - { name: hvorfor_boks_titel, label: "Grøn boks · fed indledning", widget: string }
           - { name: hvorfor_boks_tekst, label: "Grøn boks · tekst", widget: text }
           - { name: hvorfor_boks_link, label: "Grøn boks · tekst på linket", widget: string }
@@ -129,7 +131,8 @@ collections:
           - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
-          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: hvad_tekst, label: "Tekst under overskriften Rideterapi", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
@@ -139,7 +142,8 @@ collections:
           - { name: hvorfor_overskrift, label: "Overskrift", widget: string }
           - { name: hvorfor_tekst, label: "Tekst", widget: text }
           - { name: hvorfor_billede, label: "Billede", widget: image }
-          - { name: hvorfor_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hvorfor_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hvorfor_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: fokus_overskrift, label: "Overskrift · 'Hvad arbejder vi med'", widget: string }
           - { name: fokus_intro, label: "Introtekst", widget: text }
@@ -164,7 +168,8 @@ collections:
               - { name: tekst, label: "Punkt", widget: string }
           - { name: hvem_afslutning, label: "Tekst efter punktlisten", widget: text }
           - { name: hvem_billede, label: "Billede", widget: image }
-          - { name: hvem_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hvem_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hvem_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: metode_overskrift, label: "Overskrift · 'Sådan arbejder jeg'", widget: string }
           - { name: metode_tekst, label: "Tekst", widget: text }
@@ -205,7 +210,8 @@ collections:
           - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
-          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - name: hero_maerkater
             label: "De to små mærkater"
             widget: list
@@ -230,7 +236,8 @@ collections:
               - { name: tekst, label: "Punkt", widget: string }
           - { name: neuro_afslutning, label: "Tekst efter punktlisten", widget: text }
           - { name: neuro_billede, label: "Billede", widget: image }
-          - { name: neuro_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: neuro_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: neuro_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: hvem_overskrift, label: "Overskrift · 'Hvem kan henvende sig'", widget: string }
           - { name: hvem_intro, label: "Introtekst", widget: text }
@@ -296,7 +303,8 @@ collections:
           - { name: hero_knap1, label: "Tekst på orange knap", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
-          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - name: hero_maerkater
             label: "De fire små mærkater"
             widget: list
@@ -313,13 +321,15 @@ collections:
           - { name: lille_overskrift, label: "Overskrift", widget: string }
           - { name: lille_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: lille_billede, label: "Billede", widget: image }
-          - { name: lille_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+          - { name: lille_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: lille_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: tredje_mikrotekst, label: "Lille tekst · 'Det fælles tredje'", widget: string }
           - { name: tredje_overskrift, label: "Overskrift", widget: string }
           - { name: tredje_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: tredje_billede, label: "Billede", widget: image }
-          - { name: tredje_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+          - { name: tredje_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: tredje_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: grupper_mikrotekst, label: "Lille tekst · 'Et overskueligt sted at være sammen'", widget: string }
           - { name: grupper_overskrift, label: "Overskrift · 'Hvorfor små grupper?'", widget: string }
@@ -353,7 +363,8 @@ collections:
               - { name: tekst, label: "Punkt", widget: string }
           - { name: hvad_laver_afslutning, label: "Tekst efter punktlisten", widget: text, hint: "Lav en tom linje mellem afsnit." }
           - { name: hvad_laver_billede, label: "Billede", widget: image }
-          - { name: hvad_laver_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+          - { name: hvad_laver_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hvad_laver_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: maalgruppe_mikrotekst, label: "Lille tekst · 'Målgruppe'", widget: string }
           - { name: maalgruppe_overskrift, label: "Overskrift", widget: string }
@@ -365,7 +376,8 @@ collections:
               - { name: tekst, label: "Punkt", widget: string }
           - { name: maalgruppe_afslutning, label: "Tekst efter punktlisten", widget: text }
           - { name: maalgruppe_billede, label: "Billede", widget: image }
-          - { name: maalgruppe_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google. Beskriv hvad man rent faktisk ser." }
+          - { name: maalgruppe_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: maalgruppe_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: fagligt_mikrotekst, label: "Lille tekst · 'Fagligt afsæt'", widget: string }
           - { name: fagligt_overskrift, label: "Overskrift", widget: string }
@@ -486,7 +498,8 @@ collections:
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
           - { name: hero_billede, label: "Portrætfoto", widget: image }
-          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - name: hero_maerkater
             label: "De fire mærkater"
             widget: list
@@ -522,7 +535,8 @@ collections:
           - { name: neuro_overskrift, label: "Overskrift", widget: string }
           - { name: neuro_tekst, label: "Tekst", widget: text }
           - { name: neuro_billede, label: "Billede", widget: image }
-          - { name: neuro_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: neuro_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: neuro_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: forskning_overskrift, label: "Overskrift · litteratur og forskning", widget: string }
           - { name: forskning_intro, label: "Introtekst", widget: text }
@@ -572,7 +586,8 @@ collections:
               - { name: tekst, label: "Punkt", widget: string }
           - { name: vej_knap, label: "Knaptekst", widget: string }
           - { name: vej_billede, label: "Billede", widget: image }
-          - { name: vej_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: vej_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: vej_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
 
           - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
@@ -591,7 +606,8 @@ collections:
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: hero_knap2, label: "Tekst på hvid knap", widget: string }
           - { name: hero_billede, label: "Stort billede øverst", widget: image }
-          - { name: hero_billede_alt, label: "Beskrivelse af billedet", widget: string }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
           - { name: resume_overskrift, label: "Overskrift · 'Kort fortalt'", widget: string }
           - name: resume_punkter

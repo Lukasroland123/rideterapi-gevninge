@@ -37,17 +37,23 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <div class="hero__media">
-      <img src="{{ handicapridning.hero_billede }}" alt="{{ handicapridning.hero_billede_alt }}" width="600" height="800">
-    </div>
+    <figure class="figur">
+      <div class="hero__media">
+        <img src="{{ handicapridning.hero_billede }}" alt="{{ handicapridning.hero_billede_alt }}" width="600" height="800">
+      </div>
+      {% if handicapridning.hero_billedtekst %}<figcaption>{{ handicapridning.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
   </div>
 </section>
 
 <section class="section section--sand">
   <div class="wrap split">
-    <div class="split__media">
-      <img src="{{ handicapridning.neuro_billede }}" alt="{{ handicapridning.neuro_billede_alt }}" width="800" height="600">
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        <img src="{{ handicapridning.neuro_billede }}" alt="{{ handicapridning.neuro_billede_alt }}" width="800" height="600">
+      </div>
+      {% if handicapridning.neuro_billedtekst %}<figcaption>{{ handicapridning.neuro_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ handicapridning.neuro_mikrotekst }}</span>
       <h2>{{ handicapridning.neuro_overskrift }}</h2>

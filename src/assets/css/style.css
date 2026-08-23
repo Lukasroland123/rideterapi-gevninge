@@ -452,6 +452,8 @@ blockquote {
   .hero__inner--flugt { align-items: stretch; row-gap: 1.75rem; }
   .hero__inner--flugt > .resume     { grid-column: 1; grid-row: 1; }
   .hero__inner--flugt > .hero__media { grid-column: 2; grid-row: 1; aspect-ratio: auto; }
+  .hero__inner--flugt > .figur { grid-column: 2; grid-row: 1; }
+  .hero__inner--flugt > .figur .hero__media { aspect-ratio: auto; height: 100%; }
   .hero__inner--flugt > .btn-row    { grid-column: 1; grid-row: 2; margin: 0; }
 }
 
@@ -526,6 +528,7 @@ blockquote {
 @media (min-width: 860px) {
   .split { grid-template-columns: 1fr 1fr; }
   .split--reverse .split__media { order: 2; }
+  .split--reverse .figur { order: 2; }
 }
 .split__media {
   border-radius: var(--radius-lg); overflow: hidden;
@@ -537,6 +540,25 @@ blockquote {
    hvilket format billedet har. */
 .split__media--helt { aspect-ratio: auto; }
 .split__media--helt img { height: auto; }
+
+/* =========================================================
+   Billede med billedtekst
+   =========================================================
+
+   Billedrammen har fast format og overflow: hidden, saa teksten kan ikke
+   ligge inde i den. Rammen pakkes derfor ind i en <figure>, og teksten
+   staar udenfor rammen men inde i figuren.
+
+   Det betyder, at figuren og ikke rammen er grid-element. De to regler
+   nederst i filen, der placerede rammen, kender derfor ogsaa figuren. */
+
+.figur { margin: 0; display: grid; grid-template-rows: 1fr auto; gap: .7rem; }
+.figur figcaption {
+  color: var(--ink-soft);
+  font-size: .95rem;
+  line-height: 1.5;
+  font-style: italic;
+}
 
 /* =========================================================
    Trin / proces

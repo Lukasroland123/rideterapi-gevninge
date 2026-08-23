@@ -58,9 +58,12 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split split--reverse">
-    <div class="split__media">
-      <img src="{{ kontakt.vej_billede }}" alt="{{ kontakt.vej_billede_alt }}" width="800" height="600">
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        <img src="{{ kontakt.vej_billede }}" alt="{{ kontakt.vej_billede_alt }}" width="800" height="600">
+      </div>
+      {% if kontakt.vej_billedtekst %}<figcaption>{{ kontakt.vej_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <h2>{{ kontakt.vej_overskrift }}</h2>
       <p>{{ kontakt.vej_intro }}</p>

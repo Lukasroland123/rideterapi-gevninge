@@ -3,7 +3,8 @@
   "hero_overskrift": "Lotte Stegeager",
   "hero_tekst": "Jeg har arbejdet med heste i over 40 år og med mennesker i mistrivsel næsten lige så længe. Den Hesteassisterede behandling (Rideterapien), hesteassisteret fællesskabsforløb og handicapridningen er stedet, hvor tingene mødes.",
   "hero_billede": "/billeder/lotte-stegeager-portraet.jpg",
-  "hero_billede_alt": "Portræt af Lotte Stegeager",
+  "hero_billede_alt": "Portræt af Lotte Stegeager, kvinde med briller og skulderlangt brunt hår",
+  "hero_billedtekst": "",
   "hero_maerkater": [
     {
       "tekst": "Cand.scient.soc., RUC 1998"
@@ -72,7 +73,8 @@
   "neuro_overskrift": "Funktionel neuroterapi som en del af arbejdet",
   "neuro_tekst": "Som certificeret funktionel neuroterapeut benytter jeg denne tilgang i forbindelse med både handicapridning og hesteassisteret behandling og fællesskabsforløb, hvor specifikke nervebaner aktiveres bevidst via sensoriske input.\n\nUnder sessionerne laves fysiske øvelser, som stimulerer blandt andet koordination, balance og kropsholdning, herunder sansemotorisk og psykomotorisk træning. der igennem kan der skabes en skærpet opmærksomhed på sammenhængen mellem den fysiske krop og vores psyke.",
   "neuro_billede": "/billeder/omlotte-kind-mod-hest.jpg",
-  "neuro_billede_alt": "Et stille møde, der mærkes.",
+  "neuro_billede_alt": "Barn med langt hår står kind mod kind med en lysebrun hest i solskin",
+  "neuro_billedtekst": "Et stille møde, der mærkes.",
   "forskning_overskrift": "Fagligt afsæt, litteratur og forskning",
   "forskning_intro": "Lidt om hvad vores hesteassisterede praksis bygger på:",
   "forskning_punkter": [

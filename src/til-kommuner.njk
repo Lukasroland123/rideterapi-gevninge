@@ -28,9 +28,12 @@ eleventyComputed:
       {% endfor %}
     </div>
 
-    <div class="hero__media">
-      <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
-    </div>
+    <figure class="figur">
+      <div class="hero__media">
+        <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
+      </div>
+      {% if kommuner.hero_billedtekst %}<figcaption>{{ kommuner.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
 
     <div class="btn-row">
       <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>

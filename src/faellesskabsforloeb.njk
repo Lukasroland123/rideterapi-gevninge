@@ -42,21 +42,27 @@ eleventyComputed:
     </div>
     {# Tom ramme indtil Lotte har valgt et billede. Laegger hun et op i
        CMS'et, traeder <img> automatisk ind i stedet. #}
-    <div class="hero__media">
-      {% if faellesskabsforloeb.hero_billede %}
-      <img src="{{ faellesskabsforloeb.hero_billede }}" alt="{{ faellesskabsforloeb.hero_billede_alt }}">
-      {% endif %}
-    </div>
+    <figure class="figur">
+      <div class="hero__media">
+        {% if faellesskabsforloeb.hero_billede %}
+        <img src="{{ faellesskabsforloeb.hero_billede }}" alt="{{ faellesskabsforloeb.hero_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if faellesskabsforloeb.hero_billedtekst %}<figcaption>{{ faellesskabsforloeb.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
   </div>
 </section>
 
 <section class="section section--sand">
   <div class="wrap split">
-    <div class="split__media">
-      {% if faellesskabsforloeb.lille_billede %}
-      <img src="{{ faellesskabsforloeb.lille_billede }}" alt="{{ faellesskabsforloeb.lille_billede_alt }}">
-      {% endif %}
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        {% if faellesskabsforloeb.lille_billede %}
+        <img src="{{ faellesskabsforloeb.lille_billede }}" alt="{{ faellesskabsforloeb.lille_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if faellesskabsforloeb.lille_billedtekst %}<figcaption>{{ faellesskabsforloeb.lille_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ faellesskabsforloeb.lille_mikrotekst }}</span>
       <h2>{{ faellesskabsforloeb.lille_overskrift }}</h2>
@@ -67,11 +73,14 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split split--reverse">
-    <div class="split__media">
-      {% if faellesskabsforloeb.tredje_billede %}
-      <img src="{{ faellesskabsforloeb.tredje_billede }}" alt="{{ faellesskabsforloeb.tredje_billede_alt }}">
-      {% endif %}
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        {% if faellesskabsforloeb.tredje_billede %}
+        <img src="{{ faellesskabsforloeb.tredje_billede }}" alt="{{ faellesskabsforloeb.tredje_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if faellesskabsforloeb.tredje_billedtekst %}<figcaption>{{ faellesskabsforloeb.tredje_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ faellesskabsforloeb.tredje_mikrotekst }}</span>
       <h2>{{ faellesskabsforloeb.tredje_overskrift }}</h2>
@@ -113,11 +122,14 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split">
-    <div class="split__media">
-      {% if faellesskabsforloeb.hvad_laver_billede %}
-      <img src="{{ faellesskabsforloeb.hvad_laver_billede }}" alt="{{ faellesskabsforloeb.hvad_laver_billede_alt }}">
-      {% endif %}
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        {% if faellesskabsforloeb.hvad_laver_billede %}
+        <img src="{{ faellesskabsforloeb.hvad_laver_billede }}" alt="{{ faellesskabsforloeb.hvad_laver_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if faellesskabsforloeb.hvad_laver_billedtekst %}<figcaption>{{ faellesskabsforloeb.hvad_laver_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ faellesskabsforloeb.hvad_laver_mikrotekst }}</span>
       <h2>{{ faellesskabsforloeb.hvad_laver_overskrift }}</h2>
@@ -132,11 +144,14 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split split--reverse">
-    <div class="split__media">
-      {% if faellesskabsforloeb.maalgruppe_billede %}
-      <img src="{{ faellesskabsforloeb.maalgruppe_billede }}" alt="{{ faellesskabsforloeb.maalgruppe_billede_alt }}">
-      {% endif %}
-    </div>
+    <figure class="figur">
+      <div class="split__media">
+        {% if faellesskabsforloeb.maalgruppe_billede %}
+        <img src="{{ faellesskabsforloeb.maalgruppe_billede }}" alt="{{ faellesskabsforloeb.maalgruppe_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if faellesskabsforloeb.maalgruppe_billedtekst %}<figcaption>{{ faellesskabsforloeb.maalgruppe_billedtekst }}</figcaption>{% endif %}
+    </figure>
     <div>
       <span class="eyebrow">{{ faellesskabsforloeb.maalgruppe_mikrotekst }}</span>
       <h2>{{ faellesskabsforloeb.maalgruppe_overskrift }}</h2>
