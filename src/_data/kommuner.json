@@ -8,14 +8,14 @@
   "resume_punkter": [
     {
       "label": "Målgruppe",
-      "tekst": "Børn og unge i mistrivsel, skolefravær, ADHD, autisme, angst, andre diagnoser og traumer. Også voksne med senhjerneskade eller andre funktionsnedsættelser."
+      "tekst": "Børn, unge i mistrivsel, skolefravær, ADHD, autisme, angst, andre diagnoser og traumer eller andre funktionsnedsættelser. voksne i mistrivsel og/eller med funktionsnedsættelser."
     },
     {
       "label": "Ydelser",
-      "tekst": "Her tilbydes tre forskellige hesteassisterede ydelser:\n\nHesteassisteret behandling\nFor børn, unge og voksne i mistrivsel og evt. med diagnoser.\nEt individuelt terapeutisk behandlingsforløb, hvor hesten indgår aktivt i arbejdet med trivsel, udvikling og nye handlemuligheder.\n\nHesteassisterede fællesskabsforløb\nFor børn og unge med bekymrende skolefravær.\nSmå gruppeforløb, hvor hestene udgør et fælles tredje, og hvor fokus er på deltagelse, relationer og erfaringer med at høre til i et fællesskab.\n\nKompenserende handicapridning\nFor mennesker med funktionsnedsættelser.\nIndividuelt tilrettelagt forløb, hvor hesten, bevægelsen og samværet omkring den giver mulighed for kropslige og sansemæssige erfaringer, glæde, mestring og deltagelse med afsæt i deltagerens forudsætninger.\n\nYdelserne kan visiteres hver for sig eller kombineres efter behov."
+      "tekst": "Her tilbydes tre forskellige hesteassisterede ydelser:\n\n\nHesteassisteret behandling\nFor børn, unge og voksne i mistrivsel og evt. med diagnoser.\nEt individuelt terapeutisk behandlingsforløb, hvor hesten indgår aktivt i arbejdet med trivsel, udvikling og nye handlemuligheder.\n\n\nHesteassisterede fællesskabsforløb\nFor børn og unge med bekymrende skolefravær.\nSmå gruppeforløb, hvor hestene udgør et fælles tredje, og hvor fokus er på deltagelse, relationer og erfaringer med at høre til i et fællesskab.\n\n\nKompenserende handicapridning\nFor mennesker med funktionsnedsættelser.\nIndividuelt tilrettelagt forløb, hvor hesten, bevægelsen og samværet omkring den giver mulighed for kropslige og sansemæssige erfaringer, glæde, mestring og deltagelse med afsæt i deltagerens forudsætninger.\n\n\nYdelserne kan visiteres hver for sig eller kombineres efter behov."
     },
     {
-      "label": "Behandler",
+      "label": "Den ansvarlige for ydelserne:",
       "tekst": "Cand.scient.soc., specialist i narrativ psykoterapi, traumeuddannet og certificeret funktionel neuroterapeut. 30 års erfaring med heste.\nMedlem af Rideterapeut Foreningen og Dansk Psykoterapeutforening MPF."
     },
     {
@@ -63,7 +63,7 @@
   "forskel_intro": "Vores hesteassisterede forløb er fagligt funderede indsatser med et pædagogisk, terapeutisk eller kompenserende formål. Her er fire forhold, der tydeliggør forskellen fra almindelig rideundervisning.",
   "forskel_kort": [
     {
-      "overskrift": "Behandling tilgang og terapeutisk faglighed",
+      "overskrift": "Behandlingstilgang og terapeutisk faglighed",
       "tekst": "Forløbene har trivsel, udvikling og deltagelse som formål, ikke ridefærdigheder. Hesten kan indgå fra jorden, fra ryggen eller som ramme om samtalen og kan være en særlig vej til kontakt med børn og unge, som har svært ved at finde sig til rette i mere traditionelle samtale- og behandlingstilbud.\nBehandlingen varetages af cand.scient.soc. med specialisering i narrativ psykoterapi, traumeuddannelse og 30 års erfaring med heste. Det gør det muligt at tilrettelægge en helhedsorienteret indsats, hvor hesteassisteret behandling efter behov kan stå alene eller indgå i et bredere forløb med individuelle samtaler, forældresamtaler eller familiebehandling.\nDer kan således arbejdes med både barnets eller den unges egen situation og med de relationer og sammenhænge, som vedkommende er en del af."
     },
     {
@@ -71,8 +71,8 @@
       "tekst": "Det pædagogiske afsæt bygger på en relationel og kontekstuel forståelse af, at menneskers muligheder for trivsel og deltagelse udvikles i samspil med de fællesskaber og sammenhænge, de er en del af. Derfor er fokus ikke alene på den enkeltes vanskeligheder, men også på at skabe rammer, hvor nye erfaringer med mestring, tilhør og deltagelse kan blive mulige.\nDette perspektiv går på tværs af alle tre tilbud, men træder særligt frem i de hesteassisterede fællesskabsforløb for børn og unge med bekymrende skolefravær. Her bliver hestene et fælles tredje i et lille og overskueligt fællesskab, hvor barnet eller den unge kan få erfaringer med at være sammen med andre uden de krav og forventninger, som tidligere kan have gjort deltagelse vanskelig. Forløbet kan dermed indgå som en pædagogisk bro til øget deltagelse i andre fællesskaber, herunder skolefællesskabet."
     },
     {
-      "overskrift": "Helhedsorienteret tilgang i mødet med mennesker med funktionsnedsættelser",
-      "tekst": "En funktionsnedsættelse er én del af et menneskes liv, ikke en definition af, hvem man er. Derfor tager forløbene afsæt i hele mennesket og i det, der er betydningsfuldt for den enkelte: relationer, deltagelse, glæde, selvbestemmelse og mulighed for at være med på egne præmisser.\nDet adskiller tilbuddet fra almindelig (handicap)rideundervisning, hvor funktions og færdighedstræning ofte er i centrum. Her tilpasses samværet med hesten den enkelte. Min faglige baggrund, herunder som certificeret funktionel neuroterapeut, understøtter et helhedsorienteret blik på fysiske, psykiske, sociale og relationelle forhold på tværs af de tre forskellige forløb der tilbydes."
+      "overskrift": "Helhedsorienteret tilgang i mødet med mennesker",
+      "tekst": "At være i mistrivsel eller at have en funktionsnedsættelse er én del af et menneskes liv, ikke en definition af, hvem man er. Derfor tager forløbene afsæt i hele mennesket og i det, der er betydningsfuldt for den enkelte: relationer, deltagelse, glæde, selvbestemmelse og mulighed for at være med på egne præmisser.\nDet adskiller tilbuddet fra almindelig (handicap)rideundervisning, hvor funktions og færdighedstræning ofte er i centrum. Her tilpasses samværet med hesten den enkelte. Min faglige baggrund, herunder som certificeret funktionel neuroterapeut, understøtter et helhedsorienteret blik på fysiske, psykiske, sociale og relationelle forhold på tværs af de tre forskellige forløb der tilbydes."
     },
     {
       "overskrift": "Dokumentation til sagen og mulighed for deltagelse i statusmøder mv.",
@@ -90,7 +90,7 @@
     },
     {
       "overskrift": "Både Individuelle sessioner og mindre gruppeforløb",
-      "tekst": "både enesessioner, 45–60 min. eller 90–120 min. Eller gruppeforløb  på 90-120 minutter. Rammen tilpasses opgaven."
+      "tekst": "Både enesessioner, 45–60 min. eller 90–120 min. Eller gruppeforløb  på 90-120 minutter. Rammen tilpasses opgaven."
     },
     {
       "overskrift": "Løbende justering",
