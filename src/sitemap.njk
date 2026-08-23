@@ -5,10 +5,18 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {#- Redigeringssiden hoerer ikke til i sitemap'et. Den er baade noindex og
-    spaerret i robots.txt, og Google melder den som fejl, hvis den staar her. -#}
+    spaerret i robots.txt, og Google melder den som fejl, hvis den staar her.
+
+    <lastmod> er nyt: den fortaeller crawleren hvornaar siden sidst blev
+    aendret, saa den ved hvad der er vaerd at hente igen. Datoen kommer fra
+    filens egen aendringsdato, saa den passer af sig selv naar Lotte gemmer
+    i CMS'et. Sidst skrevet i haanden = sidst forkert. -#}
 {%- for side in collections.all %}
 {%- if "/admin/" not in side.url %}
-  <url><loc>{{ site.domaene }}{{ side.url }}</loc></url>
+  <url>
+    <loc>{{ site.domaene }}{{ side.url }}</loc>
+    <lastmod>{{ side.date | isodato }}</lastmod>
+  </url>
 {%- endif %}
 {%- endfor %}
 </urlset>

@@ -13,29 +13,14 @@
 <meta property="og:site_name" content="{{ site.navn }}">
 <meta property="og:title" content="{{ titel | safe }}">
 <meta property="og:description" content="{{ beskrivelse | safe }}">
-{% if side == 'forside' %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  "name": "{{ site.navn }}",
-  "description": "{{ beskrivelse | safe }}",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "{{ site.adresse }}",
-    "postalCode": "4000",
-    "addressLocality": "Roskilde",
-    "addressCountry": "DK"
-  },
-  "telephone": "{{ site.telefon_link }}",
-  "email": "{{ site.email }}",
-  "areaServed": ["Roskilde", "Lejre", "Holbæk"],
-  "founder": { "@type": "Person", "name": "Lotte Stegeager" },
-  "openingHours": "Mo-Fr",
-  "sameAs": ["{{ site.facebook }}", "{{ site.soestersite_url }}"]
-}
-</script>
-{% endif %}
+<meta property="og:url" content="{{ site.domaene }}{{ page.url }}">
+<meta property="og:image" content="{{ site.domaene }}{{ og_billede | default("/billeder/forside-barn-paa-hesteryg.jpg") }}">
+<meta name="twitter:card" content="summary_large_image">
+
+{#- Struktureret data ligger i sin egen fil, saa den kan vokse uden at goere
+    base.njk ulaeselig. Den koeres paa ALLE sider - ikke kun forsiden -
+    fordi hver side beskriver sin egen enhed i den samlede graf. -#}
+{% include "schema.njk" %}
 </head>
 <body>
 

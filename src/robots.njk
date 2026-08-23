@@ -2,6 +2,67 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
+# robots.txt for {{ site.domaene }}
+#
+# Bevidst valg: ALLE crawlere er velkomne, ogsaa dem der samler
+# traeningsdata. Kommer Lotte med i en models traeningsdata, kan modellen
+# naevne hende UDEN at slaa noget op. For en lille lokal praksis er der
+# intet at beskytte - indholdet ER markedsfoeringen.
+#
+# De navngivne blokke aendrer ikke adgangen (jokertegnet nedenfor daekker
+# dem allerede). De staar her, saa beslutningen er dokumenteret og ikke
+# bliver rullet tilbage ved et uheld.
+
+# --- Almindelige soegemaskiner ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# --- AI-soegeindeks (bruges naar nogen spoerger en AI) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+# --- Live-hentning (AI'en aabner siden i selve samtalen) ---
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Traeningsdata (bevidst tilladt, se noten oeverst) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# --- Alle oevrige ---
 User-agent: *
 Allow: /
 Disallow: /admin/

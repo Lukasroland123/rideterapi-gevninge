@@ -1,0 +1,226 @@
+{#- =====================================================================
+    STRUKTURERET DATA (JSON-LD)
+
+    Hvorfor filen ser ud som den goer:
+
+    1. EN samlet "@graph" i stedet for loese blokke. Det lader hver enhed
+       faa et "@id", som de andre kan pege paa. Uden det staar personen,
+       virksomheden og ydelsen som tre uafhaengige paastande. Med det er
+       de EN sammenhaengende beskrivelse, en maskine kan slaa op i.
+
+    2. Alle "@id" er absolutte URL'er med et #fragment. Fragmentet siger
+       "den her enhed, som siden beskriver" - modsat selve siden. Samme
+       "@id" paa alle sider = samme enhed, ikke otte kopier af Lotte.
+
+    3. Alle tekstvaerdier koeres gennem "| dump". Den laver JSON.stringify,
+       saa linjeskift, citationstegn og aeoeaa bliver escapet korrekt, og
+       den saetter sine egne anfoerselstegn. Skriver man det i haanden,
+       braekker foerste linjeskift i Lottes tekst hele blokken.
+
+    4. Der staar KUN ting, vi kan dokumentere. Ingen opfundne aabningstider,
+       ingen gaettede koordinater, ingen selvskrevne anmeldelser. En maskine
+       gentager det, der staar her - ogsaa fejlene.
+   ===================================================================== -#}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {#- ---------- PERSONEN ----------
+        Det her er E-E-A-T gjort maskinlaesbart. En AI kan ikke se, at
+        "cand.scient.soc." er en universitetsgrad - men den kan se, at der
+        staar EducationalOccupationalCredential. -#}
+    {
+      "@type": "Person",
+      "@id": {{ (site.domaene + "/#lotte") | dump | safe }},
+      "name": "Lotte Stegeager",
+      "givenName": "Lotte",
+      "familyName": "Stegeager",
+      "jobTitle": "Rideterapeut og narrativ psykoterapeut",
+      "description": {{ omlotte.beskrivelse | dump | safe }},
+      "url": {{ (site.domaene + "/om-lotte/") | dump | safe }},
+      "image": {{ (site.domaene + omlotte.hero_billede) | dump | safe }},
+      "telephone": {{ site.telefon_link | dump | safe }},
+      "email": {{ site.email | dump | safe }},
+      "knowsLanguage": "da",
+      "worksFor": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Roskilde Universitet"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": {{ site.forening_navn | dump | safe }},
+        "url": {{ site.forening_url | dump | safe }}
+      },
+      {#- Hver uddannelse fra om-lotte-siden bliver til et credential.
+          Loopet betyder, at Lotte kan tilfoeje en uddannelse i CMS'et,
+          og saa foelger schemaet automatisk med. -#}
+      "hasCredential": [
+        {%- for u in omlotte.uddannelser %}
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Uddannelse",
+          "name": {{ u.tekst | dump | safe }}
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ],
+      {#- knowsAbout er de emner, personen er en autoritet paa. Det er her,
+          man knytter sig til de begreber, folk faktisk spoerger AI'en om. -#}
+      "knowsAbout": [
+        "Hesteassisteret terapi",
+        "Rideterapi",
+        "Handicapridning",
+        "Narrativ terapi",
+        "Traumebehandling",
+        "Skolefravaer",
+        "Funktionel neuroterapi"
+      ]
+    },
+
+    {#- ---------- VIRKSOMHEDEN ----------
+        Typen er LocalBusiness, ikke HealthAndBeautyBusiness (som er
+        kategorien for frisoerer og skoenhedssaloner) og ikke
+        MedicalBusiness (som signalerer autoriseret sundhedsperson og
+        udloeser strengere krav). LocalBusiness er det aerlige valg. -#}
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }},
+      "name": {{ site.navn | dump | safe }},
+      "legalName": {{ site.juridisk_navn | dump | safe }},
+      "description": {{ forside.beskrivelse | dump | safe }},
+      "url": {{ site.domaene | dump | safe }},
+      "telephone": {{ site.telefon_link | dump | safe }},
+      "email": {{ site.email | dump | safe }},
+      "founder": { "@id": {{ (site.domaene + "/#lotte") | dump | safe }} },
+      "employee": { "@id": {{ (site.domaene + "/#lotte") | dump | safe }} },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ site.adresse | dump | safe }},
+        "postalCode": "4000",
+        "addressLocality": "Roskilde",
+        "addressRegion": "Region Sjaelland",
+        "addressCountry": "DK"
+      },
+      {#- areaServed er de kommuner, en klient realistisk koerer fra. Det er
+          signalet til "rideterapi i naerheden af mig"-soegninger. -#}
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Roskilde Kommune" },
+        { "@type": "AdministrativeArea", "name": "Lejre Kommune" },
+        { "@type": "AdministrativeArea", "name": "Holbaek Kommune" },
+        { "@type": "AdministrativeArea", "name": "Koege Kommune" },
+        { "@type": "AdministrativeArea", "name": "Frederikssund Kommune" }
+      ],
+      "currenciesAccepted": "DKK",
+      {#- Den gratis samtale er et konkret, citerbart faktum med et tal.
+          Praecis den slags, en AI kan bruge direkte i et svar. -#}
+      "makesOffer": {
+        "@type": "Offer",
+        "name": {{ priser.pris2_overskrift | dump | safe }},
+        "description": {{ priser.pris2_enhed | dump | safe }},
+        "price": "0",
+        "priceCurrency": "DKK",
+        "availability": "https://schema.org/InStock"
+      },
+      {#- sameAs er entitets-sammenkaedning: "de her profiler er ogsaa mig".
+          Det er mekanismen, der forbinder det nye domaene med Lottes
+          eksisterende omdoemme paa nettet. -#}
+      "sameAs": [
+        {{ site.facebook | dump | safe }},
+        {{ site.soestersite_url | dump | safe }}
+      ]
+      {#- BEVIDST UDELADT, indtil vi kender de rigtige tal:
+          - openingHoursSpecification (kraever klokkeslaet, ikke "efter aftale")
+          - geo (kraever praecise koordinater)
+          - aggregateRating (selvrapporterede anmeldelser ignoreres af Google)
+          Hellere intet felt end et forkert felt. -#}
+    },
+
+    {#- ---------- SITET OG SIDEN ----------
+        WebSite/WebPage giver crawleren en ramme: hvilken side er det her,
+        hvad hedder den, og hvem staar bag. -#}
+    {
+      "@type": "WebSite",
+      "@id": {{ (site.domaene + "/#website") | dump | safe }},
+      "url": {{ site.domaene | dump | safe }},
+      "name": {{ site.navn | dump | safe }},
+      "inLanguage": "da-DK",
+      "publisher": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} }
+    },
+    {
+      "@type": "WebPage",
+      "@id": {{ (site.domaene + page.url + "#webpage") | dump | safe }},
+      "url": {{ (site.domaene + page.url) | dump | safe }},
+      "name": {{ titel | dump | safe }},
+      "description": {{ beskrivelse | dump | safe }},
+      "inLanguage": "da-DK",
+      "isPartOf": { "@id": {{ (site.domaene + "/#website") | dump | safe }} },
+      "about": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} }
+    }
+
+    {#- ---------- SIDESPECIFIKKE ENHEDER ----------
+        Alt herunder starter med komma, fordi WebPage ovenfor er det sidste
+        faste element i grafen. -#}
+
+    {%- if side == 'forloeb' and forloeb.faq %}
+    ,{
+      {#- FAQPage er den stoerste enkeltgevinst paa hele sitet. En LLM
+          henter passager, ikke sider - og et spoergsmaal-svar-par ER en
+          faerdig passage. Uden det her er de otte svar bare broedtekst. -#}
+      "@type": "FAQPage",
+      "@id": {{ (site.domaene + page.url + "#faq") | dump | safe }},
+      "isPartOf": { "@id": {{ (site.domaene + page.url + "#webpage") | dump | safe }} },
+      "mainEntity": [
+        {%- for f in forloeb.faq %}
+        {
+          "@type": "Question",
+          "name": {{ f.spoergsmaal | dump | safe }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ f.svar | dump | safe }}
+          }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ]
+    }
+    {%- endif %}
+
+    {%- if side == 'rideterapi' %}
+    ,{
+      "@type": "Service",
+      "@id": {{ (site.domaene + page.url + "#ydelse") | dump | safe }},
+      "name": "Rideterapi - udviklingsstoettende hesteassisteret behandling",
+      "description": {{ rideterapi.beskrivelse | dump | safe }},
+      "serviceType": "Hesteassisteret terapi",
+      "provider": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Region Sjaelland" },
+      {#- audience er hvem ydelsen er til. Det matcher direkte den maade,
+          folk spoerger en AI paa: "hjaelp til mit barn med skolefravaer". -#}
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Boern og unge med skolefravaer, ADHD, autisme, angst eller traumer, samt voksne med PTSD, stress og senhjerneskade"
+      },
+      "availableLanguage": "da"
+    }
+    {%- endif %}
+
+    {%- if side == 'handicapridning' %}
+    ,{
+      "@type": "Service",
+      "@id": {{ (site.domaene + page.url + "#ydelse") | dump | safe }},
+      "name": "Handicapridning - kompenserende ridning",
+      "description": {{ handicapridning.beskrivelse | dump | safe }},
+      "serviceType": "Handicapridning",
+      "provider": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Region Sjaelland" },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Boern, unge og voksne med fysisk eller psykisk handicap eller funktionsnedsaettelse"
+      },
+      "availableLanguage": "da"
+    }
+    {%- endif %}
+
+  ]
+}
+</script>

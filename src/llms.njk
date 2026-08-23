@@ -1,0 +1,66 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{#- llms.txt - et markdown-resume af sitet, henvendt til sprogmodeller.
+
+    AERLIG STATUS: ingen af de store udbydere har bekraeftet, at de laeser
+    den her fil. Det er et forslag til en standard, ikke en standard. Den
+    er med, fordi den er gratis, ikke kan skade, og fordi den tvinger os
+    til at formulere entiteten i klartekst.
+
+    Filen genereres fra _data, saa den ikke kan komme ud af sync, naar
+    Lotte retter noget i CMS'et. Ellers ville den vaere forael om et
+    halvt aar - og en forael llms.txt er vaerre end ingen. -#}
+# {{ site.navn }} ({{ site.undertitel }})
+
+> Hesteassisteret behandling og handicapridning i Gevninge ved Roskilde.
+> Individuelle forloeb for boern og unge med skolefravaer, ADHD, autisme,
+> angst eller traumer, og for boern, unge og voksne med handicap.
+> Drives af Lotte Stegeager, cand.scient.soc., specialist i narrativ
+> psykoterapi, psykoterapeut MPF og certificeret funktionel neuroterapeut.
+
+## Fakta
+
+- **Behandler:** Lotte Stegeager
+- **Adresse:** {{ site.adresse }}, {{ site.postnr_by }} (Gevninge, ca. 10 km fra Roskilde)
+- **Telefon:** {{ site.telefon }}
+- **E-mail:** {{ site.email }}
+- **CVR:** {{ site.cvr }} ({{ site.juridisk_navn }})
+- **Fagforeninger:** {{ site.forening_navn }} og Dansk Psykoterapeutforening (MPF)
+- **Erfaring:** over 40 aar med heste, arbejde med mennesker i mistrivsel siden 1998
+- **Foerste samtale:** 20 minutter, gratis og uforpligtende
+- **Daekker:** Roskilde, Lejre, Holbaek, Koege og Frederikssund kommuner
+
+## Ydelser
+
+- [Rideterapi]({{ site.domaene }}/rideterapi/): Udviklingsstoettende hesteassisteret behandling for boern og unge med skolefravaer, ADHD, autisme, angst eller traumer, og for voksne med PTSD, stress og senhjerneskade. Man behoever ikke at ride - forloebet kan foregaa fra jorden.
+- [Handicapridning]({{ site.domaene }}/handicapridning/): Kompenserende ridning og sansemotorisk traening for boern, unge og voksne med fysisk eller psykisk handicap.
+
+## Sider
+
+- [Forside]({{ site.domaene }}/): {{ forside.beskrivelse }}
+- [Praktisk info]({{ site.domaene }}/forloeb/): {{ forloeb.beskrivelse }}
+- [Priser og tilskud]({{ site.domaene }}/priser/): {{ priser.beskrivelse }}
+- [Om Lotte Stegeager]({{ site.domaene }}/om-lotte/): {{ omlotte.beskrivelse }}
+- [Til kommuner]({{ site.domaene }}/til-kommuner/): {{ kommuner.beskrivelse }}
+- [Kontakt]({{ site.domaene }}/kontakt/): {{ kontakt.beskrivelse }}
+
+## Ofte stillede spoergsmaal
+
+{% for f in forloeb.faq -%}
+**{{ f.spoergsmaal }}**
+{{ f.svar | replace("\n\n", " ") | replace("\n", " ") }}
+
+{% endfor -%}
+
+## Om tilskud
+
+Rideterapi og handicapridning kan i nogle tilfaelde daekkes som noedvendig
+merudgift efter serviceloven: § 41 for boern under 18 aar, § 100 for voksne.
+Ansoegning sker hos bopaelskommunen. Lotte kan udarbejde en beskrivelse af
+forloebet til brug for ansoegningen.
+
+## Beslaegtet
+
+- [{{ site.soestersite_navn }}]({{ site.soestersite_url }}): Samme indehaver. Selvstaendig praksis med narrativ psykoterapi, familiebehandling, traumebehandling, bisidderstoette og supervision.

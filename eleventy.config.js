@@ -19,6 +19,13 @@ module.exports = function (eleventyConfig) {
       .join("\n");
   });
 
+  // Dato som ren YYYY-MM-DD til <lastmod> i sitemap'et. Soegemaskiner og
+  // AI-crawlere bruger friskhed som signal, naar de vaelger hvad de skal
+  // hente igen - og hvilken kilde de stoler mest paa.
+  eleventyConfig.addFilter("isodato", function (d) {
+    return new Date(d).toISOString().slice(0, 10);
+  });
+
   return {
     dir: {
       input: "src",

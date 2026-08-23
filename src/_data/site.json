@@ -1,10 +1,13 @@
 {
   "navn": "Hesteassisteret Praksis",
+  "juridisk_navn": "Narrativ Samtale v/Lotte Stegeager",
   "undertitel": "v/ Lotte Stegeager",
   "domaene": "https://hesteassisteret-praksis.dk",
   "telefon": "26 12 23 29",
   "telefon_link": "+4526122329",
   "cvr": "43 49 10 91",
+  "forening_navn": "Rideterapeutforeningen",
+  "forening_url": "https://www.rideterapeutforeningen.dk/",
   "email": "lotte@narrativsamtale.dk",
   "adresse": "Gevninge Bygade 26",
   "postnr_by": "4000 Roskilde",
@@ -12,6 +15,6 @@
   "google_anmeldelser": "https://www.google.com/maps/search/?api=1&query=Narrativ+Samtale+Gevninge+Bygade+26+4000+Roskilde",
   "soestersite_url": "https://narrativsamtale.dk/",
   "soestersite_navn": "Narrativ Samtale",
-  "footer_beskrivelse": "Hesteassisteret behandling og handicapridning ved Lotte Stegeager. Godkendt af Rideterapeut Foreningen.",
+  "footer_beskrivelse": "Hesteassisteret behandling og handicapridning ved Lotte Stegeager. Godkendt af Rideterapeutforeningen.",
   "cta_knap": "Book gratis samtale"
 }
