@@ -18,8 +18,15 @@ eleventyComputed:
   </div>
 </div>
 
+{#- Priserne og forklaringen af kontrakten hoerer sammen. Man skal kunne
+    laese fra "hvorfor en kontrakt" over "hvad koster en gang" til "hvilke
+    kontrakter findes" uden at falde ud undervejs, saa det staar i ét afsnit. #}
 <section class="section">
   <div class="wrap">
+    <div class="tekstspalte">
+      {{ priser.vilkaar_intro | afsnit | safe }}
+    </div>
+
     <div class="grid grid--3">
       <article class="price-card price-card--highlight">
         <h3>{{ priser.pris1_overskrift }}</h3>
@@ -46,15 +53,29 @@ eleventyComputed:
       </article>
     </div>
 
-    {#- Ansvarserklaeringen underskrives sammen med kontrakten, men selve
-        indholdet staar paa Praktisk info. Her staar kun kernen, saa teksten
-        kun skal vedligeholdes ét sted. #}
-    <div class="maanedsboks">
+    {#- Kontrakter og forloeb ligger i ét panel med samme groenne bund som
+        sidehovedet, saa hele kontraktdelen laeses som én ting under
+        sessionspriserne. #}
+    <div class="kontraktpanel">
       <h2>{{ priser.maaned_overskrift }}</h2>
-      <p>{{ priser.maaned_intro }}</p>
+      {#- Teksten loeber i to spalter, saa den udnytter panelets bredde i
+          stedet for at staa som én smal soejle med tom plads til hoejre. #}
+      <div class="kontrakttekst">
+        {{ priser.kontrakt_intro | afsnit | safe }}
+        {{ priser.vilkaar_tekst | afsnit | safe }}
 
-      {#- Én blok per sessionstype. Hovedet baerer det, hyppighederne deler
-          — varighed og pris pr. gang — saa det kun staar én gang. #}
+        {#- Ansvar og forsikring hoerer til vilkaarene, ikke efter
+            prisoversigten: det er en del af det, man skriver under paa.
+            Den ligger med i spalteflowet og lander derfor nederst i
+            hoejre spalte, lige efter det sidste vilkaar. #}
+        <div class="note note--kontrakt">
+          <strong>{{ priser.ansvar_titel }}</strong> {{ priser.ansvar_tekst }}
+          <a href="{{ priser.ansvar_link }}">{{ priser.ansvar_link_tekst }}</a>
+        </div>
+      </div>
+
+      <p class="kontraktpanel__leadin">{{ priser.maaned_intro }}</p>
+
       <div class="kontraktblokke">
         {% for kt in priser.kontrakter %}
           {% if kt.basis == 'gruppe' %}{% set grund = priser.pris_gruppe_tal %}
@@ -69,20 +90,23 @@ eleventyComputed:
             {% if hy.frekvens == '14dage' %}{% set faktor = priser.faktor_14dage %}
             {% else %}{% set faktor = priser.faktor_uge %}{% endif %}
           <div class="kontraktblok__linje">
-            <span class="kontraktblok__hvornaar">{{ hy.navn }}</span>
+            {#- Hele linjen laeses som én saetning: "En enkelt session hver
+                uge koster 4.162 kr. om maaneden". Stod der bare "Hver uge",
+                troede man, at beloebet var prisen for én uge. #}
+            <span class="kontraktblok__hvornaar">{{ kt.linjenavn }} <strong>{{ hy.navn | lower }}</strong> koster</span>
             <span class="kontraktblok__beloeb">
-              {{ (grund * faktor) | kroner }}
-              <small>{{ priser.enhed_maaned }}{% if kt.pr_deltager %} {{ priser.enhed_deltager }}{% endif %}</small>
+              <span class="kontraktblok__tal">{{ (grund * faktor) | kroner }}</span>
+              {#- Enheden staar som en markeret etiket, ikke som lille graa
+                  tekst. Ellers laeses "Hver uge ... 4.162 kr." som prisen
+                  for én uge. #}
+              <small class="kontraktblok__enhed">{{ priser.enhed_maaned }}{% if kt.pr_deltager %} {{ priser.enhed_deltager }}{% endif %}</small>
             </span>
           </div>
           {% endfor %}
         </section>
         {% endfor %}
       </div>
-
-      <p class="maanedsboks__note">{{ priser.maaned_note }}</p>
     </div>
-
   </div>
 </section>
 
@@ -123,14 +147,3 @@ eleventyComputed:
 
 {#- Vilkaarene stod foer i en boks oeverst paa siden og skubbede priserne ned.
     De hoerer til, naar man har set tallene, og staar derfor nu til sidst. #}
-<section class="section">
-  <div class="wrap wrap--narrow">
-    <h2>{{ priser.vilkaar_overskrift }}</h2>
-    {{ priser.vilkaar_tekst | afsnit | safe }}
-
-    <div class="note" style="margin-top:2rem">
-      <strong>{{ priser.ansvar_titel }}</strong> {{ priser.ansvar_tekst }}
-      <a href="{{ priser.ansvar_link }}">{{ priser.ansvar_link_tekst }}</a>
-    </div>
-  </div>
-</section>

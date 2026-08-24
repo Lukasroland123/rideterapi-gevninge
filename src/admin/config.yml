@@ -458,6 +458,7 @@ collections:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
           - { name: svar, label: "Kort svar med de konkrete tal", widget: text, hint: "2-3 sætninger med det, der kan svares konkret på: hvad koster det, og hvordan betales der. Det er dem, Google og AI-tjenester citerer." }
+          - { name: vilkaar_intro, label: "Indledning over priskortene", widget: text, hint: "Det første, man læser. Forklarer hvorfor der er en kontrakt." }
 
           - { name: pris1_overskrift, label: "Priskort 1 · overskrift", widget: string }
           - { name: pris1_tal, label: "Priskort 1 · pris i kroner", widget: number, value_type: int, hint: "Kun tallet, fx 968. Månedspriserne i tabellen regnes ud fra det her tal." }
@@ -476,13 +477,15 @@ collections:
           - { name: pris2_enhed, label: "Priskort 3 · tekst under beløbet", widget: string }
           - { name: pris2_tekst, label: "Priskort 3 · beskrivelse", widget: text }
 
-          - { name: maaned_overskrift, label: "Månedsboks · overskrift", widget: string }
-          - { name: maaned_intro, label: "Månedsboks · forklaring", widget: text }
+          - { name: maaned_overskrift, label: "Kontraktpanel · overskrift", widget: string }
+          - { name: kontrakt_intro, label: "Kontraktpanel · indledning", widget: text, hint: "Hvad man kan vælge imellem, og hvordan det hænger sammen. Lav en tom linje mellem afsnit." }
+          - { name: maaned_intro, label: "Kontraktpanel · linjen lige over oversigten", widget: text }
           - name: kontrakter
             label: "Kontrakttyper · én blok per sessionstype"
             widget: list
             fields:
               - { name: navn, label: "Blokkens navn", widget: string, hint: "Fx 'Enkelt session'." }
+              - { name: linjenavn, label: "Indledning på prislinjerne", widget: string, hint: "Fx 'En enkelt session'. Sættes sammen til 'En enkelt session hver uge koster ...'." }
               - { name: detaljer, label: "Varighed", widget: string, hint: "Fx '45-60 min.'. Prisen pr. gang skrives automatisk bagefter." }
               - name: basis
                 label: "Hvilken pris regnes der ud fra?"
@@ -503,12 +506,11 @@ collections:
                     options:
                       - { label: "Hver uge", value: "uge" }
                       - { label: "Hver anden uge", value: "14dage" }
-          - { name: enhed_maaned, label: "Kontraktkort · tekst under beløbet", widget: string, hint: "Fx 'om måneden'." }
+          - { name: enhed_maaned, label: "Kontraktkort · tekst under beløbet", widget: string, hint: "Fx 'Månedligt'." }
           - { name: enhed_gang, label: "Kontraktkort · tekst i regnestykket", widget: string, hint: "Fx 'pr. gang'." }
           - { name: enhed_deltager, label: "Kontraktkort · tilføjes når prisen er per deltager", widget: string, hint: "Fx 'pr. deltager'." }
           - { name: faktor_uge, label: "Gangetal · hver uge", widget: number, value_type: float, hint: "Skriv 4.3 med PUNKTUM her." }
           - { name: faktor_14dage, label: "Gangetal · hver anden uge", widget: number, value_type: float, hint: "Skriv 2.15 med PUNKTUM her. Bruges til at regne månedspriserne ud." }
-          - { name: maaned_note, label: "Månedsboks · note nederst", widget: text }
 
           - { name: pris_note_titel, label: "Grøn boks under priserne · fed indledning", widget: string }
           - { name: pris_note_tekst, label: "Grøn boks under priserne · tekst", widget: text }
@@ -516,8 +518,7 @@ collections:
           - { name: ansvar_tekst, label: "Ansvarsboks · tekst", widget: text }
           - { name: ansvar_link_tekst, label: "Ansvarsboks · tekst på linket", widget: string }
           - { name: ansvar_link, label: "Ansvarsboks · hvor linket peger hen", widget: string, hint: "Peger på afsnittet om ansvar på Praktisk info. Lad den stå." }
-          - { name: vilkaar_overskrift, label: "Vilkårsafsnit nederst · overskrift", widget: string }
-          - { name: vilkaar_tekst, label: "Vilkårsafsnit nederst · tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: vilkaar_tekst, label: "Kontraktpanel · vilkår", widget: text, hint: "Opstart, betaling, opsigelse og afbud. Lav en tom linje mellem afsnit." }
 
           - { name: tilskud_mikrotekst, label: "Lille tekst · tilskudsafsnittet", widget: string }
           - { name: tilskud_overskrift, label: "Overskrift", widget: string }

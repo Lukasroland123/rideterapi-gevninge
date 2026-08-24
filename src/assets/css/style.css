@@ -450,17 +450,91 @@ blockquote {
 }
 .ydelsesliste a { font-weight: 600; }
 
-/* Kontrakttyperne paa prissiden. Blokkene stod foer som hvide kort paa en
-   lysegroen bund og flød sammen med den. Nu ligger de direkte paa sidens
-   egen bund, saa rammen om hver blok er det, der adskiller dem. */
-.maanedsboks { margin-top: 2.5rem; }
-.maanedsboks > h2 { margin-top: 0; }
-.maanedsboks > p { max-width: 62ch; }
-.maanedsboks__note {
-  margin: 1.25rem 0 0;
-  color: var(--ink-soft);
-  font-size: .95rem;
-  max-width: 62ch;
+/* Loebende tekst inde i et afsnit, der ellers bruger fuld bredde. Bruges
+   paa prissiden, hvor forklaringen af kontrakten staar over og under
+   priskortene i samme afsnit. */
+.tekstspalte {
+  width: min(100%, 68ch);
+  /* Ikke centreret: teksten skal dele venstrekant med priskortene og med
+     overskrifterne, saa hele siden hviler paa den samme lodrette linje. */
+  margin-bottom: 2.5rem;
+}
+.tekstspalte--luft { margin-block: 3rem 0; }
+.tekstspalte > p:last-child { margin-bottom: 0; }
+
+/* Hele kontraktdelen ligger i ét panel med samme groenne bund som
+   sidehovedet, saa den laeses som én ting under sessionspriserne og ikke
+   som tre loese afsnit. */
+.kontraktpanel {
+  margin-top: 3rem;
+  background: var(--brand-tint);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+}
+.kontraktpanel > h2 { margin-top: 0; }
+/* Ansvar og forsikring staar som et almindeligt afsnit i spalten: samme
+   bredde, samme skriftstoerrelse og flugtende venstrekant som teksten
+   omkring. Boksens groenne bund ville alligevel vaere usynlig paa panelets
+   groenne bund, og padding'en gjorde den smallere end resten. Uden boks maa
+   den ogsaa knaekke over spalteskiftet ligesom afsnittene — det er det, der
+   goer de to spalter lige lange. */
+/* Selektoren skal vaere staerkere end .note laengere nede i filen,
+   ellers vinder boksens padding og baggrund. */
+.kontrakttekst > .note--kontrakt {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  font-size: inherit;
+  orphans: 2;
+  widows: 2;
+}
+
+/* Forklaringen af kontrakten er lang. Staar den i én spalte, bruger den kun
+   venstre halvdel af det groenne panel og skubber priserne langt ned. Derfor
+   loeber den i to spalter, saa snart panelet er bredt nok til to laeselige
+   linjelaengder. Afsnit maa ikke brydes midt over. */
+.kontrakttekst {
+  width: 100%;
+  margin-bottom: 2.25rem;
+}
+@media (min-width: 800px) {
+  .kontrakttekst {
+    columns: 2;
+    column-gap: clamp(2rem, 4vw, 3.25rem);
+  }
+  /* To ting skal vaere opfyldt, for at browseren kan goere spalterne lige
+     lange. Dels skal afsnittene kunne knaekke frit over spalteskiftet
+     (orphans/widows 1) — ellers er det afsnitslaengderne, der bestemmer,
+     hvor spalten slutter. Dels skal afstanden mellem afsnit vaere praecis
+     én linje (1.7em = line-height), saa hele spalten ligger paa det samme
+     linjeraster; med en halv linje mellem afsnittene kan de to spalter
+     aldrig ende i samme hoejde. */
+  .kontrakttekst > p,
+  .kontrakttekst > .note--kontrakt { orphans: 2; widows: 2; }
+  .kontrakttekst > p { margin-bottom: 1.7em; }
+  .kontrakttekst > .note--kontrakt { margin-top: 0; }
+}
+.kontrakttekst > p:first-child { margin-top: 0; }
+.kontrakttekst > p:last-child { margin-bottom: 0; }
+/* Linjen, der peger ned i oversigten, staar for sig i fuld bredde. Den er
+   sat kraftigere end broedteksten, saa man med det samme ser, at det er her
+   priserne begynder. */
+.kontraktpanel__leadin {
+  margin: 0;
+  /* Ingen maksbredde: linjen skal staa som én saetning hen over panelet i
+     stedet for at knaekke i to. */
+  max-width: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+/* Kortene indeni skal loefte sig fra den groenne bund, derfor hvid uden
+   ramme i stedet for hvid med ramme. */
+.kontraktpanel .kontraktblok { border-color: transparent; }
+.kontraktpanel .kontraktblok__hoved {
+  background: var(--sand);
+  border-bottom-color: var(--line);
 }
 
 .kontraktblokke {
@@ -509,20 +583,33 @@ blockquote {
   border-bottom: 1px solid var(--line);
 }
 .kontraktblok__linje:last-child { border-bottom: 0; }
-.kontraktblok__hvornaar { font-weight: 600; }
+/* Linjen er en hel saetning, saa den staar i normal vaegt — kun hyppigheden
+   er fremhaevet, for det er den, der skiller linjerne fra hinanden. */
+.kontraktblok__hvornaar { font-weight: 400; }
+.kontraktblok__hvornaar strong { font-weight: 600; }
 .kontraktblok__beloeb {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: .2rem .5rem;
   font-family: var(--font-head);
   font-size: 1.35rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
-.kontraktblok__beloeb small {
+.kontraktblok__tal { white-space: nowrap; }
+/* Enheden er ikke en fodnote, den er halvdelen af oplysningen: uden den
+   laeses "Hver uge — 4.162 kr." som prisen for én uge. Derfor samme
+   skriftstoerrelse og farve som saetningen til venstre. */
+.kontraktblok__enhed {
   font-family: var(--font-body);
-  font-size: .85rem;
-  font-weight: 400;
-  color: var(--ink-soft);
-  margin-left: .4rem;
+  font-size: 1.0625rem;
+  /* Samme vaegt som beloebet: enheden er en del af prisen, ikke en note. */
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+  color: var(--ink);
 }
 
 /* Nummereret trinliste inde i et klik-ud-afsnit */
