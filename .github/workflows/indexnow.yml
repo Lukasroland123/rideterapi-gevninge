@@ -1,0 +1,54 @@
+# Fortaeller Bing med det samme, naar en side er aendret.
+#
+# Lotte gemmer i CMS'et -> Sveltia laver en commit -> Cloudflare bygger og
+# deployer -> den her workflow siger til Bing, at siderne skal hentes igen.
+# Uden den kan der gaa uger, foer Bing opdager en rettelse.
+#
+# Google er ikke med: de har ingen tilsvarende protokol, der virker. Der er
+# sitemap og Search Console stadig eneste vej.
+
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    # Kun naar der faktisk er aendret indhold. Rettelser i README eller i
+    # workflows skal ikke sende URL'er af sted.
+    paths:
+      - "src/**"
+      - "eleventy.config.js"
+  # Kan ogsaa startes i haanden fra fanen Actions paa GitHub.
+  workflow_dispatch:
+
+# Kommer der to gem lige efter hinanden, er det kun det sidste, der taeller.
+# Uden det ville Bing faa to naesten ens indsendelser.
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      # Sitemap og noeglefil skal bygges her, saa scriptet laeser de samme
+      # URL'er, som lige er blevet deployet.
+      - run: npx @11ty/eleventy
+
+      # Cloudflare bygger parallelt med den her workflow. Pinger vi for
+      # tidligt, henter Bing den GAMLE udgave af siden og tror, den er ny.
+      # Byggetiden er maalt til omkring 20 sekunder; de tre minutter er
+      # rigelig margen til, at koeen er lang.
+      - name: Vent paa at Cloudflare har deployet
+        run: sleep 180
+
+      - name: Send URL'er til IndexNow
+        run: python3 scripts/indexnow.py
