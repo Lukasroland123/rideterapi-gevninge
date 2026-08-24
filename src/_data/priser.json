@@ -18,33 +18,6 @@
   "pris2_tekst": "Jeg tilbyder en konsultation på 20 minutter uden beregning til alle potentielle klienter. Det giver dig mulighed for at beskrive netop den situation, du står i, stille spørgsmål om min erfaring og komme til en beslutning om, hvorvidt det vi tilbyder her er den rette for dig.",
   "maaned_overskrift": "Kontrakttyper",
   "maaned_intro": "Der betales månedsvis forud. Månedsprisen beregnes ud fra det gennemsnitlige antal uger i en måned, så beløbet ikke svinger fra måned til måned. Det ligger fast på tallene herunder og afhænger af, hvilken kontrakt der er indgået.",
-  "faktor_uge": 4.3,
-  "faktor_14dage": 2.15,
-  "maaned_note": "Fællesskabsforløb holdes én gang om ugen og findes derfor ikke som en hver-anden-uge-kontrakt. Et forløb løber typisk over tre til fire måneder.",
-  "pris_note_titel": "Bemærk:",
-  "pris_note_tekst": "Vi har samarbejde med flere kommuner.",
-  "ansvar_titel": "Ansvar og forsikring:",
-  "ansvar_tekst": "Sammen med kontrakten underskrives en ansvarserklæring. Al omgang med hestene foregår på eget ansvar, og det er en forudsætning for at deltage, at du selv har en dækkende ulykkesforsikring.",
-  "ansvar_link_tekst": "Læs hele afsnittet om ansvar og forsikring",
-  "ansvar_link": "/forloeb/#ansvar",
-  "tilskud_mikrotekst": "Vidste du det?",
-  "tilskud_overskrift": "Du kan søge om tilskud til handicapridning",
-  "tilskud_intro": "Mange ved ikke, at bl.a. handicapridning i nogle tilfælde kan dækkes delvist af den kommune du /dit barn bor i.",
-  "tilskud_kort": [
-    {
-      "overskrift": "Børn under 18 år",
-      "tekst": "Børn og unge med en funktionsnedsættelse skal så vidt muligt have de samme muligheder for et aktivt og meningsfuldt fritidsliv som andre børn og unge. Det er også en del af intentionen i Barnets Lov.\nNår en funktionsnedsættelse betyder, at et almindeligt fritidstilbud ikke er muligt, kan der i nogle tilfælde være mulighed for støtte til de ekstra udgifter, der følger med et særligt tilrettelagt tilbud som handicapridning. Det vil altid bero på kommunens konkrete og individuelle vurdering.\nEfter aftale kan jeg tilbyde sparring ved udarbejdelse af en ansøgning."
-    },
-    {
-      "overskrift": "Voksne",
-      "tekst": "For voksne med en senhjerneskade kan der være behov for at genopbygge balance, kropsfornemmelse og tillid til egen krop. Det kan tage tid at lære kroppens signaler og muligheder at kende på ny.\nHestens rolige, rytmiske bevægelser og samspillet med den giver mulighed for at arbejde med både balance, koordination og kropslig opmærksomhed i en meningsfuld aktivitet. Der arbejdes både fra hesteryg og fra jorden, og altid med afsæt i den enkeltes dagsform. Der er ikke en fast plan, der skal følges, tempo og aktiviteter tilpasses det, der er muligt den enkelte dag."
-    }
-  ],
-  "tilskud_knap": "Spørg mig om tilskudsansøgning",
-  "vilkaar_overskrift": "Vilkår og kontrakt",
-  "vilkaar_tekst": "Ved opstart underskrives kontrakt og ansvarserklæring, og der betales et depositum svarende til én måneds betaling. Depositummet står som sikkerhed gennem hele forløbet og dækker den sidste måned, hvis forløbet på et tidspunkt siges op. Der skal altså ikke betales for den afsluttende måned en gang til.\n\nDer betales månedsvis forud. Månedsprisen er den samme hver eneste måned, uanset om måneden rummer fire eller fem uger, fordi beløbet er regnet ud som et gennemsnit over året. Holdes der ferie, reduceres prisen ud fra antallet af feriedage i den pågældende måned.\n\nEt forløb kan siges op med én måneds varsel til udgangen af en kalendermåned. Det betyder, at depositummet dækker den efterfølgende og sidste måned, uanset hvornår i måneden opsigelsen gives.\n\nMeldes der afbud fra deltagerens side, gives der ikke erstatningstid. Bliver jeg selv nødt til at aflyse en aftalt tid, tilbydes der til gengæld en erstatningstid.",
-  "titel": "Priser og tilskud til rideterapi | Hesteassisteret Praksis",
-  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, vejledning i at søge kommunalt tilskud efter serviceloven og Barnets lov",
   "kontrakter": [
     {
       "navn": "Enkelt session",
@@ -93,5 +66,32 @@
   ],
   "enhed_maaned": "om måneden",
   "enhed_gang": "pr. gang",
-  "enhed_deltager": "pr. deltager"
+  "enhed_deltager": "pr. deltager",
+  "faktor_uge": 4.3,
+  "faktor_14dage": 2.15,
+  "maaned_note": "Fællesskabsforløb holdes én gang om ugen og findes derfor ikke som en hver-anden-uge-kontrakt. Et forløb løber typisk over tre til fire måneder.",
+  "pris_note_titel": "Bemærk:",
+  "pris_note_tekst": "Vi har samarbejde med flere kommuner.",
+  "ansvar_titel": "Ansvar og forsikring:",
+  "ansvar_tekst": "Sammen med kontrakten underskrives en ansvarserklæring. Al omgang med hestene foregår på eget ansvar, og det er en forudsætning for at deltage, at du selv har en dækkende ulykkesforsikring.",
+  "ansvar_link_tekst": "Læs hele afsnittet om ansvar og forsikring",
+  "ansvar_link": "/forloeb/#ansvar",
+  "vilkaar_overskrift": "Vilkår og kontrakt",
+  "vilkaar_tekst": "Ved opstart underskrives kontrakt og ansvarserklæring, og der betales et depositum svarende til én måneds betaling. Depositummet står som sikkerhed gennem hele forløbet og dækker den sidste måned, hvis forløbet på et tidspunkt siges op. Der skal altså ikke betales for den afsluttende måned en gang til.\n\nDer betales månedsvis forud. Månedsprisen er den samme hver eneste måned, uanset om måneden rummer fire eller fem uger, fordi beløbet er regnet ud som et gennemsnit over året. Holdes der ferie, reduceres prisen ud fra antallet af feriedage i den pågældende måned.\n\nEt forløb kan siges op med én måneds varsel til udgangen af en kalendermåned. Det betyder, at depositummet dækker den efterfølgende og sidste måned, uanset hvornår i måneden opsigelsen gives.\n\nMeldes der afbud fra deltagerens side, gives der ikke erstatningstid. Bliver jeg selv nødt til at aflyse en aftalt tid, tilbydes der til gengæld en erstatningstid.",
+  "tilskud_mikrotekst": "Vidste du det?",
+  "tilskud_overskrift": "Du kan søge om tilskud til handicapridning",
+  "tilskud_intro": "Mange ved ikke, at bl.a. handicapridning i nogle tilfælde kan dækkes delvist af den kommune du /dit barn bor i.",
+  "tilskud_kort": [
+    {
+      "overskrift": "Børn under 18 år med funktionsnedsættelser",
+      "tekst": "Børn og unge med en funktionsnedsættelse skal så vidt muligt have de samme muligheder for et aktivt og meningsfuldt fritidsliv som andre børn og unge. Det er også en del af intentionen i Barnets Lov.\nNår en funktionsnedsættelse betyder, at et almindeligt fritidstilbud ikke er muligt, kan der i nogle tilfælde være mulighed for støtte til de ekstra udgifter, der følger med et særligt tilrettelagt tilbud som handicapridning. Det vil altid bero på kommunens konkrete og individuelle vurdering.\nEfter aftale kan jeg tilbyde sparring ved udarbejdelse af en ansøgning."
+    },
+    {
+      "overskrift": "Voksne med funktionsnedsættelser",
+      "tekst": "Voksne med en varigt nedsat funktionsevne skal så vidt muligt have mulighed for at leve et aktivt liv og deltage i aktiviteter på lige fod med andre. Når en funktionsnedsættelse medfører ekstra udgifter for at kunne deltage, kan der i nogle tilfælde søges om støtte gennem kommunen efter serviceloven.\nAnsøgningen sker til bopælskommunen. Efter aftale kan jeg tilbyde sparring ved udarbejdelse af en ansøgning."
+    }
+  ],
+  "tilskud_knap": "Spørg mig om tilskudsansøgning",
+  "titel": "Priser og tilskud til rideterapi | Hesteassisteret Praksis",
+  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, vejledning i at søge kommunalt tilskud efter serviceloven og Barnets lov"
 }
