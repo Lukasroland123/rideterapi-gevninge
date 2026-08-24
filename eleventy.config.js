@@ -19,6 +19,15 @@ module.exports = function (eleventyConfig) {
       .join("\n");
   });
 
+  // Tal til dansk kronebeloeb: 4162.4 -> "4.162 kr."
+  // Alle priser regnes ud fra ét tal pr. ydelse, saa en prisaendring kun
+  // skal skrives ét sted og maanedspriserne foelger med af sig selv.
+  eleventyConfig.addFilter("kroner", function (tal) {
+    const n = Math.round(Number(tal));
+    if (!isFinite(n)) return "";
+    return n.toLocaleString("da-DK") + " kr.";
+  });
+
   // Dato som ren YYYY-MM-DD til <lastmod> i sitemap'et. Soegemaskiner og
   // AI-crawlere bruger friskhed som signal, naar de vaelger hvad de skal
   // hente igen - og hvilken kilde de stoler mest paa.

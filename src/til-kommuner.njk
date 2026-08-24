@@ -23,14 +23,22 @@ eleventyComputed:
       {% for r in kommuner.resume_punkter %}
       <div class="resume__row">
         <span class="resume__label">{{ r.label }}</span>
-        <span>{{ r.tekst }}</span>
+        <span>{{ r.tekst }}
+          {%- if r.ydelser %}
+          <ul class="ydelsesliste">
+            {%- for y in r.ydelser %}
+            <li><a href="{{ y.url }}">{{ y.navn }}</a> – {{ y.tekst }}</li>
+            {%- endfor %}
+          </ul>
+          {%- endif %}
+        </span>
       </div>
       {% endfor %}
     </div>
 
     <figure class="figur">
       <div class="hero__media">
-        <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="800">
+        <img src="{{ kommuner.hero_billede }}" alt="{{ kommuner.hero_billede_alt }}" width="600" height="750">
       </div>
       {% if kommuner.hero_billedtekst %}<figcaption>{{ kommuner.hero_billedtekst }}</figcaption>{% endif %}
     </figure>

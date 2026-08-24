@@ -3,7 +3,8 @@
   "hero_overskrift": "Til dig, der skal finde et tilbud til et barn, en ung eller en voksen",
   "hero_knap2": "Send en forespørgsel",
   "hero_billede": "/billeder/kommuner-barn-rider-med-lotte.jpg",
-  "hero_billede_alt": "Når nærvær giver mod til lidt mere.",
+  "hero_billede_alt": "Barn med ridehjelm sidder på en lysebrun islandshest i sne, mens Lotte står ved siden af og smiler til barnet",
+  "hero_billedtekst": "Når nærvær giver mod til lidt mere.",
   "resume_overskrift": "Kort fortalt",
   "resume_punkter": [
     {
@@ -12,7 +13,24 @@
     },
     {
       "label": "Ydelser",
-      "tekst": "Her tilbydes tre forskellige hesteassisterede ydelser:\n\n\nHesteassisteret behandling\nFor børn, unge og voksne i mistrivsel og evt. med diagnoser.\nEt individuelt terapeutisk behandlingsforløb, hvor hesten indgår aktivt i arbejdet med trivsel, udvikling og nye handlemuligheder.\n\n\nHesteassisterede fællesskabsforløb\nFor børn og unge med bekymrende skolefravær.\nSmå gruppeforløb, hvor hestene udgør et fælles tredje, og hvor fokus er på deltagelse, relationer og erfaringer med at høre til i et fællesskab.\n\n\nKompenserende handicapridning\nFor mennesker med funktionsnedsættelser.\nIndividuelt tilrettelagt forløb, hvor hesten, bevægelsen og samværet omkring den giver mulighed for kropslige og sansemæssige erfaringer, glæde, mestring og deltagelse med afsæt i deltagerens forudsætninger.\n\n\nYdelserne kan visiteres hver for sig eller kombineres efter behov."
+      "tekst": "Her tilbydes tre hesteassisterede ydelser. De kan visiteres hver for sig eller kombineres efter behov.",
+      "ydelser": [
+        {
+          "navn": "Hesteassisteret behandling",
+          "url": "/rideterapi/",
+          "tekst": "Enesessioner for børn, unge og voksne i mistrivsel."
+        },
+        {
+          "navn": "Hesteassisteret fællesskabsforløb",
+          "url": "/faellesskabsforloeb/",
+          "tekst": "Små grupper for børn og unge med begyndende skolefravær."
+        },
+        {
+          "navn": "Kompenserende handicapridning",
+          "url": "/handicapridning/",
+          "tekst": "For mennesker med funktionsnedsættelser."
+        }
+      ]
     },
     {
       "label": "Den ansvarlige for ydelserne:",

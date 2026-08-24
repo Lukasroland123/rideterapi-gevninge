@@ -105,7 +105,7 @@ eleventyComputed:
       <p>{{ forside.fokus_intro }}</p>
     </div>
     <div class="grid grid--3 grid--3-fast">
-      {% for k in forside.fokus_kort %}
+      {% for k in fokuskort.kort %}
       <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
       {% endfor %}
     </div>

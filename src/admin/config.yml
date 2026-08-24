@@ -89,14 +89,6 @@ collections:
 
           - { name: fokus_overskrift, label: "Overskrift · afsnittet 'Hvad er i fokus'", widget: string }
           - { name: fokus_intro, label: "Introtekst", widget: text }
-          - name: fokus_kort
-            label: "De seks fokuspunkter"
-            widget: list
-            allow_add: false
-            allow_remove: false
-            fields:
-              - { name: overskrift, label: "Overskrift", widget: string }
-              - { name: tekst, label: "Tekst", widget: text }
 
           - { name: anmeldelser_overskrift, label: "Overskrift · udtalelser", widget: string }
           - name: anmeldelser_citater
@@ -120,6 +112,23 @@ collections:
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text, hint: "Cirka 150 tegn." }
 
       # ---------------------------------------------------------------
+      # ---------------------------------------------------------------
+      # De seks fokuspunkter vises BAADE paa forsiden og paa rideterapi-siden.
+      # De ligger derfor i deres egen fil og redigeres kun ét sted.
+      - name: fokuskort
+        label: "De seks fokuspunkter"
+        file: "src/_data/fokuskort.json"
+        description: "Vises både på forsiden og på siden om rideterapi. Retter du dem her, ændrer de sig begge steder."
+        fields:
+          - name: kort
+            label: "De seks fokuspunkter"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
       - name: rideterapi
         label: "Rideterapi"
         file: "src/_data/rideterapi.json"
@@ -147,14 +156,6 @@ collections:
 
           - { name: fokus_overskrift, label: "Overskrift · 'Hvad arbejder vi med'", widget: string }
           - { name: fokus_intro, label: "Introtekst", widget: text }
-          - name: fokus_kort
-            label: "De seks kort"
-            widget: list
-            allow_add: false
-            allow_remove: false
-            fields:
-              - { name: overskrift, label: "Overskrift", widget: string }
-              - { name: tekst, label: "Tekst", widget: text }
 
           - { name: hvem_mikrotekst, label: "Lille tekst · 'Målgruppe'", widget: string }
           - { name: hvem_overskrift, label: "Overskrift", widget: string }
@@ -456,22 +457,67 @@ collections:
         fields:
           - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
           - { name: hero_overskrift, label: "Stor overskrift", widget: string }
-          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
-          - { name: svar, label: "Kort svar med de konkrete tal", widget: text, hint: "2-3 sætninger i jeg-form med det, der kan svares konkret på: hvor længe varer det, hvor ofte, hvad koster det, hvad kan man søge tilskud til. Det er dem, Google og AI-tjenester citerer. Gentag ikke noget, der allerede står i afsnittet ved siden af." }
+          - { name: svar, label: "Kort svar med de konkrete tal", widget: text, hint: "2-3 sætninger med det, der kan svares konkret på: hvad koster det, og hvordan betales der. Det er dem, Google og AI-tjenester citerer." }
 
           - { name: pris1_overskrift, label: "Priskort 1 · overskrift", widget: string }
-          - { name: pris1_beloeb, label: "Priskort 1 · det store beløb", widget: string }
+          - { name: pris1_tal, label: "Priskort 1 · pris i kroner", widget: number, value_type: int, hint: "Kun tallet, fx 968. Månedspriserne i tabellen regnes ud fra det her tal." }
           - { name: pris1_enhed, label: "Priskort 1 · tekst under beløbet", widget: string }
           - { name: pris1_tekst, label: "Priskort 1 · beskrivelse", widget: text }
           - { name: pris1_knap, label: "Priskort 1 · knaptekst", widget: string }
 
-          - { name: pris2_overskrift, label: "Priskort 2 · overskrift", widget: string }
-          - { name: pris2_beloeb, label: "Priskort 2 · det store beløb", widget: string }
-          - { name: pris2_enhed, label: "Priskort 2 · tekst under beløbet", widget: string }
-          - { name: pris2_tekst, label: "Priskort 2 · beskrivelse", widget: text }
+          - { name: pris_gruppe_overskrift, label: "Priskort 2 · overskrift", widget: string }
+          - { name: pris_gruppe_tal, label: "Priskort 2 · pris i kroner", widget: number, value_type: int, hint: "Kun tallet, fx 700." }
+          - { name: pris_gruppe_enhed, label: "Priskort 2 · tekst under beløbet", widget: string }
+          - { name: pris_gruppe_tekst, label: "Priskort 2 · beskrivelse", widget: text }
+          - { name: pris_gruppe_knap, label: "Priskort 2 · knaptekst", widget: string }
+
+          - { name: pris2_overskrift, label: "Priskort 3 · overskrift", widget: string }
+          - { name: pris2_beloeb, label: "Priskort 3 · det store beløb", widget: string }
+          - { name: pris2_enhed, label: "Priskort 3 · tekst under beløbet", widget: string }
+          - { name: pris2_tekst, label: "Priskort 3 · beskrivelse", widget: text }
+
+          - { name: maaned_overskrift, label: "Månedsboks · overskrift", widget: string }
+          - { name: maaned_intro, label: "Månedsboks · forklaring", widget: text }
+          - name: kontrakter
+            label: "Kontrakttyper · én blok per sessionstype"
+            widget: list
+            fields:
+              - { name: navn, label: "Blokkens navn", widget: string, hint: "Fx 'Enkelt session'." }
+              - { name: detaljer, label: "Varighed", widget: string, hint: "Fx '45-60 min.'. Prisen pr. gang skrives automatisk bagefter." }
+              - name: basis
+                label: "Hvilken pris regnes der ud fra?"
+                widget: select
+                options:
+                  - { label: "Sessionsprisen fra priskort 1", value: "session" }
+                  - { label: "Det dobbelte af priskort 1", value: "dobbelt" }
+                  - { label: "Prisen fra priskort 2", value: "gruppe" }
+              - { name: pr_deltager, label: "Er prisen per deltager?", widget: boolean, default: false, hint: "Slås til på fællesskabsforløb." }
+              - name: hyppigheder
+                label: "Linjer i blokken"
+                widget: list
+                fields:
+                  - { name: navn, label: "Tekst til venstre", widget: string, hint: "Fx 'Hver uge'." }
+                  - name: frekvens
+                    label: "Hvor ofte?"
+                    widget: select
+                    options:
+                      - { label: "Hver uge", value: "uge" }
+                      - { label: "Hver anden uge", value: "14dage" }
+          - { name: enhed_maaned, label: "Kontraktkort · tekst under beløbet", widget: string, hint: "Fx 'om måneden'." }
+          - { name: enhed_gang, label: "Kontraktkort · tekst i regnestykket", widget: string, hint: "Fx 'pr. gang'." }
+          - { name: enhed_deltager, label: "Kontraktkort · tilføjes når prisen er per deltager", widget: string, hint: "Fx 'pr. deltager'." }
+          - { name: faktor_uge, label: "Gangetal · hver uge", widget: number, value_type: float, hint: "Skriv 4.3 med PUNKTUM her." }
+          - { name: faktor_14dage, label: "Gangetal · hver anden uge", widget: number, value_type: float, hint: "Skriv 2.15 med PUNKTUM her. Bruges til at regne månedspriserne ud." }
+          - { name: maaned_note, label: "Månedsboks · note nederst", widget: text }
 
           - { name: pris_note_titel, label: "Grøn boks under priserne · fed indledning", widget: string }
           - { name: pris_note_tekst, label: "Grøn boks under priserne · tekst", widget: text }
+          - { name: ansvar_titel, label: "Ansvarsboks · fed indledning", widget: string }
+          - { name: ansvar_tekst, label: "Ansvarsboks · tekst", widget: text }
+          - { name: ansvar_link_tekst, label: "Ansvarsboks · tekst på linket", widget: string }
+          - { name: ansvar_link, label: "Ansvarsboks · hvor linket peger hen", widget: string, hint: "Peger på afsnittet om ansvar på Praktisk info. Lad den stå." }
+          - { name: vilkaar_overskrift, label: "Vilkårsafsnit nederst · overskrift", widget: string }
+          - { name: vilkaar_tekst, label: "Vilkårsafsnit nederst · tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
 
           - { name: tilskud_mikrotekst, label: "Lille tekst · tilskudsafsnittet", widget: string }
           - { name: tilskud_overskrift, label: "Overskrift", widget: string }
@@ -618,6 +664,14 @@ collections:
             fields:
               - { name: label, label: "Etiket til venstre", widget: string, hint: "Ét eller to ord, fx Målgruppe." }
               - { name: tekst, label: "Tekst", widget: text }
+              - name: ydelser
+                label: "Punktliste med links (bruges kun på linjen 'Ydelser')"
+                widget: list
+                required: false
+                fields:
+                  - { name: navn, label: "Ydelsens navn", widget: string }
+                  - { name: url, label: "Link til siden", widget: string, hint: "Fx /rideterapi/ — husk skråstreg i begge ender." }
+                  - { name: tekst, label: "Kort forklaring", widget: string }
 
           - { name: relevant_overskrift, label: "Overskrift · 'Hvornår er det relevant'", widget: string }
           - { name: relevant_intro, label: "Introtekst", widget: text }

@@ -1,19 +1,32 @@
 {
   "hero_mikrotekst": "Åbent og gennemskueligt",
   "hero_overskrift": "Priser og kontrakter",
-  "svar": "Prisen aftaler vi konkret, fordi opgaverne er forskellige. Ring og få et tilbud.",
-  "hero_tekst": "Ved opstart underskrives kontrakt og ansvarserklæring.\n\nDer betales månedsvis forud for både hesteassisteret behandling og handicapridningen. Ved opstart betales desuden et depositum svarende til én måneds betaling. Depositummet dækker den sidste måned ved opsigelse.\n\nDer er én måneds opsigelse til udgangen af en kalendermåned. Det betyder, at depositummet dækker den efterfølgende og sidste måned, uanset hvornår i måneden opsigelsen gives.\n\nVed ferie reduceres prisen ud fra antal feriedage i en given måned. \n\nVed afbud fra deltagers side gives der ikke erstatningstid. \nHvis jeg er nødt til at aflyse en aftalt tid, tilbydes en erstatningstid.",
+  "svar": "En session koster 968 kr. og et fællesskabsforløb 700 kr. pr. gang pr. deltager. Der betales månedsvis forud, og månedsprisen afhænger af, om man kommer hver uge eller hver anden uge.",
   "pris1_overskrift": "Hesteassisteret behandling (Rideterapi) og handicapridning",
-  "pris1_beloeb": "Fast pris",
-  "pris1_enhed": "Typisk 45–60 min. eller 90–120 min.",
+  "pris1_tal": 968,
+  "pris1_enhed": "pr. session på 45–60 min.",
   "pris1_tekst": "Individuel hesteassistert behandling (rideterapi) og handicapridning kan tilbydes separat eller kombineres med narrativ terapi og familiebehandling.\n\nVær opmærksom på, at hesteassisteret behandling (rideterapi) ikke nødvendigvis handler om at ride, men om det samspil, der kan skabes mellem menneske og hest.",
   "pris1_knap": "Få et konkret tilbud",
-  "pris2_overskrift": "Gratis indledende samtale",
+  "pris_gruppe_overskrift": "Hesteassisteret fællesskabsforløb",
+  "pris_gruppe_tal": 700,
+  "pris_gruppe_enhed": "pr. gang pr. deltager · hold på 2–4",
+  "pris_gruppe_tekst": "Pædagogisk gruppeforløb i små, faste hold for børn og unge med skolefravær. Prisen er pr. deltager pr. gang. Et forløb aftales som et fast antal gange.",
+  "pris_gruppe_knap": "Få et konkret tilbud",
+  "pris2_overskrift": "Uforpligtende indledende samtale",
   "pris2_beloeb": "uden beregning",
   "pris2_enhed": "20 minutter, uforpligtende",
   "pris2_tekst": "Jeg tilbyder en konsultation på 20 minutter uden beregning til alle potentielle klienter. Det giver dig mulighed for at beskrive netop den situation, du står i, stille spørgsmål om min erfaring og komme til en beslutning om, hvorvidt det vi tilbyder her er den rette for dig.",
+  "maaned_overskrift": "Kontrakttyper",
+  "maaned_intro": "Der betales månedsvis forud. Månedsprisen beregnes ud fra det gennemsnitlige antal uger i en måned, så beløbet ikke svinger fra måned til måned. Det ligger fast på tallene herunder og afhænger af, hvilken kontrakt der er indgået.",
+  "faktor_uge": 4.3,
+  "faktor_14dage": 2.15,
+  "maaned_note": "Fællesskabsforløb holdes én gang om ugen og findes derfor ikke som en hver-anden-uge-kontrakt. Et forløb løber typisk over tre til fire måneder.",
   "pris_note_titel": "Bemærk:",
   "pris_note_tekst": "Vi har samarbejde med flere kommuner.",
+  "ansvar_titel": "Ansvar og forsikring:",
+  "ansvar_tekst": "Sammen med kontrakten underskrives en ansvarserklæring. Al omgang med hestene foregår på eget ansvar, og det er en forudsætning for at deltage, at du selv har en dækkende ulykkesforsikring.",
+  "ansvar_link_tekst": "Læs hele afsnittet om ansvar og forsikring",
+  "ansvar_link": "/forloeb/#ansvar",
   "tilskud_mikrotekst": "Vidste du det?",
   "tilskud_overskrift": "Du kan søge om tilskud til handicapridning",
   "tilskud_intro": "Mange ved ikke, at bl.a. handicapridning i nogle tilfælde kan dækkes delvist af den kommune du /dit barn bor i.",
@@ -28,6 +41,57 @@
     }
   ],
   "tilskud_knap": "Spørg mig om tilskudsansøgning",
+  "vilkaar_overskrift": "Vilkår og kontrakt",
+  "vilkaar_tekst": "Ved opstart underskrives kontrakt og ansvarserklæring, og der betales et depositum svarende til én måneds betaling. Depositummet står som sikkerhed gennem hele forløbet og dækker den sidste måned, hvis forløbet på et tidspunkt siges op. Der skal altså ikke betales for den afsluttende måned en gang til.\n\nDer betales månedsvis forud. Månedsprisen er den samme hver eneste måned, uanset om måneden rummer fire eller fem uger, fordi beløbet er regnet ud som et gennemsnit over året. Holdes der ferie, reduceres prisen ud fra antallet af feriedage i den pågældende måned.\n\nEt forløb kan siges op med én måneds varsel til udgangen af en kalendermåned. Det betyder, at depositummet dækker den efterfølgende og sidste måned, uanset hvornår i måneden opsigelsen gives.\n\nMeldes der afbud fra deltagerens side, gives der ikke erstatningstid. Bliver jeg selv nødt til at aflyse en aftalt tid, tilbydes der til gengæld en erstatningstid.",
   "titel": "Priser og tilskud til rideterapi | Hesteassisteret Praksis",
-  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, vejledning i at søge kommunalt tilskud efter serviceloven og Barnets lov"
+  "beskrivelse": "Priser på hesteassisteret behandling og handicapridning, vejledning i at søge kommunalt tilskud efter serviceloven og Barnets lov",
+  "kontrakter": [
+    {
+      "navn": "Enkelt session",
+      "detaljer": "45–60 min.",
+      "basis": "session",
+      "pr_deltager": false,
+      "hyppigheder": [
+        {
+          "navn": "Hver uge",
+          "frekvens": "uge"
+        },
+        {
+          "navn": "Hver anden uge",
+          "frekvens": "14dage"
+        }
+      ]
+    },
+    {
+      "navn": "Dobbelt session",
+      "detaljer": "90–120 min.",
+      "basis": "dobbelt",
+      "pr_deltager": false,
+      "hyppigheder": [
+        {
+          "navn": "Hver uge",
+          "frekvens": "uge"
+        },
+        {
+          "navn": "Hver anden uge",
+          "frekvens": "14dage"
+        }
+      ]
+    },
+    {
+      "navn": "Fællesskabsforløb",
+      "detaljer": "90 min. i hold på 2–4",
+      "basis": "gruppe",
+      "pr_deltager": true,
+      "hyppigheder": [
+        {
+          "navn": "Hver uge",
+          "frekvens": "uge"
+        }
+      ]
+    }
+  ],
+  "enhed_maaned": "om måneden",
+  "enhed_gang": "pr. gang",
+  "enhed_deltager": "pr. deltager"
 }

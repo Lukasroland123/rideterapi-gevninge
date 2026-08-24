@@ -47,16 +47,23 @@
       <a href="/"{% if side == 'forside' %} aria-current="page"{% endif %}>Forside</a>
 
       <div class="nav__group">
-        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-forloeb"{% if side in ['rideterapi','handicapridning','faellesskabsforloeb','forloeb'] %} aria-current="true"{% endif %}>Forløb</button>
+        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-forloeb"{% if side in ['rideterapi','handicapridning','faellesskabsforloeb'] %} aria-current="true"{% endif %}>Forløb</button>
         <ul class="nav__sub" id="undermenu-forloeb">
-          <li><a href="/rideterapi/"{% if side == 'rideterapi' %} aria-current="page"{% endif %}>Rideterapi<small>Hesteassisteret behandling</small></a></li>
+          <li><a href="/rideterapi/"{% if side == 'rideterapi' %} aria-current="page"{% endif %}>Hesteassisteret behandling<small>Rideterapi</small></a></li>
           <li><a href="/handicapridning/"{% if side == 'handicapridning' %} aria-current="page"{% endif %}>Handicapridning<small>Kompenserende ridning</small></a></li>
           <li><a href="/faellesskabsforloeb/"{% if side == 'faellesskabsforloeb' %} aria-current="page"{% endif %}>Fællesskabsforløb<small>Gruppeforløb i små hold</small></a></li>
-          <li><a href="/forloeb/"{% if side == 'forloeb' %} aria-current="page"{% endif %}>Praktisk info<small>Tøj, sikkerhed og spørgsmål</small></a></li>
         </ul>
       </div>
 
-      <a href="/priser/"{% if side == 'priser' %} aria-current="page"{% endif %}>Priser &amp; tilskud</a>
+      {#- "Praktisk info" er flyttet ud af Forloeb-menuen og staar nu sammen med
+          priserne i sin egen menu. Begge sider beholder deres egne adresser. #}
+      <div class="nav__group">
+        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-praktisk"{% if side in ['forloeb','priser'] %} aria-current="true"{% endif %}>Praktisk info &amp; priser</button>
+        <ul class="nav__sub" id="undermenu-praktisk">
+          <li><a href="/forloeb/"{% if side == 'forloeb' %} aria-current="page"{% endif %}>Praktisk info<small>Tøj, sikkerhed og spørgsmål</small></a></li>
+          <li><a href="/priser/"{% if side == 'priser' %} aria-current="page"{% endif %}>Priser<small>Priser, kontrakter og tilskud</small></a></li>
+        </ul>
+      </div>
       <a href="/om-lotte/"{% if side == 'omlotte' %} aria-current="page"{% endif %}>Om Lotte</a>
       <a href="/kontakt/"{% if side == 'kontakt' %} aria-current="page"{% endif %}>Kontakt</a>
       <a href="/til-kommuner/"{% if side == 'kommuner' %} aria-current="page"{% endif %}>Til kommuner</a>
@@ -85,11 +92,11 @@
         <h4>Sider</h4>
         <ul>
           <li><a href="/">Forside</a></li>
-          <li><a href="/rideterapi/">Rideterapi</a></li>
+          <li><a href="/rideterapi/">Hesteassisteret behandling</a></li>
           <li><a href="/handicapridning/">Handicapridning</a></li>
           <li><a href="/faellesskabsforloeb/">Fællesskabsforløb</a></li>
           <li><a href="/forloeb/">Praktisk info</a></li>
-          <li><a href="/priser/">Priser &amp; tilskud</a></li>
+          <li><a href="/priser/">Priser &amp; kontrakter</a></li>
           <li><a href="/om-lotte/">Om Lotte</a></li>
           <li><a href="/til-kommuner/">Til kommuner</a></li>
           <li><a href="/kontakt/">Kontakt</a></li>

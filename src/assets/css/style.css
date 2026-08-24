@@ -433,6 +433,98 @@ blockquote {
   }
 }
 
+/* De tre ydelser i "Kort fortalt" paa Til kommuner. Stod foer som én lang
+   koerende tekst; nu er hver ydelse sin egen linje med link til sin side. */
+.ydelsesliste {
+  list-style: none;
+  margin: .6rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: .5rem;
+}
+.ydelsesliste li {
+  margin: 0;
+  padding-left: .9rem;
+  border-left: 2px solid var(--brand-tint, var(--line));
+  line-height: 1.45;
+}
+.ydelsesliste a { font-weight: 600; }
+
+/* Kontrakttyperne paa prissiden. Blokkene stod foer som hvide kort paa en
+   lysegroen bund og flød sammen med den. Nu ligger de direkte paa sidens
+   egen bund, saa rammen om hver blok er det, der adskiller dem. */
+.maanedsboks { margin-top: 2.5rem; }
+.maanedsboks > h2 { margin-top: 0; }
+.maanedsboks > p { max-width: 62ch; }
+.maanedsboks__note {
+  margin: 1.25rem 0 0;
+  color: var(--ink-soft);
+  font-size: .95rem;
+  max-width: 62ch;
+}
+
+.kontraktblokke {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+.kontraktblok {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--paper);
+}
+/* Hovedet baerer det, raekkerne nedenunder deler: varighed og pris pr. gang. */
+.kontraktblok__hoved {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .35rem 1.25rem;
+  padding: .85rem 1.25rem;
+  background: var(--brand-tint);
+  border-bottom: 1px solid var(--line);
+}
+.kontraktblok__hoved h3 {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--brand-dark);
+}
+.kontraktblok__hoved p {
+  margin: 0;
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+.kontraktblok__linje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .25rem 1.25rem;
+  padding: .9rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.kontraktblok__linje:last-child { border-bottom: 0; }
+.kontraktblok__hvornaar { font-weight: 600; }
+.kontraktblok__beloeb {
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.kontraktblok__beloeb small {
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  margin-left: .4rem;
+}
+
 /* Nummereret trinliste inde i et klik-ud-afsnit */
 .trinliste { padding-left: 1.2rem; }
 .trinliste li { margin-bottom: .75rem; }
@@ -453,7 +545,11 @@ blockquote {
   .hero__inner--flugt > .resume     { grid-column: 1; grid-row: 1; }
   .hero__inner--flugt > .hero__media { grid-column: 2; grid-row: 1; aspect-ratio: auto; }
   .hero__inner--flugt > .figur { grid-column: 2; grid-row: 1; }
-  .hero__inner--flugt > .figur .hero__media { aspect-ratio: auto; height: 100%; }
+  /* Billedet maa ikke laengere straekke sig efter resuméets hoejde. Fotoet er
+     naesten kvadratisk, og en meget hoej ramme tvang det til at blive baade
+     opskaleret og forvraenget. 4/5 er samme forhold som portraetrammen. */
+  .hero__inner--flugt > .figur { align-self: start; }
+  .hero__inner--flugt > .figur .hero__media { aspect-ratio: 4 / 5; height: auto; }
   .hero__inner--flugt > .btn-row    { grid-column: 1; grid-row: 2; margin: 0; }
 }
 

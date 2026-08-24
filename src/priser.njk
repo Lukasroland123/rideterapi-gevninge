@@ -11,19 +11,30 @@ eleventyComputed:
     <span class="eyebrow">{{ priser.hero_mikrotekst }}</span>
     <h1>{{ priser.hero_overskrift }}</h1>
     <p>{{ priser.svar }}</p>
-    <p>{{ priser.hero_tekst }}</p>
+
+    {#- Vilkaarene stod foer som ét langt afsnit. De er de samme fem punkter,
+        men nu med etiket til venstre, saa man kan finde det ene, man leder
+        efter. Samme komponent som "Kort fortalt" paa kommunesiden. #}
   </div>
 </div>
 
 <section class="section">
   <div class="wrap">
-    <div class="grid grid--2">
+    <div class="grid grid--3">
       <article class="price-card price-card--highlight">
         <h3>{{ priser.pris1_overskrift }}</h3>
-        <div class="price-card__amount">{{ priser.pris1_beloeb }}</div>
+        <div class="price-card__amount">{{ priser.pris1_tal | kroner }}</div>
         <p class="price-card__unit">{{ priser.pris1_enhed }}</p>
         {{ priser.pris1_tekst | afsnit | safe }}
         <a class="btn btn--primary" href="/kontakt/">{{ priser.pris1_knap }}</a>
+      </article>
+
+      <article class="price-card">
+        <h3>{{ priser.pris_gruppe_overskrift }}</h3>
+        <div class="price-card__amount">{{ priser.pris_gruppe_tal | kroner }}</div>
+        <p class="price-card__unit">{{ priser.pris_gruppe_enhed }}</p>
+        {{ priser.pris_gruppe_tekst | afsnit | safe }}
+        <a class="btn btn--primary" href="/kontakt/">{{ priser.pris_gruppe_knap }}</a>
       </article>
 
       <article class="price-card">
@@ -35,9 +46,43 @@ eleventyComputed:
       </article>
     </div>
 
-    <div class="note" style="margin-top:2rem">
-      <strong>{{ priser.pris_note_titel }}</strong> {{ priser.pris_note_tekst }}
+    {#- Ansvarserklaeringen underskrives sammen med kontrakten, men selve
+        indholdet staar paa Praktisk info. Her staar kun kernen, saa teksten
+        kun skal vedligeholdes ét sted. #}
+    <div class="maanedsboks">
+      <h2>{{ priser.maaned_overskrift }}</h2>
+      <p>{{ priser.maaned_intro }}</p>
+
+      {#- Én blok per sessionstype. Hovedet baerer det, hyppighederne deler
+          — varighed og pris pr. gang — saa det kun staar én gang. #}
+      <div class="kontraktblokke">
+        {% for kt in priser.kontrakter %}
+          {% if kt.basis == 'gruppe' %}{% set grund = priser.pris_gruppe_tal %}
+          {% elif kt.basis == 'dobbelt' %}{% set grund = priser.pris1_tal * 2 %}
+          {% else %}{% set grund = priser.pris1_tal %}{% endif %}
+        <section class="kontraktblok">
+          <header class="kontraktblok__hoved">
+            <h3>{{ kt.navn }}</h3>
+            <p>{{ kt.detaljer }} &middot; {{ grund | kroner }} {{ priser.enhed_gang }}{% if kt.pr_deltager %} {{ priser.enhed_deltager }}{% endif %}</p>
+          </header>
+          {% for hy in kt.hyppigheder %}
+            {% if hy.frekvens == '14dage' %}{% set faktor = priser.faktor_14dage %}
+            {% else %}{% set faktor = priser.faktor_uge %}{% endif %}
+          <div class="kontraktblok__linje">
+            <span class="kontraktblok__hvornaar">{{ hy.navn }}</span>
+            <span class="kontraktblok__beloeb">
+              {{ (grund * faktor) | kroner }}
+              <small>{{ priser.enhed_maaned }}{% if kt.pr_deltager %} {{ priser.enhed_deltager }}{% endif %}</small>
+            </span>
+          </div>
+          {% endfor %}
+        </section>
+        {% endfor %}
+      </div>
+
+      <p class="maanedsboks__note">{{ priser.maaned_note }}</p>
     </div>
+
   </div>
 </section>
 
@@ -64,6 +109,9 @@ eleventyComputed:
       {% endfor %}
     </div>
     <p style="margin-top:1.75rem">
+      <div class="note" style="margin-bottom:2rem">
+        <strong>{{ priser.pris_note_titel }}</strong> {{ priser.pris_note_tekst }}
+      </div>
       <a class="btn btn--brand" href="/kontakt/">{{ priser.tilskud_knap }}</a>
     </p>
   </div>
@@ -72,3 +120,17 @@ eleventyComputed:
 {# Aabningstider og beliggenhed staar kun paa kontaktsiden.
    Den groenne kontaktboks er ogsaa fjernet herfra — den bruges kun paa
    forsiden, rideterapi og handicapridning. #}
+
+{#- Vilkaarene stod foer i en boks oeverst paa siden og skubbede priserne ned.
+    De hoerer til, naar man har set tallene, og staar derfor nu til sidst. #}
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <h2>{{ priser.vilkaar_overskrift }}</h2>
+    {{ priser.vilkaar_tekst | afsnit | safe }}
+
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ priser.ansvar_titel }}</strong> {{ priser.ansvar_tekst }}
+      <a href="{{ priser.ansvar_link }}">{{ priser.ansvar_link_tekst }}</a>
+    </div>
+  </div>
+</section>
