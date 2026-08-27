@@ -83,6 +83,8 @@ collections:
           - { name: hvorfor_billede, label: "Billede", widget: image }
           - { name: hvorfor_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
           - { name: hvorfor_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hvorfor_artikel_tekst, label: "Link til artiklen · tekst", widget: string, required: false, hint: "Linket der står lige under teksten, fx 'Hesteassisteret terapi som platform – læs min artikel'. Pilen sættes automatisk." }
+          - { name: hvorfor_artikel_url, label: "Link til artiklen · adresse", widget: string, required: false, hint: "Hele adressen inklusive https://. Lad begge felter stå tomme, hvis linket ikke skal vises." }
           - { name: hvorfor_boks_titel, label: "Grøn boks · fed indledning", widget: string }
           - { name: hvorfor_boks_tekst, label: "Grøn boks · tekst", widget: text }
           - { name: hvorfor_boks_link, label: "Grøn boks · tekst på linket", widget: string }
@@ -747,10 +749,13 @@ collections:
         description: "Disse oplysninger bruges i toppen og bunden af ALLE sider."
         fields:
           - { name: navn, label: "Virksomhedens navn", widget: string }
+          - { name: juridisk_navn, label: "Juridisk navn (CVR-registreret)", widget: string, hint: "Det navn virksomheden er registreret under i CVR, fx 'Narrativ Samtale v/Lotte Stegeager'. Vises ikke på siden, men bruges af Google og af AI-tjenester. Ret kun hvis registreringen ændres." }
           - { name: undertitel, label: "Undertekst i logoet", widget: string }
           - { name: telefon, label: "Mobilnummer (som det vises)", widget: string }
           - { name: telefon_link, label: "Mobilnummer til opkald", widget: string, hint: "Skrives som +45 efterfulgt af nummeret uden mellemrum, fx +4526122329" }
           - { name: cvr, label: "CVR-nummer", widget: string, hint: "Vises nederst under Kontakt i bunden af siden." }
+          - { name: forening_navn, label: "Faglig forening · navn", widget: string, hint: "Fx 'Rideterapeutforeningen'. Vises ikke på siden, men fortæller Google og AI-tjenester, hvor Lotte er medlem." }
+          - { name: forening_url, label: "Faglig forening · hjemmeside", widget: string, hint: "Hele adressen inklusive https://" }
           - { name: email, label: "E-mailadresse", widget: string }
           - { name: adresse, label: "Vej og husnummer", widget: string }
           - { name: postnr_by, label: "Postnummer og by", widget: string }
