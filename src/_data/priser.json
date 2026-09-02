@@ -1,25 +1,30 @@
 {
   "hero_mikrotekst": "Åbent og gennemskueligt",
   "hero_overskrift": "Priser og kontrakter",
-  "svar": "En session koster 968 kr. og et fællesskabsforløb 700 kr. pr. gang pr. deltager. Der betales månedsvis forud, og månedsprisen afhænger af, om man kommer hver uge eller hver anden uge.",
+  "svar": "En session koster 968 kr. Et fællesskabsforløb koster 700 kr. pr. gang pr. deltager med pædagogisk fokus og 900 kr. med behandlingsfokus. Der betales månedsvis forud, og månedsprisen afhænger af, om man kommer hver uge eller hver anden uge.",
   "vilkaar_intro": "Et forløb med heste bygger på genkendelighed. Derfor aftaler vi fra begyndelsen, hvor ofte vi ses, og hvor længe hver gang varer, og det skriver vi ned i en kontrakt. Rammen er der ikke for formalitetens skyld, men fordi der ligger noget trygt i, at det ser ens ud fra gang til gang.",
   "pris1_overskrift": "Hesteassisteret behandling (Rideterapi) og handicapridning",
   "pris1_tal": 968,
   "pris1_enhed": "pr. session på 45–60 min.",
   "pris1_tekst": "Individuel hesteassistert behandling (rideterapi) og handicapridning kan tilbydes separat eller kombineres med narrativ terapi og familiebehandling.\n\nVær opmærksom på, at hesteassisteret behandling (rideterapi) ikke nødvendigvis handler om at ride, men om det samspil, der kan skabes mellem menneske og hest.",
   "pris1_knap": "Få et konkret tilbud",
-  "pris_gruppe_overskrift": "Hesteassisteret fællesskabsforløb",
+  "pris_gruppe_overskrift": "Hesteassisteret fællesskabsforløb · pædagogisk fokus",
   "pris_gruppe_tal": 700,
   "pris_gruppe_enhed": "pr. session af 90 min. pr. deltager · hold på 2–4",
   "pris_gruppe_tekst": "Pædagogisk gruppeforløb i små, faste hold for børn og unge med skolefravær. Prisen er pr. deltager pr. gang. Et forløb aftales som et fast antal gange.",
   "pris_gruppe_knap": "Få et konkret tilbud",
+  "pris_gruppe2_overskrift": "Hesteassisteret fællesskabsforløb · behandlingsfokus",
+  "pris_gruppe2_tal": 900,
+  "pris_gruppe2_enhed": "pr. session af 90 min. pr. deltager · hold på 2–4",
+  "pris_gruppe2_tekst": "Behandlingsforløb i små, faste hold for børn og unge med angst, tristhed, lavt selvværd eller belastningsreaktioner. Prisen er pr. deltager pr. gang. Et forløb aftales som et fast antal gange.",
+  "pris_gruppe2_knap": "Få et konkret tilbud",
   "pris2_overskrift": "Uforpligtende indledende samtale",
   "pris2_beloeb": "uden beregning",
   "pris2_enhed": "20 minutter, uforpligtende",
   "pris2_tekst": "Jeg tilbyder en konsultation på 20 minutter uden beregning til alle potentielle klienter. Det giver dig mulighed for at beskrive netop den situation, du står i, stille spørgsmål om min erfaring og komme til en beslutning om, hvorvidt det vi tilbyder her er den rette for dig.",
   "maaned_overskrift": "Kontrakter og forløb",
-  "kontrakt_intro": "Et forløb aftales som en fast kontrakt, så du på forhånd ved, hvornår I ses, og hvad det koster hver måned. Kontrakten fastlægger to ting: hvor længe hver gang varer, og hvor ofte du kommer.\n\nEn enkelt session varer 45–60 minutter, en dobbelt session 90–120. Begge dele kan aftales enten hver uge eller hver anden uge. Dertil kommer fællesskabsforløbet, som altid holdes ugentligt i et fast hold på to til fire deltagere. Tilsammen giver det fem kontrakttyper at vælge imellem.",
-  "maaned_intro": "Herunder er der en oversigt over de fem kontrakttyper, og hvad de koster om måneden.",
+  "kontrakt_intro": "Et forløb aftales som en fast kontrakt, så du på forhånd ved, hvornår I ses, og hvad det koster hver måned. Kontrakten fastlægger to ting: hvor længe hver gang varer, og hvor ofte du kommer.\n\nEn enkelt session varer 45–60 minutter, en dobbelt session 90–120. Begge dele kan aftales enten hver uge eller hver anden uge. Dertil kommer de to fællesskabsforløb — det pædagogiske og det med behandlingsfokus — som begge holdes ugentligt i et fast hold på to til fire deltagere. Tilsammen giver det seks kontrakttyper at vælge imellem.",
+  "maaned_intro": "Herunder er der en oversigt over de seks kontrakttyper, og hvad de koster om måneden.",
   "kontrakter": [
     {
       "navn": "Enkelt session",
@@ -56,10 +61,23 @@
       ]
     },
     {
-      "navn": "Fællesskabsforløb",
-      "linjenavn": "Fællesskabsforløb",
+      "navn": "Fællesskabsforløb · pædagogisk",
+      "linjenavn": "Fællesskabsforløb, pædagogisk",
       "detaljer": "90 min. i hold på 2–4",
       "basis": "gruppe",
+      "pr_deltager": true,
+      "hyppigheder": [
+        {
+          "navn": "Hver uge",
+          "frekvens": "uge"
+        }
+      ]
+    },
+    {
+      "navn": "Fællesskabsforløb · behandling",
+      "linjenavn": "Fællesskabsforløb, behandling",
+      "detaljer": "90 min. i hold på 2–4",
+      "basis": "gruppe2",
       "pr_deltager": true,
       "hyppigheder": [
         {

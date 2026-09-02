@@ -584,15 +584,20 @@ collections:
           - { name: pris1_knap, label: "Priskort 1 · knaptekst", widget: string }
 
           - { name: pris_gruppe_overskrift, label: "Priskort 2 · overskrift", widget: string }
-          - { name: pris_gruppe_tal, label: "Priskort 2 · pris i kroner", widget: number, value_type: int, hint: "Kun tallet, fx 700." }
+          - { name: pris_gruppe_tal, label: "Priskort 2 · pris i kroner", widget: number, value_type: int, hint: "Kun tallet, fx 700. Fællesskabsforløbet med pædagogisk fokus." }
           - { name: pris_gruppe_enhed, label: "Priskort 2 · tekst under beløbet", widget: string }
           - { name: pris_gruppe_tekst, label: "Priskort 2 · beskrivelse", widget: text }
           - { name: pris_gruppe_knap, label: "Priskort 2 · knaptekst", widget: string }
+          - { name: pris_gruppe2_overskrift, label: "Priskort 3 · overskrift", widget: string }
+          - { name: pris_gruppe2_tal, label: "Priskort 3 · pris i kroner", widget: number, value_type: int, hint: "Kun tallet, fx 900. Fællesskabsforløbet med behandlingsfokus." }
+          - { name: pris_gruppe2_enhed, label: "Priskort 3 · tekst under beløbet", widget: string }
+          - { name: pris_gruppe2_tekst, label: "Priskort 3 · beskrivelse", widget: text }
+          - { name: pris_gruppe2_knap, label: "Priskort 3 · knaptekst", widget: string }
 
-          - { name: pris2_overskrift, label: "Priskort 3 · overskrift", widget: string }
-          - { name: pris2_beloeb, label: "Priskort 3 · det store beløb", widget: string }
-          - { name: pris2_enhed, label: "Priskort 3 · tekst under beløbet", widget: string }
-          - { name: pris2_tekst, label: "Priskort 3 · beskrivelse", widget: text }
+          - { name: pris2_overskrift, label: "Priskort 4 · overskrift", widget: string }
+          - { name: pris2_beloeb, label: "Priskort 4 · det store beløb", widget: string }
+          - { name: pris2_enhed, label: "Priskort 4 · tekst under beløbet", widget: string }
+          - { name: pris2_tekst, label: "Priskort 4 · beskrivelse", widget: text }
 
           - { name: maaned_overskrift, label: "Kontraktpanel · overskrift", widget: string }
           - { name: kontrakt_intro, label: "Kontraktpanel · indledning", widget: text, hint: "Hvad man kan vælge imellem, og hvordan det hænger sammen. Lav en tom linje mellem afsnit." }

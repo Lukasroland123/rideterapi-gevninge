@@ -45,6 +45,14 @@ eleventyComputed:
       </article>
 
       <article class="price-card">
+        <h3>{{ priser.pris_gruppe2_overskrift }}</h3>
+        <div class="price-card__amount">{{ priser.pris_gruppe2_tal | kroner }}</div>
+        <p class="price-card__unit">{{ priser.pris_gruppe2_enhed }}</p>
+        {{ priser.pris_gruppe2_tekst | afsnit | safe }}
+        <a class="btn btn--primary" href="/kontakt/">{{ priser.pris_gruppe2_knap }}</a>
+      </article>
+
+      <article class="price-card">
         <h3>{{ priser.pris2_overskrift }}</h3>
         <div class="price-card__amount">{{ priser.pris2_beloeb }}</div>
         <p class="price-card__unit">{{ priser.pris2_enhed }}</p>
@@ -79,6 +87,7 @@ eleventyComputed:
       <div class="kontraktblokke">
         {% for kt in priser.kontrakter %}
           {% if kt.basis == 'gruppe' %}{% set grund = priser.pris_gruppe_tal %}
+          {% elif kt.basis == 'gruppe2' %}{% set grund = priser.pris_gruppe2_tal %}
           {% elif kt.basis == 'dobbelt' %}{% set grund = priser.pris1_tal * 2 %}
           {% else %}{% set grund = priser.pris1_tal %}{% endif %}
         <section class="kontraktblok">
