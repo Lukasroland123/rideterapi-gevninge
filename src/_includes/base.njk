@@ -46,12 +46,23 @@
     <nav class="nav" id="hovedmenu" aria-label="Hovedmenu">
       <a href="/"{% if side == 'forside' %} aria-current="page"{% endif %}>Forside</a>
 
+      {#- To forloebsmenuer i stedet for en. Skellet mellem "alene med Lotte"
+          og "sammen med andre" er det foerste, en foraelder eller en
+          sagsbehandler skal traeffe et valg om - saa lad navigationen sige
+          det i stedet for at gemme det inde i en faelles skuffe. #}
       <div class="nav__group">
-        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-forloeb"{% if side in ['rideterapi','handicapridning','faellesskabsforloeb'] %} aria-current="true"{% endif %}>Forløb</button>
-        <ul class="nav__sub" id="undermenu-forloeb">
+        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-individuelle"{% if side in ['rideterapi','handicapridning'] %} aria-current="true"{% endif %}>Individuelle forløb</button>
+        <ul class="nav__sub" id="undermenu-individuelle">
           <li><a href="/rideterapi/"{% if side == 'rideterapi' %} aria-current="page"{% endif %}>Hesteassisteret behandling<small>Rideterapi</small></a></li>
           <li><a href="/handicapridning/"{% if side == 'handicapridning' %} aria-current="page"{% endif %}>Handicapridning<small>Kompenserende ridning</small></a></li>
-          <li><a href="/faellesskabsforloeb/"{% if side == 'faellesskabsforloeb' %} aria-current="page"{% endif %}>Fællesskabsforløb<small>Gruppeforløb i små hold</small></a></li>
+        </ul>
+      </div>
+
+      <div class="nav__group">
+        <button class="nav__parent" type="button" aria-expanded="false" aria-controls="undermenu-gruppe"{% if side in ['faellesskabsforloeb','behandlingsforloeb'] %} aria-current="true"{% endif %}>Gruppeforløb</button>
+        <ul class="nav__sub" id="undermenu-gruppe">
+          <li><a href="/faellesskabsforloeb/"{% if side == 'faellesskabsforloeb' %} aria-current="page"{% endif %}>Fælles pædagogisk forløb<small>Skolefravær, deltagelse og relationer</small></a></li>
+          <li><a href="/faellesskabsforloeb-behandling/"{% if side == 'behandlingsforloeb' %} aria-current="page"{% endif %}>Fælles behandlingsforløb<small>Angst, tristhed og belastning</small></a></li>
         </ul>
       </div>
 
@@ -94,7 +105,8 @@
           <li><a href="/">Forside</a></li>
           <li><a href="/rideterapi/">Hesteassisteret behandling</a></li>
           <li><a href="/handicapridning/">Handicapridning</a></li>
-          <li><a href="/faellesskabsforloeb/">Fællesskabsforløb</a></li>
+          <li><a href="/faellesskabsforloeb/">Fælles pædagogisk forløb</a></li>
+          <li><a href="/faellesskabsforloeb-behandling/">Fælles behandlingsforløb</a></li>
           <li><a href="/forloeb/">Praktisk info</a></li>
           <li><a href="/priser/">Priser &amp; kontrakter</a></li>
           <li><a href="/om-lotte/">Om Lotte</a></li>

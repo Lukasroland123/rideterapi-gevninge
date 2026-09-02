@@ -1,0 +1,220 @@
+---
+layout: base.njk
+permalink: /faellesskabsforloeb-behandling/
+side: behandlingsforloeb
+eleventyComputed:
+  titel: "{{ behandlingsforloeb.titel }}"
+  beskrivelse: "{{ behandlingsforloeb.beskrivelse }}"
+  og_billede: "{{ behandlingsforloeb.hero_billede }}"
+---
+{# Soestersiden til /faellesskabsforloeb/. Samme opbygning og samme rytme i
+   baggrundsfarverne, saa de to forloeb foeles som ét sted - forskellen er
+   indholdet, ikke formen. #}
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ behandlingsforloeb.hero_mikrotekst }}</span>
+      <h1>{{ behandlingsforloeb.hero_overskrift }}</h1>
+      <p class="lead">{{ behandlingsforloeb.hero_tekst }}</p>
+
+      <div class="hero__uddyb prose">
+        {{ behandlingsforloeb.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ behandlingsforloeb.hvad_boks_titel }}</strong> {{ behandlingsforloeb.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      <div class="badges">
+        {% for m in behandlingsforloeb.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media">
+        {% if behandlingsforloeb.hero_billede %}
+        <img src="{{ behandlingsforloeb.hero_billede }}" alt="{{ behandlingsforloeb.hero_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if behandlingsforloeb.hero_billedtekst %}<figcaption>{{ behandlingsforloeb.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+{# Maalgruppen staar hoejt paa siden med vilje: en foraelder eller en
+   sagsbehandler skal kunne se om det er dem, uden at scrolle. #}
+<section class="section section--sand">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media">
+        {% if behandlingsforloeb.maalgruppe_billede %}
+        <img src="{{ behandlingsforloeb.maalgruppe_billede }}" alt="{{ behandlingsforloeb.maalgruppe_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if behandlingsforloeb.maalgruppe_billedtekst %}<figcaption>{{ behandlingsforloeb.maalgruppe_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ behandlingsforloeb.maalgruppe_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.maalgruppe_overskrift }}</h2>
+      {{ behandlingsforloeb.maalgruppe_indledning | afsnit | safe }}
+      <ul>
+        {% for p in behandlingsforloeb.maalgruppe_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ behandlingsforloeb.maalgruppe_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--reverse">
+    <figure class="figur">
+      <div class="split__media">
+        {% if behandlingsforloeb.enkelte_billede %}
+        <img src="{{ behandlingsforloeb.enkelte_billede }}" alt="{{ behandlingsforloeb.enkelte_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if behandlingsforloeb.enkelte_billedtekst %}<figcaption>{{ behandlingsforloeb.enkelte_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ behandlingsforloeb.enkelte_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.enkelte_overskrift }}</h2>
+      {{ behandlingsforloeb.enkelte_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow">{{ behandlingsforloeb.faellesskab_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.faellesskab_overskrift }}</h2>
+    </div>
+    <div class="prose">
+      {{ behandlingsforloeb.faellesskab_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+{# Fire kort, ikke tre: de fire underoverskrifter staar allerede i Lottes
+   tekst, og grid--2-fast stiller dem op to og to. #}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ behandlingsforloeb.tredje_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.tredje_overskrift }}</h2>
+      {{ behandlingsforloeb.tredje_indledning | afsnit | safe }}
+    </div>
+    <div class="grid grid--2 grid--2-fast">
+      {% for k in behandlingsforloeb.tredje_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media">
+        {% if behandlingsforloeb.arbejde_billede %}
+        <img src="{{ behandlingsforloeb.arbejde_billede }}" alt="{{ behandlingsforloeb.arbejde_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if behandlingsforloeb.arbejde_billedtekst %}<figcaption>{{ behandlingsforloeb.arbejde_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ behandlingsforloeb.arbejde_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.arbejde_overskrift }}</h2>
+      {{ behandlingsforloeb.arbejde_indledning | afsnit | safe }}
+      <ul>
+        {% for p in behandlingsforloeb.arbejde_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ behandlingsforloeb.arbejde_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split split--reverse">
+    <figure class="figur">
+      <div class="split__media">
+        {% if behandlingsforloeb.individuel_billede %}
+        <img src="{{ behandlingsforloeb.individuel_billede }}" alt="{{ behandlingsforloeb.individuel_billede_alt }}">
+        {% endif %}
+      </div>
+      {% if behandlingsforloeb.individuel_billedtekst %}<figcaption>{{ behandlingsforloeb.individuel_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ behandlingsforloeb.individuel_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.individuel_overskrift }}</h2>
+      {{ behandlingsforloeb.individuel_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow">{{ behandlingsforloeb.fagligt_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.fagligt_overskrift }}</h2>
+    </div>
+    <div class="prose">
+      {{ behandlingsforloeb.fagligt_tekst | afsnit | safe }}
+      <div class="note">
+        <strong>{{ behandlingsforloeb.fagligt_boks_titel }}</strong> {{ behandlingsforloeb.fagligt_boks_tekst }}
+        <a href="/om-lotte/#forskning">{{ behandlingsforloeb.fagligt_boks_link }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow">{{ behandlingsforloeb.visitation_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.visitation_overskrift }}</h2>
+    </div>
+    <div class="prose">
+      {{ behandlingsforloeb.visitation_tekst | afsnit | safe }}
+    </div>
+    <p style="margin-top:2rem">
+      <a class="btn btn--ghost" href="/til-kommuner/">Læs mere til kommuner og sagsbehandlere</a>
+    </p>
+  </div>
+</section>
+
+{# Sammenligningen staar paa BEGGE forloebssider. Den er det, der forhindrer,
+   at nogen laeser den forkerte side til ende uden at faa forskellen at vide. #}
+<section class="section section--sand">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow">{{ behandlingsforloeb.valg_mikrotekst }}</span>
+      <h2>{{ behandlingsforloeb.valg_overskrift }}</h2>
+      <p>{{ behandlingsforloeb.valg_indledning }}</p>
+    </div>
+    <div class="grid grid--2 grid--2-fast">
+      {% for k in behandlingsforloeb.valg_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+    <div class="prose" style="margin-top:2rem">
+      {{ behandlingsforloeb.valg_afslutning | afsnit | safe }}
+    </div>
+    <p style="margin-top:1.5rem">
+      <a class="btn btn--brand" href="/faellesskabsforloeb/">{{ behandlingsforloeb.valg_knap }}</a>
+    </p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ behandlingsforloeb.cta_overskrift }}</h2>
+      {{ behandlingsforloeb.cta_tekst | afsnit | safe }}
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser og muligheder for kommunal finansiering</a>
+      </div>
+    </div>
+  </div>
+</section>

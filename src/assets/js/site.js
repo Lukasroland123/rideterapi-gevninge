@@ -49,7 +49,7 @@
     });
 
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 1080) setNavOpen(false);
+      if (window.innerWidth > 1380) setNavOpen(false);
     });
   }
 

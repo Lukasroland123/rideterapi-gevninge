@@ -226,7 +226,7 @@
     ,{
       "@type": "Service",
       "@id": {{ (site.domaene + page.url + "#ydelse") | dump | safe }},
-      "name": "Hesteassisteret faellesskabsforloeb - paedagogisk gruppeforloeb",
+      "name": "Hesteassisteret faelles paedagogisk forloeb",
       "description": {{ faellesskabsforloeb.beskrivelse | dump | safe }},
       {#- serviceType siger hvad ydelsen ER. Her staar "paedagogisk" og ikke
           "terapi", fordi det er den skelnen Lotte selv goer paa siden. Skrev
@@ -261,6 +261,27 @@
         }{% if not loop.last %},{% endif %}
         {%- endfor %}
       ]
+    }
+    {%- endif %}
+
+    {%- if side == 'behandlingsforloeb' %}
+    ,{
+      {#- Soesterydelsen til faellesskabsforloebet. Forskellen mellem de to
+          staar udtrykkeligt i serviceType: den ene er paedagogisk, den her
+          er behandling. Skriver vi det samme paa begge, kan hverken Google
+          eller en sprogmodel se, at det er to forskellige tilbud. -#}
+      "@type": "Service",
+      "@id": {{ (site.domaene + page.url + "#ydelse") | dump | safe }},
+      "name": "Hesteassisteret faelles behandlingsforloeb",
+      "description": {{ behandlingsforloeb.beskrivelse | dump | safe }},
+      "serviceType": "Hesteassisteret gruppebehandling med narrativ psykoterapi",
+      "provider": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Region Sjaelland" },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Boern og unge med psykisk mistrivsel - eksempelvis angst, depressive symptomer, lavt selvvaerd, belastningsreaktioner eller social tilbagetraekning - hvor der er behov for en maalrettet behandlingsindsats"
+      },
+      "availableLanguage": "da"
     }
     {%- endif %}
 

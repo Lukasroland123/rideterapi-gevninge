@@ -213,6 +213,22 @@ eleventyComputed:
   </div>
 </section>
 
+{# Henvisning til soesterforloebet. Den staar foer henvisningen til
+   rideterapi, fordi de to faellesskabsforloeb ligner hinanden mest - og
+   fordi ingen skal laese hele siden til ende uden at faa at vide, at der
+   findes en udgave med behandlingsfokus. #}
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ faellesskabsforloeb.behandling_overskrift }}</h3>
+        <p>{{ faellesskabsforloeb.behandling_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="/faellesskabsforloeb-behandling/">{{ faellesskabsforloeb.behandling_knap }}</a>
+    </div>
+  </div>
+</section>
+
 <section class="section section--tight">
   <div class="wrap">
     <div class="sister">

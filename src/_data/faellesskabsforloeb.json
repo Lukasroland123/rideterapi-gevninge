@@ -1,6 +1,6 @@
 {
   "hero_mikrotekst": "Forløb · Hesteassisteret fællesskabsforløb",
-  "hero_overskrift": "Hesteassisteret fællesskabsforløb",
+  "hero_overskrift": "Hesteassisteret fælles pædagogisk forløb",
   "hero_tekst": "Et pædagogisk gruppeforløb for børn og unge, som gennem kortere eller længere tid har haft svært ved at komme i skole og har fået afstand til de sociale fællesskaber, der normalt følger med hverdagen.",
   "hero_knap1": "Book en uforpligtende 20 min. samtale",
   "hero_knap2": "Se rideterapi i stedet",
@@ -178,11 +178,14 @@
     }
   ],
   "faq_knap": "Se alle praktiske spørgsmål og svar",
+  "behandling_overskrift": "Er der brug for et forløb med behandlingsfokus?",
+  "behandling_tekst": "Fællesskabsforløbet med behandlingsfokus retter sig mod børn og unge, hvor psykisk mistrivsel kalder på en mere målrettet behandlingsindsats. Her arbejdes der blandt andet med angst, depressive symptomer, belastende erfaringer, lavt selvværd og andre problemstillinger, der har fået væsentlig indflydelse på barnets eller den unges hverdag.",
+  "behandling_knap": "Læs om det fælles behandlingsforløb",
   "kryds_overskrift": "Er der brug for et individuelt forløb i stedet?",
   "kryds_tekst": "Har barnet brug for et individuelt psykoterapeutisk behandlingsforløb, tilbyder jeg udviklingsstøttende hesteassisteret behandling, også kaldet rideterapi.",
   "kryds_knap": "Læs om rideterapi",
   "cta_overskrift": "Er I i tvivl, om det kunne være noget?",
   "cta_tekst": "Ring og få en samtale på 20 minutter uden beregning. Her kan I fortælle lidt om situationen, og vi kan sammen vurdere, om et hesteassisteret fællesskabsforløb kunne være en meningsfuld ramme.",
-  "titel": "Hesteassisteret fællesskabsforløb ved Roskilde | Hesteassisteret Praksis",
+  "titel": "Fælles pædagogisk forløb med heste ved Roskilde | Hesteassisteret Praksis",
   "beskrivelse": "Pædagogisk gruppeforløb for børn og unge med skolefravær. Små, faste hold på 2–4 deltagere omkring hestene i Gevninge ved Roskilde. Typisk 10–12 gange á 90 minutter."
 }

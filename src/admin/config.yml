@@ -407,12 +407,127 @@ collections:
               - { name: svar, label: "Svar", widget: text }
           - { name: faq_knap, label: "Tekst på knappen under spørgsmålene", widget: string }
 
+          - { name: behandling_overskrift, label: "Henvisning til behandlingsforløbet · overskrift", widget: string }
+          - { name: behandling_tekst, label: "Henvisning til behandlingsforløbet · tekst", widget: text }
+          - { name: behandling_knap, label: "Henvisning til behandlingsforløbet · knaptekst", widget: string }
+
           - { name: kryds_overskrift, label: "Henvisning til rideterapi · overskrift", widget: string }
           - { name: kryds_tekst, label: "Henvisning · tekst", widget: text }
           - { name: kryds_knap, label: "Henvisning · knaptekst", widget: string }
 
           - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
           - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
+
+          - { name: titel, label: "Fanebladstitel i browseren", widget: string, hint: "Vises i browserfanen og i Google." }
+          - { name: beskrivelse, label: "Beskrivelse til Google", widget: text, hint: "Cirka 150 tegn." }
+
+      # ---------------------------------------------------------------
+      - name: behandlingsforloeb
+        label: "Fællesskabsforløb · behandlingsfokus"
+        file: "src/_data/behandlingsforloeb.json"
+        description: "Det hesteassisterede fællesskabsforløb med behandlingsfokus."
+        fields:
+          - { name: hero_mikrotekst, label: "Lille tekst over overskriften", widget: string }
+          - { name: hero_overskrift, label: "Stor overskrift", widget: string }
+          - { name: hero_tekst, label: "Tekst under overskriften", widget: text }
+          - { name: hero_billede, label: "Stort billede øverst", widget: image }
+          - { name: hero_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: hero_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - name: hero_maerkater
+            label: "De fire små mærkater"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: tekst, label: "Tekst", widget: string }
+
+          - { name: hvad_tekst, label: "Tekst ved siden af billedet øverst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: hvad_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: hvad_boks_tekst, label: "Grøn boks · tekst", widget: text }
+
+          - { name: maalgruppe_mikrotekst, label: "Lille tekst · 'Målgruppe'", widget: string }
+          - { name: maalgruppe_overskrift, label: "Overskrift · 'Hvem kan forløbet være relevant for?'", widget: string }
+          - { name: maalgruppe_indledning, label: "Tekst før punktlisten", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - name: maalgruppe_punkter
+            label: "Punktlisten"
+            widget: list
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: maalgruppe_afslutning, label: "Tekst efter punktlisten", widget: text }
+          - { name: maalgruppe_billede, label: "Billede", widget: image }
+          - { name: maalgruppe_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER, fx 'Barn børster en brun pony på folden'. Ikke en stemning." }
+          - { name: maalgruppe_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+
+          - { name: enkelte_mikrotekst, label: "Lille tekst · 'Den narrative tilgang'", widget: string }
+          - { name: enkelte_overskrift, label: "Overskrift · 'Behandling med afsæt i den enkelte'", widget: string }
+          - { name: enkelte_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: enkelte_billede, label: "Billede", widget: image }
+          - { name: enkelte_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER. Ikke en stemning." }
+          - { name: enkelte_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Lad feltet stå tomt, hvis der ingen tekst skal være." }
+
+          - { name: faellesskab_mikrotekst, label: "Lille tekst · 'Behandling sammen med andre'", widget: string }
+          - { name: faellesskab_overskrift, label: "Overskrift · 'Hvorfor behandling i et fællesskab?'", widget: string }
+          - { name: faellesskab_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+
+          - { name: tredje_mikrotekst, label: "Lille tekst · 'Det fælles tredje'", widget: string }
+          - { name: tredje_overskrift, label: "Overskrift · 'Hestene som fælles tredje'", widget: string }
+          - { name: tredje_indledning, label: "Tekst over de fire kort", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - name: tredje_kort
+            label: "De fire kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+          - { name: arbejde_mikrotekst, label: "Lille tekst · 'Sådan arbejder vi'", widget: string }
+          - { name: arbejde_overskrift, label: "Overskrift", widget: string }
+          - { name: arbejde_indledning, label: "Tekst før punktlisten", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - name: arbejde_punkter
+            label: "Punktlisten"
+            widget: list
+            fields:
+              - { name: tekst, label: "Punkt", widget: string }
+          - { name: arbejde_afslutning, label: "Tekst efter punktlisten", widget: text }
+          - { name: arbejde_billede, label: "Billede", widget: image }
+          - { name: arbejde_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER. Ikke en stemning." }
+          - { name: arbejde_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Lad feltet stå tomt, hvis der ingen tekst skal være." }
+
+          - { name: individuel_mikrotekst, label: "Lille tekst · 'Mål og opfølgning'", widget: string }
+          - { name: individuel_overskrift, label: "Overskrift · 'En individuelt tilrettelagt indsats...'", widget: string }
+          - { name: individuel_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: individuel_billede, label: "Billede", widget: image }
+          - { name: individuel_billede_alt, label: "Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man rent faktisk SER. Ikke en stemning." }
+          - { name: individuel_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Lad feltet stå tomt, hvis der ingen tekst skal være." }
+
+          - { name: fagligt_mikrotekst, label: "Lille tekst · 'Fagligt afsæt'", widget: string }
+          - { name: fagligt_overskrift, label: "Overskrift", widget: string }
+          - { name: fagligt_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+          - { name: fagligt_boks_titel, label: "Grøn boks · fed indledning", widget: string }
+          - { name: fagligt_boks_tekst, label: "Grøn boks · tekst", widget: text }
+          - { name: fagligt_boks_link, label: "Grøn boks · tekst på linket", widget: string }
+
+          - { name: visitation_mikrotekst, label: "Lille tekst · 'For kommuner'", widget: string }
+          - { name: visitation_overskrift, label: "Overskrift · 'Kommunal visitation...'", widget: string }
+          - { name: visitation_tekst, label: "Tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
+
+          - { name: valg_mikrotekst, label: "Lille tekst · 'To fællesskabsforløb'", widget: string }
+          - { name: valg_overskrift, label: "Overskrift · 'Pædagogisk fokus eller behandlingsfokus?'", widget: string }
+          - { name: valg_indledning, label: "Tekst over de to kort", widget: text }
+          - name: valg_kort
+            label: "De to kort"
+            widget: list
+            allow_add: false
+            allow_remove: false
+            fields:
+              - { name: overskrift, label: "Overskrift", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+          - { name: valg_afslutning, label: "Tekst under de to kort", widget: text }
+          - { name: valg_knap, label: "Knap til den pædagogiske side · tekst", widget: string }
+
+          - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
+          - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text, hint: "Lav en tom linje mellem afsnit." }
 
           - { name: titel, label: "Fanebladstitel i browseren", widget: string, hint: "Vises i browserfanen og i Google." }
           - { name: beskrivelse, label: "Beskrivelse til Google", widget: text, hint: "Cirka 150 tegn." }
