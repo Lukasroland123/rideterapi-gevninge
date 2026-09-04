@@ -31,7 +31,7 @@ eleventyComputed:
       </div>
     </div>
     <figure class="figur">
-      <div class="hero__media">
+      <div class="hero__media" style="aspect-ratio: {{ behandlingsforloeb.hero_billede | billedforhold }}">
         {% if behandlingsforloeb.hero_billede %}
         <img src="{{ behandlingsforloeb.hero_billede }}" alt="{{ behandlingsforloeb.hero_billede_alt }}">
         {% endif %}
@@ -46,7 +46,7 @@ eleventyComputed:
 <section class="section section--sand">
   <div class="wrap split">
     <figure class="figur">
-      <div class="split__media">
+      <div class="split__media" style="aspect-ratio: {{ behandlingsforloeb.maalgruppe_billede | billedforhold }}">
         {% if behandlingsforloeb.maalgruppe_billede %}
         <img src="{{ behandlingsforloeb.maalgruppe_billede }}" alt="{{ behandlingsforloeb.maalgruppe_billede_alt }}">
         {% endif %}
@@ -68,7 +68,7 @@ eleventyComputed:
 <section class="section">
   <div class="wrap split split--reverse">
     <figure class="figur">
-      <div class="split__media">
+      <div class="split__media" style="aspect-ratio: {{ behandlingsforloeb.enkelte_billede | billedforhold }}">
         {% if behandlingsforloeb.enkelte_billede %}
         <img src="{{ behandlingsforloeb.enkelte_billede }}" alt="{{ behandlingsforloeb.enkelte_billede_alt }}">
         {% endif %}
@@ -115,7 +115,7 @@ eleventyComputed:
 <section class="section section--sand">
   <div class="wrap split">
     <figure class="figur">
-      <div class="split__media">
+      <div class="split__media" style="aspect-ratio: {{ behandlingsforloeb.arbejde_billede | billedforhold }}">
         {% if behandlingsforloeb.arbejde_billede %}
         <img src="{{ behandlingsforloeb.arbejde_billede }}" alt="{{ behandlingsforloeb.arbejde_billede_alt }}">
         {% endif %}
@@ -137,7 +137,7 @@ eleventyComputed:
 <section class="section">
   <div class="wrap split split--reverse">
     <figure class="figur">
-      <div class="split__media">
+      <div class="split__media" style="aspect-ratio: {{ behandlingsforloeb.individuel_billede | billedforhold }}">
         {% if behandlingsforloeb.individuel_billede %}
         <img src="{{ behandlingsforloeb.individuel_billede }}" alt="{{ behandlingsforloeb.individuel_billede_alt }}">
         {% endif %}
