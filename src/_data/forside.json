@@ -1,7 +1,7 @@
 {
-  "hero_mikrotekst": "Medlem af Rideterapeutforeningen og Dansk Psykoterapeutforening",
+  "hero_mikrotekst": "Medlem af Rideterapeutforeningen og Medlem Dansk Psykoterapeutforening MPF",
   "hero_overskrift": "Hesteassisteret Praksis for mennesker i mistrivsel og med diagnoser",
-  "hero_tekst": "Hesteassisteret behandling, handicapridning og fællesskabsforløb kan understøtte trivsel, og er særligt relevant ved skolefravær, ADHD, autisme, angst, traumer og handicap. Forløbene, individuelle eller fælles, foregår i rolige omgivelser 10 km fra Roskilde.",
+  "hero_tekst": "Hesteassisteret behandling, handicapridning og fællesskabsforløb kan understøtte trivsel, og er særligt relevant ved skolefravær, ADHD, autisme, angst, traumer og andre former for funktionsnedsættelser. Forløbene, individuelle eller fælles, foregår i rolige omgivelser 10 km fra Roskilde.",
   "hero_knap1": "Book en samtale på 20 min.",
   "hero_knap2": "Se hvordan et forløb foregår",
   "hero_billede": "/billeder/forside-barn-paa-hesteryg.jpg",
@@ -33,8 +33,8 @@
       "tekst": "ADHD, autisme, angst eller depression fylder så meget, at der ikke er plads til mennesket bag diagnosen."
     },
     {
-      "overskrift": "Handicap og funktionsnedsættelse",
-      "tekst": "Der er brug for træning af balance, koordination og kropsholdning, i en form, der ikke føles som træning."
+      "overskrift": "Funktionsnedsættelser og særlige behov",
+      "tekst": "Der er fokus på at understøtte balance, koordination og kropsholdning, samtidig med at der skabes rum for nærvær og mestring."
     },
     {
       "overskrift": "Traumer og et uroligt nervesystem",
@@ -46,13 +46,13 @@
   "tilbud_intro": "De to første foregår som enesessioner, hvor der tages højde for dine forudsætninger, behov og ønsker. Fællesskabsforløbet foregår i en lille, fast gruppe. Man behøver ikke kunne ride for at komme her.",
   "tilbud_kort": [
     {
-      "overskrift": "Udviklingsstøttende hesteassisteret behandling (ofte kaldet rideterapi)",
-      "tekst": "Et guidet forløb, hvor du oplever hestens respons på dine egne handlinger. Ved at mærke hestens bevægelser, puls, pels og rytme stimuleres en række sanser, som kan danne fundament for nærvær, ro og oplevelsen af samhørighed.\n\nMetoden har jeg selv udviklet ved at „oversætte“ narrativ terapi og viden om nervesystemet / neuroanatomi til et sanseligt og (non)verbalt samspil mellem hest og menneske.",
+      "overskrift": "Udviklingsstøttende hesteassisteret behandling",
+      "tekst": "Et guidet forløb, hvor du oplever hestens respons på dine egne handlinger. Ved at mærke hestens bevægelser, puls, pels og rytme stimuleres en række sanser, som kan danne fundament for nærvær, ro og oplevelsen af samhørighed.\n\nJeg har selv udviklet metoden ved at omsætte narrativ terapi og viden om nervesystemet og neuroanatomi til en tilgang, hvor samtaleterapi og sanseligt samspil mellem hest, deltager og terapeut går hånd i hånd.",
       "link_tekst": "Læs om rideterapi"
     },
     {
       "overskrift": "Kompenserende handicapridning",
-      "tekst": "Mennesker med psykiske eller fysiske handicap bliver ofte stimuleret konstruktivt af både samværet med hestene og selve ridningen. Gennem hestens bevægelser aktiveres sanser, der kan have gavnlig effekt for den, der er ramt af handicap eller sygdom.\n\nSom certificeret funktionel neuroterapeut arbejder jeg målrettet med koordination, balance og kropsholdning, sansemotorisk og psykomotorisk træning.",
+      "tekst": "Mennesker med psykiske/ fysiske funktionsnedsættelser bliver ofte stimuleret konstruktivt af både samværet med hestene og selve ridningen. Gennem hestens bevægelser aktiveres sanser, der kan have gavnlig effekt.\n\nSom certificeret funktionel neuroterapeut inddrager jeg sansemotoriske og psykomotoriske perspektiver med fokus på balance, koordination, kropsholdning og kropslig regulering.",
       "link_tekst": "Læs om handicapridning"
     },
     {
@@ -67,6 +67,8 @@
   "hvorfor_billede": "/billeder/forside-barn-og-hest-i-sne.jpg",
   "hvorfor_billede_alt": "Smilende barn i vinterjakke rækker en vante frem mod en brun hests mule i en snedækket fold",
   "hvorfor_billedtekst": "Oplevelsen af nærhed, samhørighed og forbundethed kan opstå.",
+  "hvorfor_artikel_tekst": "Hesteassisteret terapi som platform – læs min artikel",
+  "hvorfor_artikel_url": "https://tidsskriftetspecialpaedagogik.dk/vare/fra-nr-2024-2-hesteassisteret-terapi-som-platform-i-moedet-med-boern-og-unge-i-mistrivsel/",
   "hvorfor_boks_titel": "Fra forskningen:",
   "hvorfor_boks_tekst": "Et amerikansk studie fra 2014 fulgte 130 unge gennem 12 ugers hesteassisteret forløb og fandt et betydeligt fald i stresshormonet kortisol. Et andet studie med 66 deltagere over 8 måneder viste markant reduktion af angst og depression samt styrket selvværd.",
   "hvorfor_boks_link": "Se kilder og litteratur",
@@ -90,7 +92,5 @@
   "soester_tekst": "Jeg driver også Narrativ Samtale, hvor jeg tilbyder individuel terapi, traumebehandling, familiebehandling, bisidderstøtte og supervision.",
   "soester_knap": "Gå til narrativsamtale.dk",
   "titel": "Rideterapi & handicapridning ved Roskilde | Lotte Stegeager",
-  "beskrivelse": "Hesteassisteret behandling, rideterapi og handicapridning for børn, unge og voksne. bl.a. ved skolefravær, ADHD, autisme, angst, PTSD og andre handicap. Praksis i Gevninge, 10 km fra Roskilde.",
-  "hvorfor_artikel_tekst": "Hesteassisteret terapi som platform – læs min artikel",
-  "hvorfor_artikel_url": "https://tidsskriftetspecialpaedagogik.dk/vare/fra-nr-2024-2-hesteassisteret-terapi-som-platform-i-moedet-med-boern-og-unge-i-mistrivsel/"
+  "beskrivelse": "Hesteassisteret behandling, rideterapi og handicapridning for børn, unge og voksne. bl.a. ved skolefravær, ADHD, autisme, angst, PTSD og andre handicap. Praksis i Gevninge, 10 km fra Roskilde."
 }
