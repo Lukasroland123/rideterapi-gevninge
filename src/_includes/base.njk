@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ titel | safe }}</title>
 <meta name="description" content="{{ beskrivelse | safe }}">
+{#- Fejlsiden ligger paa /404.html, men Cloudflare omdirigerer den adresse
+    til /404. En canonical ville derfor pege paa en omdirigering, og det er
+    praecis det Google rapporterer som "Side med omdirigering". Siden skal
+    hverken indekseres eller have en canonical - kun et noindex. -#}
+{% if noindex %}
+<meta name="robots" content="noindex">
+{% else %}
 <link rel="canonical" href="{{ site.domaene }}{{ page.url }}">
+{% endif %}
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐴</text></svg>">
 <meta property="og:type" content="website">
@@ -13,8 +21,8 @@
 <meta property="og:site_name" content="{{ site.navn }}">
 <meta property="og:title" content="{{ titel | safe }}">
 <meta property="og:description" content="{{ beskrivelse | safe }}">
-<meta property="og:url" content="{{ site.domaene }}{{ page.url }}">
-<meta property="og:image" content="{{ site.domaene }}{{ og_billede | default("/billeder/forside-barn-paa-hesteryg.jpg", true) }}">
+{% if not noindex %}<meta property="og:url" content="{{ site.domaene }}{{ page.url }}">
+{% endif %}<meta property="og:image" content="{{ site.domaene }}{{ og_billede | default("/billeder/forside-barn-paa-hesteryg.jpg", true) }}">
 <meta name="twitter:card" content="summary_large_image">
 
 {#- Struktureret data ligger i sin egen fil, saa den kan vokse uden at goere
