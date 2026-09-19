@@ -106,7 +106,6 @@ collections:
           - { name: cta_overskrift, label: "Grøn boks nederst · overskrift", widget: string }
           - { name: cta_tekst, label: "Grøn boks nederst · tekst", widget: text }
 
-          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
           - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
 
@@ -720,7 +719,6 @@ collections:
           - { name: citat, label: "Citatet nederst", widget: text }
           - { name: citat_kilde, label: "Kilde til citatet", widget: string }
 
-          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
           - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
 
@@ -759,7 +757,6 @@ collections:
           - { name: vej_billedtekst, label: "Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den tekst, der står med kursiv under billedet på siden. Her er der plads til stemningen. Lad feltet stå tomt, hvis der ingen tekst skal være." }
 
 
-          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
           - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
 
@@ -852,7 +849,6 @@ collections:
               - { name: overskrift, label: "Overskrift", widget: string }
               - { name: tekst, label: "Tekst", widget: text }
 
-          - { name: soester_overskrift, label: "Henvisning til Narrativ Samtale · overskrift", widget: string }
           - { name: soester_tekst, label: "Henvisning · tekst", widget: text }
           - { name: soester_knap, label: "Henvisning · knaptekst", widget: string }
 
@@ -869,7 +865,7 @@ collections:
         description: "Disse oplysninger bruges i toppen og bunden af ALLE sider."
         fields:
           - { name: navn, label: "Virksomhedens navn", widget: string }
-          - { name: juridisk_navn, label: "Juridisk navn (CVR-registreret)", widget: string, hint: "Det navn virksomheden er registreret under i CVR, fx 'Narrativ Samtale v/Lotte Stegeager'. Vises ikke på siden, men bruges af Google og af AI-tjenester. Ret kun hvis registreringen ændres." }
+          - { name: juridisk_navn, label: "Juridisk navn (CVR-registreret)", widget: string, hint: "Det navn virksomheden er registreret under i CVR, fx 'Curans'. Vises ikke på siden, men bruges af Google og af AI-tjenester. Ret kun hvis registreringen ændres." }
           - { name: undertitel, label: "Undertekst i logoet", widget: string }
           - { name: telefon, label: "Mobilnummer (som det vises)", widget: string }
           - { name: telefon_link, label: "Mobilnummer til opkald", widget: string, hint: "Skrives som +45 efterfulgt af nummeret uden mellemrum, fx +4526122329" }
@@ -881,7 +877,7 @@ collections:
           - { name: postnr_by, label: "Postnummer og by", widget: string }
           - { name: facebook, label: "Link til Facebook", widget: string }
           - { name: google_anmeldelser, label: "Link til anmeldelser på Google", widget: string }
-          - { name: soestersite_url, label: "Link til Narrativ Samtale", widget: string }
+          - { name: soestersite_url, label: "Link til Curans", widget: string }
           - { name: soestersite_navn, label: "Navn på den anden hjemmeside", widget: string }
           - { name: footer_beskrivelse, label: "Tekst nederst på siden", widget: text }
           - { name: cta_knap, label: "Tekst på knappen i menuen", widget: string }

@@ -1,6 +1,6 @@
 {
   "navn": "Hesteassisteret Praksis",
-  "juridisk_navn": "Narrativ Samtale v/Lotte Stegeager",
+  "juridisk_navn": "Curans",
   "undertitel": "v/ Lotte Stegeager",
   "domaene": "https://hesteassisteret-praksis.dk",
   "telefon": "26 12 23 29",
@@ -13,8 +13,8 @@
   "postnr_by": "4000 Roskilde",
   "facebook": "https://www.facebook.com/profile.php?id=100090422453079",
   "google_anmeldelser": "https://www.google.com/maps/search/?api=1&query=Narrativ+Samtale+Gevninge+Bygade+26+4000+Roskilde",
-  "soestersite_url": "https://narrativsamtale.dk/",
-  "soestersite_navn": "Narrativ Samtale",
+  "soestersite_url": "https://curans.dk/",
+  "soestersite_navn": "Curans",
   "footer_beskrivelse": "Hesteassisteret behandling og handicapridning ved Lotte Stegeager. Godkendt af Rideterapeutforeningen.",
   "cta_knap": "Book uforpligtende samtale"
 }

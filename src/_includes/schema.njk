@@ -21,6 +21,16 @@
        ingen gaettede koordinater, ingen selvskrevne anmeldelser. En maskine
        gentager det, der staar her - ogsaa fejlene.
    ===================================================================== -#}
+{#- Lotte er EN person med TO praksisser, og begge sites skal derfor pege paa
+    det SAMME Person-"@id". Ellers ser en maskine to forskellige mennesker, og
+    hverken anmeldelser, uddannelse eller erfaring samler sig ét sted.
+
+    Det kanoniske id ligger paa curans.dk, fordi Curans er det juridiske
+    firmanavn for begge grene. Det staar her som en fast vaerdi og ikke som
+    site.domaene: paa soestersitet ville site.domaene give det forkerte svar,
+    og det er praecis den fejl, der skal undgaas. Aendres det ene sted, skal
+    det aendres begge steder. -#}
+{%- set lotte_id = "https://curans.dk/#lotte" -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,7 +42,7 @@
         staar EducationalOccupationalCredential. -#}
     {
       "@type": "Person",
-      "@id": {{ (site.domaene + "/#lotte") | dump | safe }},
+      "@id": {{ lotte_id | dump | safe }},
       "name": "Lotte Stegeager",
       "givenName": "Lotte",
       "familyName": "Stegeager",
@@ -93,8 +103,8 @@
       "url": {{ site.domaene | dump | safe }},
       "telephone": {{ site.telefon_link | dump | safe }},
       "email": {{ site.email | dump | safe }},
-      "founder": { "@id": {{ (site.domaene + "/#lotte") | dump | safe }} },
-      "employee": { "@id": {{ (site.domaene + "/#lotte") | dump | safe }} },
+      "founder": { "@id": {{ lotte_id | dump | safe }} },
+      "employee": { "@id": {{ lotte_id | dump | safe }} },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": {{ site.adresse | dump | safe }},
