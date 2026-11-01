@@ -226,6 +226,15 @@ blockquote {
   text-transform: uppercase; color: var(--ink-soft);
 }
 
+/* Facebook og Instagram lige efter navnet. margin-right: auto skubber
+   menuen ud til hoejre, saa ikonerne bliver staaende ved logoet. De er
+   holdt smalle, fordi menuen kun lige har plads - se 1420px nedenfor. */
+.site-header .social { gap: 0; margin: 0 auto 0 -.5rem; }
+.site-header .social a { display: grid; place-items: center; width: 2rem; height: 2rem;
+  border-radius: 50%; color: var(--brand); transition: background .15s, color .15s; }
+.site-header .social a:hover { background: var(--brand-tint); color: var(--brand-dark); }
+.site-header .social svg { width: 1.25rem; height: 1.25rem; }
+
 .nav { display: flex; align-items: center; gap: .1rem; }
 
 .nav > a:not(.btn),
@@ -317,7 +326,18 @@ blockquote {
 .nav-toggle[aria-expanded="true"] .nav-toggle__open { display: none; }
 .nav-toggle[aria-expanded="true"] .nav-toggle__close { display: block; }
 
-@media (max-width: 1380px) {
+/* Paa en telefon er der ikke plads til navn, ikoner og "Menu" paa en linje.
+   Navnet maa bryde over to linjer, og menuknappen viser kun sine streger. */
+@media (max-width: 560px) {
+  .logo { flex-shrink: 1; min-width: 0; font-size: 1.05rem; }
+  .site-header .social { margin-left: 0; }
+  .nav-toggle { font-size: 0; gap: 0; padding: .6rem; }
+}
+
+/* Var 1380px, foer ikonerne kom op ved siden af navnet. Under 1420px er
+   der ikke plads til hele menuen paa en linje, og bestillingsknappen
+   brydes ellers over to linjer. */
+@media (max-width: 1420px) {
   .nav-toggle { display: inline-flex; }
   .nav {
     display: none;
