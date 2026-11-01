@@ -138,6 +138,7 @@
           eksisterende omdoemme paa nettet. -#}
       "sameAs": [
         {{ site.facebook | dump | safe }},
+        {% if site.instagram %}{{ site.instagram | dump | safe }},{% endif %}
         {{ site.soestersite_url | dump | safe }}
       ]
       {#- BEVIDST UDELADT, indtil vi kender de rigtige tal:

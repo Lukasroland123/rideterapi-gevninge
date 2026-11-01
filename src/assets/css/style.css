@@ -903,6 +903,11 @@ blockquote {
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
 .footer-grid li { margin: 0; }
+.social { display: flex; gap: .75rem; margin-top: 1.25rem; }
+.site-footer .social a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem;
+  border-radius: 50%; background: rgba(255,255,255,.12); color: #fff; transition: background .15s; }
+.site-footer .social a:hover { background: rgba(255,255,255,.25); text-decoration: none; }
+.social svg { width: 1.35rem; height: 1.35rem; }
 .footer__brand { font-family: var(--font-head); font-size: 1.3rem; color: #fff; margin-bottom: .5rem; }
 .footer-bottom {
   margin-top: 2.5rem; padding-top: 1.5rem;

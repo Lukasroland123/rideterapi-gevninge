@@ -876,6 +876,7 @@ collections:
           - { name: adresse, label: "Vej og husnummer", widget: string }
           - { name: postnr_by, label: "Postnummer og by", widget: string }
           - { name: facebook, label: "Link til Facebook", widget: string }
+          - { name: instagram, label: "Link til Instagram", widget: string, required: false }
           - { name: google_anmeldelser, label: "Link til anmeldelser på Google", widget: string }
           - { name: soestersite_url, label: "Link til Curans", widget: string }
           - { name: soestersite_navn, label: "Navn på den anden hjemmeside", widget: string }
