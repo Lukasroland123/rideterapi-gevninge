@@ -9,7 +9,7 @@
   "hero_billedtekst": "",
   "hero_maerkater": [
     {
-      "tekst": "Små, faste grupper på 2–4 børn og unge"
+      "tekst": "Små, faste grupper på 2–3 børn eller unge"
     },
     {
       "tekst": "Typisk 10–12 gange á 90 minutter, én gang om ugen"
@@ -21,7 +21,7 @@
       "tekst": "Gevninge ved Roskilde"
     }
   ],
-  "hvad_tekst": "Forløbene foregår i små, faste grupper på 2–4 børn eller unge. Her er hestene og aktiviteterne omkring dem det, vi er sammen om.\n\nFormålet er at skabe et overskueligt fællesskab, hvor der kan opstå nye erfaringer med deltagelse, relationer og det at høre til, erfaringer, som på sigt kan få betydning for deltagelse i andre fællesskaber, også i skolen.",
+  "hvad_tekst": "Forløbene foregår i små, faste grupper på 2–3 børn eller unge. Her er hestene og aktiviteterne omkring dem det, vi er sammen om.\n\nFormålet er at skabe et overskueligt fællesskab, hvor der kan opstå nye erfaringer med deltagelse, relationer og det at høre til, erfaringer, som på sigt kan få betydning for deltagelse i andre fællesskaber, også i skolen.",
   "hvad_boks_titel": "Man kan begynde med bare at være med.",
   "hvad_boks_tekst": "Man behøver ikke være god til at tale, være udadvendt eller vide, hvordan man skal være sammen med de andre.",
   "lille_mikrotekst": "Et lille fællesskab",
@@ -38,7 +38,7 @@
   "tredje_billedtekst": "",
   "grupper_mikrotekst": "Et overskueligt sted at være sammen",
   "grupper_overskrift": "Hvorfor små grupper?",
-  "grupper_intro": "En gruppe på 2–4 deltagere er stor nok til, at der kan opstå et fællesskab, men lille nok til, at den enkelte ikke forsvinder i mængden.",
+  "grupper_intro": "En gruppe på 2–3 deltagere er stor nok til, at der kan opstå et fællesskab, men lille nok til, at den enkelte ikke forsvinder i mængden.",
   "grupper_kort": [
     {
       "overskrift": "At være med på forskellige måder",
@@ -143,7 +143,7 @@
     },
     {
       "overskrift": "Gruppen sættes sammen",
-      "tekst": "Grupperne består af 2–4 børn eller unge og sammensættes med blik for alder, forudsætninger og det, deltagerne står i."
+      "tekst": "Grupperne består af 2–3 børn eller unge og sammensættes med blik for alder, forudsætninger og det, deltagerne står i."
     },
     {
       "overskrift": "Faste rammer",
@@ -166,7 +166,7 @@
     },
     {
       "spoergsmaal": "Hvor mange er der på et hold?",
-      "svar": "Der er 2–4 børn eller unge i en gruppe. Den lille gruppestørrelse er en væsentlig del af tilbuddet."
+      "svar": "Der er 2–3 børn eller unge i en gruppe. Den lille gruppestørrelse er en væsentlig del af tilbuddet."
     },
     {
       "spoergsmaal": "Skal barnet være klar til at være socialt?",
@@ -187,5 +187,5 @@
   "cta_overskrift": "Er I i tvivl, om det kunne være noget?",
   "cta_tekst": "Ring og få en samtale på 20 minutter uden beregning. Her kan I fortælle lidt om situationen, og vi kan sammen vurdere, om et hesteassisteret fællesskabsforløb kunne være en meningsfuld ramme.",
   "titel": "Fælles pædagogisk forløb med heste ved Roskilde | Hesteassisteret Praksis",
-  "beskrivelse": "Pædagogisk gruppeforløb for børn og unge med skolefravær. Små, faste hold på 2–4 deltagere omkring hestene i Gevninge ved Roskilde. Typisk 10–12 gange á 90 minutter."
+  "beskrivelse": "Pædagogisk gruppeforløb for børn og unge med skolefravær. Små, faste hold på 2–3 deltagere omkring hestene i Gevninge ved Roskilde. Typisk 10–12 gange á 90 minutter."
 }
