@@ -104,3 +104,63 @@
   });
 
 })();
+
+/* Cookie-boks og besøgsstatistik.
+   Valget gemmes i localStorage under "cookie-samtykke" sammen med datoen.
+   Efter 12 måneder spørges der igen. Statistikken (Cloudflare Web Analytics)
+   indlæses kun, hvis der er sagt ja, og kun hvis der er sat et token i
+   src/_data/statistik.json. Ja og Nej er bevidst lige store knapper:
+   det kræver reglerne for samtykke. */
+(function () {
+  var boks = document.getElementById('cookie-boks');
+  if (!boks) return;
+  var NOEGLE = 'cookie-samtykke';
+  var GYLDIG_MS = 365 * 24 * 60 * 60 * 1000;
+
+  function hentValg() {
+    try {
+      var v = JSON.parse(localStorage.getItem(NOEGLE) || 'null');
+      if (v && (v.valg === 'ja' || v.valg === 'nej') && Date.now() - v.dato < GYLDIG_MS) return v.valg;
+    } catch (e) {}
+    return null;
+  }
+
+  function gemValg(valg) {
+    try { localStorage.setItem(NOEGLE, JSON.stringify({ valg: valg, dato: Date.now() })); } catch (e) {}
+  }
+
+  var indlaest = false;
+  function startStatistik() {
+    var token = boks.getAttribute('data-token');
+    if (!token || indlaest) return;
+    indlaest = true;
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', JSON.stringify({ token: token }));
+    document.body.appendChild(s);
+  }
+
+  function visBoks() { boks.hidden = false; }
+  function skjulBoks() { boks.hidden = true; }
+
+  boks.addEventListener('click', function (e) {
+    var knap = e.target.closest('[data-samtykke]');
+    if (!knap) return;
+    var valg = knap.getAttribute('data-samtykke');
+    var foer = hentValg();
+    gemValg(valg);
+    skjulBoks();
+    if (valg === 'ja') startStatistik();
+    // Trækkes et ja tilbage, genindlæses siden, så statistikken stopper med det samme
+    else if (foer === 'ja') location.reload();
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.cookie-aabn'), function (b) {
+    b.addEventListener('click', visBoks);
+  });
+
+  var valg = hentValg();
+  if (valg === 'ja') startStatistik();
+  else if (valg === null) visBoks();
+})();

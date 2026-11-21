@@ -991,3 +991,33 @@ blockquote {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
+
+/* ---------- Cookie-boks ----------
+   Ligger nederst til venstre som et kort, så den ikke dækker hele siden.
+   Ja og Nej har samme udseende med vilje (krav til samtykke). */
+.cookie-boks {
+  position: fixed; z-index: 200;
+  left: 1rem; right: 1rem; bottom: 1rem;
+  max-width: 26rem;
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 1.25rem 1.35rem;
+  font-size: .95rem; line-height: 1.5;
+}
+.cookie-boks[hidden] { display: none; }
+.cookie-boks p { margin: 0 0 .6rem; }
+.cookie-boks__titel { font-family: var(--font-head); font-size: 1.15rem; font-weight: 600; color: var(--brand-dark); }
+.cookie-boks a { color: var(--brand-dark); }
+.cookie-boks__knapper { display: flex; gap: .6rem; margin-top: .9rem; }
+.cookie-boks__knapper .btn { flex: 1; justify-content: center; }
+.cookie-aabn {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font: inherit; color: inherit; text-decoration: underline;
+}
+
+/* Tabellen over cookies i privatlivspolitikken */
+.tabel-rul { overflow-x: auto; margin: 1rem 0 1.5rem; }
+.prose table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: .55rem .6rem; border-bottom: 1px solid var(--line); }
+.prose th { color: var(--brand-dark); font-weight: 600; }

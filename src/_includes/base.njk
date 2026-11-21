@@ -139,7 +139,8 @@
     <div class="footer-bottom">
       <p>&copy; 2026 {{ site.navn }} &middot; Alle rettigheder forbeholdt</p>
       <ul>
-        <li><a href="/privatlivspolitik/">Privatlivspolitik</a></li>
+        <li><a href="/privatlivspolitik/">Privatlivs- og cookiepolitik</a></li>
+        <li><button type="button" class="cookie-aabn">Cookieindstillinger</button></li>
         <li><a href="/forloeb/#ansvar">Ansvar og forsikring</a></li>
         {% if side != 'privatliv' %}
         <li>
@@ -153,6 +154,17 @@
     </div>
   </div>
 </footer>
+
+{#- Cookie-boksen. Den er skjult, til site.js har tjekket, om den besøgende
+    allerede har valgt. Statistikken indlæses KUN efter "Ja tak". -#}
+<div class="cookie-boks" id="cookie-boks" role="dialog" aria-labelledby="cookie-titel" aria-describedby="cookie-tekst" data-token="{{ statistik.cloudflare_token }}" hidden>
+  <p class="cookie-boks__titel" id="cookie-titel">Cookies og statistik</p>
+  <p id="cookie-tekst">Jeg vil gerne kunne se, hvor mange der besøger hjemmesiden, og hvilke sider der bliver læst. Statistikken er anonym og bruges ikke til reklamer. Må jeg tælle dit besøg? <a href="/privatlivspolitik/#cookies">Læs mere</a></p>
+  <div class="cookie-boks__knapper">
+    <button type="button" class="btn btn--brand" data-samtykke="ja">Ja tak</button>
+    <button type="button" class="btn btn--brand" data-samtykke="nej">Nej tak</button>
+  </div>
+</div>
 
 <script src="/assets/js/site.js"></script>
 </body>
