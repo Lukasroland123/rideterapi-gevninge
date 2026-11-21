@@ -25,6 +25,14 @@ backend:
 media_folder: "src/billeder"
 public_folder: "/billeder"
 
+# Gratis billeder direkte i billedvælgeren. Lotte indtaster selv en gratis
+# API-nøgle første gang (gemmes kun i hendes browser). Kun Pexels og Pixabay:
+# de kræver ingen kreditering. Unsplash kræver fotografens navn på siden, og
+# Lorem Picsum er tilfældige pladsholdere, så de er slået fra.
+media_libraries:
+  stock_assets:
+    providers: [pexels, pixabay]
+
 collections:
   # -------------------------------------------------------------------
   - name: sider
