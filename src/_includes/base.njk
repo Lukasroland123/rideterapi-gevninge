@@ -14,7 +14,7 @@
 {% else %}
 <link rel="canonical" href="{{ site.domaene }}{{ page.url }}">
 {% endif %}
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css?v={{ version }}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐴</text></svg>">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="da_DK">
@@ -166,6 +166,6 @@
   </div>
 </div>
 
-<script src="/assets/js/site.js"></script>
+<script src="/assets/js/site.js?v={{ version }}"></script>
 </body>
 </html>
