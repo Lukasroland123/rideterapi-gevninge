@@ -220,6 +220,8 @@ blockquote {
   border-radius: 50%;
 }
 .logo__mark svg { width: 24px; height: 24px; }
+/* Curans-logoet. Filen er 352x160 og vises i 44px hoejde, saa den er skarp paa telefoner. */
+.logo__img { display: block; height: 44px; width: auto; }
 .logo small {
   display: block; font-family: var(--font-body);
   font-size: .7rem; font-weight: 600; letter-spacing: .08em;
@@ -330,6 +332,7 @@ blockquote {
    Navnet maa bryde over to linjer, og menuknappen viser kun sine streger. */
 @media (max-width: 560px) {
   .logo { flex-shrink: 1; min-width: 0; font-size: 1.05rem; }
+  .logo__img { height: 38px; }
   .site-header .social { margin-left: 0; }
   .nav-toggle { font-size: 0; gap: 0; padding: .6rem; }
 }
